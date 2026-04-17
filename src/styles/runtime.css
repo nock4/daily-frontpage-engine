@@ -244,6 +244,17 @@ a {
   border-radius: 8px;
   background: rgba(18, 16, 15, 0.68);
   border: 1px solid rgba(255,255,255,0.08);
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity 140ms ease, transform 140ms ease;
+}
+
+.artifact--labels-on span,
+.artifact.is-active span,
+.artifact:hover span,
+.artifact:focus-visible span {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .artifact--hero.is-active,

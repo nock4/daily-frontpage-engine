@@ -1,0 +1,37 @@
+import { describe, expect, it } from 'vitest'
+import { getRuntimePresentation, type ReviewMode } from './runtimePresentation'
+
+const getMode = (reviewMode: ReviewMode) => getRuntimePresentation(reviewMode)
+
+describe('getRuntimePresentation', () => {
+  it('treats live mode as the real-deal presentation', () => {
+    expect(getMode('live')).toEqual({
+      showArtifactLists: false,
+      showReviewPanel: false,
+      showPersistentRegionLabels: false,
+      briefEyebrow: 'Edition',
+      selectionEyebrow: 'Active pocket',
+      sourceWindowsEmptyState: 'Open a pocket to pin a source window.',
+    })
+  })
+
+  it('keeps clickable review mode explicitly review-oriented', () => {
+    expect(getMode('clickable')).toEqual({
+      showArtifactLists: true,
+      showReviewPanel: true,
+      showPersistentRegionLabels: true,
+      briefEyebrow: 'Review mode',
+      selectionEyebrow: 'Selection',
+      sourceWindowsEmptyState: 'Hover for preview, click to pin.',
+    })
+  })
+
+  it('keeps solo and debug modes in the review lane', () => {
+    for (const mode of ['solo', 'debug'] satisfies ReviewMode[]) {
+      expect(getMode(mode).showReviewPanel).toBe(true)
+      expect(getMode(mode).showArtifactLists).toBe(true)
+      expect(getMode(mode).showPersistentRegionLabels).toBe(true)
+      expect(getMode(mode).briefEyebrow).toBe('Review mode')
+    }
+  })
+})

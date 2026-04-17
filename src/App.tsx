@@ -1,8 +1,9 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { loadEditionPackage, loadManifest, polygonToClipPath } from './lib/editionLoader'
-import { buildArchiveHref, buildEditionHref, getEditionArchiveRecords, parseAppRoute, type AppRoute } from './lib/router'
+import { buildArchiveHref, getEditionArchiveRecords, parseAppRoute, type AppRoute } from './lib/router'
 import { getSourceWindowDescriptor } from './lib/sourceWindowContent'
 import { getRuntimeAmbienceClasses } from './lib/runtimeAmbience'
+import { getRuntimePresentation } from './lib/runtimePresentation'
 import { clearPreview, closeWindow, createWindowState, hoverBinding, pinBinding, restoreWindow } from './lib/sourceWindowManager'
 import type { ArchiveRecord, EditionManifest, LoadedEdition, SourceBindingRecord, SourceWindowState } from './types/runtime'
 
@@ -87,6 +88,7 @@ function App() {
       : new URLSearchParams(window.location.search).get('qa') === 'solo'
         ? 'solo'
         : 'live'
+  const presentation = getRuntimePresentation(reviewMode)
 
   if (loading) return <main className="boot-state">Loading daily edition…</main>
   if (error) return <main className="boot-state">{error}</main>
@@ -132,7 +134,7 @@ function App() {
             return (
               <button
                 key={artifact.id}
-                className={`artifact artifact--${artifact.kind}${active ? ' is-active' : ''}`}
+                className={`artifact artifact--${artifact.kind}${active ? ' is-active' : ''}${presentation.showPersistentRegionLabels ? ' artifact--labels-on' : ''}`}
                 style={{
                   left: `${artifact.bounds.x * 100}%`,
                   top: `${artifact.bounds.y * 100}%`,
@@ -162,34 +164,36 @@ function App() {
           })}
         </section>
 
-        <section className="artifact-lists">
-          <div>
-            <h2>Heroes</h2>
-            <ul>
-              {heroes.map((artifact) => (
-                <li key={artifact.id}>{artifact.label}</li>
-              ))}
-            </ul>
-          </div>
-          <div>
-            <h2>Modules</h2>
-            <ul>
-              {modules.map((artifact) => (
-                <li key={artifact.id}>{artifact.label}</li>
-              ))}
-            </ul>
-          </div>
-        </section>
+        {presentation.showArtifactLists ? (
+          <section className="artifact-lists">
+            <div>
+              <h2>Heroes</h2>
+              <ul>
+                {heroes.map((artifact) => (
+                  <li key={artifact.id}>{artifact.label}</li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <h2>Modules</h2>
+              <ul>
+                {modules.map((artifact) => (
+                  <li key={artifact.id}>{artifact.label}</li>
+                ))}
+              </ul>
+            </div>
+          </section>
+        ) : null}
       </section>
 
       <aside className="side-rail">
         <section className="panel">
-          <div className="eyebrow">Brief</div>
+          <div className="eyebrow">{presentation.briefEyebrow}</div>
           <h2>{loaded.edition.title}</h2>
           <p>{loaded.brief.mood}</p>
           <p>Lighting: {loaded.brief.lighting}</p>
           <p>Motion: {loaded.ambiance.motion_system}</p>
-          {route.kind === 'archive-edition' ? <p>Archive route: {buildEditionHref(route.edition)}</p> : null}
+          {route.kind === 'archive-edition' ? <p>{loaded.edition.date} · {loaded.edition.scene_family}</p> : null}
         </section>
 
         <section className="panel">
@@ -197,7 +201,7 @@ function App() {
           {primaryBinding ? (
             <SourceWindow binding={primaryBinding} mode="primary" onClose={() => setWindowState((state) => closeWindow(state, primaryBinding.id))} />
           ) : (
-            <p>No pinned window yet. Hover for preview, click to pin.</p>
+            <p>{presentation.sourceWindowsEmptyState}</p>
           )}
 
           {previewBinding && (!primaryBinding || previewBinding.id !== primaryBinding.id) ? (
@@ -219,7 +223,7 @@ function App() {
         </section>
 
         <section className="panel">
-          <div className="eyebrow">Selection</div>
+          <div className="eyebrow">{presentation.selectionEyebrow}</div>
           {activeBinding ? (
             <>
               <p>{activeBinding.title}</p>
@@ -235,12 +239,14 @@ function App() {
           <ArchiveMiniList currentEditionId={loaded.edition.edition_id} navigate={navigate} records={archiveRecords} />
         </section>
 
-        <section className="panel">
-          <div className="eyebrow">Review</div>
-          <p>Geometry: {loaded.review.geometry_status}</p>
-          <p>Clickability: {loaded.review.clickability_status}</p>
-          <p>Behavior: {loaded.review.behavior_status}</p>
-        </section>
+        {presentation.showReviewPanel ? (
+          <section className="panel">
+            <div className="eyebrow">Review</div>
+            <p>Geometry: {loaded.review.geometry_status}</p>
+            <p>Clickability: {loaded.review.clickability_status}</p>
+            <p>Behavior: {loaded.review.behavior_status}</p>
+          </section>
+        ) : null}
       </aside>
     </main>
   )
