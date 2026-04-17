@@ -27,6 +27,23 @@ a {
 
 .runtime-shell {
   grid-template-columns: minmax(0, 1.25fr) 340px;
+  transition: background 180ms ease, box-shadow 180ms ease;
+}
+
+.runtime-shell.ambient-video {
+  background: radial-gradient(circle at top left, rgba(95, 124, 255, 0.14), transparent 40%);
+}
+
+.runtime-shell.ambient-audio {
+  background: radial-gradient(circle at top left, rgba(255, 142, 61, 0.12), transparent 42%);
+}
+
+.runtime-shell.ambient-social {
+  background: radial-gradient(circle at top left, rgba(78, 201, 176, 0.12), transparent 42%);
+}
+
+.runtime-shell.ambient-reading {
+  background: radial-gradient(circle at top left, rgba(214, 189, 113, 0.1), transparent 40%);
 }
 
 .runtime-main,
@@ -248,6 +265,11 @@ a {
   border-radius: 12px;
   border: 1px solid rgba(255,255,255,0.08);
   background: rgba(255,255,255,0.03);
+}
+
+.audio-dock-card--warning {
+  border-color: rgba(255, 178, 87, 0.28);
+  background: rgba(255, 178, 87, 0.07);
 }
 
 .audio-dock-card p,

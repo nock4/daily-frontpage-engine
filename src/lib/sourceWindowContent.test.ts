@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import type { SourceBindingRecord } from '../types/runtime'
-import { getSourceWindowDescriptor } from './sourceWindowContent'
+import { getActiveBindingAmbienceMode, getSourceWindowDescriptor } from './sourceWindowContent'
 
 const makeBinding = (overrides: Partial<SourceBindingRecord> = {}): SourceBindingRecord => ({
   id: 'binding-1',
@@ -52,19 +52,21 @@ describe('getSourceWindowDescriptor', () => {
     expect(descriptor.allowsPlaybackPersistence).toBe(true)
   })
 
-  it('falls back to audio-dock for non-NTS audio bindings', () => {
+  it('uses platform-aware labels for resolved track sources', () => {
     const descriptor = getSourceWindowDescriptor(
       makeBinding({
         source_type: 'audio',
-        source_url: 'https://example.com/audio.mp3',
+        source_url: 'https://soundcloud.com/forss/flickermood',
         window_type: 'audio',
         playback_persistence: true,
       }),
     )
 
     expect(descriptor.kind).toBe('audio-dock')
+    if (descriptor.kind !== 'audio-dock') throw new Error('expected audio dock descriptor')
+    expect(descriptor.platformLabel).toBe('SoundCloud')
     expect(descriptor.ctaLabel).toBe('Open track source')
-    expect(descriptor.allowsPlaybackPersistence).toBe(true)
+    expect(descriptor.accentTone).toBe('audio')
   })
 
   it('uses a social card descriptor for social links that are not directly embeddable yet', () => {
@@ -77,14 +79,41 @@ describe('getSourceWindowDescriptor', () => {
     )
 
     expect(descriptor.kind).toBe('social-card')
+    if (descriptor.kind !== 'social-card') throw new Error('expected social descriptor')
     expect(descriptor.domainLabel).toBe('x.com')
+    expect(descriptor.platformLabel).toBe('X')
+    expect(descriptor.accentTone).toBe('social')
   })
 
   it('falls back to a rich web preview for article-like sources', () => {
     const descriptor = getSourceWindowDescriptor(makeBinding())
 
     expect(descriptor.kind).toBe('rich-preview')
+    if (descriptor.kind !== 'rich-preview') throw new Error('expected rich preview descriptor')
     expect(descriptor.domainLabel).toBe('example.com')
     expect(descriptor.ctaLabel).toBe('Open source')
+    expect(descriptor.platformLabel).toBe('Web source')
+  })
+})
+
+describe('getActiveBindingAmbienceMode', () => {
+  it('returns idle when there is no active binding', () => {
+    expect(getActiveBindingAmbienceMode(null)).toBe('ambient-idle')
+  })
+
+  it('maps video bindings to video ambiance', () => {
+    expect(getActiveBindingAmbienceMode(makeBinding({ source_type: 'youtube', window_type: 'video', source_url: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ' }))).toBe('ambient-video')
+  })
+
+  it('maps audio bindings to audio ambiance', () => {
+    expect(getActiveBindingAmbienceMode(makeBinding({ source_type: 'audio', window_type: 'audio' }))).toBe('ambient-audio')
+  })
+
+  it('maps social bindings to social ambiance', () => {
+    expect(getActiveBindingAmbienceMode(makeBinding({ source_type: 'tweet', window_type: 'social' }))).toBe('ambient-social')
+  })
+
+  it('maps generic web bindings to reading ambiance', () => {
+    expect(getActiveBindingAmbienceMode(makeBinding())).toBe('ambient-reading')
   })
 })

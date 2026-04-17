@@ -1,5 +1,7 @@
 import type { SourceBindingRecord } from '../types/runtime'
 
+export type SourceAccentTone = 'video' | 'audio' | 'social' | 'reading'
+
 export type SourceWindowDescriptor =
   | {
       kind: 'youtube-embed'
@@ -7,6 +9,8 @@ export type SourceWindowDescriptor =
       allowsPlaybackPersistence: boolean
       domainLabel: string
       ctaLabel: string
+      platformLabel: string
+      accentTone: SourceAccentTone
     }
   | {
       kind: 'audio-dock'
@@ -14,6 +18,8 @@ export type SourceWindowDescriptor =
       allowsPlaybackPersistence: boolean
       domainLabel: string
       ctaLabel: string
+      platformLabel: string
+      accentTone: SourceAccentTone
     }
   | {
       kind: 'social-card'
@@ -21,6 +27,8 @@ export type SourceWindowDescriptor =
       allowsPlaybackPersistence: boolean
       domainLabel: string
       ctaLabel: string
+      platformLabel: string
+      accentTone: SourceAccentTone
     }
   | {
       kind: 'rich-preview'
@@ -28,6 +36,8 @@ export type SourceWindowDescriptor =
       allowsPlaybackPersistence: boolean
       domainLabel: string
       ctaLabel: string
+      platformLabel: string
+      accentTone: SourceAccentTone
     }
 
 const getDomainLabel = (sourceUrl: string | null) => {
@@ -37,6 +47,22 @@ const getDomainLabel = (sourceUrl: string | null) => {
     return new URL(sourceUrl).hostname.replace(/^www\./, '')
   } catch {
     return 'linked source'
+  }
+}
+
+const getPlatformLabel = (sourceUrl: string | null, fallback: string) => {
+  if (!sourceUrl) return fallback
+
+  try {
+    const hostname = new URL(sourceUrl).hostname.replace(/^www\./, '')
+    if (hostname === 'soundcloud.com') return 'SoundCloud'
+    if (hostname === 'bandcamp.com' || hostname.endsWith('.bandcamp.com')) return 'Bandcamp'
+    if (hostname === 'youtube.com' || hostname === 'youtu.be' || hostname === 'm.youtube.com') return 'YouTube'
+    if (hostname === 'x.com' || hostname === 'twitter.com') return 'X'
+    if (hostname === 'instagram.com') return 'Instagram'
+    return fallback
+  } catch {
+    return fallback
   }
 }
 
@@ -94,6 +120,8 @@ export const getSourceWindowDescriptor = (binding: SourceBindingRecord): SourceW
         allowsPlaybackPersistence,
         domainLabel,
         ctaLabel: 'Open on YouTube',
+        platformLabel: 'YouTube',
+        accentTone: 'video',
       }
     }
   }
@@ -105,6 +133,8 @@ export const getSourceWindowDescriptor = (binding: SourceBindingRecord): SourceW
       allowsPlaybackPersistence,
       domainLabel,
       ctaLabel: isNtsUrl(binding.source_url) || binding.source_type === 'nts' ? 'Resolved track source required' : 'Open track source',
+      platformLabel: isNtsUrl(binding.source_url) || binding.source_type === 'nts' ? 'NTS signal' : getPlatformLabel(binding.source_url, 'Track source'),
+      accentTone: 'audio',
     }
   }
 
@@ -115,6 +145,8 @@ export const getSourceWindowDescriptor = (binding: SourceBindingRecord): SourceW
       allowsPlaybackPersistence,
       domainLabel,
       ctaLabel: 'Open post',
+      platformLabel: getPlatformLabel(binding.source_url, 'Social source'),
+      accentTone: 'social',
     }
   }
 
@@ -124,5 +156,16 @@ export const getSourceWindowDescriptor = (binding: SourceBindingRecord): SourceW
     allowsPlaybackPersistence,
     domainLabel,
     ctaLabel: 'Open source',
+    platformLabel: getPlatformLabel(binding.source_url, 'Web source'),
+    accentTone: 'reading',
   }
+}
+
+export const getActiveBindingAmbienceMode = (binding: SourceBindingRecord | null): string => {
+  if (!binding) return 'ambient-idle'
+  const descriptor = getSourceWindowDescriptor(binding)
+  if (descriptor.accentTone === 'video') return 'ambient-video'
+  if (descriptor.accentTone === 'audio') return 'ambient-audio'
+  if (descriptor.accentTone === 'social') return 'ambient-social'
+  return 'ambient-reading'
 }

@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { loadEditionPackage, loadManifest, polygonToClipPath } from './lib/editionLoader'
 import { buildArchiveHref, buildEditionHref, getEditionArchiveRecords, parseAppRoute, type AppRoute } from './lib/router'
-import { getSourceWindowDescriptor } from './lib/sourceWindowContent'
+import { getActiveBindingAmbienceMode, getSourceWindowDescriptor } from './lib/sourceWindowContent'
 import { clearPreview, closeWindow, createWindowState, hoverBinding, pinBinding, restoreWindow } from './lib/sourceWindowManager'
 import type { ArchiveRecord, EditionManifest, LoadedEdition, SourceBindingRecord, SourceWindowState } from './types/runtime'
 
@@ -76,6 +76,7 @@ function App() {
   const dockBindings = windowState.minimizedBindingIds
     .map((bindingId) => bindingsById.get(bindingId) ?? null)
     .filter((binding): binding is SourceBindingRecord => Boolean(binding))
+  const ambianceMode = getActiveBindingAmbienceMode(primaryBinding ?? previewBinding ?? activeBinding)
 
   const archiveRecords = useMemo<ArchiveRecord[]>(() => (manifest ? getEditionArchiveRecords(manifest) : []), [manifest])
   const reviewMode = new URLSearchParams(window.location.search).get('debug') === 'masks'
@@ -100,7 +101,7 @@ function App() {
   const modules = loaded.artifactMap.artifacts.filter((artifact) => artifact.kind === 'module')
 
   return (
-    <main className={`runtime-shell review-mode--${reviewMode}`}>
+    <main className={`runtime-shell review-mode--${reviewMode} ${ambianceMode}`}>
       <section className="runtime-main">
         <header className="runtime-topbar">
           <div>
@@ -312,6 +313,7 @@ function SourceWindow({ binding, mode, onClose }: { binding: SourceBindingRecord
       <div className="source-window__meta">
         <span>{binding.window_type}</span>
         <span>{binding.source_type}</span>
+        <span>{descriptor.platformLabel}</span>
         <span>{descriptor.allowsPlaybackPersistence ? 'persistent' : 'replaceable'}</span>
       </div>
       <SourceWindowBody binding={binding} />
@@ -340,9 +342,14 @@ function SourceWindowBody({ binding }: { binding: SourceBindingRecord }) {
   if (descriptor.kind === 'audio-dock') {
     return (
       <div className="source-window__body source-window__body--audio">
-        <div className="audio-dock-card">
-          <strong>Persistent audio pocket</strong>
-          <p>This window is treated like the minimized audio dock path. Keep listening while exploring other pockets.</p>
+        <div className={`audio-dock-card${descriptor.ctaLabel === 'Resolved track source required' ? ' audio-dock-card--warning' : ''}`}>
+          <div className="eyebrow">{descriptor.platformLabel}</div>
+          <strong>Persistent track pocket</strong>
+          <p>
+            {descriptor.ctaLabel === 'Resolved track source required'
+              ? 'This signal still points at NTS discovery context. Swap in the resolved track source before treating it like a playable front-page pocket.'
+              : 'This pocket is ready to hand off to the resolved track source while keeping the dock-style listening posture.'}
+          </p>
         </div>
         {descriptor.streamUrl ? <a href={descriptor.streamUrl} rel="noreferrer" target="_blank">{descriptor.ctaLabel} ↗</a> : <span className="fallback">No live audio source URL bound yet</span>}
       </div>
@@ -353,9 +360,9 @@ function SourceWindowBody({ binding }: { binding: SourceBindingRecord }) {
     return (
       <div className="source-window__body source-window__body--social">
         <div className="social-card">
-          <div className="eyebrow">Social source</div>
+          <div className="eyebrow">{descriptor.platformLabel}</div>
           <strong>{descriptor.domainLabel}</strong>
-          <p>Placeholder for the native social embed path. This still preserves the real outbound source instead of rewriting it into a summary card.</p>
+          <p>Use a source-framed social window here. Keep provenance visible and avoid rewriting the post into summary-card UI.</p>
         </div>
         {descriptor.sourceUrl ? <a href={descriptor.sourceUrl} rel="noreferrer" target="_blank">{descriptor.ctaLabel} ↗</a> : <span className="fallback">No live post URL bound yet</span>}
       </div>
@@ -365,7 +372,7 @@ function SourceWindowBody({ binding }: { binding: SourceBindingRecord }) {
   return (
     <div className="source-window__body source-window__body--web">
       <div className="rich-preview-card">
-        <div className="eyebrow">Rich preview</div>
+        <div className="eyebrow">{descriptor.platformLabel}</div>
         <strong>{descriptor.domainLabel}</strong>
         <p>Source-framed fallback for article, note, and linked web content.</p>
       </div>
