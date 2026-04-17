@@ -1,7 +1,8 @@
 import { useCallback, useEffect, useMemo, useState } from 'react'
 import { loadEditionPackage, loadManifest, polygonToClipPath } from './lib/editionLoader'
 import { buildArchiveHref, buildEditionHref, getEditionArchiveRecords, parseAppRoute, type AppRoute } from './lib/router'
-import { getActiveBindingAmbienceMode, getSourceWindowDescriptor } from './lib/sourceWindowContent'
+import { getSourceWindowDescriptor } from './lib/sourceWindowContent'
+import { getRuntimeAmbienceClasses } from './lib/runtimeAmbience'
 import { clearPreview, closeWindow, createWindowState, hoverBinding, pinBinding, restoreWindow } from './lib/sourceWindowManager'
 import type { ArchiveRecord, EditionManifest, LoadedEdition, SourceBindingRecord, SourceWindowState } from './types/runtime'
 
@@ -76,7 +77,7 @@ function App() {
   const dockBindings = windowState.minimizedBindingIds
     .map((bindingId) => bindingsById.get(bindingId) ?? null)
     .filter((binding): binding is SourceBindingRecord => Boolean(binding))
-  const ambianceMode = getActiveBindingAmbienceMode(primaryBinding ?? previewBinding ?? activeBinding)
+  const runtimeAmbienceClasses = getRuntimeAmbienceClasses(loaded?.ambiance ?? null, primaryBinding ?? previewBinding ?? activeBinding).join(' ')
 
   const archiveRecords = useMemo<ArchiveRecord[]>(() => (manifest ? getEditionArchiveRecords(manifest) : []), [manifest])
   const reviewMode = new URLSearchParams(window.location.search).get('debug') === 'masks'
@@ -101,7 +102,7 @@ function App() {
   const modules = loaded.artifactMap.artifacts.filter((artifact) => artifact.kind === 'module')
 
   return (
-    <main className={`runtime-shell review-mode--${reviewMode} ${ambianceMode}`}>
+    <main className={`runtime-shell review-mode--${reviewMode} ${runtimeAmbienceClasses}`}>
       <section className="runtime-main">
         <header className="runtime-topbar">
           <div>
