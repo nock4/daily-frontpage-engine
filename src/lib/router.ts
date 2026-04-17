@@ -1,0 +1,44 @@
+import type { ArchiveRecord, EditionManifest, EditionManifestItem } from '../types/runtime'
+import { selectEdition } from './editionLoader'
+
+export type AppRoute =
+  | { kind: 'edition'; edition: EditionManifestItem }
+  | { kind: 'archive-index' }
+  | { kind: 'archive-edition'; edition: EditionManifestItem }
+
+const trimTrailingSlash = (pathname: string) => {
+  if (pathname.length > 1 && pathname.endsWith('/')) return pathname.slice(0, -1)
+  return pathname || '/'
+}
+
+const findEdition = (manifest: EditionManifest, value: string) =>
+  manifest.editions.find((item) => item.slug === value || item.edition_id === value) ?? null
+
+export const parseAppRoute = (pathname: string, search: string, manifest: EditionManifest): AppRoute => {
+  const normalizedPath = trimTrailingSlash(pathname)
+
+  if (normalizedPath === '/archive') {
+    return { kind: 'archive-index' }
+  }
+
+  if (normalizedPath.startsWith('/archive/')) {
+    const slug = decodeURIComponent(normalizedPath.replace('/archive/', '').split('/')[0] ?? '')
+    const edition = findEdition(manifest, slug)
+    if (edition) return { kind: 'archive-edition', edition }
+    return { kind: 'archive-index' }
+  }
+
+  return { kind: 'edition', edition: selectEdition(manifest, new URLSearchParams(search)) }
+}
+
+export const buildArchiveHref = (slug: string) => `/archive/${slug}`
+
+export const buildEditionHref = (edition: EditionManifestItem) => (edition.is_live ? '/' : buildArchiveHref(edition.slug))
+
+export const getEditionArchiveRecords = (manifest: EditionManifest): ArchiveRecord[] =>
+  [...manifest.editions]
+    .sort((a, b) => b.date.localeCompare(a.date))
+    .map((edition) => ({
+      ...edition,
+      archive_href: buildArchiveHref(edition.slug),
+    }))

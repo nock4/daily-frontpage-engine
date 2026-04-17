@@ -6,7 +6,45 @@
       "date": "2026-04-17",
       "slug": "herbarium-bed-v1",
       "title": "Herbarium Bed",
-      "path": "/editions/2026-04-17-herbarium-bed-v1"
+      "path": "/editions/2026-04-17-herbarium-bed-v1",
+      "scene_family": "herbarium-bed",
+      "motif_tags": [
+        "botany",
+        "archive",
+        "paper"
+      ],
+      "preview_asset_path": "/editions/2026-04-17-herbarium-bed-v1/assets/plate.jpg",
+      "is_live": true
+    },
+    {
+      "edition_id": "2026-04-16-night-observatory-v1",
+      "date": "2026-04-16",
+      "slug": "night-observatory-v1",
+      "title": "Night Observatory",
+      "path": "/editions/2026-04-16-night-observatory-v1",
+      "scene_family": "night-observatory",
+      "motif_tags": [
+        "astral",
+        "survey",
+        "signal"
+      ],
+      "preview_asset_path": "/editions/2026-04-16-night-observatory-v1/assets/plate.jpg",
+      "is_live": false
+    },
+    {
+      "edition_id": "2026-04-15-offering-board-v1",
+      "date": "2026-04-15",
+      "slug": "offering-board-v1",
+      "title": "Offering Board",
+      "path": "/editions/2026-04-15-offering-board-v1",
+      "scene_family": "offering-board",
+      "motif_tags": [
+        "ritual",
+        "tabletop",
+        "paper"
+      ],
+      "preview_asset_path": "/editions/2026-04-15-offering-board-v1/assets/plate.jpg",
+      "is_live": false
     }
   ]
 }

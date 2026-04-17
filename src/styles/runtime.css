@@ -7,27 +7,39 @@ body {
   color: #f5edde;
 }
 
+button,
+a {
+  font: inherit;
+}
+
 .boot-state {
   min-height: 100vh;
   display: grid;
   place-items: center;
 }
 
-.runtime-shell {
+.runtime-shell,
+.archive-shell {
   display: grid;
-  grid-template-columns: minmax(0, 1.25fr) 340px;
   gap: 1rem;
   padding: 1rem;
 }
 
-.runtime-main {
+.runtime-shell {
+  grid-template-columns: minmax(0, 1.25fr) 340px;
+}
+
+.runtime-main,
+.side-rail,
+.archive-shell {
   display: grid;
   gap: 1rem;
 }
 
 .runtime-topbar,
 .panel,
-.source-window {
+.source-window,
+.archive-card {
   border: 1px solid rgba(255,255,255,0.08);
   background: rgba(24, 20, 18, 0.78);
   border-radius: 16px;
@@ -35,24 +47,78 @@ body {
 }
 
 .runtime-topbar {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
   gap: 1rem;
   padding: 0.8rem 1rem;
+  align-items: start;
 }
 
 .runtime-topbar h1,
 .panel h2,
 .runtime-topbar p,
-.panel p {
+.panel p,
+.archive-shell h1,
+.archive-shell p,
+.archive-card p {
   margin: 0;
 }
 
-.topbar-meta {
+.topbar-actions,
+.window-dock__items,
+.source-window__meta {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.topbar-actions button,
+.archive-mini-list button,
+.window-dock button,
+.source-window button,
+.source-window a,
+.archive-card,
+.archive-shell button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2rem;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.04);
+  color: #f5edde;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.archive-card {
+  padding: 0;
+  border-radius: 20px;
+  overflow: hidden;
+  text-align: left;
   display: grid;
-  gap: 0.35rem;
-  text-align: right;
+}
+
+.archive-card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.archive-card__body {
+  display: grid;
+  gap: 0.45rem;
+  padding: 0.8rem 0.95rem 1rem;
+}
+
+.archive-card__meta,
+.topbar-meta {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
   color: rgba(255,255,255,0.7);
+  font-size: 0.9rem;
 }
 
 .eyebrow {
@@ -60,6 +126,18 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: rgba(255,255,255,0.6);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  padding: 0.15rem 0.45rem;
+  border-radius: 999px;
+  border: 1px solid rgba(246, 227, 147, 0.25);
+  background: rgba(246, 227, 147, 0.1);
+  color: #f6e393;
+  font-size: 0.75rem;
 }
 
 .stage {
@@ -117,7 +195,8 @@ body {
   gap: 1rem;
 }
 
-.artifact-lists div {
+.artifact-lists div,
+.window-dock {
   border: 1px solid rgba(255,255,255,0.08);
   border-radius: 16px;
   background: rgba(24, 20, 18, 0.78);
@@ -125,19 +204,14 @@ body {
 }
 
 .artifact-lists h2,
-.artifact-lists ul {
+.artifact-lists ul,
+.archive-mini-list {
   margin: 0;
 }
 
 .artifact-lists ul {
   padding-left: 1rem;
   color: rgba(255,255,255,0.76);
-}
-
-.side-rail {
-  display: grid;
-  gap: 1rem;
-  align-content: start;
 }
 
 .panel {
@@ -152,6 +226,10 @@ body {
   gap: 0.55rem;
 }
 
+.source-window--preview {
+  background: rgba(36, 31, 28, 0.72);
+}
+
 .source-window__top,
 .source-window__actions {
   display: flex;
@@ -160,18 +238,27 @@ body {
   gap: 0.5rem;
 }
 
-.source-window button,
-.source-window a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 2rem;
-  padding: 0.3rem 0.65rem;
-  border-radius: 999px;
-  border: 1px solid rgba(255,255,255,0.1);
-  background: rgba(255,255,255,0.04);
-  color: #f5edde;
-  text-decoration: none;
+.source-window__meta {
+  color: rgba(255,255,255,0.62);
+  font-size: 0.82rem;
+}
+
+.archive-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.archive-mini-list {
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.archive-mini-list button {
+  width: 100%;
+  justify-content: space-between;
 }
 
 .fallback {
@@ -180,6 +267,14 @@ body {
 
 @media (max-width: 960px) {
   .runtime-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .runtime-topbar {
+    grid-template-columns: 1fr;
+  }
+
+  .artifact-lists {
     grid-template-columns: 1fr;
   }
 }

@@ -7,6 +7,10 @@ export interface EditionManifestItem {
   slug: string
   title: string
   path: string
+  scene_family: string
+  motif_tags: string[]
+  preview_asset_path: string
+  is_live: boolean
 }
 
 export interface EditionManifest {
@@ -123,4 +127,18 @@ export interface LoadedEdition {
   sourceBindings: SourceBindingSetRecord
   ambiance: AmbianceRecord
   review: ReviewRecord
+}
+
+export interface ArchiveRecord extends EditionManifestItem {
+  archive_href: string
+}
+
+export interface SourceWindowState {
+  previewBindingId: string | null
+  primaryBindingId: string | null
+  focusedBindingId: string | null
+  openBindingIds: string[]
+  minimizedBindingIds: string[]
+  persistentBindingIds: string[]
+  bindingWindowTypes: Record<string, string>
 }
