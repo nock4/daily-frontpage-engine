@@ -30,6 +30,16 @@ a {
   transition: background 180ms ease, box-shadow 180ms ease;
 }
 
+.runtime-shell--immersive {
+  grid-template-columns: minmax(0, 1fr);
+  padding: 0;
+  min-height: 100vh;
+}
+
+.runtime-shell--immersive .runtime-main {
+  min-height: 100vh;
+}
+
 .runtime-shell.ambient-video {
   background: radial-gradient(circle at top left, rgba(95, 124, 255, 0.14), transparent 40%);
 }
@@ -217,6 +227,13 @@ a {
   border: 1px solid rgba(255,255,255,0.08);
 }
 
+.runtime-shell--immersive .stage {
+  min-height: 100vh;
+  aspect-ratio: auto;
+  border-radius: 0;
+  border: 0;
+}
+
 .plate {
   position: absolute;
   inset: 0;
@@ -370,6 +387,23 @@ a {
 
 .source-window--preview {
   background: rgba(36, 31, 28, 0.72);
+}
+
+.stage-overlay-windows {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 8;
+  width: min(440px, calc(100% - 2rem));
+  display: grid;
+  gap: 0.75rem;
+  align-items: end;
+}
+
+.stage-overlay-windows .source-window,
+.stage-overlay-windows .window-dock {
+  backdrop-filter: blur(14px);
+  background: rgba(18, 16, 15, 0.82);
 }
 
 .source-window__top,

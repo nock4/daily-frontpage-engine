@@ -104,24 +104,26 @@ function App() {
   const modules = loaded.artifactMap.artifacts.filter((artifact) => artifact.kind === 'module')
 
   return (
-    <main className={`runtime-shell review-mode--${reviewMode} ${runtimeAmbienceClasses}`}>
+    <main className={`runtime-shell review-mode--${reviewMode} ${runtimeAmbienceClasses}${presentation.showSidebar ? '' : ' runtime-shell--immersive'}`}>
       <section className="runtime-main">
-        <header className="runtime-topbar">
-          <div>
-            <div className="eyebrow">Daily frontpage engine</div>
-            <h1>{loaded.edition.title}</h1>
-            <p>{loaded.brief.mood}</p>
-          </div>
-          <div className="topbar-actions">
-            <button onClick={() => navigate('/')} type="button">Current</button>
-            <button onClick={() => navigate('/archive')} type="button">Archive</button>
-            {route.kind === 'archive-edition' ? <button onClick={() => navigate(buildArchiveHref(route.edition.slug))} type="button">Edition entry</button> : null}
-          </div>
-          <div className="topbar-meta">
-            <span>{loaded.edition.date}</span>
-            <span>{loaded.edition.scene_family}</span>
-          </div>
-        </header>
+        {presentation.showTopbar ? (
+          <header className="runtime-topbar">
+            <div>
+              <div className="eyebrow">Daily frontpage engine</div>
+              <h1>{loaded.edition.title}</h1>
+              <p>{loaded.brief.mood}</p>
+            </div>
+            <div className="topbar-actions">
+              <button onClick={() => navigate('/')} type="button">Current</button>
+              <button onClick={() => navigate('/archive')} type="button">Archive</button>
+              {route.kind === 'archive-edition' ? <button onClick={() => navigate(buildArchiveHref(route.edition.slug))} type="button">Edition entry</button> : null}
+            </div>
+            <div className="topbar-meta">
+              <span>{loaded.edition.date}</span>
+              <span>{loaded.edition.scene_family}</span>
+            </div>
+          </header>
+        ) : null}
 
         <section className="stage" onMouseLeave={() => setWindowState((state) => clearPreview(state))}>
           <img className="plate" src={loaded.edition.plate_asset_path} alt={loaded.edition.title} />
@@ -162,6 +164,27 @@ function App() {
               </button>
             )
           })}
+
+          {presentation.showStageOverlayWindows ? (
+            <div className="stage-overlay-windows">
+              {primaryBinding ? <SourceWindow binding={primaryBinding} mode="primary" onClose={() => setWindowState((state) => closeWindow(state, primaryBinding.id))} /> : null}
+              {previewBinding && (!primaryBinding || previewBinding.id !== primaryBinding.id) ? (
+                <SourceWindow binding={previewBinding} mode="preview" onClose={() => setWindowState((state) => clearPreview(state))} />
+              ) : null}
+              {dockBindings.length ? (
+                <div className="window-dock">
+                  <div className="eyebrow">Dock</div>
+                  <div className="window-dock__items">
+                    {dockBindings.map((binding) => (
+                      <button key={binding.id} onClick={() => setWindowState((state) => restoreWindow(state, binding.id))} type="button">
+                        Restore {binding.kicker}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              ) : null}
+            </div>
+          ) : null}
         </section>
 
         {presentation.showArtifactLists ? (
@@ -186,68 +209,70 @@ function App() {
         ) : null}
       </section>
 
-      <aside className="side-rail">
-        <section className="panel">
-          <div className="eyebrow">{presentation.briefEyebrow}</div>
-          <h2>{loaded.edition.title}</h2>
-          <p>{loaded.brief.mood}</p>
-          <p>Lighting: {loaded.brief.lighting}</p>
-          <p>Motion: {loaded.ambiance.motion_system}</p>
-          {route.kind === 'archive-edition' ? <p>{loaded.edition.date} · {loaded.edition.scene_family}</p> : null}
-        </section>
-
-        <section className="panel">
-          <div className="eyebrow">Source windows</div>
-          {primaryBinding ? (
-            <SourceWindow binding={primaryBinding} mode="primary" onClose={() => setWindowState((state) => closeWindow(state, primaryBinding.id))} />
-          ) : (
-            <p>{presentation.sourceWindowsEmptyState}</p>
-          )}
-
-          {previewBinding && (!primaryBinding || previewBinding.id !== primaryBinding.id) ? (
-            <SourceWindow binding={previewBinding} mode="preview" onClose={() => setWindowState((state) => clearPreview(state))} />
-          ) : null}
-
-          {dockBindings.length ? (
-            <div className="window-dock">
-              <div className="eyebrow">Dock</div>
-              <div className="window-dock__items">
-                {dockBindings.map((binding) => (
-                  <button key={binding.id} onClick={() => setWindowState((state) => restoreWindow(state, binding.id))} type="button">
-                    Restore {binding.kicker}
-                  </button>
-                ))}
-              </div>
-            </div>
-          ) : null}
-        </section>
-
-        <section className="panel">
-          <div className="eyebrow">{presentation.selectionEyebrow}</div>
-          {activeBinding ? (
-            <>
-              <p>{activeBinding.title}</p>
-              <p>{activeBinding.excerpt}</p>
-            </>
-          ) : (
-            <p>No binding selected.</p>
-          )}
-        </section>
-
-        <section className="panel">
-          <div className="eyebrow">Archive</div>
-          <ArchiveMiniList currentEditionId={loaded.edition.edition_id} navigate={navigate} records={archiveRecords} />
-        </section>
-
-        {presentation.showReviewPanel ? (
+      {presentation.showSidebar ? (
+        <aside className="side-rail">
           <section className="panel">
-            <div className="eyebrow">Review</div>
-            <p>Geometry: {loaded.review.geometry_status}</p>
-            <p>Clickability: {loaded.review.clickability_status}</p>
-            <p>Behavior: {loaded.review.behavior_status}</p>
+            <div className="eyebrow">{presentation.briefEyebrow}</div>
+            <h2>{loaded.edition.title}</h2>
+            <p>{loaded.brief.mood}</p>
+            <p>Lighting: {loaded.brief.lighting}</p>
+            <p>Motion: {loaded.ambiance.motion_system}</p>
+            {route.kind === 'archive-edition' ? <p>{loaded.edition.date} · {loaded.edition.scene_family}</p> : null}
           </section>
-        ) : null}
-      </aside>
+
+          <section className="panel">
+            <div className="eyebrow">Source windows</div>
+            {primaryBinding ? (
+              <SourceWindow binding={primaryBinding} mode="primary" onClose={() => setWindowState((state) => closeWindow(state, primaryBinding.id))} />
+            ) : (
+              <p>{presentation.sourceWindowsEmptyState}</p>
+            )}
+
+            {previewBinding && (!primaryBinding || previewBinding.id !== primaryBinding.id) ? (
+              <SourceWindow binding={previewBinding} mode="preview" onClose={() => setWindowState((state) => clearPreview(state))} />
+            ) : null}
+
+            {dockBindings.length ? (
+              <div className="window-dock">
+                <div className="eyebrow">Dock</div>
+                <div className="window-dock__items">
+                  {dockBindings.map((binding) => (
+                    <button key={binding.id} onClick={() => setWindowState((state) => restoreWindow(state, binding.id))} type="button">
+                      Restore {binding.kicker}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            ) : null}
+          </section>
+
+          <section className="panel">
+            <div className="eyebrow">{presentation.selectionEyebrow}</div>
+            {activeBinding ? (
+              <>
+                <p>{activeBinding.title}</p>
+                <p>{activeBinding.excerpt}</p>
+              </>
+            ) : (
+              <p>No binding selected.</p>
+            )}
+          </section>
+
+          <section className="panel">
+            <div className="eyebrow">Archive</div>
+            <ArchiveMiniList currentEditionId={loaded.edition.edition_id} navigate={navigate} records={archiveRecords} />
+          </section>
+
+          {presentation.showReviewPanel ? (
+            <section className="panel">
+              <div className="eyebrow">Review</div>
+              <p>Geometry: {loaded.review.geometry_status}</p>
+              <p>Clickability: {loaded.review.clickability_status}</p>
+              <p>Behavior: {loaded.review.behavior_status}</p>
+            </section>
+          ) : null}
+        </aside>
+      ) : null}
     </main>
   )
 }

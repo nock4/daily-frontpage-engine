@@ -1,9 +1,12 @@
 export type ReviewMode = 'live' | 'clickable' | 'solo' | 'debug'
 
 export interface RuntimePresentation {
+  showTopbar: boolean
+  showSidebar: boolean
   showArtifactLists: boolean
   showReviewPanel: boolean
   showPersistentRegionLabels: boolean
+  showStageOverlayWindows: boolean
   briefEyebrow: string
   selectionEyebrow: string
   sourceWindowsEmptyState: string
@@ -12,9 +15,12 @@ export interface RuntimePresentation {
 export const getRuntimePresentation = (reviewMode: ReviewMode): RuntimePresentation => {
   if (reviewMode === 'live') {
     return {
+      showTopbar: false,
+      showSidebar: false,
       showArtifactLists: false,
       showReviewPanel: false,
       showPersistentRegionLabels: false,
+      showStageOverlayWindows: true,
       briefEyebrow: 'Edition',
       selectionEyebrow: 'Active pocket',
       sourceWindowsEmptyState: 'Open a pocket to pin a source window.',
@@ -22,9 +28,12 @@ export const getRuntimePresentation = (reviewMode: ReviewMode): RuntimePresentat
   }
 
   return {
+    showTopbar: true,
+    showSidebar: true,
     showArtifactLists: true,
     showReviewPanel: true,
     showPersistentRegionLabels: true,
+    showStageOverlayWindows: false,
     briefEyebrow: 'Review mode',
     selectionEyebrow: 'Selection',
     sourceWindowsEmptyState: 'Hover for preview, click to pin.',
