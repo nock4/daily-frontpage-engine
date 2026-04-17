@@ -1,0 +1,185 @@
+#root {
+  min-height: 100vh;
+}
+
+body {
+  background: #11100f;
+  color: #f5edde;
+}
+
+.boot-state {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.runtime-shell {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) 340px;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.runtime-main {
+  display: grid;
+  gap: 1rem;
+}
+
+.runtime-topbar,
+.panel,
+.source-window {
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(24, 20, 18, 0.78);
+  border-radius: 16px;
+  box-shadow: 0 18px 50px rgba(0,0,0,0.2);
+}
+
+.runtime-topbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.8rem 1rem;
+}
+
+.runtime-topbar h1,
+.panel h2,
+.runtime-topbar p,
+.panel p {
+  margin: 0;
+}
+
+.topbar-meta {
+  display: grid;
+  gap: 0.35rem;
+  text-align: right;
+  color: rgba(255,255,255,0.7);
+}
+
+.eyebrow {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(255,255,255,0.6);
+}
+
+.stage {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 22px;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.plate {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.artifact {
+  position: absolute;
+  z-index: 4;
+  border: 1px solid rgba(255, 243, 216, 0.06);
+  background: transparent;
+  color: rgba(255,255,255,0.9);
+  cursor: pointer;
+}
+
+.artifact span {
+  position: absolute;
+  left: 0.35rem;
+  bottom: 0.35rem;
+  display: inline-flex;
+  padding: 0.18rem 0.38rem;
+  font-size: 0.68rem;
+  border-radius: 8px;
+  background: rgba(18, 16, 15, 0.68);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.artifact--hero.is-active,
+.artifact--hero:hover,
+.artifact--hero:focus-visible {
+  box-shadow: 0 0 0 1px rgba(246, 227, 147, 0.3), inset 0 0 0 1px rgba(246, 227, 147, 0.22);
+}
+
+.artifact--module.is-active,
+.artifact--module:hover,
+.artifact--module:focus-visible {
+  box-shadow: 0 0 0 1px rgba(173, 227, 184, 0.22), inset 0 0 0 1px rgba(173, 227, 184, 0.18);
+}
+
+.artifact-lists {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.artifact-lists div {
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  background: rgba(24, 20, 18, 0.78);
+  padding: 0.8rem 1rem;
+}
+
+.artifact-lists h2,
+.artifact-lists ul {
+  margin: 0;
+}
+
+.artifact-lists ul {
+  padding-left: 1rem;
+  color: rgba(255,255,255,0.76);
+}
+
+.side-rail {
+  display: grid;
+  gap: 1rem;
+  align-content: start;
+}
+
+.panel {
+  padding: 0.8rem 1rem;
+  display: grid;
+  gap: 0.55rem;
+}
+
+.source-window {
+  padding: 0.75rem;
+  display: grid;
+  gap: 0.55rem;
+}
+
+.source-window__top,
+.source-window__actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 0.5rem;
+}
+
+.source-window button,
+.source-window a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2rem;
+  padding: 0.3rem 0.65rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.04);
+  color: #f5edde;
+  text-decoration: none;
+}
+
+.fallback {
+  color: rgba(255,255,255,0.55);
+}
+
+@media (max-width: 960px) {
+  .runtime-shell {
+    grid-template-columns: 1fr;
+  }
+}
