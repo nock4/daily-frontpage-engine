@@ -2,7 +2,7 @@
 
 ## 2026-04-16
 Decision: Do not rebuild old Blender Nockgarden literally.
-Why: Keep the emotional ambition, but move through the new scene-first landing-edition process.
+Why: Keep the emotional ambition, but move through the new scene-first landing-editions process.
 
 ## 2026-04-16
 Decision: Treat the front page as a scene-first world with discoverable pockets.
@@ -19,3 +19,15 @@ Why: The project is a daily engine, not a one-off homepage.
 ## 2026-04-17
 Decision: Use native-artifact mapping for mask work.
 Why: Arbitrary overlay zones keep making the page feel like an app shell over wallpaper.
+
+## 2026-04-17
+Decision: Insert an automated research step between vault-mining and scene generation.
+Why: Research findings, especially media-driven ones, should deepen the signal field and influence both the generated scene and the final ambiance.
+
+## 2026-04-17
+Decision: Every daily scene is fully AI-generated and unique.
+Why: The front page should never reuse the same scene twice, but should preserve an explorable archive.
+
+## 2026-04-17
+Decision: Front-page pockets should open source windows, not text summaries.
+Why: The page should expose actual tweets, videos, streams, and source artifacts rather than flattening them into generic summary cards.

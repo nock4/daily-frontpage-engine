@@ -2,18 +2,17 @@
 
 The vision is a new dynamic front page every single day.
 
-This project should produce:
-- a new front-page edition daily
-- a scene-first world, not a generic app shell
-- mapped native artifacts instead of arbitrary overlay zones
-- signals seeded from recent Obsidian material
-- light ambience and daily variation on top of a stable runtime shell
+This is not one homepage.
+This is a daily scene engine that emits a new AI-generated interactive artwork every day.
 
-Translation:
-We are building a daily front-page engine, not a single homepage.
+Core rules:
+- every day gets a new scene
+- never reuse the same scene twice
+- keep an explorable archive of past editions
+- optimize for mood and world first
+- the page should feel like a living interactive artwork
+- research should deepen the signal field before generation
+- source windows should expose real media and real sources, not text-summary cards
 
-Working definition of success:
-- each day has a new plate or new edition state
-- each edition has readable native pockets
-- the page still feels like a world, not SaaS chrome on top of art
-- the engine is reproducible enough that we do not get lost between iterations
+The image is not decoration.
+The image is the interface.
