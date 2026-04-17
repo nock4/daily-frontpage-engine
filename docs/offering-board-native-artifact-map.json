@@ -1,0 +1,64 @@
+{
+  "plate": "offering-board_001.jpg",
+  "process": "native-artifact-mapping",
+  "heroes": [
+    {
+      "id": "hero-central-document",
+      "label": "Central typed document",
+      "type": "bbox",
+      "bounds": [0.400,0.285,0.653,0.945],
+      "why": "Dominant physical paper artifact in the scene."
+    },
+    {
+      "id": "hero-right-paper",
+      "label": "Right illustrated/object paper",
+      "type": "bbox",
+      "bounds": [0.628,0.325,0.872,0.610],
+      "why": "Distinct paper artifact with attached objects and markings."
+    }
+  ],
+  "modules": [
+    {
+      "id": "module-left-symbol-card",
+      "label": "Left symbol card",
+      "type": "bbox",
+      "bounds": [0.235,0.450,0.395,0.640],
+      "why": "Separate paper card with bold symbol."
+    },
+    {
+      "id": "module-upper-middle-note",
+      "label": "Upper middle ink-blot note",
+      "type": "bbox",
+      "bounds": [0.425,0.205,0.605,0.335],
+      "why": "Small standalone note sheet above main document."
+    },
+    {
+      "id": "module-upper-left-object-note",
+      "label": "Upper-left small object note",
+      "type": "bbox",
+      "bounds": [0.315,0.245,0.485,0.390],
+      "why": "Separate sheet holding small turquoise objects."
+    },
+    {
+      "id": "module-candle-pair",
+      "label": "Upper-center-right candle pair cluster",
+      "type": "bbox",
+      "bounds": [0.565,0.080,0.685,0.365],
+      "why": "Real candle cluster with clear objecthood."
+    },
+    {
+      "id": "module-lower-left-cluster",
+      "label": "Lower-left candle and trinket cluster",
+      "type": "bbox",
+      "bounds": [0.205,0.565,0.475,0.930],
+      "why": "Natural cluster of candle and tabletop objects."
+    },
+    {
+      "id": "module-lower-right-cluster",
+      "label": "Lower-right candle and metallic cluster",
+      "type": "bbox",
+      "bounds": [0.655,0.575,0.905,0.935],
+      "why": "Distinct lower-right cluster of candle and reflective objects."
+    }
+  ]
+}

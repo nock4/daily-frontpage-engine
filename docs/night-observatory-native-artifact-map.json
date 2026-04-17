@@ -1,0 +1,64 @@
+{
+  "plate": "night-observatory_001.jpg",
+  "process": "native-artifact-mapping",
+  "heroes": [
+    {
+      "id": "hero-mountain-light",
+      "label": "Central mountain peak with bright horizon light",
+      "type": "polygon",
+      "points": [[0.365,0.936],[0.412,0.860],[0.456,0.782],[0.488,0.721],[0.506,0.675],[0.521,0.643],[0.536,0.676],[0.560,0.735],[0.593,0.797],[0.623,0.864],[0.651,0.936]],
+      "why": "Dominant physical landform and light event in the scene."
+    },
+    {
+      "id": "hero-left-constellation",
+      "label": "Large left-of-center constellation diagram",
+      "type": "bbox",
+      "bounds": [0.255,0.200,0.175,0.205],
+      "why": "Discrete rendered constellation object, not empty sky."
+    }
+  ],
+  "modules": [
+    {
+      "id": "module-right-constellation",
+      "label": "Small right constellation diagram",
+      "type": "bbox",
+      "bounds": [0.525,0.245,0.090,0.130],
+      "why": "Compact native diagram with nodes and labels."
+    },
+    {
+      "id": "module-lower-right-constellation",
+      "label": "Lower-right slanted constellation object with pink node",
+      "type": "bbox",
+      "bounds": [0.807,0.635,0.090,0.110],
+      "why": "Specific rendered star-map object."
+    },
+    {
+      "id": "module-title",
+      "label": "Top-left title/logo text",
+      "type": "bbox",
+      "bounds": [0.005,0.010,0.075,0.040],
+      "why": "Actual visible text artifact."
+    },
+    {
+      "id": "module-left-text-stack",
+      "label": "Left stacked text block",
+      "type": "bbox",
+      "bounds": [0.004,0.075,0.075,0.105],
+      "why": "Discrete information block rendered into the plate."
+    },
+    {
+      "id": "module-top-right-icons",
+      "label": "Top-right icon cluster",
+      "type": "bbox",
+      "bounds": [0.935,0.005,0.060,0.040],
+      "why": "Actual visible icon cluster."
+    },
+    {
+      "id": "module-bottom-label",
+      "label": "Bottom-center label with guide line",
+      "type": "bbox",
+      "bounds": [0.425,0.955,0.150,0.025],
+      "why": "Real textual annotation element."
+    }
+  ]
+}
