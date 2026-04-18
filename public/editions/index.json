@@ -45,6 +45,81 @@
       ],
       "preview_asset_path": "/editions/2026-04-15-offering-board-v1/assets/plate.jpg",
       "is_live": false
+    },
+    {
+      "edition_id": "2026-04-17-forest-listening-table-v1",
+      "date": "2026-04-17",
+      "slug": "forest-listening-table-v1",
+      "title": "Forest Listening Table",
+      "path": "/editions/2026-04-17-forest-listening-table-v1",
+      "scene_family": "forest-listening-table",
+      "motif_tags": [
+        "audio",
+        "forest",
+        "listening"
+      ],
+      "preview_asset_path": "/editions/2026-04-17-forest-listening-table-v1/assets/plate.jpg",
+      "is_live": false
+    },
+    {
+      "edition_id": "2026-04-17-tea-house-qin-desk-v1",
+      "date": "2026-04-17",
+      "slug": "tea-house-qin-desk-v1",
+      "title": "Tea House Qin Desk",
+      "path": "/editions/2026-04-17-tea-house-qin-desk-v1",
+      "scene_family": "tea-house-qin-desk",
+      "motif_tags": [
+        "tea",
+        "ceremony",
+        "desk"
+      ],
+      "preview_asset_path": "/editions/2026-04-17-tea-house-qin-desk-v1/assets/plate.jpg",
+      "is_live": false
+    },
+    {
+      "edition_id": "2026-04-17-jaipong-procession-floor-v1",
+      "date": "2026-04-17",
+      "slug": "jaipong-procession-floor-v1",
+      "title": "Jaipong Procession Floor",
+      "path": "/editions/2026-04-17-jaipong-procession-floor-v1",
+      "scene_family": "jaipong-procession-floor",
+      "motif_tags": [
+        "performance",
+        "rhythm",
+        "procession"
+      ],
+      "preview_asset_path": "/editions/2026-04-17-jaipong-procession-floor-v1/assets/plate.jpg",
+      "is_live": false
+    },
+    {
+      "edition_id": "2026-04-17-resolver-atlas-shrine-v1",
+      "date": "2026-04-17",
+      "slug": "resolver-atlas-shrine-v1",
+      "title": "Resolver Atlas Shrine",
+      "path": "/editions/2026-04-17-resolver-atlas-shrine-v1",
+      "scene_family": "resolver-atlas-shrine",
+      "motif_tags": [
+        "map",
+        "governance",
+        "routing"
+      ],
+      "preview_asset_path": "/editions/2026-04-17-resolver-atlas-shrine-v1/assets/plate.jpg",
+      "is_live": false
+    },
+    {
+      "edition_id": "2026-04-17-sensonarrative-watch-post-v1",
+      "date": "2026-04-17",
+      "slug": "sensonarrative-watch-post-v1",
+      "title": "Sensonarrative Watch Post",
+      "path": "/editions/2026-04-17-sensonarrative-watch-post-v1",
+      "scene_family": "sensonarrative-watch-post",
+      "motif_tags": [
+        "notice-board",
+        "warning",
+        "folklore"
+      ],
+      "preview_asset_path": "/editions/2026-04-17-sensonarrative-watch-post-v1/assets/plate.jpg",
+      "is_live": false
     }
   ]
 }

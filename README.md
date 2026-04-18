@@ -1,39 +1,58 @@
 # Daily Frontpage Engine
 
-A standalone repo for the new dynamic front page system.
+Scene-first runtime for a daily front page that becomes a new interactive artwork every day.
 
 Goal:
-Ship a scene-first front page engine that can produce a new edition every day.
+Ship a daily edition engine, not a one-off homepage.
 
 Core idea:
-This is not one perfect homepage. It is a daily edition system.
+The image is the interface.
+Each edition is a world with native visible artifacts that open real source windows.
 
-Current direction:
-- scene-first landing editions
-- native-artifact mask mapping
-- daily signal seeding from recent Obsidian material
-- stable runtime shell with changing daily plates
-- lightweight review and publish flow
+Current product rules:
+- live mode is full-page artwork only
+- review chrome exists only in explicit QA and debug modes
+- every day gets a new scene and editions stay explorable in the archive
+- artifact mapping must anchor to real visible objects in the plate
+- source windows should expose real media or source-framed fallbacks, not summary cards
+- provider-native URL detection outranks weak binding metadata when the URL is unambiguous
 
-Current working artifacts live here:
-- `/Users/nickgeorge-studio/Projects/landing-editions/front-page-herbarium-bed`
-- `/Users/nickgeorge-studio/Projects/landing-editions/front-page-night-observatory`
-- `/Users/nickgeorge-studio/Projects/landing-editions/front-page-offering-board`
+Current repo state:
+- runtime lives in this repo
+- packaged editions live under `public/editions/`
+- root manifest lives at `public/editions/index.json`
+- current live edition: `2026-04-17-herbarium-bed-v1`
+- current archive count: 8 packaged editions
 
-Current remote review links:
-- Herbarium Bed: `https://dpi-renewable-alien-moscow.trycloudflare.com`
-- Night Observatory: `https://fallen-qualities-qualifications-pollution.trycloudflare.com`
-- Offering Board: `https://lying-occurred-dollar-internet.trycloudflare.com`
+Current strongest review routes:
+- `/` -> current live edition
+- `/archive/herbarium-bed-v1`
+- `/archive/forest-listening-table-v1`
+- `/archive/tea-house-qin-desk-v1`
+- `/archive/resolver-atlas-shrine-v1`
+
+Working commands:
+- `npm test`
+- `npm run validate:editions`
+- `npm run build`
+- `npm run preview -- --host 127.0.0.1 --port 4174`
+- `npm run test:ux:update`
+- `npm run test:ux`
+- `npm run test:ux:a11y`
 
 Repository purpose:
-- keep the process grounded
-- track decisions and iteration state
-- centralize docs so the thread does not get lost
-- become the future home of the actual engine
+- hold the actual runtime shell
+- keep packaged editions and archive routing in one place
+- track architecture, product decisions, and review rules
+- preserve the current contract for live mode, review modes, and source-window behavior
 
 See:
 - `docs/vision.md`
-- `docs/process.md`
+- `docs/architecture.md`
+- `docs/runtime-plan.md`
+- `docs/source-window-embed-interaction-spec.md`
 - `docs/current-state.md`
 - `docs/decision-log.md`
-- `docs/repo-roadmap.md`
+- `docs/testing/ux-acceptance-states.md`
+- `docs/testing/review-checklist.md`
+- `docs/testing/argos-ci.md`

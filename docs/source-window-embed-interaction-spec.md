@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Front-page pockets open real source windows, not text-summary cards. Each pocket reveals the best available live representation of its source: embedded tweet/bookmark, playable YouTube video, streamable NTS track, image, or direct source page.
+Front-page pockets open real source windows, not text-summary cards. Each pocket reveals the best available live representation of its source: social post, playable YouTube video, resolved track source, image, or direct source page.
 
 ## Core Rules
 
@@ -20,7 +20,7 @@ Front-page pockets open real source windows, not text-summary cards. Each pocket
 2. video embed
    - YouTube and other playable video sources
 3. audio embed
-   - NTS liked tracks or other streamable audio sources
+   - resolved track/audio sources, not the original NTS mix page
 4. image/media viewer
    - static image, GIF, scanned artifact, or hosted media file
 5. source-page fallback
@@ -133,9 +133,16 @@ Do not rely on mouseleave as a close mechanism for active media.
 - support pop-out to YouTube when embed restrictions or performance require it
 
 ### NTS liked tracks
-- click opens a stream-capable audio embed or player-linked window
+- use NTS as the discovery signal only
+- click should open the resolved actual track source, not the original NTS mix page
 - audio should persist while the user explores other pockets
 - provide minimized player state as a first-class pattern
+
+### Binding metadata drift
+- provider-native URL detection must outrank weak or stale binding metadata when the URL is unambiguous
+- if a `source_url` is YouTube, return the YouTube renderer even if the binding still says `web`
+- null `source_url` values are packaging bugs, not acceptable review-state fallbacks unless intentionally marked as unbound
+- stage fallback cards should not duplicate provider labels across eyebrow text and platform pill
 
 ### Images / scanned artifacts
 - open high-resolution viewer or framed media view

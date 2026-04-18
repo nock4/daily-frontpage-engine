@@ -4,3 +4,5 @@ dist/
 .env
 .runtime/
 *.log
+playwright-report/
+test-results/

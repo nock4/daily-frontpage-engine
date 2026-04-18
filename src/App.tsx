@@ -4,8 +4,10 @@ import { buildArchiveHref, getEditionArchiveRecords, parseAppRoute, type AppRout
 import { getSourceWindowDescriptor } from './lib/sourceWindowContent'
 import { getRuntimeAmbienceClasses } from './lib/runtimeAmbience'
 import { getRuntimePresentation } from './lib/runtimePresentation'
-import { clearPreview, closeWindow, createWindowState, hoverBinding, pinBinding, restoreWindow } from './lib/sourceWindowManager'
-import type { ArchiveRecord, EditionManifest, LoadedEdition, SourceBindingRecord, SourceWindowState } from './types/runtime'
+import { getStageWindowPlacement } from './lib/stageWindowPlacement'
+import { getSourceWindowSurfaceProfile } from './lib/sourceWindowSurface'
+import { clearPreview, closeWindow, createWindowState, focusWindow, hoverBinding, pinBinding, restoreWindow } from './lib/sourceWindowManager'
+import type { ArchiveRecord, ArtifactRecord, EditionManifest, LoadedEdition, SourceBindingRecord, SourceWindowState } from './types/runtime'
 
 function App() {
   const [manifest, setManifest] = useState<EditionManifest | null>(null)
@@ -67,6 +69,11 @@ function App() {
     return new Map(loaded.sourceBindings.bindings.map((binding) => [binding.artifact_id, binding]))
   }, [loaded])
 
+  const artifactsById = useMemo(() => {
+    if (!loaded) return new Map<string, ArtifactRecord>()
+    return new Map(loaded.artifactMap.artifacts.map((artifact) => [artifact.id, artifact]))
+  }, [loaded])
+
   const bindingsById = useMemo(() => {
     if (!loaded) return new Map<string, SourceBindingRecord>()
     return new Map(loaded.sourceBindings.bindings.map((binding) => [binding.id, binding]))
@@ -89,6 +96,15 @@ function App() {
         ? 'solo'
         : 'live'
   const presentation = getRuntimePresentation(reviewMode)
+  const hasPrimaryStageWindow = reviewMode === 'live' && !!primaryBinding
+  const lockedArtifactId = hasPrimaryStageWindow ? primaryBinding?.artifact_id ?? null : null
+  const stageVisualBindings = reviewMode === 'live'
+    ? windowState.openBindingIds
+      .filter((bindingId) => !windowState.minimizedBindingIds.includes(bindingId))
+      .map((bindingId) => bindingsById.get(bindingId) ?? null)
+      .filter((binding): binding is SourceBindingRecord => Boolean(binding))
+      .filter((binding) => binding.window_type !== 'audio')
+    : []
 
   if (loading) return <main className="boot-state">Loading daily edition…</main>
   if (error) return <main className="boot-state">{error}</main>
@@ -125,7 +141,10 @@ function App() {
           </header>
         ) : null}
 
-        <section className="stage" onMouseLeave={() => setWindowState((state) => clearPreview(state))}>
+        <section
+          className={`stage${hasPrimaryStageWindow && presentation.suppressArtifactLabelsWhenPrimaryWindowOpen ? ' stage--primary-window-open' : ''}`}
+          onMouseLeave={() => setWindowState((state) => clearPreview(state))}
+        >
           <img className="plate" src={loaded.edition.plate_asset_path} alt={loaded.edition.title} />
 
           {loaded.artifactMap.artifacts.map((artifact) => {
@@ -136,6 +155,7 @@ function App() {
             return (
               <button
                 key={artifact.id}
+                aria-label={artifact.label}
                 className={`artifact artifact--${artifact.kind}${active ? ' is-active' : ''}${presentation.showPersistentRegionLabels ? ' artifact--labels-on' : ''}`}
                 style={{
                   left: `${artifact.bounds.x * 100}%`,
@@ -147,12 +167,16 @@ function App() {
                   zIndex: artifact.z_index,
                 }}
                 onMouseEnter={() => {
-                  setActiveArtifactId(artifact.id)
-                  if (binding) setWindowState((state) => hoverBinding(state, binding))
+                  if (!lockedArtifactId || lockedArtifactId === artifact.id) {
+                    setActiveArtifactId(artifact.id)
+                  }
+                  if (binding) setWindowState((state) => hoverBinding(state, binding, { freezeWhenPrimaryWindowOpen: reviewMode === 'live' }))
                 }}
                 onFocus={() => {
-                  setActiveArtifactId(artifact.id)
-                  if (binding) setWindowState((state) => hoverBinding(state, binding))
+                  if (!lockedArtifactId || lockedArtifactId === artifact.id) {
+                    setActiveArtifactId(artifact.id)
+                  }
+                  if (binding) setWindowState((state) => hoverBinding(state, binding, { freezeWhenPrimaryWindowOpen: reviewMode === 'live' }))
                 }}
                 onClick={() => {
                   setActiveArtifactId(artifact.id)
@@ -166,13 +190,43 @@ function App() {
           })}
 
           {presentation.showStageOverlayWindows ? (
-            <div className="stage-overlay-windows">
-              {primaryBinding ? <SourceWindow binding={primaryBinding} mode="primary" onClose={() => setWindowState((state) => closeWindow(state, primaryBinding.id))} /> : null}
+            <div className={`stage-overlay-windows${reviewMode === 'live' ? ' stage-overlay-windows--live' : ''}`}>
+              {reviewMode === 'live'
+                ? stageVisualBindings.map((binding, index) => {
+                    const isFrontmost = binding.id === primaryBinding?.id
+                    return (
+                      <SourceWindow
+                        key={binding.id}
+                        artifact={artifactsById.get(binding.artifact_id) ?? null}
+                        binding={binding}
+                        mode={isFrontmost ? 'primary' : 'secondary'}
+                        onActivate={() => setWindowState((state) => focusWindow(state, binding.id))}
+                        onClose={() => setWindowState((state) => closeWindow(state, binding.id))}
+                        stackIndex={index}
+                        surface="stage"
+                      />
+                    )
+                  })
+                : primaryBinding ? (
+                    <SourceWindow
+                      artifact={artifactsById.get(primaryBinding.artifact_id) ?? null}
+                      binding={primaryBinding}
+                      mode="primary"
+                      onClose={() => setWindowState((state) => closeWindow(state, primaryBinding.id))}
+                      surface="panel"
+                    />
+                  ) : null}
               {previewBinding && (!primaryBinding || previewBinding.id !== primaryBinding.id) ? (
-                <SourceWindow binding={previewBinding} mode="preview" onClose={() => setWindowState((state) => clearPreview(state))} />
+                <SourceWindow
+                  artifact={artifactsById.get(previewBinding.artifact_id) ?? null}
+                  binding={previewBinding}
+                  mode="preview"
+                  onClose={() => setWindowState((state) => clearPreview(state))}
+                  surface={reviewMode === 'live' ? 'stage' : 'panel'}
+                />
               ) : null}
               {dockBindings.length ? (
-                <div className="window-dock">
+                <div className={`window-dock${reviewMode === 'live' ? ' window-dock--stage' : ''}`}>
                   <div className="eyebrow">Dock</div>
                   <div className="window-dock__items">
                     {dockBindings.map((binding) => (
@@ -223,13 +277,13 @@ function App() {
           <section className="panel">
             <div className="eyebrow">Source windows</div>
             {primaryBinding ? (
-              <SourceWindow binding={primaryBinding} mode="primary" onClose={() => setWindowState((state) => closeWindow(state, primaryBinding.id))} />
+              <SourceWindow binding={primaryBinding} mode="primary" onClose={() => setWindowState((state) => closeWindow(state, primaryBinding.id))} surface="panel" />
             ) : (
               <p>{presentation.sourceWindowsEmptyState}</p>
             )}
 
             {previewBinding && (!primaryBinding || previewBinding.id !== primaryBinding.id) ? (
-              <SourceWindow binding={previewBinding} mode="preview" onClose={() => setWindowState((state) => clearPreview(state))} />
+              <SourceWindow binding={previewBinding} mode="preview" onClose={() => setWindowState((state) => clearPreview(state))} surface="panel" />
             ) : null}
 
             {dockBindings.length ? (
@@ -327,38 +381,83 @@ function ArchiveMiniList({ records, navigate, currentEditionId }: { records: Arc
   )
 }
 
-function SourceWindow({ binding, mode, onClose }: { binding: SourceBindingRecord; mode: 'preview' | 'primary'; onClose: () => void }) {
+function SourceWindow({
+  binding,
+  mode,
+  onClose,
+  onActivate,
+  artifact = null,
+  stackIndex = 0,
+  surface = 'panel',
+}: {
+  binding: SourceBindingRecord
+  mode: 'preview' | 'primary' | 'secondary'
+  onClose: () => void
+  onActivate?: () => void
+  artifact?: ArtifactRecord | null
+  stackIndex?: number
+  surface?: 'panel' | 'stage'
+}) {
   const descriptor = getSourceWindowDescriptor(binding)
+  const profile = getSourceWindowSurfaceProfile(descriptor, surface, mode)
+  const placement = surface === 'stage' && artifact ? getStageWindowPlacement(artifact, mode) : null
 
   return (
-    <div className={`source-window source-window--${mode}`}>
-      <div className="source-window__top">
-        <div>
-          <div className="eyebrow">{mode === 'preview' ? `Preview · ${binding.kicker}` : binding.kicker}</div>
-          <strong>{binding.title}</strong>
+    <div
+      className={`source-window source-window--${mode} source-window--frame-${profile.frameStyle} source-window--body-${profile.bodyStyle}${placement ? ` source-window--stage source-window--tone-${placement.tone}` : surface === 'stage' ? ' source-window--stage-fallback' : ''}`}
+      onMouseDown={onActivate}
+      onFocus={onActivate}
+      style={placement ? {
+        left: `${placement.x * 100}%`,
+        top: `${placement.y * 100}%`,
+        width: `${placement.width * 100}%`,
+        maxHeight: `${placement.maxHeight * 100}%`,
+        zIndex: 9 + stackIndex,
+      } : undefined}
+      tabIndex={0}
+    >
+      {profile.showHeader ? (
+        <div className="source-window__top">
+          <div>
+            <div className="eyebrow">{mode === 'preview' ? `Preview · ${binding.kicker}` : binding.kicker}</div>
+            <strong>{binding.title}</strong>
+          </div>
+          <div className="source-window__actions">
+            <button className={`source-window__close source-window__close--${profile.closeStyle}`} onClick={onClose} type="button">{mode === 'preview' ? 'Dismiss' : 'Close'}</button>
+          </div>
         </div>
-        <div className="source-window__actions">
-          <button onClick={onClose} type="button">{mode === 'preview' ? 'Dismiss' : 'Close'}</button>
+      ) : (
+        <div className="source-window__floating-actions">
+          <button aria-label={mode === 'preview' ? 'Dismiss preview' : 'Close source window'} className={`source-window__close source-window__close--${profile.closeStyle}`} onClick={onClose} type="button">×</button>
         </div>
-      </div>
-      <p>{binding.excerpt}</p>
-      <div className="source-window__meta">
-        <span>{binding.window_type}</span>
-        <span>{binding.source_type}</span>
-        <span>{descriptor.platformLabel}</span>
-        <span>{descriptor.allowsPlaybackPersistence ? 'persistent' : 'replaceable'}</span>
-      </div>
-      <SourceWindowBody binding={binding} />
+      )}
+      {profile.showExcerpt ? <p>{binding.excerpt}</p> : null}
+      {profile.showMeta ? (
+        <div className="source-window__meta">
+          <span>{binding.window_type}</span>
+          <span>{binding.source_type}</span>
+          <span>{descriptor.platformLabel}</span>
+          <span>{descriptor.allowsPlaybackPersistence ? 'persistent' : 'replaceable'}</span>
+        </div>
+      ) : null}
+      <SourceWindowBody binding={binding} descriptor={descriptor} profile={profile} />
     </div>
   )
 }
 
-function SourceWindowBody({ binding }: { binding: SourceBindingRecord }) {
-  const descriptor = getSourceWindowDescriptor(binding)
-
+function SourceWindowBody({
+  binding,
+  descriptor,
+  profile,
+}: {
+  binding: SourceBindingRecord
+  descriptor: ReturnType<typeof getSourceWindowDescriptor>
+  profile: ReturnType<typeof getSourceWindowSurfaceProfile>
+}) {
   if (descriptor.kind === 'youtube-embed') {
     return (
       <div className="source-window__body source-window__body--video">
+        {profile.showBodyPlatformPill ? <span className="source-window__platform-pill">{descriptor.platformLabel}</span> : null}
         <iframe
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
@@ -374,6 +473,7 @@ function SourceWindowBody({ binding }: { binding: SourceBindingRecord }) {
   if (descriptor.kind === 'soundcloud-embed') {
     return (
       <div className="source-window__body source-window__body--audio-embed">
+        {profile.showBodyPlatformPill ? <span className="source-window__platform-pill">{descriptor.platformLabel}</span> : null}
         <iframe
           allow="autoplay"
           loading="lazy"
@@ -389,7 +489,8 @@ function SourceWindowBody({ binding }: { binding: SourceBindingRecord }) {
     return (
       <div className="source-window__body source-window__body--audio">
         <div className="audio-dock-card audio-dock-card--bandcamp">
-          <div className="eyebrow">{descriptor.platformLabel}</div>
+          {profile.showBodyEyebrow ? <div className="eyebrow">{descriptor.platformLabel}</div> : null}
+          {profile.showBodyPlatformPill ? <span className="source-window__platform-pill">{descriptor.platformLabel}</span> : null}
           <strong>{descriptor.artistLabel}</strong>
           <span className="source-pill">{descriptor.releasePath}</span>
           <p>Provider-aware fallback for resolved Bandcamp sources when there is no stable embed path available from the stored URL alone.</p>
@@ -403,7 +504,8 @@ function SourceWindowBody({ binding }: { binding: SourceBindingRecord }) {
     return (
       <div className="source-window__body source-window__body--audio">
         <div className={`audio-dock-card${descriptor.ctaLabel === 'Resolved track source required' ? ' audio-dock-card--warning' : ''}`}>
-          <div className="eyebrow">{descriptor.platformLabel}</div>
+          {profile.showBodyEyebrow ? <div className="eyebrow">{descriptor.platformLabel}</div> : null}
+          {profile.showBodyPlatformPill ? <span className="source-window__platform-pill">{descriptor.platformLabel}</span> : null}
           <strong>Persistent track pocket</strong>
           <p>
             {descriptor.ctaLabel === 'Resolved track source required'
@@ -420,7 +522,8 @@ function SourceWindowBody({ binding }: { binding: SourceBindingRecord }) {
     return (
       <div className="source-window__body source-window__body--social">
         <div className="social-card social-card--post">
-          <div className="eyebrow">{descriptor.platformLabel}</div>
+          {profile.showBodyEyebrow ? <div className="eyebrow">{descriptor.platformLabel}</div> : null}
+          {profile.showBodyPlatformPill ? <span className="source-window__platform-pill">{descriptor.platformLabel}</span> : null}
           <strong>{descriptor.sourceLabel ?? descriptor.domainLabel}</strong>
           {descriptor.byline ? <span className="source-pill">{descriptor.byline}</span> : null}
           {descriptor.postLabel ? <span className="source-pill">{descriptor.postLabel}</span> : null}
@@ -431,12 +534,21 @@ function SourceWindowBody({ binding }: { binding: SourceBindingRecord }) {
     )
   }
 
+  const internalKickerLabels = new Set(['Mapped pocket', 'Hero artifact'])
+  const richPreviewLabel = internalKickerLabels.has(binding.kicker)
+    ? (binding.source_type === 'article' ? 'Source' : descriptor.platformLabel)
+    : binding.kicker || (binding.source_type === 'article' ? 'Source' : descriptor.platformLabel)
+  const richPreviewTitle = binding.title || descriptor.domainLabel
+  const richPreviewExcerpt = binding.excerpt || `Open source material from ${descriptor.domainLabel}.`
+
   return (
     <div className="source-window__body source-window__body--web">
       <div className="rich-preview-card">
-        <div className="eyebrow">{descriptor.platformLabel}</div>
-        <strong>{descriptor.domainLabel}</strong>
-        <p>Source-framed fallback for article, note, and linked web content.</p>
+        {profile.showBodyEyebrow ? <div className="eyebrow">{richPreviewLabel}</div> : null}
+        {profile.showBodyPlatformPill ? <span className="source-window__platform-pill">{richPreviewLabel}</span> : null}
+        <strong>{richPreviewTitle}</strong>
+        <span className="source-pill">{descriptor.domainLabel}</span>
+        <p>{richPreviewExcerpt}</p>
       </div>
       {descriptor.sourceUrl ? <a href={descriptor.sourceUrl} rel="noreferrer" target="_blank">{descriptor.ctaLabel} ↗</a> : <span className="fallback">No live source URL bound yet</span>}
     </div>

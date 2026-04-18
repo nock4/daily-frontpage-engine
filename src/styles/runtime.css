@@ -270,6 +270,13 @@ a {
   transition: opacity 140ms ease, transform 140ms ease;
 }
 
+/* In live mode, artifact labels are only discovery hints. Once a primary stage
+window is open, they should hand off to the window instead of reading like a
+subtitle behind it. */
+.stage--primary-window-open .artifact span {
+  display: none;
+}
+
 .artifact--labels-on span,
 .artifact.is-active span,
 .artifact:hover span,
@@ -304,6 +311,19 @@ a {
   padding: 0.8rem 1rem;
 }
 
+.window-dock--stage {
+  position: absolute;
+  left: 50%;
+  bottom: 1.1rem;
+  z-index: 10;
+  transform: translateX(-50%);
+  min-width: min(420px, calc(100% - 2rem));
+  backdrop-filter: blur(18px);
+  background: rgba(19, 16, 14, 0.72);
+  border-color: rgba(255, 242, 213, 0.14);
+  box-shadow: 0 20px 44px rgba(0, 0, 0, 0.28);
+}
+
 .artifact-lists h2,
 .artifact-lists ul,
 .archive-mini-list {
@@ -325,11 +345,116 @@ a {
   padding: 0.75rem;
   display: grid;
   gap: 0.55rem;
+  outline: none;
 }
+
+.source-window--frame-panel {
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  background: rgba(24, 20, 18, 0.78);
+}
+
+.source-window--frame-artifact-card {
+  border-radius: 18px;
+}
+
+.source-window--frame-embedded-media {
+  padding: 0.35rem;
+  border-radius: 18px;
+}
+
+.source-window--body-compact {
+  gap: 0.45rem;
+}
+
+.source-window--body-immersive {
+  gap: 0.4rem;
+}
+
+.source-window--stage {
+  position: absolute;
+  z-index: 9;
+  overflow: auto;
+  backdrop-filter: blur(18px);
+  background: linear-gradient(180deg, rgba(38, 31, 24, 0.78), rgba(18, 15, 12, 0.7));
+  border: 1px solid rgba(255, 242, 213, 0.14);
+  box-shadow: 0 24px 54px rgba(0, 0, 0, 0.3);
+}
+
+.source-window:focus-visible {
+  box-shadow: 0 0 0 1px rgba(255, 242, 213, 0.24), 0 0 0 3px rgba(126, 174, 255, 0.22), 0 24px 54px rgba(0, 0, 0, 0.3);
+}
+
+.source-window--secondary.source-window--stage {
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.24);
+}
+
+.source-window--stage.source-window--frame-artifact-card {
+  background: linear-gradient(180deg, rgba(240, 226, 193, 0.92), rgba(214, 190, 151, 0.88));
+  color: rgba(36, 22, 12, 0.92);
+  border-color: rgba(92, 63, 25, 0.14);
+  box-shadow: 0 22px 48px rgba(0, 0, 0, 0.22), inset 0 1px 0 rgba(255,255,255,0.4);
+}
+
+.source-window--stage.source-window--frame-embedded-media {
+  background: rgba(10, 10, 10, 0.78);
+  border-color: rgba(255,255,255,0.12);
+}
+
+.source-window--stage-fallback {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 9;
+  width: min(440px, calc(100% - 2rem));
+  max-height: min(58vh, calc(100% - 2rem));
+  overflow: auto;
+  backdrop-filter: blur(18px);
+  background: rgba(18, 16, 15, 0.82);
+  border: 1px solid rgba(255, 242, 213, 0.14);
+  box-shadow: 0 24px 54px rgba(0, 0, 0, 0.3);
+}
+
+.source-window--stage.source-window--preview {
+  background: linear-gradient(180deg, rgba(52, 45, 38, 0.72), rgba(21, 18, 15, 0.58));
+}
+
+.source-window--tone-hero {
+  border-color: rgba(246, 227, 147, 0.22);
+}
+
+.source-window--tone-module {
+  border-color: rgba(173, 227, 184, 0.2);
+}
+
+.source-window--tone-preview {
+  border-color: rgba(255, 255, 255, 0.16);
+}
+
 
 .source-window__body {
   display: grid;
   gap: 0.65rem;
+}
+
+.source-window__platform-pill {
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+  padding: 0.2rem 0.5rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.12);
+  background: rgba(255,255,255,0.07);
+  color: rgba(255,255,255,0.88);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.source-window--stage.source-window--frame-artifact-card .source-window__platform-pill {
+  border-color: rgba(92, 63, 25, 0.18);
+  background: rgba(255,255,255,0.28);
+  color: rgba(64, 40, 17, 0.88);
 }
 
 .source-window__body iframe {
@@ -353,6 +478,13 @@ a {
   border-radius: 12px;
   border: 1px solid rgba(255,255,255,0.08);
   background: rgba(255,255,255,0.03);
+}
+
+.source-window--stage.source-window--frame-artifact-card .audio-dock-card,
+.source-window--stage.source-window--frame-artifact-card .social-card,
+.source-window--stage.source-window--frame-artifact-card .rich-preview-card {
+  border-color: rgba(92, 63, 25, 0.16);
+  background: rgba(255, 251, 241, 0.42);
 }
 
 .audio-dock-card--warning {
@@ -395,20 +527,37 @@ a {
 
 .stage-overlay-windows {
   position: absolute;
+  inset: 0;
+  z-index: 8;
+  pointer-events: none;
+}
+
+.stage-overlay-windows .source-window,
+.stage-overlay-windows .window-dock {
+  pointer-events: auto;
+}
+
+.stage-overlay-windows:not(.stage-overlay-windows--live) {
   right: 1rem;
   bottom: 1rem;
-  z-index: 8;
+  left: auto;
+  top: auto;
   width: min(440px, calc(100% - 2rem));
   display: grid;
   gap: 0.75rem;
   align-items: end;
 }
 
-.stage-overlay-windows .source-window,
-.stage-overlay-windows .window-dock {
+.stage-overlay-windows:not(.stage-overlay-windows--live) .source-window,
+.stage-overlay-windows:not(.stage-overlay-windows--live) .window-dock {
   backdrop-filter: blur(14px);
   background: rgba(18, 16, 15, 0.82);
 }
+
+.stage-overlay-windows--live {
+  display: block;
+}
+
 
 .source-window__top,
 .source-window__actions {
@@ -418,9 +567,48 @@ a {
   gap: 0.5rem;
 }
 
+.source-window__floating-actions {
+  position: absolute;
+  top: 0.4rem;
+  right: 0.4rem;
+  z-index: 1;
+}
+
+.source-window__close {
+  border: 1px solid rgba(255,255,255,0.12);
+}
+
+.source-window__close--floating {
+  width: 1.9rem;
+  height: 1.9rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 0;
+  background: rgba(15, 13, 12, 0.7);
+  color: rgba(255,255,255,0.88);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.22);
+}
+
+.source-window--stage.source-window--frame-artifact-card .source-window__close--floating {
+  background: rgba(255, 249, 237, 0.82);
+  border-color: rgba(92, 63, 25, 0.14);
+  color: rgba(63, 41, 18, 0.88);
+}
+
 .source-window__meta {
   color: rgba(255,255,255,0.62);
   font-size: 0.82rem;
+}
+
+.source-window--stage.source-window--frame-artifact-card .source-pill,
+.source-window--stage.source-window--frame-artifact-card .audio-dock-card p,
+.source-window--stage.source-window--frame-artifact-card .social-card p,
+.source-window--stage.source-window--frame-artifact-card .rich-preview-card p,
+.source-window--stage.source-window--frame-artifact-card .fallback,
+.source-window--stage.source-window--frame-artifact-card a {
+  color: rgba(64, 40, 17, 0.86);
 }
 
 .archive-grid {

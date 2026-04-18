@@ -13,6 +13,8 @@ The runtime should stay stable while the daily edition package changes.
 - keep active media alive until explicit close
 - mount ambiance systems
 - switch between live edition and archive editions
+- keep live mode chrome-free at rest
+- place source windows on the stage near their originating artifacts
 
 ## Runtime layers
 
@@ -60,6 +62,8 @@ Controls:
 - playback persistence
 - docking/minimized player state
 - replacement rules for single-primary mode
+- provider-native renderer selection from URL and binding metadata
+- stage placement fallback when artifact lookup fails
 
 ### 5. Ambiance engine
 Mounts:
@@ -154,6 +158,8 @@ src/
 - explicit close required
 - one primary visual window at a time by default
 - optional persistent minimized audio dock
+- live-stage windows should anchor near the clicked artifact and clamp inside the stage
+- if provider URL and binding metadata disagree, prefer the provider-native URL interpretation when safe
 
 ## Performance plan
 - lazy-load embeds
@@ -167,6 +173,14 @@ If source embed fails:
 - fall back to rich preview
 - if no rich preview, show source-framed outbound window action
 - do not replace with a generic summary card
+- do not allow null-source packaging bugs to silently ship as acceptable UX
+
+## Live-vs-review presentation contract
+
+- live mode should be full-page scene only at rest
+- archive controls, metadata rails, and review chrome belong only in explicit review states
+- opened source windows in live mode should feel like stage objects, not side-panel UI transplanted onto the art
+- stage windows should use lighter surface treatment than review panels
 
 ## Minimum viable runtime
 Phase 1:

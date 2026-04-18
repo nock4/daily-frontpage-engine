@@ -31,3 +31,23 @@ Why: The front page should never reuse the same scene twice, but should preserve
 ## 2026-04-17
 Decision: Front-page pockets should open source windows, not text summaries.
 Why: The page should expose actual tweets, videos, streams, and source artifacts rather than flattening them into generic summary cards.
+
+## 2026-04-17
+Decision: Live mode should be chrome-free at rest.
+Why: The default page must read as the scene itself, not a dashboard wrapped around artwork.
+
+## 2026-04-17
+Decision: Source windows should open on the stage near their artifacts.
+Why: Opening pockets in fixed side rails breaks the scene-first illusion and feels like product chrome returning.
+
+## 2026-04-17
+Decision: Provider-native URL detection outranks weak binding metadata.
+Why: A real YouTube URL should render as YouTube even if the binding metadata drifts and still says `web`.
+
+## 2026-04-17
+Decision: UX verification is required for visible runtime bugfixes.
+Why: Green tests alone were not enough to catch bad live behavior like fallback cards, duplicate labels, or wrong renderer selection.
+
+## 2026-04-18
+Decision: Visual CI should run through Argos-backed Playwright UX scenarios.
+Why: Screenshot baselines are the local guardrail, but CI needs traceable visual diffs and remote screenshot review before a UI claim is trusted.

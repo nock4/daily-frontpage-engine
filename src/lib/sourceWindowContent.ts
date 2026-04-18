@@ -200,6 +200,19 @@ const isNtsUrl = (sourceUrl: string | null) => {
 export const getSourceWindowDescriptor = (binding: SourceBindingRecord): SourceWindowDescriptor => {
   const domainLabel = getDomainLabel(binding.source_url)
   const allowsPlaybackPersistence = binding.playback_persistence
+  const youtubeEmbedUrl = toYouTubeEmbedUrl(binding.source_url)
+
+  if (youtubeEmbedUrl && (binding.source_type === 'youtube' || binding.window_type === 'video' || binding.window_type === 'web')) {
+    return {
+      kind: 'youtube-embed',
+      embedUrl: youtubeEmbedUrl,
+      allowsPlaybackPersistence,
+      domainLabel,
+      ctaLabel: 'Open on YouTube',
+      platformLabel: 'YouTube',
+      accentTone: 'video',
+    }
+  }
 
   if (binding.source_type === 'youtube' || binding.window_type === 'video') {
     const embedUrl = toYouTubeEmbedUrl(binding.source_url)

@@ -35,6 +35,21 @@ describe('getSourceWindowDescriptor', () => {
     expect(descriptor.allowsPlaybackPersistence).toBe(true)
   })
 
+  it('treats youtube urls as embeddable even when the binding metadata still says web fallback', () => {
+    const descriptor = getSourceWindowDescriptor(
+      makeBinding({
+        source_type: 'concept-note',
+        source_url: 'https://www.youtube.com/watch?v=7Ul_1yuxEVs',
+        window_type: 'web',
+      }),
+    )
+
+    expect(descriptor.kind).toBe('youtube-embed')
+    if (descriptor.kind !== 'youtube-embed') throw new Error('expected youtube descriptor')
+    expect(descriptor.platformLabel).toBe('YouTube')
+    expect(descriptor.embedUrl).toBe('https://www.youtube.com/embed/7Ul_1yuxEVs?autoplay=1&rel=0')
+  })
+
   it('does not create a special embed path for nts.live show URLs', () => {
     const descriptor = getSourceWindowDescriptor(
       makeBinding({

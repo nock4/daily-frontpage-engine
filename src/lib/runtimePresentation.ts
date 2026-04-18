@@ -6,6 +6,7 @@ export interface RuntimePresentation {
   showArtifactLists: boolean
   showReviewPanel: boolean
   showPersistentRegionLabels: boolean
+  suppressArtifactLabelsWhenPrimaryWindowOpen: boolean
   showStageOverlayWindows: boolean
   stageFillViewport: boolean
   briefEyebrow: string
@@ -21,7 +22,8 @@ export const getRuntimePresentation = (reviewMode: ReviewMode): RuntimePresentat
       showArtifactLists: false,
       showReviewPanel: false,
       showPersistentRegionLabels: false,
-      showStageOverlayWindows: false,
+      suppressArtifactLabelsWhenPrimaryWindowOpen: true,
+      showStageOverlayWindows: true,
       stageFillViewport: true,
       briefEyebrow: 'Edition',
       selectionEyebrow: 'Active pocket',
@@ -35,6 +37,7 @@ export const getRuntimePresentation = (reviewMode: ReviewMode): RuntimePresentat
     showArtifactLists: true,
     showReviewPanel: true,
     showPersistentRegionLabels: true,
+    suppressArtifactLabelsWhenPrimaryWindowOpen: false,
     showStageOverlayWindows: false,
     stageFillViewport: false,
     briefEyebrow: 'Review mode',

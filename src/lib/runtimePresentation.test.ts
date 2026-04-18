@@ -11,7 +11,8 @@ describe('getRuntimePresentation', () => {
       showArtifactLists: false,
       showReviewPanel: false,
       showPersistentRegionLabels: false,
-      showStageOverlayWindows: false,
+      suppressArtifactLabelsWhenPrimaryWindowOpen: true,
+      showStageOverlayWindows: true,
       stageFillViewport: true,
       briefEyebrow: 'Edition',
       selectionEyebrow: 'Active pocket',
@@ -26,6 +27,7 @@ describe('getRuntimePresentation', () => {
       showArtifactLists: true,
       showReviewPanel: true,
       showPersistentRegionLabels: true,
+      suppressArtifactLabelsWhenPrimaryWindowOpen: false,
       showStageOverlayWindows: false,
       stageFillViewport: false,
       briefEyebrow: 'Review mode',
@@ -41,6 +43,7 @@ describe('getRuntimePresentation', () => {
       expect(getMode(mode).showReviewPanel).toBe(true)
       expect(getMode(mode).showArtifactLists).toBe(true)
       expect(getMode(mode).showPersistentRegionLabels).toBe(true)
+      expect(getMode(mode).suppressArtifactLabelsWhenPrimaryWindowOpen).toBe(false)
       expect(getMode(mode).showStageOverlayWindows).toBe(false)
       expect(getMode(mode).stageFillViewport).toBe(false)
       expect(getMode(mode).briefEyebrow).toBe('Review mode')
