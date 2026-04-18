@@ -18,7 +18,7 @@ That job:
 - uploads Playwright HTML report artifacts
 - uploads Playwright trace and test-result artifacts
 - uploads Argos screenshots and traces when `ARGOS_TOKEN` is present
-- opts GitHub-hosted JavaScript actions into the Node 24 runtime
+- uses modern GitHub Actions majors: checkout v6, setup-node v6, upload-artifact v7
 
 ## Required GitHub secret
 
