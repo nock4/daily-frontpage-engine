@@ -12,8 +12,8 @@
     "preview": "vite preview",
     "test": "vitest run",
     "audit:codebase": "node scripts/audit-codebase.mjs",
-    "generate:interpretations": "node scripts/generate-interpretations.mjs",
-    "generate:enhancement-plans": "node scripts/generate-enhancement-plans.mjs",
+    "generate:interpretations": "tsx scripts/generate-interpretations.mjs",
+    "generate:enhancement-plans": "tsx scripts/generate-enhancement-plans.mjs",
     "validate:editions": "npm run generate:interpretations && npm run generate:enhancement-plans && node scripts/validate-editions.mjs",
     "daily:process": "node scripts/run-daily-process.mjs",
     "enrich:source-images": "node scripts/enrich-source-images.mjs",
@@ -36,6 +36,7 @@
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^6.0.1",
     "playwright": "^1.59.1",
+    "tsx": "^4.21.0",
     "typescript": "^5.6.3",
     "vite": "^8.0.10",
     "vitest": "^4.1.5"
