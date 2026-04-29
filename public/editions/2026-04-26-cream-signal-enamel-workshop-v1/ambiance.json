@@ -1,0 +1,22 @@
+{
+  "ambiance_recipe_id": "ambiance-2026-04-26-cream-signal-enamel-workshop-v1",
+  "motion_system": "nearly still; only the cream ribbon feels freshly folded, as if it settled a second ago",
+  "color_drift": "warm white and pale cream drift toward fog blue, with burgundy accents held at the margins",
+  "glow_behavior": "small anchor marks glow like reflected kitchen light on enamel, never like a screen",
+  "audio_posture": "ambient",
+  "webgl_mode": "shader-scene",
+  "research_inputs": [
+    "research-1-68b0ca43",
+    "research-2-4abef8ce",
+    "research-3-703b8410",
+    "research-4-ed5a693b",
+    "research-5-a3788ede",
+    "research-6-0c699190",
+    "research-7-c222c645",
+    "research-8-abe83ac3",
+    "research-9-e03f35af",
+    "research-10-7add7dca",
+    "research-11-65fd2166",
+    "research-12-90055999"
+  ]
+}

@@ -1,8 +1,10 @@
 # UX Testing Overhaul Plan
 
-> For Hermes: use this plan before continuing more front-page polish. The current testing loop is too DOM-heavy and too trusting of ad-hoc screenshots.
+Status: historical testing plan. The current required checks for generated editions are `npm run validate:editions`, `npm test`, `npm run build`, generated-route Playwright smoke, `npm run test:ux:media`, and `npm run audit:codebase`; see `docs/process.md` and `docs/testing/review-checklist.md`.
 
-Goal: replace the current weak UX verification loop with a layered testing stack that can actually catch visual, behavioral, and source-window presentation failures before Nick sees them.
+This plan documents the testing gaps behind the current UX overhaul.
+
+Goal at the time: replace the weak UX verification loop that existed then with a layered testing stack that can actually catch visual, behavioral, and source-window presentation failures before Nick sees them.
 
 Architecture:
 - Keep Playwright as the execution engine.

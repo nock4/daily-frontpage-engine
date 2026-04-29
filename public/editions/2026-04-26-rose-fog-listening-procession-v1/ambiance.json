@@ -1,0 +1,22 @@
+{
+  "ambiance_recipe_id": "ambiance-2026-04-26-rose-fog-listening-procession-v1",
+  "motion_system": "slow ceremonial drift, as if objects are being carried through a theatre fog",
+  "color_drift": "salmon pink fading into pearl gray, pale mint, and midnight blue",
+  "glow_behavior": "soft internal halos behind translucent materials, never sharp neon",
+  "audio_posture": "ambient",
+  "webgl_mode": "particles",
+  "research_inputs": [
+    "research-1-824982ab",
+    "research-2-c7b5cfd0",
+    "research-3-d7a31bfa",
+    "research-4-736d010c",
+    "research-5-8edd09cd",
+    "research-6-82f59734",
+    "research-7-692e7fc6",
+    "research-8-fb92a315",
+    "research-9-922922bc",
+    "research-10-ed5a693b",
+    "research-11-c3fc8178",
+    "research-12-a3788ede"
+  ]
+}

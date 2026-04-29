@@ -1,0 +1,22 @@
+{
+  "ambiance_recipe_id": "ambiance-2026-04-26-magenta-quiet-gate-v1",
+  "motion_system": "near-still architectural haze with slow breathing at the gate edges",
+  "color_drift": "rose pink deepens into wine-black at the borders with rare cobalt flickers",
+  "glow_behavior": "small anchor apertures pulse softly while the main gate remains calm",
+  "audio_posture": "ambient",
+  "webgl_mode": "shader-scene",
+  "research_inputs": [
+    "research-1-f3d36279",
+    "research-2-1fecc976",
+    "research-3-5250dba8",
+    "research-4-23c4d2d5",
+    "research-5-f604eb40",
+    "research-6-bcb9a43b",
+    "research-7-d61beb0a",
+    "research-8-02f80703",
+    "research-9-329b71bc",
+    "research-10-a9dad5cd",
+    "research-11-cda659d7",
+    "research-12-2800de35"
+  ]
+}

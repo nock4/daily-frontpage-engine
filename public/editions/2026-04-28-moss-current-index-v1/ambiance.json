@@ -1,0 +1,22 @@
+{
+  "ambiance_recipe_id": "ambiance-2026-04-28-moss-current-index-v1",
+  "motion_system": "slow organic seep, like moisture traveling through moss veins after rain",
+  "color_drift": "black-green ground warming into muted ochre, with rare violet specks held at the contour edges",
+  "glow_behavior": "tiny wet glints pulse once, then sink back into the dark paper",
+  "audio_posture": "ambient",
+  "webgl_mode": "shader-scene",
+  "research_inputs": [
+    "research-1-c05266ea",
+    "research-2-cafb4567",
+    "research-3-778c09b1",
+    "research-4-6705d86b",
+    "research-5-0c699190",
+    "research-6-f83b5e71",
+    "research-7-61c83cb1",
+    "research-8-d87d14a5",
+    "research-9-8a388fbf",
+    "research-10-e6a10546",
+    "research-11-8edd09cd",
+    "research-12-a0310c05"
+  ]
+}

@@ -1,10 +1,10 @@
 import type { AmbianceRecord, SourceBindingRecord } from '../types/runtime'
-import { getActiveBindingAmbienceMode } from './sourceWindowContent'
+import { getActiveBindingAmbienceMode } from './sourceWindowTone'
 
 const slugify = (value: string) => value.toLowerCase().trim().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '') || 'none'
 
 export const getRuntimeAmbienceClasses = (ambiance: AmbianceRecord | null, binding: SourceBindingRecord | null): string[] => {
-  const classes = [getActiveBindingAmbienceMode(binding)]
+  const classes: string[] = [getActiveBindingAmbienceMode(binding)]
 
   if (!ambiance) return classes
 

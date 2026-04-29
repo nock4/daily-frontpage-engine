@@ -1,0 +1,20 @@
+{
+  "about_id": "about-2026-04-26-midnight-checkpoint-concourse-v1",
+  "label": "About",
+  "title": "About The Midnight Checkpoint Concourse",
+  "short_blurb": "Built from 137 recent saved-content signals, 12 inspected links, and 7 unique source objects.",
+  "body": [
+    "For the visual seed, the process used @sterlingcrispin: i manage 4 10 agents working on interrelated problems in 2 (pbs.twimg.com), then translated that source image into low midnight light with cool white edge glows, soft cyan spill, and tiny warm amber markers receding down the corridor and materials like charcoal enamel panels, brushed black steel, frosted acrylic, etched glass, and polished basalt floor. The de-duplicated source set was then bound to @sterlingcrispin: i manage 4 10 agents working on interrelated problems in 2, @kail_designs: perplexity comet landing page redesign background from ascii effect using, and tdd by mattpocock/skills.",
+    "gpt-5.5 inspected the finished plate and mapped 7 visible objects, including large Seven Checkpoints inscription wall, right-side ASCII comet mural wall, red and green floor test threshold tiles, and glowing confetti voting urn. The run wrote the package, masks, interpretation, and enhancement plan at tmp/daily-process-runs/daily-process-2026-04-26T14-40-25-704Z."
+  ],
+  "typography": {
+    "profile_id": "botanical-field",
+    "heading_family": "'DFE Fraunces', Georgia, serif",
+    "body_family": "'DFE Newsreader', Iowan Old Style, Georgia, serif",
+    "accent_family": "'DFE Space Grotesk', ui-sans-serif, system-ui, sans-serif",
+    "heading_weight": 700,
+    "body_weight": 430,
+    "accent_weight": 720,
+    "rationale": "Fraunces gives the title an organic, seed-label quality; Newsreader keeps the explanation calm and readable."
+  }
+}

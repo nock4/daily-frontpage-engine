@@ -1,0 +1,67 @@
+{
+  "brief_id": "brief-2026-04-26-medusa-line-listening-arcade-v1-v1",
+  "date": "2026-04-26",
+  "signal_cluster_ids": [
+    "55c2a5c846a6",
+    "5521ff3b4c89",
+    "d824bedc7d45",
+    "67bac2353d29",
+    "97ed2b079aa4",
+    "1ecbe0ef250f",
+    "409267176a04",
+    "b7428f1c9989"
+  ],
+  "research_node_ids": [
+    "research-1-a7131df6",
+    "research-2-a0310c05",
+    "research-3-c05266ea",
+    "research-4-cafb4567",
+    "research-5-c865cd35",
+    "research-6-778c09b1",
+    "research-7-6705d86b",
+    "research-8-86dacf22",
+    "research-9-4bc72527",
+    "research-10-ed5a693b",
+    "research-11-a3788ede",
+    "research-12-0c699190"
+  ],
+  "mood": "hushed, nocturnal, mineral, aquatic, quietly ceremonial without becoming a chapel",
+  "material_language": [
+    "matte black stone",
+    "brushed brass linework",
+    "emerald enamel",
+    "smoked glass",
+    "rain-dark concrete",
+    "lacquered wood",
+    "translucent rice paper",
+    "aged record sleeves"
+  ],
+  "lighting": "low amber grazing light from floor channels, soft blue-green reflections from glass, faint fog catching gold edges",
+  "object_inventory": [
+    "hero-scale serpentine brass-and-emerald floor inlay labeled Habitual Line Stepper",
+    "hero-scale smoked-glass forest facade etched with breathing tree silhouettes",
+    "rainy computer-life album lightbox with small Japanese and English track labels",
+    "black NTS radio directory pylon with a white-red station crest",
+    "curved My Tracks listening bench with tiny brass tally marks",
+    "Discogs record vitrine holding a dark techno compilation sleeve",
+    "shallow ceramic Earth basin with floating green enamel islands",
+    "low guqin tea threshold with steam, stone cups, and silk strings"
+  ],
+  "interaction_grammar": {
+    "hero_count": 2,
+    "module_count": 6,
+    "window_strategy": "source-window"
+  },
+  "negative_constraints": [
+    "no desks",
+    "no dashboards",
+    "no generic software UI",
+    "no landing-page layout",
+    "no source-summary cards",
+    "no printmaking chapel",
+    "no roller room",
+    "no cipher chapel",
+    "no splatter-canvas archive",
+    "do not reproduce platform logos or page chrome"
+  ]
+}

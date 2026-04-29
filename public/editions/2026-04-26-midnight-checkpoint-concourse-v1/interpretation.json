@@ -1,0 +1,319 @@
+{
+  "interpretation_id": "interp-2026-04-26-midnight-checkpoint-concourse-v1",
+  "edition_id": "2026-04-26-midnight-checkpoint-concourse-v1",
+  "plate_read_timestamp": "2026-04-29T00:14:40.093Z",
+  "scene_ontology": {
+    "primary": "object-native",
+    "secondary": [
+      "optical-native",
+      "material-native"
+    ],
+    "confidence": 0.9
+  },
+  "world_read": {
+    "summary": "A dark museum-like corridor with multiple visible interactive artifact surfaces: a large checkpoint text wall, a monumental ASCII comet mural, labeled floor test tiles, a glowing confetti voting urn, a sequential horse frieze, listening-station plaques, and smaller inscription panels.",
+    "dominant_spatial_mode": "contained",
+    "density": "medium",
+    "legibility": "selective",
+    "mood": [
+      "quiet, procedural, nocturnal, ceremonial without becoming a chapel",
+      "A dark museum-like corridor with multiple visible interactive artifact surfaces: a large checkpoint text wall, a monumental ASCII comet mural, labeled floor test tiles, a glowing confetti voting urn, a sequential horse frieze, listening-station plaques, and smaller inscription panels.",
+      "dark-concourse",
+      "checkpoint-plaques",
+      "ambient-electronics"
+    ]
+  },
+  "visual_ecology": {
+    "dominant_objects": [
+      "Seven Checkpoints inscription wall",
+      "ASCII comet mural",
+      "red-green testing threshold tile",
+      "confetti voting urn lantern",
+      "motion cavalry frieze",
+      "Susumu Yokota listening alcove panel",
+      "rear circular burst artwork panel",
+      "left vertical Japanese inscription plaque"
+    ],
+    "dominant_surfaces": [
+      "paper",
+      "glass",
+      "paint",
+      "light-band"
+    ],
+    "dominant_structures": [
+      "midnight-checkpoint-concourse",
+      "hero-scale checkpoint inscription wall",
+      "hero-scale ASCII comet mural",
+      "red-green testing threshold tile",
+      "confetti voting urn lantern",
+      "motion cavalry frieze",
+      "Susumu Yokota listening alcove panel",
+      "glif style-transfer mirror"
+    ],
+    "negative_space_regions": []
+  },
+  "interaction_world": {
+    "class": "object-native",
+    "recommended_behaviors": [
+      "cabinet-drawer-behavior",
+      "object-memory",
+      "threshold-scan"
+    ],
+    "rejected_behaviors": [
+      "light-path-reaction"
+    ],
+    "reasoning": [
+      "Primary ontology inferred from scene family and artifact types: midnight-checkpoint-concourse.",
+      "Artifact vocabulary suggests object-native interaction logic."
+    ]
+  },
+  "artifact_candidates": [
+    {
+      "id": "hero-seven-checkpoints-inscription-wall",
+      "kind": "hero",
+      "type": "hero-scale-inscription-wall",
+      "strength": 0.99,
+      "bounds": {
+        "x": 0.028,
+        "y": 0.022,
+        "w": 0.188,
+        "h": 0.755
+      },
+      "supports": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "hero-ascii-comet-mural",
+      "kind": "hero",
+      "type": "hero-scale-symbol-mural",
+      "strength": 0.9767359999999999,
+      "bounds": {
+        "x": 0.714,
+        "y": 0,
+        "w": 0.286,
+        "h": 0.818
+      },
+      "supports": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-red-green-testing-threshold-tile",
+      "kind": "module",
+      "type": "inlaid-floor-threshold",
+      "strength": 0.77688,
+      "bounds": {
+        "x": 0.153,
+        "y": 0.855,
+        "w": 0.552,
+        "h": 0.071
+      },
+      "supports": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-confetti-voting-urn-lantern",
+      "kind": "module",
+      "type": "translucent-public-urn",
+      "strength": 0.7437600000000001,
+      "bounds": {
+        "x": 0.425,
+        "y": 0.658,
+        "w": 0.121,
+        "h": 0.304
+      },
+      "supports": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-motion-cavalry-frieze",
+      "kind": "module",
+      "type": "sequential-wall-frieze",
+      "strength": 0.736992,
+      "bounds": {
+        "x": 0.318,
+        "y": 0.331,
+        "w": 0.138,
+        "h": 0.113
+      },
+      "supports": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-susumu-yokota-listening-alcove-panel",
+      "kind": "module",
+      "type": "illuminated-audio-alcove",
+      "strength": 0.707148,
+      "bounds": {
+        "x": 0.594,
+        "y": 0.254,
+        "w": 0.064,
+        "h": 0.274
+      },
+      "supports": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-rear-circular-burst-artwork-panel",
+      "kind": "module",
+      "type": "framed-symbol-panel",
+      "strength": 0.6784560000000001,
+      "bounds": {
+        "x": 0.481,
+        "y": 0.39,
+        "w": 0.055,
+        "h": 0.129
+      },
+      "supports": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    }
+  ],
+  "field_candidates": [],
+  "html_surfaces": [
+    {
+      "id": "hero-seven-checkpoints-inscription-wall-surface",
+      "surface_type": "paint",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.028,
+        "y": 0.022,
+        "w": 0.188,
+        "h": 0.755
+      },
+      "suitability": 0.9,
+      "supported_treatments": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "hero-ascii-comet-mural-surface",
+      "surface_type": "paint",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.714,
+        "y": 0,
+        "w": 0.286,
+        "h": 0.818
+      },
+      "suitability": 0.9,
+      "supported_treatments": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-red-green-testing-threshold-tile-surface",
+      "surface_type": "unknown",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.153,
+        "y": 0.855,
+        "w": 0.552,
+        "h": 0.071
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-confetti-voting-urn-lantern-surface",
+      "surface_type": "unknown",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.425,
+        "y": 0.658,
+        "w": 0.121,
+        "h": 0.304
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-motion-cavalry-frieze-surface",
+      "surface_type": "paint",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.318,
+        "y": 0.331,
+        "w": 0.138,
+        "h": 0.113
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-susumu-yokota-listening-alcove-panel-surface",
+      "surface_type": "unknown",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.594,
+        "y": 0.254,
+        "w": 0.064,
+        "h": 0.274
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-rear-circular-burst-artwork-panel-surface",
+      "surface_type": "unknown",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.481,
+        "y": 0.39,
+        "w": 0.055,
+        "h": 0.129
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    }
+  ],
+  "enhancement_bundle": {
+    "primary": [
+      "mechanical-reveal-system"
+    ],
+    "secondary": [
+      "warped-paper-fragment",
+      "threshold-scan-reveal"
+    ],
+    "wildcard": []
+  },
+  "per_region_assignments": [],
+  "scene_wide_behavior": {
+    "selected": "cabinet-drawer-behavior"
+  },
+  "choreography_rule": {
+    "selected": "anchor-and-satellites"
+  },
+  "release_notes": [
+    "Generated automatically from 7 artifacts and scene family heuristics."
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "ambiance_recipe_id": "ambiance-2026-04-28-indigo-proofing-wash-v1",
+  "motion_system": "nearly still, like wet pigment settling into handmade fiber",
+  "color_drift": "charcoal warms toward umber at the edges while cobalt stays cool and mineral",
+  "glow_behavior": "tiny gold and ivory flecks catch light without becoming pinlights",
+  "audio_posture": "ambient",
+  "webgl_mode": "shader-scene",
+  "research_inputs": [
+    "research-1-7866612b",
+    "research-2-7af1d56a",
+    "research-3-258f47ab",
+    "research-4-d8178a30",
+    "research-5-0e29d7ac",
+    "research-6-f226a423",
+    "research-7-a8f1625d",
+    "research-8-027df24d",
+    "research-9-ac352c5a",
+    "research-10-61c83cb1",
+    "research-11-68b0ca43",
+    "research-12-aece83a9"
+  ]
+}

@@ -1,0 +1,314 @@
+{
+  "interpretation_id": "interp-2026-04-26-paper-bloom-cipher-procession-v1",
+  "edition_id": "2026-04-26-paper-bloom-cipher-procession-v1",
+  "plate_read_timestamp": "2026-04-29T00:14:40.084Z",
+  "scene_ontology": {
+    "primary": "material-native",
+    "secondary": [],
+    "confidence": 0.9
+  },
+  "world_read": {
+    "summary": "A restrained paper-texture scene with a large translucent flower/petal veil dominating the center, small Japanese text labels, a rail-like sunset slit at the lower left, and a fine copper sequencer line curling along the right side.",
+    "dominant_spatial_mode": "flat-field",
+    "density": "medium",
+    "legibility": "selective",
+    "mood": [
+      "hushed, ceremonial, pale, encrypted, dreamlike",
+      "A restrained paper-texture scene with a large translucent flower/petal veil dominating the center, small Japanese text labels, a rail-like sunset slit at the lower left, and a fine copper sequencer line curling along the right side.",
+      "washi-bloom",
+      "hidden-glyphs",
+      "ambient-flower"
+    ]
+  },
+  "visual_ecology": {
+    "dominant_objects": [
+      "Flower Music veil",
+      "Sequencer ribbon",
+      "Nearstalgia slit",
+      "Sound of Joy pin",
+      "Hidden egg cut",
+      "Packet petal notch",
+      "Emoji seed stain"
+    ],
+    "dominant_surfaces": [
+      "paper",
+      "paint",
+      "light-band"
+    ],
+    "dominant_structures": [
+      "paper-bloom-cipher-theater",
+      "one dominant translucent paper flower opened like a stage curtain",
+      "two secondary forms: a low sunset rail-line threshold and a thin sequencer ribbon",
+      "vertical copper text columns pressed into the paper field",
+      "tiny hidden glyph cuts and pinholes",
+      "small photographic apertures embedded along the margins",
+      "quiet source-anchor marks disguised as labels, slits, stains, and thumbnail windows",
+      "large translucent central petal veil"
+    ],
+    "negative_space_regions": []
+  },
+  "interaction_world": {
+    "class": "material-native",
+    "recommended_behaviors": [
+      "paint-bleed-reveal",
+      "restoration-scan",
+      "ghost-reflection"
+    ],
+    "rejected_behaviors": [
+      "cabinet-drawer-behavior"
+    ],
+    "reasoning": [
+      "Primary ontology inferred from scene family and artifact types: paper-bloom-cipher-theater.",
+      "Artifact vocabulary suggests material-native interaction logic."
+    ]
+  },
+  "artifact_candidates": [
+    {
+      "id": "hero-flower-music-veil",
+      "kind": "hero",
+      "type": "hero-scale-petal-curtain",
+      "strength": 0.99,
+      "bounds": {
+        "x": 0.279,
+        "y": 0.025,
+        "w": 0.499,
+        "h": 0.885
+      },
+      "supports": [
+        "paint-bleed-reveal",
+        "restoration-scan"
+      ]
+    },
+    {
+      "id": "hero-sequencer-ribbon",
+      "kind": "hero",
+      "type": "hero-scale-copper-line",
+      "strength": 0.967112,
+      "bounds": {
+        "x": 0.801,
+        "y": 0.412,
+        "w": 0.196,
+        "h": 0.472
+      },
+      "supports": [
+        "paint-bleed-reveal",
+        "pigment-crack-annotation"
+      ]
+    },
+    {
+      "id": "module-nearstalgia-slit",
+      "kind": "module",
+      "type": "sunset-threshold-aperture",
+      "strength": 0.790356,
+      "bounds": {
+        "x": 0.076,
+        "y": 0.853,
+        "w": 0.276,
+        "h": 0.142
+      },
+      "supports": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ]
+    },
+    {
+      "id": "module-flower-music-veil",
+      "kind": "module",
+      "type": "hero-scale-petal-curtain",
+      "strength": 0.76578,
+      "bounds": {
+        "x": 0.08,
+        "y": 0.1,
+        "w": 0.32,
+        "h": 0.32
+      },
+      "supports": [
+        "paint-bleed-reveal",
+        "restoration-scan"
+      ]
+    },
+    {
+      "id": "module-sequencer-ribbon",
+      "kind": "module",
+      "type": "hero-scale-copper-line",
+      "strength": 0.734844,
+      "bounds": {
+        "x": 0.58,
+        "y": 0.12,
+        "w": 0.32,
+        "h": 0.32
+      },
+      "supports": [
+        "paint-bleed-reveal",
+        "pigment-crack-annotation"
+      ]
+    },
+    {
+      "id": "module-nearstalgia-slit-2",
+      "kind": "module",
+      "type": "sunset-threshold-aperture",
+      "strength": 0.63,
+      "bounds": {
+        "x": 0.08,
+        "y": 0.52,
+        "w": 0.22,
+        "h": 0.22
+      },
+      "supports": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ]
+    },
+    {
+      "id": "module-sound-of-joy-pin",
+      "kind": "module",
+      "type": "amber-pin-light",
+      "strength": 0.6673920000000001,
+      "bounds": {
+        "x": 0.34,
+        "y": 0.54,
+        "w": 0.22,
+        "h": 0.22
+      },
+      "supports": [
+        "paint-bleed-reveal",
+        "restoration-scan"
+      ]
+    }
+  ],
+  "field_candidates": [],
+  "html_surfaces": [
+    {
+      "id": "hero-flower-music-veil-surface",
+      "surface_type": "unknown",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.279,
+        "y": 0.025,
+        "w": 0.499,
+        "h": 0.885
+      },
+      "suitability": 0.9,
+      "supported_treatments": [
+        "paint-bleed-reveal",
+        "restoration-scan"
+      ]
+    },
+    {
+      "id": "hero-sequencer-ribbon-surface",
+      "surface_type": "paper",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.801,
+        "y": 0.412,
+        "w": 0.196,
+        "h": 0.472
+      },
+      "suitability": 0.9,
+      "supported_treatments": [
+        "paint-bleed-reveal",
+        "pigment-crack-annotation"
+      ]
+    },
+    {
+      "id": "module-nearstalgia-slit-surface",
+      "surface_type": "paint",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.076,
+        "y": 0.853,
+        "w": 0.276,
+        "h": 0.142
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ]
+    },
+    {
+      "id": "module-flower-music-veil-surface",
+      "surface_type": "unknown",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.08,
+        "y": 0.1,
+        "w": 0.32,
+        "h": 0.32
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "paint-bleed-reveal",
+        "restoration-scan"
+      ]
+    },
+    {
+      "id": "module-sequencer-ribbon-surface",
+      "surface_type": "paper",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.58,
+        "y": 0.12,
+        "w": 0.32,
+        "h": 0.32
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "paint-bleed-reveal",
+        "pigment-crack-annotation"
+      ]
+    },
+    {
+      "id": "module-nearstalgia-slit-2-surface",
+      "surface_type": "paint",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.08,
+        "y": 0.52,
+        "w": 0.22,
+        "h": 0.22
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ]
+    },
+    {
+      "id": "module-sound-of-joy-pin-surface",
+      "surface_type": "light-band",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.34,
+        "y": 0.54,
+        "w": 0.22,
+        "h": 0.22
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "paint-bleed-reveal",
+        "restoration-scan"
+      ]
+    }
+  ],
+  "enhancement_bundle": {
+    "primary": [
+      "paint-bleed-reveal"
+    ],
+    "secondary": [
+      "restoration-scan",
+      "pigment-crack-annotation"
+    ],
+    "wildcard": []
+  },
+  "per_region_assignments": [],
+  "scene_wide_behavior": {
+    "selected": "paint-bleed-reveal"
+  },
+  "choreography_rule": {
+    "selected": "anchor-and-satellites"
+  },
+  "release_notes": [
+    "Generated automatically from 7 artifacts and scene family heuristics."
+  ]
+}

@@ -1,0 +1,348 @@
+{
+  "interpretation_id": "interp-2026-04-26-cream-signal-enamel-workshop-v1",
+  "edition_id": "2026-04-26-cream-signal-enamel-workshop-v1",
+  "plate_read_timestamp": "2026-04-29T00:14:40.082Z",
+  "scene_ontology": {
+    "primary": "object-native",
+    "secondary": [],
+    "confidence": 0.9
+  },
+  "world_read": {
+    "summary": "A restrained tabletop-like plate with a dominant cream enamel oval in the lower left, a brushed metal crescent at the top, a dark tiled field with seams and small marks, and a vertical blue fog panel on the right. The useful interaction anchors are mostly physical-looking rims, slits, stains, tally cuts, dots, labels, and surface marks.",
+    "dominant_spatial_mode": "contained",
+    "density": "dense",
+    "legibility": "selective",
+    "mood": [
+      "calm, tactile, slightly uncanny, like a kitchen tool becoming a signal instrument after closing time",
+      "A restrained tabletop-like plate with a dominant cream enamel oval in the lower left, a brushed metal crescent at the top, a dark tiled field with seams and small marks, and a vertical blue fog panel on the right. The useful interaction anchors are mostly physical-looking rims, slits, stains, tally cuts, dots, labels, and surface marks.",
+      "enamel-field",
+      "cream-ribbon",
+      "stainless-moon"
+    ]
+  },
+  "visual_ecology": {
+    "dominant_objects": [
+      "Cream Oval Plate",
+      "Cream Smear",
+      "Brown Plate Label",
+      "Steel Crescent",
+      "Faint Circular Stain",
+      "Bluebell Fog Threshold",
+      "Riverside Fragrance Dot",
+      "FINIS Horizon Cut"
+    ],
+    "dominant_surfaces": [
+      "paper",
+      "fog",
+      "paint",
+      "light-band"
+    ],
+    "dominant_structures": [
+      "cream-signal-enamel-workshop",
+      "one dominant oversized warm-white enamel oval carrying a cream ribbon gesture",
+      "one secondary brushed-steel pot crescent suspended near the top edge",
+      "one secondary fog-blue rectangular threshold pressed into the right side of the field",
+      "quiet source anchors as tiny slits, labels, dots, tally cuts, and grain marks",
+      "large charcoal tile negative space occupying more than half the plate",
+      "large cream enamel plate surface",
+      "raised cream smear on the plate"
+    ],
+    "negative_space_regions": []
+  },
+  "interaction_world": {
+    "class": "object-native",
+    "recommended_behaviors": [
+      "cabinet-drawer-behavior",
+      "object-memory",
+      "threshold-scan"
+    ],
+    "rejected_behaviors": [
+      "light-path-reaction"
+    ],
+    "reasoning": [
+      "Primary ontology inferred from scene family and artifact types: cream-signal-enamel-workshop.",
+      "Artifact vocabulary suggests object-native interaction logic."
+    ]
+  },
+  "artifact_candidates": [
+    {
+      "id": "hero-cream-oval-plate",
+      "kind": "hero",
+      "type": "hero-scale-enamel-plate",
+      "strength": 0.99,
+      "bounds": {
+        "x": 0,
+        "y": 0.407,
+        "w": 0.508,
+        "h": 0.593
+      },
+      "supports": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ]
+    },
+    {
+      "id": "hero-cream-smear",
+      "kind": "hero",
+      "type": "raised-cream-swipe",
+      "strength": 0.9777079999999999,
+      "bounds": {
+        "x": 0,
+        "y": 0.682,
+        "w": 0.389,
+        "h": 0.31799999999999995
+      },
+      "supports": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ]
+    },
+    {
+      "id": "module-brown-plate-label",
+      "kind": "module",
+      "type": "small-paper-label",
+      "strength": 0.798372,
+      "bounds": {
+        "x": 0.106,
+        "y": 0.524,
+        "w": 0.078,
+        "h": 0.077
+      },
+      "supports": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ]
+    },
+    {
+      "id": "module-steel-crescent",
+      "kind": "module",
+      "type": "brushed-metal-crescent",
+      "strength": 0.750348,
+      "bounds": {
+        "x": 0.285,
+        "y": 0,
+        "w": 0.452,
+        "h": 0.177
+      },
+      "supports": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ]
+    },
+    {
+      "id": "module-faint-circular-stain",
+      "kind": "module",
+      "type": "round-surface-stain",
+      "strength": 0.744936,
+      "bounds": {
+        "x": 0.059,
+        "y": 0.171,
+        "w": 0.065,
+        "h": 0.101
+      },
+      "supports": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ]
+    },
+    {
+      "id": "module-bluebell-fog-threshold",
+      "kind": "module",
+      "type": "hero-scale-fog-panel",
+      "strength": 0.678,
+      "bounds": {
+        "x": 0.829,
+        "y": 0,
+        "w": 0.171,
+        "h": 0.922
+      },
+      "supports": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-cream-oval-plate",
+      "kind": "module",
+      "type": "hero-scale-enamel-plate",
+      "strength": 0.6720480000000001,
+      "bounds": {
+        "x": 0.08,
+        "y": 0.1,
+        "w": 0.32,
+        "h": 0.32
+      },
+      "supports": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ]
+    },
+    {
+      "id": "module-bluebell-fog-threshold-2",
+      "kind": "module",
+      "type": "hero-scale-fog-panel",
+      "strength": 0.648148,
+      "bounds": {
+        "x": 0.58,
+        "y": 0.12,
+        "w": 0.32,
+        "h": 0.32
+      },
+      "supports": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    }
+  ],
+  "field_candidates": [],
+  "html_surfaces": [
+    {
+      "id": "hero-cream-oval-plate-surface",
+      "surface_type": "fog",
+      "host": "artifact",
+      "bounds": {
+        "x": 0,
+        "y": 0.407,
+        "w": 0.508,
+        "h": 0.593
+      },
+      "suitability": 0.9,
+      "supported_treatments": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ]
+    },
+    {
+      "id": "hero-cream-smear-surface",
+      "surface_type": "paint",
+      "host": "artifact",
+      "bounds": {
+        "x": 0,
+        "y": 0.682,
+        "w": 0.389,
+        "h": 0.31799999999999995
+      },
+      "suitability": 0.9,
+      "supported_treatments": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ]
+    },
+    {
+      "id": "module-brown-plate-label-surface",
+      "surface_type": "paper",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.106,
+        "y": 0.524,
+        "w": 0.078,
+        "h": 0.077
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ]
+    },
+    {
+      "id": "module-steel-crescent-surface",
+      "surface_type": "paint",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.285,
+        "y": 0,
+        "w": 0.452,
+        "h": 0.177
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ]
+    },
+    {
+      "id": "module-faint-circular-stain-surface",
+      "surface_type": "fog",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.059,
+        "y": 0.171,
+        "w": 0.065,
+        "h": 0.101
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ]
+    },
+    {
+      "id": "module-bluebell-fog-threshold-surface",
+      "surface_type": "fog",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.829,
+        "y": 0,
+        "w": 0.171,
+        "h": 0.922
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-cream-oval-plate-surface",
+      "surface_type": "fog",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.08,
+        "y": 0.1,
+        "w": 0.32,
+        "h": 0.32
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ]
+    },
+    {
+      "id": "module-bluebell-fog-threshold-2-surface",
+      "surface_type": "fog",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.58,
+        "y": 0.12,
+        "w": 0.32,
+        "h": 0.32
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    }
+  ],
+  "enhancement_bundle": {
+    "primary": [
+      "mechanical-reveal-system"
+    ],
+    "secondary": [
+      "warped-paper-fragment",
+      "threshold-scan-reveal"
+    ],
+    "wildcard": []
+  },
+  "per_region_assignments": [],
+  "scene_wide_behavior": {
+    "selected": "cabinet-drawer-behavior"
+  },
+  "choreography_rule": {
+    "selected": "anchor-and-satellites"
+  },
+  "release_notes": [
+    "Generated automatically from 8 artifacts and scene family heuristics."
+  ]
+}

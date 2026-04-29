@@ -1,0 +1,435 @@
+{
+  "artifact_map_id": "map-2026-04-26-rose-fog-listening-procession-v1",
+  "viewport": {
+    "base_width": 1536,
+    "base_height": 1024,
+    "aspect_ratio": "1536:1024"
+  },
+  "default_cluster_id": "rose-fog-listening-atrium",
+  "default_artifact_id": "hero-rose-expectation-proscenium",
+  "artifacts": [
+    {
+      "id": "hero-rose-expectation-proscenium",
+      "kind": "hero",
+      "label": "Rose Expectation Proscenium",
+      "artifact_type": "hero-scale-translucent-scrim",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 0.42
+      },
+      "z_index": 10,
+      "polygon": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0.42
+        ],
+        [
+          0,
+          0.42
+        ]
+      ],
+      "cluster_id": "rose-fog-listening-atrium",
+      "mask_path": "/editions/2026-04-26-rose-fog-listening-procession-v1/assets/masks/hero-rose-expectation-proscenium.svg",
+      "source_binding_ids": [
+        "binding-hero-rose-expectation-proscenium"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          768,
+          181
+        ],
+        "safe_stage_window_origin_px": [
+          891,
+          215
+        ],
+        "preferred_expansion_label": "right"
+      }
+    },
+    {
+      "id": "hero-black-acid-electro-speaker-monolith",
+      "kind": "hero",
+      "label": "Black Acid-Electro Speaker Monolith",
+      "artifact_type": "lacquered-speaker-column",
+      "bounds": {
+        "x": 0.063,
+        "y": 0.096,
+        "w": 0.081,
+        "h": 0.602
+      },
+      "z_index": 11,
+      "polygon": [
+        [
+          0.063,
+          0.096
+        ],
+        [
+          0.144,
+          0.096
+        ],
+        [
+          0.144,
+          0.698
+        ],
+        [
+          0.063,
+          0.698
+        ]
+      ],
+      "cluster_id": "rose-fog-listening-atrium",
+      "mask_path": "/editions/2026-04-26-rose-fog-listening-procession-v1/assets/masks/hero-black-acid-electro-speaker-monolith.svg",
+      "source_binding_ids": [
+        "binding-hero-black-acid-electro-speaker-monolith"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          159,
+          357
+        ],
+        "safe_stage_window_origin_px": [
+          169,
+          407
+        ],
+        "preferred_expansion_label": "right"
+      }
+    },
+    {
+      "id": "module-air-earth-weather-veil",
+      "kind": "module",
+      "label": "Air / Earth Weather Veil",
+      "artifact_type": "frosted-glass-curtain",
+      "bounds": {
+        "x": 0.232,
+        "y": 0.462,
+        "w": 0.05,
+        "h": 0.232
+      },
+      "z_index": 22,
+      "polygon": [
+        [
+          0.232,
+          0.462
+        ],
+        [
+          0.282,
+          0.462
+        ],
+        [
+          0.282,
+          0.694
+        ],
+        [
+          0.232,
+          0.694
+        ]
+      ],
+      "cluster_id": "rose-fog-listening-atrium",
+      "mask_path": "/editions/2026-04-26-rose-fog-listening-procession-v1/assets/masks/module-air-earth-weather-veil.svg",
+      "source_binding_ids": [
+        "binding-module-air-earth-weather-veil"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          395,
+          573
+        ],
+        "safe_stage_window_origin_px": [
+          401,
+          592
+        ],
+        "preferred_expansion_label": "right"
+      }
+    },
+    {
+      "id": "module-artstar-brass-address-mailbox",
+      "kind": "module",
+      "label": "ArtStar Brass Address Mailbox",
+      "artifact_type": "wall-mounted-brass-mailbox",
+      "bounds": {
+        "x": 0.334,
+        "y": 0.479,
+        "w": 0.041,
+        "h": 0.091
+      },
+      "z_index": 23,
+      "polygon": [
+        [
+          0.334,
+          0.479
+        ],
+        [
+          0.375,
+          0.479
+        ],
+        [
+          0.375,
+          0.57
+        ],
+        [
+          0.334,
+          0.57
+        ]
+      ],
+      "cluster_id": "rose-fog-listening-atrium",
+      "mask_path": "/editions/2026-04-26-rose-fog-listening-procession-v1/assets/masks/module-artstar-brass-address-mailbox.svg",
+      "source_binding_ids": [
+        "binding-module-artstar-brass-address-mailbox"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          545,
+          530
+        ],
+        "safe_stage_window_origin_px": [
+          550,
+          537
+        ],
+        "preferred_expansion_label": "right"
+      }
+    },
+    {
+      "id": "module-lucid-landscape-terrain-tray",
+      "kind": "module",
+      "label": "Lucid Landscape Terrain Tray",
+      "artifact_type": "glass-topographic-object",
+      "bounds": {
+        "x": 0.462,
+        "y": 0.528,
+        "w": 0.108,
+        "h": 0.077
+      },
+      "z_index": 24,
+      "polygon": [
+        [
+          0.462,
+          0.528
+        ],
+        [
+          0.57,
+          0.528
+        ],
+        [
+          0.57,
+          0.605
+        ],
+        [
+          0.462,
+          0.605
+        ]
+      ],
+      "cluster_id": "rose-fog-listening-atrium",
+      "mask_path": "/editions/2026-04-26-rose-fog-listening-procession-v1/assets/masks/module-lucid-landscape-terrain-tray.svg",
+      "source_binding_ids": [
+        "binding-module-lucid-landscape-terrain-tray"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          793,
+          574
+        ],
+        "safe_stage_window_origin_px": [
+          806,
+          580
+        ],
+        "preferred_expansion_label": "left"
+      }
+    },
+    {
+      "id": "module-cameron-portrait-lantern",
+      "kind": "module",
+      "label": "Cameron Portrait Lantern",
+      "artifact_type": "round-portrait-lantern",
+      "bounds": {
+        "x": 0.516,
+        "y": 0.436,
+        "w": 0.047,
+        "h": 0.112
+      },
+      "z_index": 25,
+      "polygon": [
+        [
+          0.516,
+          0.436
+        ],
+        [
+          0.563,
+          0.436
+        ],
+        [
+          0.563,
+          0.548
+        ],
+        [
+          0.516,
+          0.548
+        ]
+      ],
+      "cluster_id": "rose-fog-listening-atrium",
+      "mask_path": "/editions/2026-04-26-rose-fog-listening-procession-v1/assets/masks/module-cameron-portrait-lantern.svg",
+      "source_binding_ids": [
+        "binding-module-cameron-portrait-lantern"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          829,
+          495
+        ],
+        "safe_stage_window_origin_px": [
+          834,
+          504
+        ],
+        "preferred_expansion_label": "left"
+      }
+    },
+    {
+      "id": "module-rear-lit-shelf-vitrine",
+      "kind": "module",
+      "label": "Rear Lit Shelf Vitrine",
+      "artifact_type": "lit-display-vitrine",
+      "bounds": {
+        "x": 0.606,
+        "y": 0.488,
+        "w": 0.067,
+        "h": 0.094
+      },
+      "z_index": 26,
+      "polygon": [
+        [
+          0.606,
+          0.488
+        ],
+        [
+          0.673,
+          0.488
+        ],
+        [
+          0.673,
+          0.582
+        ],
+        [
+          0.606,
+          0.582
+        ]
+      ],
+      "cluster_id": "rose-fog-listening-atrium",
+      "mask_path": "/editions/2026-04-26-rose-fog-listening-procession-v1/assets/masks/module-rear-lit-shelf-vitrine.svg",
+      "source_binding_ids": [
+        "binding-module-rear-lit-shelf-vitrine"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          982,
+          540
+        ],
+        "safe_stage_window_origin_px": [
+          991,
+          548
+        ],
+        "preferred_expansion_label": "left"
+      }
+    },
+    {
+      "id": "module-jaipong-bronze-drum-pavilion",
+      "kind": "module",
+      "label": "Jaipong Bronze Drum Pavilion",
+      "artifact_type": "bronze-stage-instrument",
+      "bounds": {
+        "x": 0.74,
+        "y": 0.376,
+        "w": 0.26,
+        "h": 0.293
+      },
+      "z_index": 27,
+      "polygon": [
+        [
+          0.74,
+          0.376
+        ],
+        [
+          1,
+          0.376
+        ],
+        [
+          1,
+          0.669
+        ],
+        [
+          0.74,
+          0.669
+        ]
+      ],
+      "cluster_id": "rose-fog-listening-atrium",
+      "mask_path": "/editions/2026-04-26-rose-fog-listening-procession-v1/assets/masks/module-jaipong-bronze-drum-pavilion.svg",
+      "source_binding_ids": [
+        "binding-module-jaipong-bronze-drum-pavilion"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          1320,
+          511
+        ],
+        "safe_stage_window_origin_px": [
+          1320,
+          535
+        ],
+        "preferred_expansion_label": "left"
+      }
+    },
+    {
+      "id": "module-source-catalogue-plaque",
+      "kind": "module",
+      "label": "Source Catalogue Plaque",
+      "artifact_type": "catalogue-plaque",
+      "bounds": {
+        "x": 0.799,
+        "y": 0.744,
+        "w": 0.092,
+        "h": 0.176
+      },
+      "z_index": 28,
+      "polygon": [
+        [
+          0.799,
+          0.744
+        ],
+        [
+          0.891,
+          0.744
+        ],
+        [
+          0.891,
+          0.92
+        ],
+        [
+          0.799,
+          0.92
+        ]
+      ],
+      "cluster_id": "rose-fog-listening-atrium",
+      "mask_path": "/editions/2026-04-26-rose-fog-listening-procession-v1/assets/masks/module-source-catalogue-plaque.svg",
+      "source_binding_ids": [
+        "binding-module-source-catalogue-plaque"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          1298,
+          838
+        ],
+        "safe_stage_window_origin_px": [
+          1309,
+          850
+        ],
+        "preferred_expansion_label": "up"
+      }
+    }
+  ]
+}

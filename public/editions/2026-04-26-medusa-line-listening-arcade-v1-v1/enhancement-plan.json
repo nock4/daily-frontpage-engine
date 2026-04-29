@@ -1,0 +1,217 @@
+{
+  "enhancement_plan_id": "enhance-2026-04-26-medusa-line-listening-arcade-v1-v1",
+  "edition_id": "2026-04-26-medusa-line-listening-arcade-v1-v1",
+  "derived_from": {
+    "interpretation_id": "interp-2026-04-26-medusa-line-listening-arcade-v1-v1"
+  },
+  "interaction_world": {
+    "class": "object-native",
+    "primary_behavior": "mechanical-reveal-system",
+    "scene_wide_behavior": "cabinet-drawer-behavior",
+    "choreography_rule": "anchor-and-satellites"
+  },
+  "bundle": {
+    "primary": [
+      "mechanical-reveal-system"
+    ],
+    "secondary": [
+      "warped-paper-fragment",
+      "threshold-scan-reveal"
+    ],
+    "wildcard": []
+  },
+  "runtime_safe_subset": [
+    "warped-paper-fragment",
+    "threshold-scan-reveal",
+    "screen-rendered-html"
+  ],
+  "future_only_subset": [
+    "mechanical-reveal-system",
+    "ghost-reflection-treatment",
+    "lens-inspection"
+  ],
+  "rejected": [
+    {
+      "technique": "light-path-reveal",
+      "reason": "Rejected by interpretation behavior rule: light-path-reaction"
+    },
+    {
+      "technique": "light-path-reveal",
+      "reason": "Object-native scenes should anchor interaction to discrete artifacts before environmental field effects."
+    }
+  ],
+  "targets": [
+    {
+      "target_id": "hero-computer-life-thank-you-for-your-har",
+      "target_kind": "artifact",
+      "artifact_id": "hero-computer-life-thank-you-for-your-har",
+      "priority": 1,
+      "techniques": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ],
+      "source_classes": [
+        "audio"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (illuminated-album-panel) selected from interpretation."
+    },
+    {
+      "target_id": "hero-nts-don-t-assume-directory-pylon",
+      "target_kind": "artifact",
+      "artifact_id": "hero-nts-don-t-assume-directory-pylon",
+      "priority": 2,
+      "techniques": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ],
+      "source_classes": [
+        "video",
+        "youtube"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (radio-directory-pylon) selected from interpretation."
+    },
+    {
+      "target_id": "module-blessings-of-the-forest-glass-facade",
+      "target_kind": "artifact",
+      "artifact_id": "module-blessings-of-the-forest-glass-facade",
+      "priority": 3,
+      "techniques": [
+        "screen-rendered-html",
+        "threshold-scan-reveal"
+      ],
+      "source_classes": [
+        "video",
+        "youtube"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (etched-glass-facade) selected from interpretation."
+    },
+    {
+      "target_id": "module-habitual-line-stepper-floor-inlay",
+      "target_kind": "artifact",
+      "artifact_id": "module-habitual-line-stepper-floor-inlay",
+      "priority": 4,
+      "techniques": [
+        "screen-rendered-html",
+        "threshold-scan-reveal"
+      ],
+      "source_classes": [
+        "video",
+        "youtube"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (brass-enamel-floor-surface) selected from interpretation."
+    },
+    {
+      "target_id": "module-my-tracks-listening-bench",
+      "target_kind": "artifact",
+      "artifact_id": "module-my-tracks-listening-bench",
+      "priority": 5,
+      "techniques": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ],
+      "source_classes": [
+        "video",
+        "youtube"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (curved-public-bench) selected from interpretation."
+    },
+    {
+      "target_id": "module-fabric-presents-record-vitrine",
+      "target_kind": "artifact",
+      "artifact_id": "module-fabric-presents-record-vitrine",
+      "priority": 6,
+      "techniques": [
+        "ghost-reflection-treatment",
+        "lens-inspection"
+      ],
+      "source_classes": [
+        "web",
+        "article"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (record-display-vitrine) selected from interpretation."
+    },
+    {
+      "target_id": "module-i-want-an-earth-basin",
+      "target_kind": "artifact",
+      "artifact_id": "module-i-want-an-earth-basin",
+      "priority": 7,
+      "techniques": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ],
+      "source_classes": [
+        "audio"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (ceramic-water-basin) selected from interpretation."
+    },
+    {
+      "target_id": "module-shu-qin-tea-threshold",
+      "target_kind": "artifact",
+      "artifact_id": "module-shu-qin-tea-threshold",
+      "priority": 8,
+      "techniques": [
+        "warped-paper-fragment",
+        "threshold-scan-reveal"
+      ],
+      "source_classes": [
+        "video",
+        "youtube"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (low-tea-and-string-platform) selected from interpretation."
+    }
+  ],
+  "global_recommendation": [
+    "mechanical-reveal-system",
+    "warped-paper-fragment",
+    "threshold-scan-reveal"
+  ],
+  "runtime_note": "Generated automatically from 8 artifacts and scene family heuristics."
+}

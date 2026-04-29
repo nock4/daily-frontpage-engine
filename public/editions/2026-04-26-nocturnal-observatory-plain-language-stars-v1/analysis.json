@@ -1,0 +1,148 @@
+{
+  "analysis_id": "analysis-2026-04-26-nocturnal-observatory-plain-language-stars-v1",
+  "scene_summary": "A dark observatory-like study with a large question ledger, star-dotted dome ceiling, brass-mounted text strip, porcelain vessel, engraved tablet, retro moon monitor, orbit model, hanging pennant, and open star chart all visibly available as interaction surfaces.",
+  "usable_surfaces": [
+    "large left chalk ledger",
+    "overhead ASCII star dome",
+    "long brass-mounted text strip",
+    "open porcelain signal vessel",
+    "central engraved skill tablet",
+    "retro VHS moon monitor screen",
+    "right kinetic orbit model",
+    "hanging ephemera pennant",
+    "open restart star chart"
+  ],
+  "detected_objects": [
+    {
+      "label": "Gut-Check Star Ledger",
+      "artifact_type": "hero-scale-wall-slate",
+      "role": "hero-anchor",
+      "bounds": {
+        "x": 0.013,
+        "y": 0.038,
+        "w": 0.255,
+        "h": 0.789
+      },
+      "confidence": 0.96,
+      "visual_evidence": "Large upright black slate on the left with the title 'GUT-CHECK STAR LEDGER' and numbered question rows."
+    },
+    {
+      "label": "ASCII Comet Dome",
+      "artifact_type": "hero-scale-dome-map",
+      "role": "map-surface",
+      "bounds": {
+        "x": 0.189,
+        "y": 0,
+        "w": 0.746,
+        "h": 0.348
+      },
+      "confidence": 0.91,
+      "visual_evidence": "Curved overhead observatory dome filled with constellation labels, dotted star fields, and ASCII-like comet lettering."
+    },
+    {
+      "label": "Variable Type Constellation Strip",
+      "artifact_type": "brass-mounted-letter-strip",
+      "role": "label-surface",
+      "bounds": {
+        "x": 0.332,
+        "y": 0.386,
+        "w": 0.389,
+        "h": 0.055
+      },
+      "confidence": 0.9,
+      "visual_evidence": "Long narrow black strip across the middle reading 'When we are stardust we’ll still be looking up.'"
+    },
+    {
+      "label": "Concealed-Egg Signal Vessel",
+      "artifact_type": "porcelain-reliquary",
+      "role": "container-surface",
+      "bounds": {
+        "x": 0.292,
+        "y": 0.463,
+        "w": 0.14,
+        "h": 0.292
+      },
+      "confidence": 0.88,
+      "visual_evidence": "Open white porcelain egg-shaped vessel with blue star markings and coiled dark material inside."
+    },
+    {
+      "label": "Skill Navigation Tablet",
+      "artifact_type": "smoked-glass-tablet",
+      "role": "label-surface",
+      "bounds": {
+        "x": 0.445,
+        "y": 0.488,
+        "w": 0.19,
+        "h": 0.293
+      },
+      "confidence": 0.94,
+      "visual_evidence": "Central tilted dark tablet titled 'SKILL NAVIGATION TABLET' with listed entries such as CLARITY, COURAGE, DISCIPLINE, and KINDNESS."
+    },
+    {
+      "label": "Heisei Tape Moon Monitor",
+      "artifact_type": "retro-vhs-monitor",
+      "role": "media-surface",
+      "bounds": {
+        "x": 0.616,
+        "y": 0.512,
+        "w": 0.164,
+        "h": 0.222
+      },
+      "confidence": 0.95,
+      "visual_evidence": "Boxy CRT monitor showing a blue moon image with VHS-style overlay text including 'PLAY' and timestamp."
+    },
+    {
+      "label": "Omma Kinetic Orbit Model",
+      "artifact_type": "frosted-acrylic-orbit-model",
+      "role": "container-surface",
+      "bounds": {
+        "x": 0.774,
+        "y": 0.5,
+        "w": 0.181,
+        "h": 0.348
+      },
+      "confidence": 0.92,
+      "visual_evidence": "Right-side armillary orbit sculpture with translucent rings, spheres, and a labeled circular base."
+    },
+    {
+      "label": "Fifty-Watt Ephemera Pennant",
+      "artifact_type": "aged-paper-pennant",
+      "role": "label-surface",
+      "bounds": {
+        "x": 0.91,
+        "y": 0.309,
+        "w": 0.088,
+        "h": 0.296
+      },
+      "confidence": 0.93,
+      "visual_evidence": "Hanging tan paper pennant on the right labeled 'FIFTY-WATT EPHEMERA' with a starburst illustration and small text."
+    },
+    {
+      "label": "Aura Restart Star Chart",
+      "artifact_type": "folded-stellar-manifest",
+      "role": "map-surface",
+      "bounds": {
+        "x": 0.403,
+        "y": 0.783,
+        "w": 0.39,
+        "h": 0.211
+      },
+      "confidence": 0.9,
+      "visual_evidence": "Open book or folded chart at the bottom foreground titled 'AURA RESTART STAR CHART' with circular star-map diagrams."
+    },
+    {
+      "label": "Gut-Check Star Ledger",
+      "artifact_type": "hero-scale-wall-slate",
+      "role": "hero-anchor",
+      "bounds": {
+        "x": 0.08,
+        "y": 0.1,
+        "w": 0.32,
+        "h": 0.32
+      },
+      "confidence": 0.55,
+      "visual_evidence": "Planned source artifact from the scene brief."
+    }
+  ],
+  "edition_id": "2026-04-26-nocturnal-observatory-plain-language-stars-v1"
+}

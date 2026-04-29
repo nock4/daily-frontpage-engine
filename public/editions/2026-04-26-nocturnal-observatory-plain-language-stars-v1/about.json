@@ -1,0 +1,20 @@
+{
+  "about_id": "about-2026-04-26-nocturnal-observatory-plain-language-stars-v1",
+  "label": "About",
+  "title": "About The Nocturnal Observatory of Plain-Language Stars",
+  "short_blurb": "Built from 981 notes from the last 30 days, 10 inspected links, and 9 unique source objects.",
+  "body": [
+    "For the visual seed, the process used @sterlingcrispin: i manage 4 10 agents working on interrelated problems in 2 (pbs.twimg.com), then translated that source image into cold moonlight through a slit dome, soft cyan instrument glow, brass highlights, faint violet haze near the floor and materials like matte black enamel, brushed brass, smoked glass, chalk-white lettering, and blue-black stone. The de-duplicated source set was then bound to @sterlingcrispin: i manage 4 10 agents working on interrelated problems in 2, ASCII Magic — Turn images & videos into ASCII art, and BREAKING: Someone just dropped the most advanced Steganography Platform EVER!! 😱🥚 is an....",
+    "gpt-5.5 inspected the finished plate and mapped 9 visible objects, including large left chalk ledger, overhead ASCII star dome, long brass-mounted text strip, and open porcelain signal vessel. The run wrote the package, masks, interpretation, and enhancement plan at tmp/daily-process-runs/daily-process-2026-04-26T13-43-18-239Z."
+  ],
+  "typography": {
+    "profile_id": "botanical-field",
+    "heading_family": "'DFE Fraunces', Georgia, serif",
+    "body_family": "'DFE Newsreader', Iowan Old Style, Georgia, serif",
+    "accent_family": "'DFE Space Grotesk', ui-sans-serif, system-ui, sans-serif",
+    "heading_weight": 700,
+    "body_weight": 430,
+    "accent_weight": 720,
+    "rationale": "Fraunces gives the title an organic, seed-label quality; Newsreader keeps the explanation calm and readable."
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "analysis_id": "analysis-2026-04-26-medusa-line-listening-arcade-v1-v1",
+  "scene_summary": "A rain-dark museum arcade with illuminated music and directory signage, a central etched glass forest facade, a brass-and-emerald floor inlay, a listening bench, record vitrine, ceramic basin, and low guqin tea platform visible as interaction surfaces.",
+  "usable_surfaces": [
+    "left illuminated Computer-life album panel",
+    "freestanding NTS Don't Assume directory pylon",
+    "central etched forest glass facade",
+    "large Habitual Line Stepper brass floor inlay",
+    "My Tracks listening bench face",
+    "right Fabric Presents record vitrine",
+    "lower-left ceramic earth basin",
+    "low guqin and tea platform",
+    "bottom-right handwritten book surface"
+  ],
+  "detected_objects": [
+    {
+      "label": "Computer-life Thank You For Your Hard Work Lightbox",
+      "artifact_type": "illuminated-album-panel",
+      "role": "media-surface",
+      "bounds": {
+        "x": 0.021,
+        "y": 0.042,
+        "w": 0.178,
+        "h": 0.577
+      },
+      "confidence": 0.96,
+      "visual_evidence": "Large glowing framed poster on the left wall with readable 'computer-life' title, 'Thank You For Your Hard Work' subtitle, city image, and track list."
+    },
+    {
+      "label": "NTS Don't Assume Directory Pylon",
+      "artifact_type": "radio-directory-pylon",
+      "role": "label-surface",
+      "bounds": {
+        "x": 0.221,
+        "y": 0.169,
+        "w": 0.068,
+        "h": 0.444
+      },
+      "confidence": 0.95,
+      "visual_evidence": "Freestanding black information pylon with visible NTS logo, 'DON'T ASSUME' heading, numbered directory entries, and nts.live text."
+    },
+    {
+      "label": "Blessings of the Forest Glass Facade",
+      "artifact_type": "etched-glass-facade",
+      "role": "hero-anchor",
+      "bounds": {
+        "x": 0.366,
+        "y": 0.057,
+        "w": 0.266,
+        "h": 0.463
+      },
+      "confidence": 0.91,
+      "visual_evidence": "Tall curved central glass wall with etched forest silhouettes, green reflections, vertical panel seams, and misty illuminated woodland imagery."
+    },
+    {
+      "label": "Habitual Line Stepper Floor Inlay",
+      "artifact_type": "brass-enamel-floor-surface",
+      "role": "hero-anchor",
+      "bounds": {
+        "x": 0.137,
+        "y": 0.469,
+        "w": 0.663,
+        "h": 0.42
+      },
+      "confidence": 0.97,
+      "visual_evidence": "Dominant walkable floor surface with swirling brass contour lines, emerald enamel sections, and readable central 'Habitual Line Stepper' medallion."
+    },
+    {
+      "label": "My Tracks Listening Bench",
+      "artifact_type": "curved-public-bench",
+      "role": "source-pocket",
+      "bounds": {
+        "x": 0.586,
+        "y": 0.421,
+        "w": 0.213,
+        "h": 0.095
+      },
+      "confidence": 0.89,
+      "visual_evidence": "Curved bench or low wall on the right with visible 'My Tracks' text, tally marks, and headphones placed on top."
+    },
+    {
+      "label": "Fabric Presents Record Vitrine",
+      "artifact_type": "record-display-vitrine",
+      "role": "container-surface",
+      "bounds": {
+        "x": 0.839,
+        "y": 0.083,
+        "w": 0.144,
+        "h": 0.477
+      },
+      "confidence": 0.96,
+      "visual_evidence": "Tall glass display case on the right labeled 'fabric PRESENTS' and 'Discogs', containing a visible record sleeve and disc."
+    },
+    {
+      "label": "I Want An Earth Basin",
+      "artifact_type": "ceramic-water-basin",
+      "role": "container-surface",
+      "bounds": {
+        "x": 0,
+        "y": 0.791,
+        "w": 0.237,
+        "h": 0.20899999999999996
+      },
+      "confidence": 0.9,
+      "visual_evidence": "Large shallow ceramic bowl in the lower left filled with dark water and small green island-like forms."
+    },
+    {
+      "label": "Shu Qin Tea Threshold",
+      "artifact_type": "low-tea-and-string-platform",
+      "role": "source-pocket",
+      "bounds": {
+        "x": 0.242,
+        "y": 0.884,
+        "w": 0.565,
+        "h": 0.11599999999999999
+      },
+      "confidence": 0.92,
+      "visual_evidence": "Low foreground platform holding a long stringed guqin instrument, teapot, cups, tray, and visible steam."
+    },
+    {
+      "label": "Handwritten Shu Qin Book",
+      "artifact_type": "calligraphy-book-surface",
+      "role": "label-surface",
+      "bounds": {
+        "x": 0.767,
+        "y": 0.922,
+        "w": 0.109,
+        "h": 0.07799999999999996
+      },
+      "confidence": 0.83,
+      "visual_evidence": "Closed dark book or placard at bottom right with gold handwritten characters on its cover, adjacent to the tea setup."
+    },
+    {
+      "label": "Habitual Line Stepper Floor Inlay",
+      "artifact_type": "hero-scale-floor-surface",
+      "role": "hero-anchor",
+      "bounds": {
+        "x": 0.08,
+        "y": 0.1,
+        "w": 0.32,
+        "h": 0.32
+      },
+      "confidence": 0.55,
+      "visual_evidence": "Planned source artifact from the scene brief."
+    }
+  ],
+  "edition_id": "2026-04-26-medusa-line-listening-arcade-v1-v1"
+}

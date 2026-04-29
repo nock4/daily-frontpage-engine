@@ -1,0 +1,318 @@
+{
+  "interpretation_id": "interp-2026-04-27-charcoal-spiral-observatory-v1",
+  "edition_id": "2026-04-27-charcoal-spiral-observatory-v1",
+  "plate_read_timestamp": "2026-04-29T00:14:40.075Z",
+  "scene_ontology": {
+    "primary": "object-native",
+    "secondary": [
+      "optical-native",
+      "material-native"
+    ],
+    "confidence": 0.9
+  },
+  "world_read": {
+    "summary": "A nocturnal observatory reduced to a charcoal field: one dominant matte-black celestial oculus floats high in the frame, leaving broad empty darkness around it. Below center, a warm vellum square translates the Yokota cover’s centered pale panel, heavy black surrounding typography, soft grain, and delicate curling violet-brown line into a quiet star-map fragment. A single oxidized copper spiral arc becomes the second secondary form, crossing the vellum like a handmade orbit. Keep the palette to charcoal pigment, warm vellum, and dark copper, with smoked-glass glints. Visible but small: IMAGE 1983-1998 on the vellum edge, Galaxy DNA etched into the copper curl, Under a Glass Bell as a tiny clear aperture, Taaritt as a sand notch, Fabric as a dim acid-green dial, Circuits as a reed scratch, cam.eee as a profile moon, open world as a low horizon chip, and 13-26 as a date fleck. Silent, spacious, optical.",
+    "dominant_spatial_mode": "contained",
+    "density": "medium",
+    "legibility": "selective",
+    "mood": [
+      "hushed, nocturnal, optical, intimate, and slightly uncanny",
+      "A nocturnal observatory reduced to a charcoal field: one dominant matte-black celestial oculus floats high in the frame, leaving broad empty darkness around it. Below center, a warm vellum square translates the Yokota cover’s centered pale panel, heavy black surrounding typography, soft grain, and delicate curling violet-brown line into a quiet star-map fragment. A single oxidized copper spiral arc becomes the second secondary form, crossing the vellum like a handmade orbit. Keep the palette to charcoal pigment, warm vellum, and dark copper, with smoked-glass glints. Visible but small: IMAGE 1983-1998 on the vellum edge, Galaxy DNA etched into the copper curl, Under a Glass Bell as a tiny clear aperture, Taaritt as a sand notch, Fabric as a dim acid-green dial, Circuits as a reed scratch, cam.eee as a profile moon, open world as a low horizon chip, and 13-26 as a date fleck. Silent, spacious, optical.",
+      "nocturnal-observatory",
+      "warm-vellum",
+      "copper-spiral"
+    ]
+  },
+  "visual_ecology": {
+    "dominant_objects": [
+      "IMAGE 1983-1998",
+      "Galaxy DNA",
+      "Under a Glass Bell",
+      "Taaritt",
+      "Preference Specimen Tray",
+      "open world",
+      "13-26"
+    ],
+    "dominant_surfaces": [
+      "paper",
+      "glass",
+      "paint",
+      "light-band"
+    ],
+    "dominant_structures": [
+      "charcoal-spiral-observatory",
+      "one large matte-black celestial oculus occupying the upper field",
+      "one centered warm vellum square carrying a curled violet-brown line",
+      "one oxidized copper spiral arc crossing the plate like a handmade orbit",
+      "small glass, sand, enamel, and scratch anchors embedded along the orbit",
+      "wide untouched charcoal negative space around all forms",
+      "matte charcoal pigment",
+      "warm translucent vellum"
+    ],
+    "negative_space_regions": []
+  },
+  "interaction_world": {
+    "class": "object-native",
+    "recommended_behaviors": [
+      "cabinet-drawer-behavior",
+      "object-memory",
+      "threshold-scan"
+    ],
+    "rejected_behaviors": [
+      "light-path-reaction"
+    ],
+    "reasoning": [
+      "Primary ontology inferred from scene family and artifact types: charcoal-spiral-observatory.",
+      "Artifact vocabulary suggests object-native interaction logic."
+    ]
+  },
+  "artifact_candidates": [
+    {
+      "id": "hero-image-1983-1998",
+      "kind": "hero",
+      "type": "central-vellum-plate",
+      "strength": 0.99,
+      "bounds": {
+        "x": 0.08,
+        "y": 0.1,
+        "w": 0.32,
+        "h": 0.32
+      },
+      "supports": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "hero-galaxy-dna",
+      "kind": "hero",
+      "type": "copper-spiral-orbit",
+      "strength": 0.99,
+      "bounds": {
+        "x": 0.58,
+        "y": 0.12,
+        "w": 0.32,
+        "h": 0.32
+      },
+      "supports": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-under-a-glass-bell",
+      "kind": "module",
+      "type": "smoked-glass-aperture",
+      "strength": 0.78954,
+      "bounds": {
+        "x": 0.08,
+        "y": 0.52,
+        "w": 0.22,
+        "h": 0.22
+      },
+      "supports": [
+        "screen-rendered-html",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-taaritt",
+      "kind": "module",
+      "type": "sand-paper-notch",
+      "strength": 0.759096,
+      "bounds": {
+        "x": 0.34,
+        "y": 0.54,
+        "w": 0.22,
+        "h": 0.22
+      },
+      "supports": [
+        "warped-paper-fragment",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-preference-specimen-tray",
+      "kind": "module",
+      "type": "reed-scratch-glyph",
+      "strength": 0.731388,
+      "bounds": {
+        "x": 0.1,
+        "y": 0.78,
+        "w": 0.18,
+        "h": 0.16
+      },
+      "supports": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ]
+    },
+    {
+      "id": "module-open-world",
+      "kind": "module",
+      "type": "low-horizon-chip",
+      "strength": 0.701412,
+      "bounds": {
+        "x": 0.72,
+        "y": 0.76,
+        "w": 0.18,
+        "h": 0.16
+      },
+      "supports": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-13-26",
+      "kind": "module",
+      "type": "date-fleck",
+      "strength": 0.6774720000000001,
+      "bounds": {
+        "x": 0.28,
+        "y": 0.34,
+        "w": 0.16,
+        "h": 0.15
+      },
+      "supports": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ]
+    }
+  ],
+  "field_candidates": [],
+  "html_surfaces": [
+    {
+      "id": "hero-image-1983-1998-surface",
+      "surface_type": "unknown",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.08,
+        "y": 0.1,
+        "w": 0.32,
+        "h": 0.32
+      },
+      "suitability": 0.9,
+      "supported_treatments": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "hero-galaxy-dna-surface",
+      "surface_type": "unknown",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.58,
+        "y": 0.12,
+        "w": 0.32,
+        "h": 0.32
+      },
+      "suitability": 0.9,
+      "supported_treatments": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-under-a-glass-bell-surface",
+      "surface_type": "glass",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.08,
+        "y": 0.52,
+        "w": 0.22,
+        "h": 0.22
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "screen-rendered-html",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-taaritt-surface",
+      "surface_type": "paper",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.34,
+        "y": 0.54,
+        "w": 0.22,
+        "h": 0.22
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "warped-paper-fragment",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-preference-specimen-tray-surface",
+      "surface_type": "paint",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.1,
+        "y": 0.78,
+        "w": 0.18,
+        "h": 0.16
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ]
+    },
+    {
+      "id": "module-open-world-surface",
+      "surface_type": "unknown",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.72,
+        "y": 0.76,
+        "w": 0.18,
+        "h": 0.16
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-13-26-surface",
+      "surface_type": "paint",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.28,
+        "y": 0.34,
+        "w": 0.16,
+        "h": 0.15
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ]
+    }
+  ],
+  "enhancement_bundle": {
+    "primary": [
+      "mechanical-reveal-system"
+    ],
+    "secondary": [
+      "warped-paper-fragment",
+      "threshold-scan-reveal"
+    ],
+    "wildcard": []
+  },
+  "per_region_assignments": [],
+  "scene_wide_behavior": {
+    "selected": "cabinet-drawer-behavior"
+  },
+  "choreography_rule": {
+    "selected": "anchor-and-satellites"
+  },
+  "release_notes": [
+    "Generated automatically from 7 artifacts and scene family heuristics."
+  ]
+}

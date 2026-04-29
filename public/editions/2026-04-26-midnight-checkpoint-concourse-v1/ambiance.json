@@ -1,0 +1,22 @@
+{
+  "ambiance_recipe_id": "ambiance-2026-04-26-midnight-checkpoint-concourse-v1",
+  "motion_system": "slow procession of light pulses traveling along floor seams and wall inlays",
+  "color_drift": "charcoal and bone-white drifting into cyan, violet, and occasional amber",
+  "glow_behavior": "thin grid lines breathe faintly while labels stay crisp and still",
+  "audio_posture": "ambient",
+  "webgl_mode": "shader-scene",
+  "research_inputs": [
+    "research-1-433ce88f",
+    "research-2-e72d5c57",
+    "research-3-9c9b976a",
+    "research-4-98b6d51d",
+    "research-5-ef74d131",
+    "research-6-cfe1296b",
+    "research-7-1601cefe",
+    "research-8-88263fb4",
+    "research-9-c4906958",
+    "research-10-c2189e1a",
+    "research-11-02d3a2fc",
+    "research-12-5215c32f"
+  ]
+}

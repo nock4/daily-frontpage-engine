@@ -1,0 +1,22 @@
+{
+  "ambiance_recipe_id": "ambiance-2026-04-26-medusa-line-listening-arcade-v1-v1",
+  "motion_system": "slow procession of fog and reflected gold lines along the corridor floor",
+  "color_drift": "deep black drifting toward ink-blue, emerald, moss green, and tarnished gold",
+  "glow_behavior": "thin brass edges glow as if warmed from beneath, while glass surfaces hold a cooler forest-green shimmer",
+  "audio_posture": "ambient",
+  "webgl_mode": "shader-scene",
+  "research_inputs": [
+    "research-1-a7131df6",
+    "research-2-a0310c05",
+    "research-3-c05266ea",
+    "research-4-cafb4567",
+    "research-5-c865cd35",
+    "research-6-778c09b1",
+    "research-7-6705d86b",
+    "research-8-86dacf22",
+    "research-9-4bc72527",
+    "research-10-ed5a693b",
+    "research-11-a3788ede",
+    "research-12-0c699190"
+  ]
+}

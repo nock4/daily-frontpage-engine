@@ -1,0 +1,381 @@
+{
+  "interpretation_id": "interp-2026-04-26-rose-fog-listening-procession-v1",
+  "edition_id": "2026-04-26-rose-fog-listening-procession-v1",
+  "plate_read_timestamp": "2026-04-29T00:14:40.090Z",
+  "scene_ontology": {
+    "primary": "object-native",
+    "secondary": [
+      "optical-native"
+    ],
+    "confidence": 0.9
+  },
+  "world_read": {
+    "summary": "A misty gallery-procession scene with a vast rose translucent backdrop, visible music/display objects, carried illuminated artifacts, a right-side bronze instrument pavilion, and a readable source catalogue placard in the foreground.",
+    "dominant_spatial_mode": "contained",
+    "density": "dense",
+    "legibility": "selective",
+    "mood": [
+      "hushed, ceremonial, dreamlike, and faintly ecstatic",
+      "A misty gallery-procession scene with a vast rose translucent backdrop, visible music/display objects, carried illuminated artifacts, a right-side bronze instrument pavilion, and a readable source catalogue placard in the foreground.",
+      "rose-fog",
+      "gauze-theatre",
+      "ambient-procession"
+    ]
+  },
+  "visual_ecology": {
+    "dominant_objects": [
+      "Rose Expectation Proscenium",
+      "Black Acid-Electro Speaker Monolith",
+      "Air / Earth Weather Veil",
+      "ArtStar Brass Address Mailbox",
+      "Lucid Landscape Terrain Tray",
+      "Cameron Portrait Lantern",
+      "Rear Lit Shelf Vitrine",
+      "Jaipong Bronze Drum Pavilion"
+    ],
+    "dominant_surfaces": [
+      "glass",
+      "fog",
+      "wood"
+    ],
+    "dominant_structures": [
+      "rose-fog-listening-atrium",
+      "monumental rose translucent proscenium scrim",
+      "frosted Air / Earth weather veil",
+      "lucid landscape glass terrain tray",
+      "small-run Japanese ambient CD reliquary tower",
+      "black acid-electro speaker monolith",
+      "Jaipong bronze drum pavilion",
+      "ArtStar brass address mailbox"
+    ],
+    "negative_space_regions": []
+  },
+  "interaction_world": {
+    "class": "object-native",
+    "recommended_behaviors": [
+      "cabinet-drawer-behavior",
+      "object-memory",
+      "threshold-scan"
+    ],
+    "rejected_behaviors": [
+      "light-path-reaction"
+    ],
+    "reasoning": [
+      "Primary ontology inferred from scene family and artifact types: rose-fog-listening-atrium.",
+      "Artifact vocabulary suggests object-native interaction logic."
+    ]
+  },
+  "artifact_candidates": [
+    {
+      "id": "hero-rose-expectation-proscenium",
+      "kind": "hero",
+      "type": "hero-scale-translucent-scrim",
+      "strength": 0.99,
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 0.42
+      },
+      "supports": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "hero-black-acid-electro-speaker-monolith",
+      "kind": "hero",
+      "type": "lacquered-speaker-column",
+      "strength": 0.97898,
+      "bounds": {
+        "x": 0.063,
+        "y": 0.096,
+        "w": 0.081,
+        "h": 0.602
+      },
+      "supports": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-air-earth-weather-veil",
+      "kind": "module",
+      "type": "frosted-glass-curtain",
+      "strength": 0.7866,
+      "bounds": {
+        "x": 0.232,
+        "y": 0.462,
+        "w": 0.05,
+        "h": 0.232
+      },
+      "supports": [
+        "screen-rendered-html",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-artstar-brass-address-mailbox",
+      "kind": "module",
+      "type": "wall-mounted-brass-mailbox",
+      "strength": 0.7601040000000001,
+      "bounds": {
+        "x": 0.334,
+        "y": 0.479,
+        "w": 0.041,
+        "h": 0.091
+      },
+      "supports": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-lucid-landscape-terrain-tray",
+      "kind": "module",
+      "type": "glass-topographic-object",
+      "strength": 0.736716,
+      "bounds": {
+        "x": 0.462,
+        "y": 0.528,
+        "w": 0.108,
+        "h": 0.077
+      },
+      "supports": [
+        "ghost-reflection-treatment",
+        "lens-inspection"
+      ]
+    },
+    {
+      "id": "module-cameron-portrait-lantern",
+      "kind": "module",
+      "type": "round-portrait-lantern",
+      "strength": 0.709884,
+      "bounds": {
+        "x": 0.516,
+        "y": 0.436,
+        "w": 0.047,
+        "h": 0.112
+      },
+      "supports": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-rear-lit-shelf-vitrine",
+      "kind": "module",
+      "type": "lit-display-vitrine",
+      "strength": 0.6772440000000001,
+      "bounds": {
+        "x": 0.606,
+        "y": 0.488,
+        "w": 0.067,
+        "h": 0.094
+      },
+      "supports": [
+        "ghost-reflection-treatment",
+        "lens-inspection"
+      ]
+    },
+    {
+      "id": "module-jaipong-bronze-drum-pavilion",
+      "kind": "module",
+      "type": "bronze-stage-instrument",
+      "strength": 0.648484,
+      "bounds": {
+        "x": 0.74,
+        "y": 0.376,
+        "w": 0.26,
+        "h": 0.293
+      },
+      "supports": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-source-catalogue-plaque",
+      "kind": "module",
+      "type": "catalogue-plaque",
+      "strength": 0.6464559999999999,
+      "bounds": {
+        "x": 0.799,
+        "y": 0.744,
+        "w": 0.092,
+        "h": 0.176
+      },
+      "supports": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    }
+  ],
+  "field_candidates": [],
+  "html_surfaces": [
+    {
+      "id": "hero-rose-expectation-proscenium-surface",
+      "surface_type": "unknown",
+      "host": "artifact",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 0.42
+      },
+      "suitability": 0.9,
+      "supported_treatments": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "hero-black-acid-electro-speaker-monolith-surface",
+      "surface_type": "unknown",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.063,
+        "y": 0.096,
+        "w": 0.081,
+        "h": 0.602
+      },
+      "suitability": 0.9,
+      "supported_treatments": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-air-earth-weather-veil-surface",
+      "surface_type": "glass",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.232,
+        "y": 0.462,
+        "w": 0.05,
+        "h": 0.232
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "screen-rendered-html",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-artstar-brass-address-mailbox-surface",
+      "surface_type": "wood",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.334,
+        "y": 0.479,
+        "w": 0.041,
+        "h": 0.091
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-lucid-landscape-terrain-tray-surface",
+      "surface_type": "glass",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.462,
+        "y": 0.528,
+        "w": 0.108,
+        "h": 0.077
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "ghost-reflection-treatment",
+        "lens-inspection"
+      ]
+    },
+    {
+      "id": "module-cameron-portrait-lantern-surface",
+      "surface_type": "unknown",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.516,
+        "y": 0.436,
+        "w": 0.047,
+        "h": 0.112
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-rear-lit-shelf-vitrine-surface",
+      "surface_type": "glass",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.606,
+        "y": 0.488,
+        "w": 0.067,
+        "h": 0.094
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "ghost-reflection-treatment",
+        "lens-inspection"
+      ]
+    },
+    {
+      "id": "module-jaipong-bronze-drum-pavilion-surface",
+      "surface_type": "unknown",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.74,
+        "y": 0.376,
+        "w": 0.26,
+        "h": 0.293
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-source-catalogue-plaque-surface",
+      "surface_type": "wood",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.799,
+        "y": 0.744,
+        "w": 0.092,
+        "h": 0.176
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    }
+  ],
+  "enhancement_bundle": {
+    "primary": [
+      "mechanical-reveal-system"
+    ],
+    "secondary": [
+      "warped-paper-fragment",
+      "threshold-scan-reveal"
+    ],
+    "wildcard": []
+  },
+  "per_region_assignments": [],
+  "scene_wide_behavior": {
+    "selected": "cabinet-drawer-behavior"
+  },
+  "choreography_rule": {
+    "selected": "anchor-and-satellites"
+  },
+  "release_notes": [
+    "Generated automatically from 9 artifacts and scene family heuristics."
+  ]
+}

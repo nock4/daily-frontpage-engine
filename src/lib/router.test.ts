@@ -32,28 +32,28 @@ const manifest: EditionManifest = {
 
 describe('parseAppRoute', () => {
   it('returns current edition for root route', () => {
-    const route = parseAppRoute('/', '', manifest)
+    const route = parseAppRoute('/', manifest)
     expect(route.kind).toBe('edition')
     if (route.kind !== 'edition') throw new Error('expected edition route')
     expect(route.edition.slug).toBe('herbarium-bed-v1')
   })
 
+  it('returns direct edition route when edition id is in pathname', () => {
+    const route = parseAppRoute('/editions/2026-04-16-night-observatory-v1', manifest)
+    expect(route.kind).toBe('edition')
+    if (route.kind !== 'edition') throw new Error('expected edition route')
+    expect(route.edition.slug).toBe('night-observatory-v1')
+  })
+
   it('returns archive index for /archive', () => {
-    const route = parseAppRoute('/archive', '', manifest)
+    const route = parseAppRoute('/archive', manifest)
     expect(route).toEqual({ kind: 'archive-index' })
   })
 
   it('returns archive edition when slug is in pathname', () => {
-    const route = parseAppRoute('/archive/night-observatory-v1', '', manifest)
+    const route = parseAppRoute('/archive/night-observatory-v1', manifest)
     expect(route.kind).toBe('archive-edition')
     if (route.kind !== 'archive-edition') throw new Error('expected archive edition route')
-    expect(route.edition.slug).toBe('night-observatory-v1')
-  })
-
-  it('allows query params to pick a specific edition from root', () => {
-    const route = parseAppRoute('/', '?edition=night-observatory-v1', manifest)
-    expect(route.kind).toBe('edition')
-    if (route.kind !== 'edition') throw new Error('expected edition route')
     expect(route.edition.slug).toBe('night-observatory-v1')
   })
 })

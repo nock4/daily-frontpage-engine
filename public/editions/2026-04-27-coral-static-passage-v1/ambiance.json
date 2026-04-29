@@ -1,0 +1,22 @@
+{
+  "ambiance_recipe_id": "ambiance-2026-04-27-coral-static-passage-v1",
+  "motion_system": "barely perceptible rain shimmer across the frosted arch and floor waterline",
+  "color_drift": "coral pink slowly breathing toward milk white, with occasional soot-black cooling at the base",
+  "glow_behavior": "tiny anchors glow like restrained pilot lights, never overpowering the main threshold",
+  "audio_posture": "ambient",
+  "webgl_mode": "shader-scene",
+  "research_inputs": [
+    "research-1-736d010c",
+    "research-2-972323a6",
+    "research-3-80976fa9",
+    "research-4-82f59734",
+    "research-5-692e7fc6",
+    "research-6-fb92a315",
+    "research-7-8a388fbf",
+    "research-8-e6a10546",
+    "research-9-51830e59",
+    "research-10-c3fc8178",
+    "research-11-c545ff94",
+    "research-12-7a6e3590"
+  ]
+}

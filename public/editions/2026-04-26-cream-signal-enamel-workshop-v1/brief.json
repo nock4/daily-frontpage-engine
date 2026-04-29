@@ -1,0 +1,60 @@
+{
+  "brief_id": "brief-2026-04-26-cream-signal-enamel-workshop-v1",
+  "date": "2026-04-26",
+  "signal_cluster_ids": [
+    "55c2a5c846a6",
+    "5521ff3b4c89",
+    "d824bedc7d45",
+    "67bac2353d29",
+    "97ed2b079aa4",
+    "1ecbe0ef250f",
+    "409267176a04",
+    "b7428f1c9989"
+  ],
+  "research_node_ids": [
+    "research-1-68b0ca43",
+    "research-2-4abef8ce",
+    "research-3-703b8410",
+    "research-4-ed5a693b",
+    "research-5-a3788ede",
+    "research-6-0c699190",
+    "research-7-c222c645",
+    "research-8-abe83ac3",
+    "research-9-e03f35af",
+    "research-10-7add7dca",
+    "research-11-65fd2166",
+    "research-12-90055999"
+  ],
+  "mood": "calm, tactile, slightly uncanny, like a kitchen tool becoming a signal instrument after closing time",
+  "material_language": [
+    "warm white enamel",
+    "cream sauce glaze",
+    "brushed stainless steel"
+  ],
+  "lighting": "soft overhead kitchen light, diffused through fog, with a low stainless gleam and small burgundy edge shadows",
+  "object_inventory": [
+    "one dominant oversized warm-white enamel oval carrying a cream ribbon gesture",
+    "one secondary brushed-steel pot crescent suspended near the top edge",
+    "one secondary fog-blue rectangular threshold pressed into the right side of the field",
+    "quiet source anchors as tiny slits, labels, dots, tally cuts, and grain marks",
+    "large charcoal tile negative space occupying more than half the plate"
+  ],
+  "interaction_grammar": {
+    "hero_count": 2,
+    "module_count": 6,
+    "window_strategy": "source-window"
+  },
+  "negative_constraints": [
+    "no desks, dashboards, cards, shelves, cabinets, archives, or office rooms",
+    "no printmaking chapel, roller room, cipher chapel, or splatter-canvas archive",
+    "no copied faces, logos, page chrome, or literal social-media screenshots",
+    "no crowded prop inventory; keep one dominant form and two secondary forms only",
+    "preserve at least 45 percent negative space",
+    "limit the dominant visible surface language to enamel, stainless steel, and charcoal tile",
+    "no dense archive wall",
+    "no cabinet of objects",
+    "no many-prop still life",
+    "no equal-weight grid of source objects",
+    "preserve large negative space"
+  ]
+}

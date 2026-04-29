@@ -1,0 +1,63 @@
+{
+  "brief_id": "brief-2026-04-28-moss-current-index-v1",
+  "date": "2026-04-28",
+  "signal_cluster_ids": [
+    "55c2a5c846a6",
+    "5521ff3b4c89",
+    "d824bedc7d45",
+    "67bac2353d29",
+    "97ed2b079aa4",
+    "1ecbe0ef250f",
+    "409267176a04",
+    "b7428f1c9989"
+  ],
+  "research_node_ids": [
+    "research-1-c05266ea",
+    "research-2-cafb4567",
+    "research-3-778c09b1",
+    "research-4-6705d86b",
+    "research-5-0c699190",
+    "research-6-f83b5e71",
+    "research-7-61c83cb1",
+    "research-8-d87d14a5",
+    "research-9-8a388fbf",
+    "research-10-e6a10546",
+    "research-11-8edd09cd",
+    "research-12-a0310c05"
+  ],
+  "mood": "humid, listening, nocturnal, botanical, quietly energized",
+  "material_language": [
+    "black loam paper",
+    "moss pigment",
+    "ochre ink"
+  ],
+  "lighting": "low raking amber light over a dark open field, with small wet highlights and muted green afterglow at the edges",
+  "object_inventory": [
+    "one broad black-loam negative field",
+    "a moss-green botanical contour mass",
+    "one ochre diagonal rupture",
+    "seven tiny source-bearing scars and flecks",
+    "thin rain-glaze halos",
+    "small handwritten anchor labels"
+  ],
+  "interaction_grammar": {
+    "hero_count": 2,
+    "module_count": 5,
+    "window_strategy": "source-window"
+  },
+  "negative_constraints": [
+    "no desks, dashboards, cards, shelves, cabinets, office rooms, software UI, web chrome, realistic props, or archive walls",
+    "do not depict album covers, logos, tweets, thumbnails, game screenshots, musical instruments, screens, or literal forest scenery",
+    "preserve at least 60 percent open negative space",
+    "use one dominant field or form and one disruptive gesture only",
+    "limit the visible dominant surfaces to black loam paper, moss pigment, and ochre ink",
+    "keep all source anchors small except the two hero-scale anchors",
+    "no dense archive wall",
+    "no cabinet of objects",
+    "no many-prop still life",
+    "no equal-weight grid of source objects",
+    "no realistic object inventory",
+    "no literal depiction of the source reference image",
+    "preserve large negative space"
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "brief_id": "brief-2026-04-26-nocturnal-observatory-plain-language-stars-v1",
+  "date": "2026-04-26",
+  "signal_cluster_ids": [
+    "46144a6f11bf",
+    "724497e23339",
+    "6537988463fd",
+    "5232e4ca6bd3",
+    "a71121feac57",
+    "1b46560955e6",
+    "4c839656a9ef",
+    "e2b9869c2864"
+  ],
+  "research_node_ids": [
+    "research-1-329b71bc",
+    "research-2-0307f8d5",
+    "research-3-a9dad5cd",
+    "research-4-9c9b976a",
+    "research-5-b494619c",
+    "research-6-e74f188d",
+    "research-7-f7c11be4",
+    "research-8-a5f5767f",
+    "research-9-13494445",
+    "research-10-5b0c2853"
+  ],
+  "mood": "quiet, investigative, astronomical, uncanny, precise",
+  "material_language": [
+    "matte black enamel",
+    "brushed brass",
+    "smoked glass",
+    "chalk-white lettering",
+    "blue-black stone",
+    "aged paper",
+    "frosted acrylic",
+    "magnetic tape"
+  ],
+  "lighting": "cold moonlight through a slit dome, soft cyan instrument glow, brass highlights, faint violet haze near the floor",
+  "object_inventory": [
+    "Gut-Check Star Ledger",
+    "ASCII Comet Dome",
+    "Concealed-Egg Signal Vessel",
+    "Skill Navigation Tablet",
+    "Variable Type Constellation Strip",
+    "Heisei Tape Moon Monitor",
+    "Omma Kinetic Orbit Model",
+    "Fifty-Watt Ephemera Pennant",
+    "Aura Restart Star Chart"
+  ],
+  "interaction_grammar": {
+    "hero_count": 2,
+    "module_count": 7,
+    "window_strategy": "source-window"
+  },
+  "negative_constraints": [
+    "no desks",
+    "no dashboards",
+    "no office room",
+    "no landing-page layout",
+    "no source-summary cards",
+    "no printmaking chapel",
+    "no roller room",
+    "no cipher chapel",
+    "no splatter-canvas archive",
+    "no conservatory or greenhouse"
+  ]
+}

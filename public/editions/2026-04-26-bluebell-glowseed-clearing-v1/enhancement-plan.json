@@ -1,0 +1,214 @@
+{
+  "enhancement_plan_id": "enhance-2026-04-26-bluebell-glowseed-clearing-v1",
+  "edition_id": "2026-04-26-bluebell-glowseed-clearing-v1",
+  "derived_from": {
+    "interpretation_id": "interp-2026-04-26-bluebell-glowseed-clearing-v1"
+  },
+  "interaction_world": {
+    "class": "object-native",
+    "primary_behavior": "mechanical-reveal-system",
+    "scene_wide_behavior": "cabinet-drawer-behavior",
+    "choreography_rule": "anchor-and-satellites"
+  },
+  "bundle": {
+    "primary": [
+      "mechanical-reveal-system"
+    ],
+    "secondary": [
+      "warped-paper-fragment",
+      "threshold-scan-reveal"
+    ],
+    "wildcard": []
+  },
+  "runtime_safe_subset": [
+    "warped-paper-fragment",
+    "threshold-scan-reveal"
+  ],
+  "future_only_subset": [
+    "mechanical-reveal-system",
+    "restoration-scan"
+  ],
+  "rejected": [
+    {
+      "technique": "light-path-reveal",
+      "reason": "Rejected by interpretation behavior rule: light-path-reaction"
+    },
+    {
+      "technique": "light-path-reveal",
+      "reason": "Object-native scenes should anchor interaction to discrete artifacts before environmental field effects."
+    }
+  ],
+  "targets": [
+    {
+      "target_id": "hero-background-bloom",
+      "target_kind": "artifact",
+      "artifact_id": "hero-background-bloom",
+      "priority": 1,
+      "techniques": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ],
+      "source_classes": [
+        "web",
+        "article"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (glossy-resin-seedpod) selected from interpretation."
+    },
+    {
+      "target_id": "hero-haller-fog-veil",
+      "target_kind": "artifact",
+      "artifact_id": "hero-haller-fog-veil",
+      "priority": 2,
+      "techniques": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ],
+      "source_classes": [
+        "web",
+        "article"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (star-shaped-incision) selected from interpretation."
+    },
+    {
+      "target_id": "module-october-language-spore",
+      "target_kind": "artifact",
+      "artifact_id": "module-october-language-spore",
+      "priority": 3,
+      "techniques": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ],
+      "source_classes": [
+        "video",
+        "youtube"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (small-shadow-aperture) selected from interpretation."
+    },
+    {
+      "target_id": "module-source-pathway-plaque",
+      "target_kind": "artifact",
+      "artifact_id": "module-source-pathway-plaque",
+      "priority": 4,
+      "techniques": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ],
+      "source_classes": [
+        "audio"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (amber-spore-ring) selected from interpretation."
+    },
+    {
+      "target_id": "module-ever-no-way-lichen",
+      "target_kind": "artifact",
+      "artifact_id": "module-ever-no-way-lichen",
+      "priority": 5,
+      "techniques": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ],
+      "source_classes": [
+        "audio"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (pale-lichen-stroke) selected from interpretation."
+    },
+    {
+      "target_id": "module-angel-bell",
+      "target_kind": "artifact",
+      "artifact_id": "module-angel-bell",
+      "priority": 6,
+      "techniques": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ],
+      "source_classes": [
+        "audio"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (white-bellflower) selected from interpretation."
+    },
+    {
+      "target_id": "module-agent-browser-moth",
+      "target_kind": "artifact",
+      "artifact_id": "module-agent-browser-moth",
+      "priority": 7,
+      "techniques": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ],
+      "source_classes": [
+        "web",
+        "article"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (silver-moth-cutout) selected from interpretation."
+    },
+    {
+      "target_id": "module-grill-me-thorn",
+      "target_kind": "artifact",
+      "artifact_id": "module-grill-me-thorn",
+      "priority": 8,
+      "techniques": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ],
+      "source_classes": [
+        "web",
+        "article"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (charred-thorn-label) selected from interpretation."
+    }
+  ],
+  "global_recommendation": [
+    "mechanical-reveal-system",
+    "warped-paper-fragment",
+    "threshold-scan-reveal"
+  ],
+  "runtime_note": "Generated automatically from 8 artifacts and scene family heuristics."
+}

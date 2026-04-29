@@ -1,0 +1,66 @@
+{
+  "brief_id": "brief-2026-04-26-rose-fog-listening-procession-v1",
+  "date": "2026-04-26",
+  "signal_cluster_ids": [
+    "55c2a5c846a6",
+    "5521ff3b4c89",
+    "d824bedc7d45",
+    "67bac2353d29",
+    "97ed2b079aa4",
+    "1ecbe0ef250f",
+    "409267176a04",
+    "b7428f1c9989"
+  ],
+  "research_node_ids": [
+    "research-1-824982ab",
+    "research-2-c7b5cfd0",
+    "research-3-d7a31bfa",
+    "research-4-736d010c",
+    "research-5-8edd09cd",
+    "research-6-82f59734",
+    "research-7-692e7fc6",
+    "research-8-fb92a315",
+    "research-9-922922bc",
+    "research-10-ed5a693b",
+    "research-11-c3fc8178",
+    "research-12-a3788ede"
+  ],
+  "mood": "hushed, ceremonial, dreamlike, and faintly ecstatic",
+  "material_language": [
+    "salmon-pink translucent gauze",
+    "frosted acrylic",
+    "smoked glass",
+    "brushed aluminum",
+    "lacquered black wood",
+    "bronze cymbal metal",
+    "wet concrete",
+    "silk organza"
+  ],
+  "lighting": "diffuse coral light through layered scrims, cool blue-green fog at floor level, small amber glows inside each carried object",
+  "object_inventory": [
+    "monumental rose translucent proscenium scrim",
+    "frosted Air / Earth weather veil",
+    "lucid landscape glass terrain tray",
+    "small-run Japanese ambient CD reliquary tower",
+    "black acid-electro speaker monolith",
+    "Jaipong bronze drum pavilion",
+    "ArtStar brass address mailbox",
+    "round Cameron portrait lantern"
+  ],
+  "interaction_grammar": {
+    "hero_count": 2,
+    "module_count": 7,
+    "window_strategy": "source-window"
+  },
+  "negative_constraints": [
+    "no desks",
+    "no dashboards",
+    "no generic software UI",
+    "no landing-page layout",
+    "no source-summary cards",
+    "no printmaking chapel",
+    "no roller room",
+    "no cipher chapel",
+    "no splatter-canvas archive"
+  ]
+}

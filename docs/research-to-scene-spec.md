@@ -1,41 +1,57 @@
 # Research-to-Scene Pipeline Spec
 
 ## Purpose
-Turn recent Obsidian signals into a ranked research field that can drive one daily scene, its pockets, and its ambiance.
+Turn recent saved-source signals into a ranked research field that can drive one daily scene, its pockets, and its ambiance.
 
 ## Inputs
-- recent notes, bookmarks, clips, likes, and outbound links from Obsidian
-- attached or linked media: images, video, audio, screenshots, PDFs
+- recent Markdown records from the saved-signal allowlist:
+  - Twitter/X bookmarks
+  - YouTube likes
+  - NTS liked-track source maps
+  - Chrome bookmarks
+- attached or linked media: images, video, audio, screenshots, and source-page lead media
 - lightweight history from recent editions to avoid repeating yesterday's dominant motif
 
-## 1. Mine signals from Obsidian
+## 1. Mine saved signals from the allowlist
 Extract atoms, not summaries.
 
 For each candidate signal, capture:
 - source note/link id and timestamp
+- source channel: `twitter-bookmark`, `youtube-like`, `nts-like`, or `chrome-bookmark`
 - motif terms: objects, materials, organisms, tools, symbols, spaces
 - tone terms: moods, energies, tensions
 - media evidence: image/video/audio present, plus URLs
 - recurrence signals: repeated mentions, backlinks, tag overlap, temporal clustering
 - open threads: unfinished fascinations, questions, or return visits
 
-Group candidates into 3-8 clusters that could plausibly become a world.
+Do not mine the broader personal vault for public source content. Source selection begins with explicit saved-content paths only.
 
 ## 2. Enrich each cluster with automated research
-For each cluster:
-1. open the original sources
-2. inspect linked media first
-3. pull adjacent references: artists, movements, lineages, geographies, tools, materials, environments, historical echoes
-4. extract concrete visual evidence rather than broad summaries
-5. collect playable/viewable source targets for future pockets
+Current order:
+1. collect candidate URLs only from the saved-signal allowlist
+2. reject private/local/text-document targets before fetch or capture
+3. gather source evidence with Node fetch: final URL, title, description, visible text, source type, note provenance, images, and YouTube embeddability
+4. pass the evidence to `gpt-5.5` for an autoresearch-style synthesis: read all candidates, cluster the field, identify the through-line, reject weak/duplicate sources, and choose source candidates with provenance
+5. use browser-harness only after synthesis to capture and verify selected pages/images
+6. select one artistic or material-rich source image for the brief
+7. choose 7-10 renderable non-duplicate content sources; hard-fail below 7
 
 Research record per cluster:
 - visual cues: shapes, silhouettes, compositions, density
 - material cues: surfaces, weathering, fabrication, textures
 - ambient cues: lighting, weather, sound, motion behavior
 - object inventory: artifacts that could become native mask targets
-- source windows: URLs worth exposing directly in-scene
+- image references: specific source images, artworks, diagrams, scans, screenshots, or layouts that could directly shape the generation prompt
+- source windows: saved-source URLs worth exposing directly in-scene
 - risk flags: overfamiliar, too literal, weak media support, hard-to-render
+
+Source selection rules:
+- NTS liked-track map rows are discovery signals; bind only to resolved YouTube, Bandcamp, or SoundCloud sources
+- YouTube sources must pass the embeddability check or be skipped from generated editions
+- native tweet URLs are preferred over raw Twitter/X media URLs
+- raw `pbs.twimg.com` / `video.twimg.com` URLs can support tweet imagery but cannot be primary source bindings
+- recent source duplicates are ineligible
+- distinct resolved NTS tracks from one source-map note may fill separate source windows
 
 ## 3. Let media findings shape the edition
 Media evidence has priority over abstract topic similarity.
@@ -46,10 +62,11 @@ Use media findings to steer:
 - ambiance: motion grammar, particles, color drift, sound-reactive behavior, playback tone
 
 Rule: if research changes how the scene should look, move, or sound, it belongs in the brief.
+Rule: if source images reveal a stronger formal language than a literal room/world metaphor, prefer the image-led direction.
 
 ## 4. Score and select motifs
 Score each cluster 1-5 on:
-- resonance: how strongly it reflects recent Obsidian attention
+- resonance: how strongly it reflects recent saved-source attention
 - visual potency: image/world-building strength
 - media richness: quality and variety of inspectable sources
 - artifactability: number of plausible native interaction targets
@@ -72,14 +89,16 @@ Produce one save-ready package per edition:
 - edition title or working name
 - one-paragraph world description
 - visual direction: composition, palette, lighting, materials, scale
-- object inventory: 5-12 concrete artifacts
-- interaction grammar: 2 hero pockets + 4-8 secondary pockets
+- formal direction: abstraction level, symbolism, collage/diagram tendencies, and whether the result should resist office/desk-like staging
+- source-anchor families: 7-10 quiet marks, apertures, labels, slits, cuts, scratches, stains, edge details, or small lights
+- interaction grammar: 2 hero pockets + 5-8 secondary pockets when enough valid sources exist
 - negative constraints: what to avoid repeating or rendering generically
 
 ### B. Research field
 - ranked motif list with scores
 - supporting references and lineage notes
 - extracted media cues
+- shortlisted source-image references for generation input
 - shortlist of source URLs for pockets
 
 ### C. Ambiance brief
@@ -98,7 +117,13 @@ Produce one save-ready package per edition:
   "visual_cues": ["..."],
   "material_cues": ["..."],
   "ambient_cues": ["..."],
-  "object_inventory": ["..."],
+  "object_inventory": ["one dominant form", "two secondary forms", "quiet source-anchor families"],
+  "complexity_budget": {
+    "mode": "minimal-expressionist",
+    "negative_space": "at least 60% when the source set allows it",
+    "material_limit": 3,
+    "anchor_strategy": "7-10 subtle marks, apertures, labels, slits, cuts, scratches, stains, edge details, or small lights"
+  },
   "pocket_targets": [
     {"artifact": "...", "source_url": "...", "media_type": "video|image|audio|article"}
   ],
@@ -119,7 +144,12 @@ Produce one save-ready package per edition:
 ## Acceptance check
 Before handing off to image generation, verify:
 - the brief names concrete objects, materials, and lighting
-- at least 6 viable source-window targets exist
+- the brief also states the desired abstraction / formal language, not just a literal room type
+- at least 7 viable source-window targets exist
+- the 7-10 source-window targets are not treated as 7-10 equal-weight props
+- the image prompt preserves a minimal expressionist complexity budget: one dominant form, one disruptive gesture, quiet anchors, and large negative space
+- primary source URLs are unique and do not include raw Twitter/X CDN media
 - ambiance is derived from research, not random styling
 - the chosen motif is distinct from recent editions
+- the composition is not falling back to a generic office/desk scene unless that literalism is intentional
 - the scene still reads as one world, not a moodboard

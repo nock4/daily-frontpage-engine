@@ -1,0 +1,22 @@
+{
+  "ambiance_recipe_id": "ambiance-2026-04-27-vermilion-arc-astrolabe-v1",
+  "motion_system": "almost still; only the smallest orbital ticks imply a slow measuring sweep",
+  "color_drift": "vermilion slowly warms toward burnt orange at the arc base and cools toward maroon at the edges",
+  "glow_behavior": "chalk arcs emit a dry lunar halo, with two hero anchors carrying a slightly stronger rim glow",
+  "audio_posture": "ambient",
+  "webgl_mode": "shader-scene",
+  "research_inputs": [
+    "research-1-c865cd35",
+    "research-2-07977d76",
+    "research-3-3206e1e5",
+    "research-4-d403a5e4",
+    "research-5-27aacee7",
+    "research-6-c545ff94",
+    "research-7-7a6e3590",
+    "research-8-61c83cb1",
+    "research-9-8a388fbf",
+    "research-10-e6a10546",
+    "research-11-51830e59",
+    "research-12-8edd09cd"
+  ]
+}

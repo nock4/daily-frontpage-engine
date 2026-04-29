@@ -1,0 +1,351 @@
+{
+  "interpretation_id": "interp-2026-04-27-vermilion-arc-astrolabe-v1",
+  "edition_id": "2026-04-27-vermilion-arc-astrolabe-v1",
+  "plate_read_timestamp": "2026-04-29T00:14:40.074Z",
+  "scene_ontology": {
+    "primary": "object-native",
+    "secondary": [
+      "optical-native",
+      "material-native"
+    ],
+    "confidence": 0.9
+  },
+  "world_read": {
+    "summary": "A vast matte vermilion field fills the frame, borrowing the supplied album-cover evidence: hot red ground, imperfect hand-drawn pale arcs, sparse inscription, and a sun-worn science-fiction western mood. In the lower half, one dominant form: a half-dome astrolabe of nested chalk-white and ochre arcs, like an observatory instrument drawn directly onto desert pigment. Two secondary forms balance it only lightly: a low smoked-obsidian horizon bar beneath the arcs and a small brushed-aluminum lens moon near the upper right. Keep more than half the image empty red air. Add tiny quiet anchors as etched labels, pinholes, nicks, and constellation ticks along the arcs and horizon: Flower Music, Shu Qin, Surf Noir, Into the Light, Brise, Open World, Jam, Galaxy DNA. No room, no signal board, no archive wall. The mood is nocturnal, optical, dry, still, and reverent.",
+    "dominant_spatial_mode": "contained",
+    "density": "dense",
+    "legibility": "selective",
+    "mood": [
+      "wide, sunburned, nocturnal, and contemplative, like a desert instrument listening after midnight",
+      "A vast matte vermilion field fills the frame, borrowing the supplied album-cover evidence: hot red ground, imperfect hand-drawn pale arcs, sparse inscription, and a sun-worn science-fiction western mood. In the lower half, one dominant form: a half-dome astrolabe of nested chalk-white and ochre arcs, like an observatory instrument drawn directly onto desert pigment. Two secondary forms balance it only lightly: a low smoked-obsidian horizon bar beneath the arcs and a small brushed-aluminum lens moon near the upper right. Keep more than half the image empty red air. Add tiny quiet anchors as etched labels, pinholes, nicks, and constellation ticks along the arcs and horizon: Flower Music, Shu Qin, Surf Noir, Into the Light, Brise, Open World, Jam, Galaxy DNA. No room, no signal board, no archive wall. The mood is nocturnal, optical, dry, still, and reverent.",
+      "nocturnal-desert",
+      "optical-arc",
+      "vermilion-field"
+    ]
+  },
+  "visual_ecology": {
+    "dominant_objects": [
+      "Into the Light Arc",
+      "Flower Music Dome",
+      "Shu Qin Notch",
+      "Surf Noir Tide Mark",
+      "Brise Air Tick",
+      "Jam Signal Tile",
+      "Galaxy DNA Lens",
+      "Paper Cut Anchor"
+    ],
+    "dominant_surfaces": [
+      "paper",
+      "glass",
+      "paint",
+      "light-band"
+    ],
+    "dominant_structures": [
+      "vermilion-arc-astrolabe",
+      "one dominant half-dome astrolabe made from nested chalk and ochre arcs",
+      "two secondary forms: a low smoked-obsidian horizon bar and a small brushed-aluminum lens moon",
+      "large uninterrupted vermilion negative space above and around the instrument",
+      "tiny etched labels, pinholes, notches, and constellation ticks used as quiet source anchors",
+      "subtle album-cover texture: flat red ground, hand-drawn imperfect arcs, sparse lettering",
+      "matte vermilion mineral pigment",
+      "chalk-white orbital linework"
+    ],
+    "negative_space_regions": []
+  },
+  "interaction_world": {
+    "class": "object-native",
+    "recommended_behaviors": [
+      "cabinet-drawer-behavior",
+      "object-memory",
+      "threshold-scan"
+    ],
+    "rejected_behaviors": [
+      "light-path-reaction"
+    ],
+    "reasoning": [
+      "Primary ontology inferred from scene family and artifact types: vermilion-arc-astrolabe.",
+      "Artifact vocabulary suggests object-native interaction logic."
+    ]
+  },
+  "artifact_candidates": [
+    {
+      "id": "hero-into-the-light-arc",
+      "kind": "hero",
+      "type": "hero-scale-chalk-orbit",
+      "strength": 0.99,
+      "bounds": {
+        "x": 0.08,
+        "y": 0.1,
+        "w": 0.32,
+        "h": 0.32
+      },
+      "supports": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "hero-flower-music-dome",
+      "kind": "hero",
+      "type": "hero-scale-petal-orbit",
+      "strength": 0.99,
+      "bounds": {
+        "x": 0.58,
+        "y": 0.12,
+        "w": 0.32,
+        "h": 0.32
+      },
+      "supports": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-shu-qin-notch",
+      "kind": "module",
+      "type": "etched-horizon-notch",
+      "strength": 0.788748,
+      "bounds": {
+        "x": 0.08,
+        "y": 0.52,
+        "w": 0.22,
+        "h": 0.22
+      },
+      "supports": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-surf-noir-tide-mark",
+      "kind": "module",
+      "type": "blue-black-edge-stain",
+      "strength": 0.7577520000000001,
+      "bounds": {
+        "x": 0.34,
+        "y": 0.54,
+        "w": 0.22,
+        "h": 0.22
+      },
+      "supports": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ]
+    },
+    {
+      "id": "module-brise-air-tick",
+      "kind": "module",
+      "type": "fine-graphite-tick",
+      "strength": 0.728268,
+      "bounds": {
+        "x": 0.62,
+        "y": 0.54,
+        "w": 0.22,
+        "h": 0.22
+      },
+      "supports": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-jam-signal-tile",
+      "kind": "module",
+      "type": "small-purple-aluminum-tile",
+      "strength": 0.6938880000000001,
+      "bounds": {
+        "x": 0.42,
+        "y": 0.78,
+        "w": 0.18,
+        "h": 0.16
+      },
+      "supports": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-galaxy-dna-lens",
+      "kind": "module",
+      "type": "brushed-aluminum-lens-moon",
+      "strength": 0.6621960000000001,
+      "bounds": {
+        "x": 0.72,
+        "y": 0.76,
+        "w": 0.18,
+        "h": 0.16
+      },
+      "supports": [
+        "ghost-reflection-treatment",
+        "lens-inspection"
+      ]
+    },
+    {
+      "id": "module-paper-cut-anchor",
+      "kind": "module",
+      "type": "paper-cut-anchor",
+      "strength": 0.6628959999999999,
+      "bounds": {
+        "x": 0.28,
+        "y": 0.34,
+        "w": 0.16,
+        "h": 0.15
+      },
+      "supports": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ]
+    }
+  ],
+  "field_candidates": [],
+  "html_surfaces": [
+    {
+      "id": "hero-into-the-light-arc-surface",
+      "surface_type": "light-band",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.08,
+        "y": 0.1,
+        "w": 0.32,
+        "h": 0.32
+      },
+      "suitability": 0.9,
+      "supported_treatments": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "hero-flower-music-dome-surface",
+      "surface_type": "light-band",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.58,
+        "y": 0.12,
+        "w": 0.32,
+        "h": 0.32
+      },
+      "suitability": 0.9,
+      "supported_treatments": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-shu-qin-notch-surface",
+      "surface_type": "unknown",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.08,
+        "y": 0.52,
+        "w": 0.22,
+        "h": 0.22
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-surf-noir-tide-mark-surface",
+      "surface_type": "paint",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.34,
+        "y": 0.54,
+        "w": 0.22,
+        "h": 0.22
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ]
+    },
+    {
+      "id": "module-brise-air-tick-surface",
+      "surface_type": "unknown",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.62,
+        "y": 0.54,
+        "w": 0.22,
+        "h": 0.22
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-jam-signal-tile-surface",
+      "surface_type": "unknown",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.42,
+        "y": 0.78,
+        "w": 0.18,
+        "h": 0.16
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-galaxy-dna-lens-surface",
+      "surface_type": "glass",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.72,
+        "y": 0.76,
+        "w": 0.18,
+        "h": 0.16
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "ghost-reflection-treatment",
+        "lens-inspection"
+      ]
+    },
+    {
+      "id": "module-paper-cut-anchor-surface",
+      "surface_type": "paper",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.28,
+        "y": 0.34,
+        "w": 0.16,
+        "h": 0.15
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ]
+    }
+  ],
+  "enhancement_bundle": {
+    "primary": [
+      "mechanical-reveal-system"
+    ],
+    "secondary": [
+      "warped-paper-fragment",
+      "threshold-scan-reveal"
+    ],
+    "wildcard": []
+  },
+  "per_region_assignments": [],
+  "scene_wide_behavior": {
+    "selected": "cabinet-drawer-behavior"
+  },
+  "choreography_rule": {
+    "selected": "anchor-and-satellites"
+  },
+  "release_notes": [
+    "Generated automatically from 8 artifacts and scene family heuristics."
+  ]
+}

@@ -1,0 +1,350 @@
+{
+  "interpretation_id": "interp-2026-04-27-coral-static-passage-v1",
+  "edition_id": "2026-04-27-coral-static-passage-v1",
+  "plate_read_timestamp": "2026-04-29T00:14:40.077Z",
+  "scene_ontology": {
+    "primary": "object-native",
+    "secondary": [
+      "optical-native"
+    ],
+    "confidence": 0.9
+  },
+  "world_read": {
+    "summary": "A minimal rose-plaster corridor/frontpage plate with a dominant frosted coral arch, a translucent red curtain panel, small etched labels, floor insets, vents, pinlights, and distant horizon markers.",
+    "dominant_spatial_mode": "contained",
+    "density": "dense",
+    "legibility": "selective",
+    "mood": [
+      "hushed, washed-out, after-hours, quietly expectant",
+      "A minimal rose-plaster corridor/frontpage plate with a dominant frosted coral arch, a translucent red curtain panel, small etched labels, floor insets, vents, pinlights, and distant horizon markers.",
+      "coral-static",
+      "frosted-threshold",
+      "ambient-corridor"
+    ]
+  },
+  "visual_ecology": {
+    "dominant_objects": [
+      "Rose Static Threshold",
+      "Underground Mix Curtain",
+      "Bajidoran Floor Tile",
+      "Air Earth Vent",
+      "Lucid Landscape Seam",
+      "Broadway Mail Slot",
+      "Jam Moon Glyph",
+      "Open World Horizon Chip"
+    ],
+    "dominant_surfaces": [
+      "glass",
+      "water",
+      "paint",
+      "light-band"
+    ],
+    "dominant_structures": [
+      "coral-static-passage",
+      "one dominant frosted-glass arch floating in a waxed plaster passage",
+      "one narrow inverted curtain panel suspended along the left edge",
+      "one low blackened-steel waterline crossing the floor",
+      "soft rectangular overlays and ghosted photographic texture translated from the coral reference image",
+      "nine quiet source anchors embedded as labels, slits, tiles, seams, pinlights, and chips",
+      "large frosted coral arched threshold",
+      "translucent red curtain panel"
+    ],
+    "negative_space_regions": []
+  },
+  "interaction_world": {
+    "class": "object-native",
+    "recommended_behaviors": [
+      "cabinet-drawer-behavior",
+      "object-memory",
+      "threshold-scan"
+    ],
+    "rejected_behaviors": [
+      "light-path-reaction"
+    ],
+    "reasoning": [
+      "Primary ontology inferred from scene family and artifact types: coral-static-passage.",
+      "Artifact vocabulary suggests object-native interaction logic."
+    ]
+  },
+  "artifact_candidates": [
+    {
+      "id": "hero-rose-static-threshold",
+      "kind": "hero",
+      "type": "hero-scale-frosted-arch",
+      "strength": 0.99,
+      "bounds": {
+        "x": 0.4023,
+        "y": 0.0762,
+        "w": 0.3932,
+        "h": 0.5898
+      },
+      "supports": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "hero-underground-mix-curtain",
+      "kind": "hero",
+      "type": "hero-scale-translucent-curtain-panel",
+      "strength": 0.975992,
+      "bounds": {
+        "x": 0.043,
+        "y": 0.0234,
+        "w": 0.1803,
+        "h": 0.7959
+      },
+      "supports": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-bajidoran-floor-tile",
+      "kind": "module",
+      "type": "ochre-ceramic-inset",
+      "strength": 0.7941,
+      "bounds": {
+        "x": 0.222,
+        "y": 0.89,
+        "w": 0.106,
+        "h": 0.044
+      },
+      "supports": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-air-earth-vent",
+      "kind": "module",
+      "type": "paired-vertical-vent-slits",
+      "strength": 0.749232,
+      "bounds": {
+        "x": 0.62,
+        "y": 0.54,
+        "w": 0.22,
+        "h": 0.22
+      },
+      "supports": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ]
+    },
+    {
+      "id": "module-lucid-landscape-seam-2",
+      "kind": "module",
+      "type": "thin-glass-horizon-seam",
+      "strength": 0.732264,
+      "bounds": {
+        "x": 0.1,
+        "y": 0.78,
+        "w": 0.18,
+        "h": 0.16
+      },
+      "supports": [
+        "screen-rendered-html",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-broadway-mail-slot",
+      "kind": "module",
+      "type": "etched-brass-mail-slot",
+      "strength": 0.700896,
+      "bounds": {
+        "x": 0.42,
+        "y": 0.78,
+        "w": 0.18,
+        "h": 0.16
+      },
+      "supports": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-jam-moon-glyph",
+      "kind": "module",
+      "type": "square-blue-moon-glyph",
+      "strength": 0.6649680000000001,
+      "bounds": {
+        "x": 0.72,
+        "y": 0.76,
+        "w": 0.18,
+        "h": 0.16
+      },
+      "supports": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-open-world-horizon-chip",
+      "kind": "module",
+      "type": "distant-black-horizon-chip",
+      "strength": 0.663028,
+      "bounds": {
+        "x": 0.28,
+        "y": 0.34,
+        "w": 0.16,
+        "h": 0.15
+      },
+      "supports": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    }
+  ],
+  "field_candidates": [],
+  "html_surfaces": [
+    {
+      "id": "hero-rose-static-threshold-surface",
+      "surface_type": "unknown",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.4023,
+        "y": 0.0762,
+        "w": 0.3932,
+        "h": 0.5898
+      },
+      "suitability": 0.9,
+      "supported_treatments": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "hero-underground-mix-curtain-surface",
+      "surface_type": "unknown",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.043,
+        "y": 0.0234,
+        "w": 0.1803,
+        "h": 0.7959
+      },
+      "suitability": 0.9,
+      "supported_treatments": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-bajidoran-floor-tile-surface",
+      "surface_type": "unknown",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.222,
+        "y": 0.89,
+        "w": 0.106,
+        "h": 0.044
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-air-earth-vent-surface",
+      "surface_type": "paint",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.62,
+        "y": 0.54,
+        "w": 0.22,
+        "h": 0.22
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ]
+    },
+    {
+      "id": "module-lucid-landscape-seam-2-surface",
+      "surface_type": "glass",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.1,
+        "y": 0.78,
+        "w": 0.18,
+        "h": 0.16
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "screen-rendered-html",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-broadway-mail-slot-surface",
+      "surface_type": "unknown",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.42,
+        "y": 0.78,
+        "w": 0.18,
+        "h": 0.16
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-jam-moon-glyph-surface",
+      "surface_type": "unknown",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.72,
+        "y": 0.76,
+        "w": 0.18,
+        "h": 0.16
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-open-world-horizon-chip-surface",
+      "surface_type": "unknown",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.28,
+        "y": 0.34,
+        "w": 0.16,
+        "h": 0.15
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    }
+  ],
+  "enhancement_bundle": {
+    "primary": [
+      "mechanical-reveal-system"
+    ],
+    "secondary": [
+      "warped-paper-fragment",
+      "threshold-scan-reveal"
+    ],
+    "wildcard": []
+  },
+  "per_region_assignments": [],
+  "scene_wide_behavior": {
+    "selected": "cabinet-drawer-behavior"
+  },
+  "choreography_rule": {
+    "selected": "anchor-and-satellites"
+  },
+  "release_notes": [
+    "Generated automatically from 8 artifacts and scene family heuristics."
+  ]
+}

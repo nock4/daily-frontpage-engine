@@ -1,0 +1,22 @@
+{
+  "ambiance_recipe_id": "ambiance-2026-04-28-ash-procession-flare-v1",
+  "motion_system": "slow ceremonial drift, as if the marks are being carried across a dark stage in a single line",
+  "color_drift": "charcoal and graphite hold steady while the bone-white flare warms slightly toward pearl and pale smoke-gray",
+  "glow_behavior": "the flare blooms at its thickest edge, then fades into dry chalk dust and small silver interruptions",
+  "audio_posture": "ambient",
+  "webgl_mode": "shader-scene",
+  "research_inputs": [
+    "research-1-4abef8ce",
+    "research-2-4bc72527",
+    "research-3-2ca2a5c8",
+    "research-4-45f1d60f",
+    "research-5-aece83a9",
+    "research-6-30310d9c",
+    "research-7-7f19e780",
+    "research-8-0ce42ea7",
+    "research-9-908549bd",
+    "research-10-e2c054df",
+    "research-11-4fe99639",
+    "research-12-c4c0c715"
+  ]
+}

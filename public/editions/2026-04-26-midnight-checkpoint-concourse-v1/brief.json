@@ -1,0 +1,66 @@
+{
+  "brief_id": "brief-2026-04-26-midnight-checkpoint-concourse-v1",
+  "date": "2026-04-26",
+  "signal_cluster_ids": [
+    "55c2a5c846a6",
+    "5521ff3b4c89",
+    "d824bedc7d45",
+    "67bac2353d29",
+    "97ed2b079aa4",
+    "1ecbe0ef250f",
+    "409267176a04",
+    "b7428f1c9989"
+  ],
+  "research_node_ids": [
+    "research-1-433ce88f",
+    "research-2-e72d5c57",
+    "research-3-9c9b976a",
+    "research-4-98b6d51d",
+    "research-5-ef74d131",
+    "research-6-cfe1296b",
+    "research-7-1601cefe",
+    "research-8-88263fb4",
+    "research-9-c4906958",
+    "research-10-c2189e1a",
+    "research-11-02d3a2fc",
+    "research-12-5215c32f"
+  ],
+  "mood": "quiet, procedural, nocturnal, ceremonial without becoming a chapel",
+  "material_language": [
+    "charcoal enamel panels",
+    "brushed black steel",
+    "frosted acrylic",
+    "etched glass",
+    "polished basalt floor",
+    "pearl-white inlay lettering",
+    "translucent resin tiles",
+    "soft paper lantern fabric"
+  ],
+  "lighting": "low midnight light with cool white edge glows, soft cyan spill, and tiny warm amber markers receding down the corridor",
+  "object_inventory": [
+    "hero-scale checkpoint inscription wall",
+    "hero-scale ASCII comet mural",
+    "red-green testing threshold tile",
+    "confetti voting urn lantern",
+    "motion cavalry frieze",
+    "Susumu Yokota listening alcove panel",
+    "glif style-transfer mirror",
+    "agent-routing enamel wayfinding strip"
+  ],
+  "interaction_grammar": {
+    "hero_count": 2,
+    "module_count": 5,
+    "window_strategy": "source-window"
+  },
+  "negative_constraints": [
+    "no desks",
+    "no dashboards",
+    "no generic software UI",
+    "no office room",
+    "no printmaking chapel",
+    "no roller imagery",
+    "no greenhouse or garden",
+    "no source-summary cards",
+    "do not reproduce logos or social-media page chrome"
+  ]
+}

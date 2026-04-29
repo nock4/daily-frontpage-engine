@@ -2,6 +2,23 @@
 
 These are the canonical live-stage states that must pass before Hermes reports a UX fix as done.
 
+## Generated Edition Smoke
+
+Route:
+- latest generated review route, currently `/archive/ash-procession-flare-v1`
+
+State 1: artwork renders
+- Plate loads without review chrome
+- Artifact targets are focusable/clickable
+- About/source-window styling uses the edition typography profile where applicable
+
+State 2: source window opens
+- Hover/click an artifact
+- A source window opens near the stage target
+- Media-capable bindings show media, not title-only placeholders
+- Generated YouTube bindings render playable embeds, not linkout-only windows
+- Generated primary source URLs are unique and do not point at raw Twitter/X CDN media
+
 ## Night Observatory
 
 Route:

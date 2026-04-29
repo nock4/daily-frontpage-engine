@@ -1,0 +1,20 @@
+{
+  "about_id": "about-2026-04-26-bluebell-glowseed-clearing-v1",
+  "label": "About",
+  "title": "About The Bluebell Glowseed Clearing",
+  "short_blurb": "Built from saved signals, source research, one generated plate, and a corrected post-plate mapping pass.",
+  "body": [
+    "Daily Frontpage is a daily generated interactive front page. Each edition starts from recent saved signals and source research, becomes a new image-led scene, and stays explorable in the archive. The image is the interface: visible marks, objects, and surfaces in the scene open the real sources that shaped the day.",
+    "A follow-up vision pass re-read the finished plate, moved the clickable regions onto Background Bloom, Star Cut on Resin Pod, Void Hug Hollow, October Language Spore, and Ever No Way Lichen, and then the mask audit tested tighter geometry from those corrected regions. Run artifacts are in tmp/daily-process-runs/contour-sync-2026-04-27/remap-2026-04-26-bluebell-glowseed-clearing-v1."
+  ],
+  "typography": {
+    "profile_id": "botanical-field",
+    "heading_family": "'DFE Fraunces', Georgia, serif",
+    "body_family": "'DFE Newsreader', Iowan Old Style, Georgia, serif",
+    "accent_family": "'DFE Space Grotesk', ui-sans-serif, system-ui, sans-serif",
+    "heading_weight": 700,
+    "body_weight": 430,
+    "accent_weight": 720,
+    "rationale": "Fraunces gives the title an organic, seed-label quality; Newsreader keeps the explanation calm and readable."
+  }
+}

@@ -1,0 +1,239 @@
+{
+  "enhancement_plan_id": "enhance-2026-04-26-nocturnal-observatory-plain-language-stars-v1",
+  "edition_id": "2026-04-26-nocturnal-observatory-plain-language-stars-v1",
+  "derived_from": {
+    "interpretation_id": "interp-2026-04-26-nocturnal-observatory-plain-language-stars-v1"
+  },
+  "interaction_world": {
+    "class": "object-native",
+    "primary_behavior": "mechanical-reveal-system",
+    "scene_wide_behavior": "cabinet-drawer-behavior",
+    "choreography_rule": "anchor-and-satellites"
+  },
+  "bundle": {
+    "primary": [
+      "mechanical-reveal-system"
+    ],
+    "secondary": [
+      "warped-paper-fragment",
+      "threshold-scan-reveal"
+    ],
+    "wildcard": []
+  },
+  "runtime_safe_subset": [
+    "warped-paper-fragment",
+    "threshold-scan-reveal"
+  ],
+  "future_only_subset": [
+    "mechanical-reveal-system",
+    "ghost-reflection-treatment",
+    "lens-inspection"
+  ],
+  "rejected": [
+    {
+      "technique": "light-path-reveal",
+      "reason": "Rejected by interpretation behavior rule: light-path-reaction"
+    },
+    {
+      "technique": "light-path-reveal",
+      "reason": "Object-native scenes should anchor interaction to discrete artifacts before environmental field effects."
+    }
+  ],
+  "targets": [
+    {
+      "target_id": "hero-gut-check-star-ledger",
+      "target_kind": "artifact",
+      "artifact_id": "hero-gut-check-star-ledger",
+      "priority": 1,
+      "techniques": [
+        "warped-paper-fragment",
+        "threshold-scan-reveal"
+      ],
+      "source_classes": [
+        "web",
+        "article"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (hero-scale-wall-slate) selected from interpretation."
+    },
+    {
+      "target_id": "hero-ascii-comet-dome",
+      "target_kind": "artifact",
+      "artifact_id": "hero-ascii-comet-dome",
+      "priority": 2,
+      "techniques": [
+        "warped-paper-fragment",
+        "threshold-scan-reveal"
+      ],
+      "source_classes": [
+        "web",
+        "article"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (hero-scale-dome-map) selected from interpretation."
+    },
+    {
+      "target_id": "module-variable-type-constellation-strip",
+      "target_kind": "artifact",
+      "artifact_id": "module-variable-type-constellation-strip",
+      "priority": 3,
+      "techniques": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ],
+      "source_classes": [
+        "social",
+        "tweet"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (brass-mounted-letter-strip) selected from interpretation."
+    },
+    {
+      "target_id": "module-concealed-egg-signal-vessel",
+      "target_kind": "artifact",
+      "artifact_id": "module-concealed-egg-signal-vessel",
+      "priority": 4,
+      "techniques": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ],
+      "source_classes": [
+        "social",
+        "tweet"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (porcelain-reliquary) selected from interpretation."
+    },
+    {
+      "target_id": "module-skill-navigation-tablet",
+      "target_kind": "artifact",
+      "artifact_id": "module-skill-navigation-tablet",
+      "priority": 5,
+      "techniques": [
+        "ghost-reflection-treatment",
+        "lens-inspection"
+      ],
+      "source_classes": [
+        "web",
+        "article"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (smoked-glass-tablet) selected from interpretation."
+    },
+    {
+      "target_id": "module-heisei-tape-moon-monitor",
+      "target_kind": "artifact",
+      "artifact_id": "module-heisei-tape-moon-monitor",
+      "priority": 6,
+      "techniques": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ],
+      "source_classes": [
+        "web",
+        "article"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (retro-vhs-monitor) selected from interpretation."
+    },
+    {
+      "target_id": "module-omma-kinetic-orbit-model",
+      "target_kind": "artifact",
+      "artifact_id": "module-omma-kinetic-orbit-model",
+      "priority": 7,
+      "techniques": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ],
+      "source_classes": [
+        "web",
+        "article"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (frosted-acrylic-orbit-model) selected from interpretation."
+    },
+    {
+      "target_id": "module-fifty-watt-ephemera-pennant",
+      "target_kind": "artifact",
+      "artifact_id": "module-fifty-watt-ephemera-pennant",
+      "priority": 8,
+      "techniques": [
+        "warped-paper-fragment",
+        "threshold-scan-reveal"
+      ],
+      "source_classes": [
+        "web",
+        "article"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (aged-paper-pennant) selected from interpretation."
+    },
+    {
+      "target_id": "module-aura-restart-star-chart",
+      "target_kind": "artifact",
+      "artifact_id": "module-aura-restart-star-chart",
+      "priority": 9,
+      "techniques": [
+        "warped-paper-fragment",
+        "threshold-scan-reveal"
+      ],
+      "source_classes": [
+        "web",
+        "article"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (folded-stellar-manifest) selected from interpretation."
+    }
+  ],
+  "global_recommendation": [
+    "mechanical-reveal-system",
+    "warped-paper-fragment",
+    "threshold-scan-reveal"
+  ],
+  "runtime_note": "Generated automatically from 9 artifacts and scene family heuristics."
+}

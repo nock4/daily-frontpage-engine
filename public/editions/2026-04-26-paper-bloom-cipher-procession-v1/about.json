@@ -1,0 +1,20 @@
+{
+  "about_id": "about-2026-04-26-paper-bloom-cipher-procession-v1",
+  "label": "About",
+  "title": "About The Paper Bloom Cipher Procession",
+  "short_blurb": "Built from 137 recent saved-content signals, 12 inspected links, and 7 unique source objects.",
+  "body": [
+    "Seed image: Morgan Fisher - Flower Music (1998) (i.ytimg.com). The plate borrowed diffuse milky front light with a faint amber glow gathered at the center of the bloom; edges fall into soft charcoal side shadow and materials like cream washi paper, translucent vellum petals, and dull copper ink. Bound sources include Morgan Fisher - Flower Music (1998) and Tangerine Dream 70s Sequencer Pieces, plus 5 more.",
+    "gpt-5.5 inspected the finished plate and mapped 7 visible objects, including large translucent central petal veil, warm flower-center pin glow, and right-side copper sequencer ribbon. Outputs were written to tmp/daily-process-runs/daily-process-2026-04-26T16-19-25-084Z."
+  ],
+  "typography": {
+    "profile_id": "listening-arcade",
+    "heading_family": "'DFE Bricolage Grotesque', ui-sans-serif, system-ui, sans-serif",
+    "body_family": "'DFE Space Grotesk', ui-sans-serif, system-ui, sans-serif",
+    "accent_family": "'DFE Fraunces', Georgia, serif",
+    "heading_weight": 720,
+    "body_weight": 430,
+    "accent_weight": 680,
+    "rationale": "Bricolage Grotesque and Space Grotesk fit record, arcade, and listening-room editions while Fraunces keeps source captions tactile."
+  }
+}

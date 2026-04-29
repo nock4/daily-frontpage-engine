@@ -1,0 +1,604 @@
+{
+  "artifact_map_id": "map-2026-04-26-bluebell-glowseed-clearing-v1",
+  "viewport": {
+    "base_width": 1536,
+    "base_height": 1024,
+    "aspect_ratio": "1536:1024"
+  },
+  "default_cluster_id": "bluebell-glowseed-clearing",
+  "default_artifact_id": "hero-background-bloom",
+  "artifacts": [
+    {
+      "id": "hero-background-bloom",
+      "kind": "hero",
+      "label": "Background Bloom",
+      "artifact_type": "glossy-resin-seedpod",
+      "bounds": {
+        "x": 0.5723,
+        "y": 0.3389,
+        "w": 0.1914,
+        "h": 0.3262
+      },
+      "z_index": 10,
+      "polygon": [
+        [
+          0.6621,
+          0.6616
+        ],
+        [
+          0.6491,
+          0.6616
+        ],
+        [
+          0.6243,
+          0.6392
+        ],
+        [
+          0.5947,
+          0.5918
+        ],
+        [
+          0.5785,
+          0.5459
+        ],
+        [
+          0.5752,
+          0.4854
+        ],
+        [
+          0.5895,
+          0.4326
+        ],
+        [
+          0.6178,
+          0.3843
+        ],
+        [
+          0.6784,
+          0.3442
+        ],
+        [
+          0.7096,
+          0.3413
+        ],
+        [
+          0.734,
+          0.3682
+        ],
+        [
+          0.7314,
+          0.373
+        ],
+        [
+          0.7406,
+          0.4092
+        ],
+        [
+          0.7536,
+          0.4404
+        ],
+        [
+          0.7614,
+          0.4873
+        ],
+        [
+          0.7581,
+          0.5264
+        ],
+        [
+          0.7425,
+          0.5811
+        ],
+        [
+          0.7207,
+          0.6177
+        ],
+        [
+          0.7044,
+          0.6372
+        ],
+        [
+          0.6621,
+          0.6616
+        ]
+      ],
+      "cluster_id": "bluebell-glowseed-clearing",
+      "mask_path": "/editions/2026-04-26-bluebell-glowseed-clearing-v1/assets/masks/hero-background-bloom.svg",
+      "source_binding_ids": [
+        "binding-hero-background-bloom"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          1024,
+          489
+        ],
+        "safe_stage_window_origin_px": [
+          1046,
+          515
+        ],
+        "preferred_expansion_label": "left"
+      }
+    },
+    {
+      "id": "hero-haller-fog-veil",
+      "kind": "hero",
+      "label": "Star Cut on Resin Pod",
+      "artifact_type": "star-shaped-incision",
+      "bounds": {
+        "x": 0.602,
+        "y": 0.394,
+        "w": 0.09,
+        "h": 0.108
+      },
+      "z_index": 11,
+      "polygon": [
+        [
+          0.638,
+          0.394
+        ],
+        [
+          0.649,
+          0.431
+        ],
+        [
+          0.672,
+          0.404
+        ],
+        [
+          0.66,
+          0.445
+        ],
+        [
+          0.692,
+          0.448
+        ],
+        [
+          0.662,
+          0.463
+        ],
+        [
+          0.678,
+          0.502
+        ],
+        [
+          0.646,
+          0.477
+        ],
+        [
+          0.625,
+          0.502
+        ],
+        [
+          0.631,
+          0.464
+        ],
+        [
+          0.602,
+          0.453
+        ],
+        [
+          0.631,
+          0.441
+        ]
+      ],
+      "cluster_id": "bluebell-glowseed-clearing",
+      "mask_path": "/editions/2026-04-26-bluebell-glowseed-clearing-v1/assets/masks/hero-haller-fog-veil.svg",
+      "source_binding_ids": [
+        "binding-hero-haller-fog-veil"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          994,
+          450
+        ],
+        "safe_stage_window_origin_px": [
+          1005,
+          459
+        ],
+        "preferred_expansion_label": "left"
+      }
+    },
+    {
+      "id": "module-october-language-spore",
+      "kind": "module",
+      "label": "Void Hug Hollow",
+      "artifact_type": "small-shadow-aperture",
+      "bounds": {
+        "x": 0.334,
+        "y": 0.858,
+        "w": 0.083,
+        "h": 0.11
+      },
+      "z_index": 23,
+      "polygon": [
+        [
+          0.351,
+          0.873
+        ],
+        [
+          0.378,
+          0.858
+        ],
+        [
+          0.405,
+          0.872
+        ],
+        [
+          0.417,
+          0.903
+        ],
+        [
+          0.41,
+          0.944
+        ],
+        [
+          0.388,
+          0.968
+        ],
+        [
+          0.354,
+          0.963
+        ],
+        [
+          0.334,
+          0.934
+        ],
+        [
+          0.336,
+          0.895
+        ]
+      ],
+      "cluster_id": "bluebell-glowseed-clearing",
+      "mask_path": "/editions/2026-04-26-bluebell-glowseed-clearing-v1/assets/masks/module-october-language-spore.svg",
+      "source_binding_ids": [
+        "binding-module-october-language-spore"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          577,
+          850
+        ],
+        "safe_stage_window_origin_px": [
+          587,
+          850
+        ],
+        "preferred_expansion_label": "up"
+      }
+    },
+    {
+      "id": "module-source-pathway-plaque",
+      "kind": "module",
+      "label": "October Language Spore",
+      "artifact_type": "amber-spore-ring",
+      "bounds": {
+        "x": 0.665,
+        "y": 0.828,
+        "w": 0.094,
+        "h": 0.061
+      },
+      "z_index": 24,
+      "polygon": [
+        [
+          0.682,
+          0.838
+        ],
+        [
+          0.705,
+          0.828
+        ],
+        [
+          0.735,
+          0.833
+        ],
+        [
+          0.759,
+          0.848
+        ],
+        [
+          0.759,
+          0.872
+        ],
+        [
+          0.734,
+          0.889
+        ],
+        [
+          0.701,
+          0.889
+        ],
+        [
+          0.674,
+          0.876
+        ],
+        [
+          0.665,
+          0.856
+        ]
+      ],
+      "cluster_id": "bluebell-glowseed-clearing",
+      "mask_path": "/editions/2026-04-26-bluebell-glowseed-clearing-v1/assets/masks/module-source-pathway-plaque.svg",
+      "source_binding_ids": [
+        "binding-module-source-pathway-plaque"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          1094,
+          850
+        ],
+        "safe_stage_window_origin_px": [
+          1105,
+          850
+        ],
+        "preferred_expansion_label": "up"
+      }
+    },
+    {
+      "id": "module-ever-no-way-lichen",
+      "kind": "module",
+      "label": "Ever No Way Lichen",
+      "artifact_type": "pale-lichen-stroke",
+      "bounds": {
+        "x": 0.06,
+        "y": 0.81,
+        "w": 0.208,
+        "h": 0.138
+      },
+      "z_index": 25,
+      "polygon": [
+        [
+          0.06,
+          0.81
+        ],
+        [
+          0.095,
+          0.817
+        ],
+        [
+          0.126,
+          0.848
+        ],
+        [
+          0.16,
+          0.861
+        ],
+        [
+          0.185,
+          0.897
+        ],
+        [
+          0.23,
+          0.919
+        ],
+        [
+          0.268,
+          0.93
+        ],
+        [
+          0.255,
+          0.948
+        ],
+        [
+          0.205,
+          0.932
+        ],
+        [
+          0.171,
+          0.902
+        ],
+        [
+          0.134,
+          0.884
+        ],
+        [
+          0.102,
+          0.852
+        ],
+        [
+          0.066,
+          0.833
+        ]
+      ],
+      "cluster_id": "bluebell-glowseed-clearing",
+      "mask_path": "/editions/2026-04-26-bluebell-glowseed-clearing-v1/assets/masks/module-ever-no-way-lichen.svg",
+      "source_binding_ids": [
+        "binding-module-ever-no-way-lichen"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          252,
+          850
+        ],
+        "safe_stage_window_origin_px": [
+          277,
+          850
+        ],
+        "preferred_expansion_label": "up"
+      }
+    },
+    {
+      "id": "module-angel-bell",
+      "kind": "module",
+      "label": "Angel Bell",
+      "artifact_type": "white-bellflower",
+      "bounds": {
+        "x": 0.807,
+        "y": 0.678,
+        "w": 0.051,
+        "h": 0.078
+      },
+      "z_index": 26,
+      "polygon": [
+        [
+          0.834,
+          0.678
+        ],
+        [
+          0.852,
+          0.691
+        ],
+        [
+          0.858,
+          0.716
+        ],
+        [
+          0.848,
+          0.747
+        ],
+        [
+          0.826,
+          0.756
+        ],
+        [
+          0.807,
+          0.739
+        ],
+        [
+          0.812,
+          0.708
+        ],
+        [
+          0.824,
+          0.692
+        ]
+      ],
+      "cluster_id": "bluebell-glowseed-clearing",
+      "mask_path": "/editions/2026-04-26-bluebell-glowseed-clearing-v1/assets/masks/module-angel-bell.svg",
+      "source_binding_ids": [
+        "binding-module-angel-bell"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          1279,
+          728
+        ],
+        "safe_stage_window_origin_px": [
+          1285,
+          734
+        ],
+        "preferred_expansion_label": "up"
+      }
+    },
+    {
+      "id": "module-agent-browser-moth",
+      "kind": "module",
+      "label": "Agent Browser Moth",
+      "artifact_type": "silver-moth-cutout",
+      "bounds": {
+        "x": 0.793,
+        "y": 0.845,
+        "w": 0.108,
+        "h": 0.069
+      },
+      "z_index": 27,
+      "polygon": [
+        [
+          0.793,
+          0.872
+        ],
+        [
+          0.819,
+          0.851
+        ],
+        [
+          0.85,
+          0.863
+        ],
+        [
+          0.876,
+          0.845
+        ],
+        [
+          0.901,
+          0.862
+        ],
+        [
+          0.886,
+          0.889
+        ],
+        [
+          0.852,
+          0.895
+        ],
+        [
+          0.823,
+          0.914
+        ],
+        [
+          0.8,
+          0.9
+        ]
+      ],
+      "cluster_id": "bluebell-glowseed-clearing",
+      "mask_path": "/editions/2026-04-26-bluebell-glowseed-clearing-v1/assets/masks/module-agent-browser-moth.svg",
+      "source_binding_ids": [
+        "binding-module-agent-browser-moth"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          1301,
+          850
+        ],
+        "safe_stage_window_origin_px": [
+          1314,
+          850
+        ],
+        "preferred_expansion_label": "up"
+      }
+    },
+    {
+      "id": "module-grill-me-thorn",
+      "kind": "module",
+      "label": "Grill-Me Thorn",
+      "artifact_type": "charred-thorn-label",
+      "bounds": {
+        "x": 0.891,
+        "y": 0.674,
+        "w": 0.102,
+        "h": 0.099
+      },
+      "z_index": 28,
+      "polygon": [
+        [
+          0.905,
+          0.674
+        ],
+        [
+          0.961,
+          0.695
+        ],
+        [
+          0.993,
+          0.735
+        ],
+        [
+          0.98,
+          0.773
+        ],
+        [
+          0.921,
+          0.752
+        ],
+        [
+          0.891,
+          0.708
+        ]
+      ],
+      "cluster_id": "bluebell-glowseed-clearing",
+      "mask_path": "/editions/2026-04-26-bluebell-glowseed-clearing-v1/assets/masks/module-grill-me-thorn.svg",
+      "source_binding_ids": [
+        "binding-module-grill-me-thorn"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          1320,
+          733
+        ],
+        "safe_stage_window_origin_px": [
+          1320,
+          741
+        ],
+        "preferred_expansion_label": "up"
+      }
+    }
+  ]
+}

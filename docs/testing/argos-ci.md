@@ -1,6 +1,6 @@
 # Argos CI setup
 
-This repo now supports Argos-backed visual regression review for the Playwright UX lane.
+Argos provides visual regression review for the Playwright UX lane.
 
 ## What runs in CI
 
@@ -19,6 +19,7 @@ That job:
 - uploads Playwright trace and test-result artifacts
 - uploads Argos screenshots and traces when `ARGOS_TOKEN` is present
 - uses modern GitHub Actions majors: checkout v6, setup-node v6, upload-artifact v7
+- runs on Node 20; repo `package.json` requires Node `^20.19.0 || >=22.12.0`
 
 ## Required GitHub secret
 

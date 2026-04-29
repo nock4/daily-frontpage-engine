@@ -8,6 +8,7 @@ Do not report a UX issue fixed until every box below is true.
 - [ ] A Playwright trace was produced
 - [ ] If the scenario is stable, a screenshot baseline exists or was intentionally updated
 - [ ] If accessibility could be affected, an axe scan was run
+- [ ] If source-window media could be affected, `npm run test:ux:media` or the route-scoped media audit was run
 
 ## Required checks
 - [ ] The screenshot was inspected directly, not inferred from DOM text alone
@@ -18,6 +19,9 @@ Do not report a UX issue fixed until every box below is true.
 - [ ] The intended number of open windows is visibly present
 - [ ] The frontmost/focused window is the one expected by the scenario
 - [ ] The close control is visible and reachable
+- [ ] Generated YouTube windows are playable embeds, not linkout-only windows
+- [ ] Generated source windows are not title-only when source media should be available
+- [ ] Generated packages do not use raw Twitter/X CDN media as primary source URLs
 
 ## If the user is reviewing via tunnel
 - [ ] Verification was run against the same fresh preview build
@@ -31,5 +35,8 @@ If any of these appear, the fix is not done:
 - `WEB SOURCE`
 - `Unbound source`
 - `example.com`
+- title-only source windows for media-capable bindings
+- non-embeddable YouTube videos in generated editions
+- raw `pbs.twimg.com` or `video.twimg.com` primary source URLs
 - visible scene-label bleed under an open stage window
 - a single popup over wallpaper when the target state is supposed to be multi-window

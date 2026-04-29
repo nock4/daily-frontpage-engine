@@ -1,0 +1,237 @@
+{
+  "enhancement_plan_id": "enhance-2026-04-26-rose-fog-listening-procession-v1",
+  "edition_id": "2026-04-26-rose-fog-listening-procession-v1",
+  "derived_from": {
+    "interpretation_id": "interp-2026-04-26-rose-fog-listening-procession-v1"
+  },
+  "interaction_world": {
+    "class": "object-native",
+    "primary_behavior": "mechanical-reveal-system",
+    "scene_wide_behavior": "cabinet-drawer-behavior",
+    "choreography_rule": "anchor-and-satellites"
+  },
+  "bundle": {
+    "primary": [
+      "mechanical-reveal-system"
+    ],
+    "secondary": [
+      "warped-paper-fragment",
+      "threshold-scan-reveal"
+    ],
+    "wildcard": []
+  },
+  "runtime_safe_subset": [
+    "warped-paper-fragment",
+    "threshold-scan-reveal",
+    "screen-rendered-html"
+  ],
+  "future_only_subset": [
+    "mechanical-reveal-system",
+    "ghost-reflection-treatment",
+    "lens-inspection"
+  ],
+  "rejected": [
+    {
+      "technique": "light-path-reveal",
+      "reason": "Rejected by interpretation behavior rule: light-path-reaction"
+    },
+    {
+      "technique": "light-path-reveal",
+      "reason": "Object-native scenes should anchor interaction to discrete artifacts before environmental field effects."
+    }
+  ],
+  "targets": [
+    {
+      "target_id": "hero-rose-expectation-proscenium",
+      "target_kind": "artifact",
+      "artifact_id": "hero-rose-expectation-proscenium",
+      "priority": 1,
+      "techniques": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ],
+      "source_classes": [
+        "audio"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (hero-scale-translucent-scrim) selected from interpretation."
+    },
+    {
+      "target_id": "hero-black-acid-electro-speaker-monolith",
+      "target_kind": "artifact",
+      "artifact_id": "hero-black-acid-electro-speaker-monolith",
+      "priority": 2,
+      "techniques": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ],
+      "source_classes": [
+        "audio"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (lacquered-speaker-column) selected from interpretation."
+    },
+    {
+      "target_id": "module-air-earth-weather-veil",
+      "target_kind": "artifact",
+      "artifact_id": "module-air-earth-weather-veil",
+      "priority": 3,
+      "techniques": [
+        "screen-rendered-html",
+        "threshold-scan-reveal"
+      ],
+      "source_classes": [
+        "audio"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (frosted-glass-curtain) selected from interpretation."
+    },
+    {
+      "target_id": "module-artstar-brass-address-mailbox",
+      "target_kind": "artifact",
+      "artifact_id": "module-artstar-brass-address-mailbox",
+      "priority": 4,
+      "techniques": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ],
+      "source_classes": [
+        "video",
+        "youtube"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (wall-mounted-brass-mailbox) selected from interpretation."
+    },
+    {
+      "target_id": "module-lucid-landscape-terrain-tray",
+      "target_kind": "artifact",
+      "artifact_id": "module-lucid-landscape-terrain-tray",
+      "priority": 5,
+      "techniques": [
+        "ghost-reflection-treatment",
+        "lens-inspection"
+      ],
+      "source_classes": [
+        "web",
+        "article"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (glass-topographic-object) selected from interpretation."
+    },
+    {
+      "target_id": "module-cameron-portrait-lantern",
+      "target_kind": "artifact",
+      "artifact_id": "module-cameron-portrait-lantern",
+      "priority": 6,
+      "techniques": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ],
+      "source_classes": [
+        "web",
+        "article"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (round-portrait-lantern) selected from interpretation."
+    },
+    {
+      "target_id": "module-rear-lit-shelf-vitrine",
+      "target_kind": "artifact",
+      "artifact_id": "module-rear-lit-shelf-vitrine",
+      "priority": 7,
+      "techniques": [
+        "ghost-reflection-treatment",
+        "lens-inspection"
+      ],
+      "source_classes": [
+        "web",
+        "article"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (lit-display-vitrine) selected from interpretation."
+    },
+    {
+      "target_id": "module-jaipong-bronze-drum-pavilion",
+      "target_kind": "artifact",
+      "artifact_id": "module-jaipong-bronze-drum-pavilion",
+      "priority": 8,
+      "techniques": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ],
+      "source_classes": [
+        "web",
+        "article"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (bronze-stage-instrument) selected from interpretation."
+    },
+    {
+      "target_id": "module-source-catalogue-plaque",
+      "target_kind": "artifact",
+      "artifact_id": "module-source-catalogue-plaque",
+      "priority": 9,
+      "techniques": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ],
+      "source_classes": [
+        "web",
+        "article"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (catalogue-plaque) selected from interpretation."
+    }
+  ],
+  "global_recommendation": [
+    "mechanical-reveal-system",
+    "warped-paper-fragment",
+    "threshold-scan-reveal"
+  ],
+  "runtime_note": "Generated automatically from 9 artifacts and scene family heuristics."
+}

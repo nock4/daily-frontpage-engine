@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-ROOT="/Users/nickgeorge-studio/Projects/landing-editions/ggol-form-field"
+ROOT="/Users/nickgeorge-studio/Projects/daily-frontpage-engine"
 RUNTIME_DIR="$ROOT/.runtime"
-PREVIEW_PORT="${PREVIEW_PORT:-4173}"
+PREVIEW_PORT="${PREVIEW_PORT:-4174}"
 PREVIEW_HOST="127.0.0.1"
 PREVIEW_LOG="$RUNTIME_DIR/preview.log"
 TUNNEL_LOG="$RUNTIME_DIR/cloudflared.log"
@@ -29,7 +29,7 @@ kill_if_running() {
 kill_if_running "$PREVIEW_PID_FILE"
 kill_if_running "$TUNNEL_PID_FILE"
 
-npm run validate:data
+npm run validate:editions
 npm run build >/dev/null
 
 nohup npm run preview -- --host "$PREVIEW_HOST" --port "$PREVIEW_PORT" >"$PREVIEW_LOG" 2>&1 &

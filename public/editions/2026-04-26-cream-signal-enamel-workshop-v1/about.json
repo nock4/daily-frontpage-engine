@@ -1,0 +1,20 @@
+{
+  "about_id": "about-2026-04-26-cream-signal-enamel-workshop-v1",
+  "label": "About",
+  "title": "About The Cream-Signal Enamel Workshop",
+  "short_blurb": "Built from 137 recent saved-content signals, 12 inspected links, and 8 unique source objects.",
+  "body": [
+    "Seed image: The Alfredo Recipe That Sold Over ONE MILLION TIMES!! (i.ytimg.com). The plate borrowed soft overhead kitchen light, diffused through fog, with a low stainless gleam and small burgundy edge shadows and materials like warm white enamel, cream sauce glaze, and brushed stainless steel. Bound sources include The Alfredo Recipe That Sold Over ONE MILLION TIMES!! and @albertdrosphoto: earlier this week in belgium in the haller forest the, plus 6 more.",
+    "gpt-5.5 inspected the finished plate and mapped 8 visible objects, including large cream enamel plate surface, raised cream smear on the plate, and small brown label strip on the plate. Outputs were written to tmp/daily-process-runs/daily-process-2026-04-26T17-13-08-058Z."
+  ],
+  "typography": {
+    "profile_id": "listening-arcade",
+    "heading_family": "'DFE Bricolage Grotesque', ui-sans-serif, system-ui, sans-serif",
+    "body_family": "'DFE Space Grotesk', ui-sans-serif, system-ui, sans-serif",
+    "accent_family": "'DFE Fraunces', Georgia, serif",
+    "heading_weight": 720,
+    "body_weight": 430,
+    "accent_weight": 680,
+    "rationale": "Bricolage Grotesque and Space Grotesk fit record, arcade, and listening-room editions while Fraunces keeps source captions tactile."
+  }
+}

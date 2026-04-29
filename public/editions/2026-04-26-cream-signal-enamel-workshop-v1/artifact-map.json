@@ -1,0 +1,388 @@
+{
+  "artifact_map_id": "map-2026-04-26-cream-signal-enamel-workshop-v1",
+  "viewport": {
+    "base_width": 1536,
+    "base_height": 1024,
+    "aspect_ratio": "1536:1024"
+  },
+  "default_cluster_id": "cream-signal-enamel-workshop",
+  "default_artifact_id": "hero-cream-oval-plate",
+  "artifacts": [
+    {
+      "id": "hero-cream-oval-plate",
+      "kind": "hero",
+      "label": "Cream Oval Plate",
+      "artifact_type": "hero-scale-enamel-plate",
+      "bounds": {
+        "x": 0,
+        "y": 0.407,
+        "w": 0.508,
+        "h": 0.593
+      },
+      "z_index": 10,
+      "polygon": [
+        [
+          0,
+          0.407
+        ],
+        [
+          0.508,
+          0.407
+        ],
+        [
+          0.508,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "cluster_id": "cream-signal-enamel-workshop",
+      "mask_path": "/editions/2026-04-26-cream-signal-enamel-workshop-v1/assets/masks/hero-cream-oval-plate.svg",
+      "source_binding_ids": [
+        "binding-hero-cream-oval-plate"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          390,
+          672
+        ],
+        "safe_stage_window_origin_px": [
+          453,
+          720
+        ],
+        "preferred_expansion_label": "up"
+      }
+    },
+    {
+      "id": "hero-cream-smear",
+      "kind": "hero",
+      "label": "Cream Smear",
+      "artifact_type": "raised-cream-swipe",
+      "bounds": {
+        "x": 0,
+        "y": 0.682,
+        "w": 0.389,
+        "h": 0.31799999999999995
+      },
+      "z_index": 11,
+      "polygon": [
+        [
+          0,
+          0.682
+        ],
+        [
+          0.389,
+          0.682
+        ],
+        [
+          0.389,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "cluster_id": "cream-signal-enamel-workshop",
+      "mask_path": "/editions/2026-04-26-cream-signal-enamel-workshop-v1/assets/masks/hero-cream-smear.svg",
+      "source_binding_ids": [
+        "binding-hero-cream-smear"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          299,
+          835
+        ],
+        "safe_stage_window_origin_px": [
+          347,
+          850
+        ],
+        "preferred_expansion_label": "up"
+      }
+    },
+    {
+      "id": "module-brown-plate-label",
+      "kind": "module",
+      "label": "Brown Plate Label",
+      "artifact_type": "small-paper-label",
+      "bounds": {
+        "x": 0.106,
+        "y": 0.524,
+        "w": 0.078,
+        "h": 0.077
+      },
+      "z_index": 22,
+      "polygon": [
+        [
+          0.106,
+          0.524
+        ],
+        [
+          0.184,
+          0.524
+        ],
+        [
+          0.184,
+          0.601
+        ],
+        [
+          0.106,
+          0.601
+        ]
+      ],
+      "cluster_id": "cream-signal-enamel-workshop",
+      "mask_path": "/editions/2026-04-26-cream-signal-enamel-workshop-v1/assets/masks/module-brown-plate-label.svg",
+      "source_binding_ids": [
+        "binding-module-brown-plate-label"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          223,
+          570
+        ],
+        "safe_stage_window_origin_px": [
+          232,
+          576
+        ],
+        "preferred_expansion_label": "right"
+      }
+    },
+    {
+      "id": "module-steel-crescent",
+      "kind": "module",
+      "label": "Steel Crescent",
+      "artifact_type": "brushed-metal-crescent",
+      "bounds": {
+        "x": 0.285,
+        "y": 0,
+        "w": 0.452,
+        "h": 0.177
+      },
+      "z_index": 23,
+      "polygon": [
+        [
+          0.285,
+          0
+        ],
+        [
+          0.737,
+          0
+        ],
+        [
+          0.737,
+          0.177
+        ],
+        [
+          0.285,
+          0.177
+        ]
+      ],
+      "cluster_id": "cream-signal-enamel-workshop",
+      "mask_path": "/editions/2026-04-26-cream-signal-enamel-workshop-v1/assets/masks/module-steel-crescent.svg",
+      "source_binding_ids": [
+        "binding-module-steel-crescent"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          785,
+          80
+        ],
+        "safe_stage_window_origin_px": [
+          840,
+          91
+        ],
+        "preferred_expansion_label": "left"
+      }
+    },
+    {
+      "id": "module-faint-circular-stain",
+      "kind": "module",
+      "label": "Faint Circular Stain",
+      "artifact_type": "round-surface-stain",
+      "bounds": {
+        "x": 0.059,
+        "y": 0.171,
+        "w": 0.065,
+        "h": 0.101
+      },
+      "z_index": 24,
+      "polygon": [
+        [
+          0.059,
+          0.171
+        ],
+        [
+          0.124,
+          0.171
+        ],
+        [
+          0.124,
+          0.272
+        ],
+        [
+          0.059,
+          0.272
+        ]
+      ],
+      "cluster_id": "cream-signal-enamel-workshop",
+      "mask_path": "/editions/2026-04-26-cream-signal-enamel-workshop-v1/assets/masks/module-faint-circular-stain.svg",
+      "source_binding_ids": [
+        "binding-module-faint-circular-stain"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          141,
+          219
+        ],
+        "safe_stage_window_origin_px": [
+          149,
+          227
+        ],
+        "preferred_expansion_label": "right"
+      }
+    },
+    {
+      "id": "module-bluebell-fog-threshold",
+      "kind": "module",
+      "label": "Bluebell Fog Threshold",
+      "artifact_type": "hero-scale-fog-panel",
+      "bounds": {
+        "x": 0.829,
+        "y": 0,
+        "w": 0.171,
+        "h": 0.922
+      },
+      "z_index": 25,
+      "polygon": [
+        [
+          0.829,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0.922
+        ],
+        [
+          0.829,
+          0.922
+        ]
+      ],
+      "cluster_id": "cream-signal-enamel-workshop",
+      "mask_path": "/editions/2026-04-26-cream-signal-enamel-workshop-v1/assets/masks/module-bluebell-fog-threshold.svg",
+      "source_binding_ids": [
+        "binding-module-bluebell-fog-threshold"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          1320,
+          397
+        ],
+        "safe_stage_window_origin_px": [
+          1320,
+          472
+        ],
+        "preferred_expansion_label": "left"
+      }
+    },
+    {
+      "id": "module-cream-oval-plate",
+      "kind": "module",
+      "label": "Cream Oval Plate",
+      "artifact_type": "hero-scale-enamel-plate",
+      "bounds": {
+        "x": 0.08,
+        "y": 0.1,
+        "w": 0.32,
+        "h": 0.32
+      },
+      "z_index": 26,
+      "polygon": [
+        [
+          0.08,
+          0.1
+        ],
+        [
+          0.4,
+          0.1
+        ],
+        [
+          0.4,
+          0.42
+        ],
+        [
+          0.08,
+          0.42
+        ]
+      ],
+      "cluster_id": "cream-signal-enamel-workshop",
+      "mask_path": "/editions/2026-04-26-cream-signal-enamel-workshop-v1/assets/masks/module-cream-oval-plate.svg",
+      "source_binding_ids": [
+        "binding-module-cream-oval-plate"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          369,
+          240
+        ],
+        "safe_stage_window_origin_px": [
+          408,
+          266
+        ],
+        "preferred_expansion_label": "right"
+      }
+    },
+    {
+      "id": "module-bluebell-fog-threshold-2",
+      "kind": "module",
+      "label": "Bluebell Fog Threshold",
+      "artifact_type": "hero-scale-fog-panel",
+      "bounds": {
+        "x": 0.58,
+        "y": 0.12,
+        "w": 0.32,
+        "h": 0.32
+      },
+      "z_index": 27,
+      "polygon": [
+        [
+          0.58,
+          0.12
+        ],
+        [
+          0.9,
+          0.12
+        ],
+        [
+          0.9,
+          0.44
+        ],
+        [
+          0.58,
+          0.44
+        ]
+      ],
+      "cluster_id": "cream-signal-enamel-workshop",
+      "mask_path": "/editions/2026-04-26-cream-signal-enamel-workshop-v1/assets/masks/module-bluebell-fog-threshold-2.svg",
+      "source_binding_ids": [
+        "binding-module-bluebell-fog-threshold-2"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          1137,
+          261
+        ],
+        "safe_stage_window_origin_px": [
+          1176,
+          287
+        ],
+        "preferred_expansion_label": "left"
+      }
+    }
+  ]
+}

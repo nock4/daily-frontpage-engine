@@ -14,7 +14,7 @@ const trimTrailingSlash = (pathname: string) => {
 const findEdition = (manifest: EditionManifest, value: string) =>
   manifest.editions.find((item) => item.slug === value || item.edition_id === value) ?? null
 
-export const parseAppRoute = (pathname: string, search: string, manifest: EditionManifest): AppRoute => {
+export const parseAppRoute = (pathname: string, manifest: EditionManifest): AppRoute => {
   const normalizedPath = trimTrailingSlash(pathname)
 
   if (normalizedPath === '/archive') {
@@ -28,12 +28,16 @@ export const parseAppRoute = (pathname: string, search: string, manifest: Editio
     return { kind: 'archive-index' }
   }
 
-  return { kind: 'edition', edition: selectEdition(manifest, new URLSearchParams(search)) }
+  if (normalizedPath.startsWith('/editions/')) {
+    const editionKey = decodeURIComponent(normalizedPath.replace('/editions/', '').split('/')[0] ?? '')
+    const edition = findEdition(manifest, editionKey)
+    if (edition) return { kind: 'edition', edition }
+  }
+
+  return { kind: 'edition', edition: selectEdition(manifest) }
 }
 
 export const buildArchiveHref = (slug: string) => `/archive/${slug}`
-
-export const buildEditionHref = (edition: EditionManifestItem) => (edition.is_live ? '/' : buildArchiveHref(edition.slug))
 
 export const getEditionArchiveRecords = (manifest: EditionManifest): ArchiveRecord[] =>
   [...manifest.editions]

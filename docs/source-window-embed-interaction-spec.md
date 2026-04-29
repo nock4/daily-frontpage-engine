@@ -16,7 +16,7 @@ Front-page pockets open real source windows, not text-summary cards. Each pocket
 ## Source Window Types
 
 1. social embed
-   - tweets, bookmark-like posts, web articles with rich preview support
+   - Twitter/X status URLs and bookmark-like posts with rich preview support
 2. video embed
    - YouTube and other playable video sources
 3. audio embed
@@ -123,26 +123,37 @@ Do not rely on mouseleave as a close mechanism for active media.
 
 ### Tweets / bookmarks / social posts
 - show the real embedded post when platform support exists
+- for X/Twitter status URLs, rebuild trusted provider embed HTML from the validated URL and load `platform.twitter.com/widgets.js`; do not trust or carry arbitrary stored embed HTML through runtime
+- remove extra stage chrome around tweet embeds: no outer modal shell, no extra dark iframe backdrop, no redundant `Open post` button
+- keep only the minimum runtime affordance needed to close the stage window
 - if full embed is heavy, hover can use a lightweight shell and click loads the live embed
-- preserve author, timestamp, and outbound link
+- preserve author, timestamp, and outbound link when the provider-native embed exposes them
+- raw `pbs.twimg.com` and `video.twimg.com` media URLs are never valid primary source bindings for generated editions
+- when a tweet has useful media, foreground that media in the preview while keeping the native tweet/status URL as the source of truth
 
 ### YouTube
 - hover may show thumbnail, muted teaser, or lightweight embed shell
 - click opens playable embed with controls
 - playback continues after mouseleave until explicit close or pause
-- support pop-out to YouTube when embed restrictions or performance require it
+- support pop-out to YouTube for older/manual editions when embed restrictions or performance require it
+- for newly generated editions, YouTube sources that fail embeddability checks should be skipped before packaging rather than shipped as linkout-only source windows
 
 ### NTS liked tracks
 - use NTS as the discovery signal only
+- do not bind or display the NTS URL itself
+- resolve to a direct streaming source before packaging; prefer YouTube watch/music URLs, then Bandcamp or SoundCloud track/release URLs
+- if no direct streamable source can be found, skip that NTS item
 - click should open the resolved actual track source, not the original NTS mix page
 - audio should persist while the user explores other pockets
 - provide minimized player state as a first-class pattern
+- distinct resolved tracks from one NTS source-map note may become distinct source windows
 
 ### Binding metadata drift
 - provider-native URL detection must outrank weak or stale binding metadata when the URL is unambiguous
 - if a `source_url` is YouTube, return the YouTube renderer even if the binding still says `web`
 - null `source_url` values are packaging bugs, not acceptable review-state fallbacks unless intentionally marked as unbound
 - stage fallback cards should not duplicate provider labels across eyebrow text and platform pill
+- if a generated binding has a raw Twitter/X media URL as `source_url`, treat it as a packaging bug
 
 ### Images / scanned artifacts
 - open high-resolution viewer or framed media view

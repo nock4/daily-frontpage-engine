@@ -1,0 +1,384 @@
+{
+  "interpretation_id": "interp-2026-04-26-nocturnal-observatory-plain-language-stars-v1",
+  "edition_id": "2026-04-26-nocturnal-observatory-plain-language-stars-v1",
+  "plate_read_timestamp": "2026-04-29T00:14:40.095Z",
+  "scene_ontology": {
+    "primary": "object-native",
+    "secondary": [
+      "optical-native"
+    ],
+    "confidence": 0.9
+  },
+  "world_read": {
+    "summary": "A dark observatory-like study with a large question ledger, star-dotted dome ceiling, brass-mounted text strip, porcelain vessel, engraved tablet, retro moon monitor, orbit model, hanging pennant, and open star chart all visibly available as interaction surfaces.",
+    "dominant_spatial_mode": "contained",
+    "density": "dense",
+    "legibility": "selective",
+    "mood": [
+      "quiet, investigative, astronomical, uncanny, precise",
+      "A dark observatory-like study with a large question ledger, star-dotted dome ceiling, brass-mounted text strip, porcelain vessel, engraved tablet, retro moon monitor, orbit model, hanging pennant, and open star chart all visibly available as interaction surfaces.",
+      "night-observatory",
+      "hidden-signals",
+      "ascii-starlight"
+    ]
+  },
+  "visual_ecology": {
+    "dominant_objects": [
+      "Gut-Check Star Ledger",
+      "ASCII Comet Dome",
+      "Variable Type Constellation Strip",
+      "Concealed-Egg Signal Vessel",
+      "Skill Navigation Tablet",
+      "Heisei Tape Moon Monitor",
+      "Omma Kinetic Orbit Model",
+      "Fifty-Watt Ephemera Pennant"
+    ],
+    "dominant_surfaces": [
+      "paper",
+      "glass",
+      "fog",
+      "wood",
+      "screen",
+      "light-band"
+    ],
+    "dominant_structures": [
+      "nocturnal-optical-observatory",
+      "Gut-Check Star Ledger",
+      "ASCII Comet Dome",
+      "Concealed-Egg Signal Vessel",
+      "Skill Navigation Tablet",
+      "Variable Type Constellation Strip",
+      "Heisei Tape Moon Monitor",
+      "Omma Kinetic Orbit Model"
+    ],
+    "negative_space_regions": []
+  },
+  "interaction_world": {
+    "class": "object-native",
+    "recommended_behaviors": [
+      "cabinet-drawer-behavior",
+      "object-memory",
+      "threshold-scan"
+    ],
+    "rejected_behaviors": [
+      "light-path-reaction"
+    ],
+    "reasoning": [
+      "Primary ontology inferred from scene family and artifact types: nocturnal-optical-observatory.",
+      "Artifact vocabulary suggests object-native interaction logic."
+    ]
+  },
+  "artifact_candidates": [
+    {
+      "id": "hero-gut-check-star-ledger",
+      "kind": "hero",
+      "type": "hero-scale-wall-slate",
+      "strength": 0.99,
+      "bounds": {
+        "x": 0.013,
+        "y": 0.038,
+        "w": 0.255,
+        "h": 0.789
+      },
+      "supports": [
+        "warped-paper-fragment",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "hero-ascii-comet-dome",
+      "kind": "hero",
+      "type": "hero-scale-dome-map",
+      "strength": 0.99,
+      "bounds": {
+        "x": 0.189,
+        "y": 0,
+        "w": 0.746,
+        "h": 0.348
+      },
+      "supports": [
+        "warped-paper-fragment",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-variable-type-constellation-strip",
+      "kind": "module",
+      "type": "brass-mounted-letter-strip",
+      "strength": 0.804156,
+      "bounds": {
+        "x": 0.332,
+        "y": 0.386,
+        "w": 0.389,
+        "h": 0.055
+      },
+      "supports": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-concealed-egg-signal-vessel",
+      "kind": "module",
+      "type": "porcelain-reliquary",
+      "strength": 0.7536,
+      "bounds": {
+        "x": 0.292,
+        "y": 0.463,
+        "w": 0.14,
+        "h": 0.292
+      },
+      "supports": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-skill-navigation-tablet",
+      "kind": "module",
+      "type": "smoked-glass-tablet",
+      "strength": 0.7265520000000001,
+      "bounds": {
+        "x": 0.445,
+        "y": 0.488,
+        "w": 0.19,
+        "h": 0.293
+      },
+      "supports": [
+        "ghost-reflection-treatment",
+        "lens-inspection"
+      ]
+    },
+    {
+      "id": "module-heisei-tape-moon-monitor",
+      "kind": "module",
+      "type": "retro-vhs-monitor",
+      "strength": 0.701052,
+      "bounds": {
+        "x": 0.616,
+        "y": 0.512,
+        "w": 0.164,
+        "h": 0.222
+      },
+      "supports": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-omma-kinetic-orbit-model",
+      "kind": "module",
+      "type": "frosted-acrylic-orbit-model",
+      "strength": 0.662892,
+      "bounds": {
+        "x": 0.774,
+        "y": 0.5,
+        "w": 0.181,
+        "h": 0.348
+      },
+      "supports": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-fifty-watt-ephemera-pennant",
+      "kind": "module",
+      "type": "aged-paper-pennant",
+      "strength": 0.6486639999999999,
+      "bounds": {
+        "x": 0.91,
+        "y": 0.309,
+        "w": 0.088,
+        "h": 0.296
+      },
+      "supports": [
+        "warped-paper-fragment",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-aura-restart-star-chart",
+      "kind": "module",
+      "type": "folded-stellar-manifest",
+      "strength": 0.6466959999999999,
+      "bounds": {
+        "x": 0.403,
+        "y": 0.783,
+        "w": 0.39,
+        "h": 0.211
+      },
+      "supports": [
+        "warped-paper-fragment",
+        "threshold-scan-reveal"
+      ]
+    }
+  ],
+  "field_candidates": [],
+  "html_surfaces": [
+    {
+      "id": "hero-gut-check-star-ledger-surface",
+      "surface_type": "paper",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.013,
+        "y": 0.038,
+        "w": 0.255,
+        "h": 0.789
+      },
+      "suitability": 0.9,
+      "supported_treatments": [
+        "warped-paper-fragment",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "hero-ascii-comet-dome-surface",
+      "surface_type": "paper",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.189,
+        "y": 0,
+        "w": 0.746,
+        "h": 0.348
+      },
+      "suitability": 0.9,
+      "supported_treatments": [
+        "warped-paper-fragment",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-variable-type-constellation-strip-surface",
+      "surface_type": "unknown",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.332,
+        "y": 0.386,
+        "w": 0.389,
+        "h": 0.055
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-concealed-egg-signal-vessel-surface",
+      "surface_type": "unknown",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.292,
+        "y": 0.463,
+        "w": 0.14,
+        "h": 0.292
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-skill-navigation-tablet-surface",
+      "surface_type": "glass",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.445,
+        "y": 0.488,
+        "w": 0.19,
+        "h": 0.293
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "ghost-reflection-treatment",
+        "lens-inspection"
+      ]
+    },
+    {
+      "id": "module-heisei-tape-moon-monitor-surface",
+      "surface_type": "screen",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.616,
+        "y": 0.512,
+        "w": 0.164,
+        "h": 0.222
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-omma-kinetic-orbit-model-surface",
+      "surface_type": "unknown",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.774,
+        "y": 0.5,
+        "w": 0.181,
+        "h": 0.348
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-fifty-watt-ephemera-pennant-surface",
+      "surface_type": "paper",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.91,
+        "y": 0.309,
+        "w": 0.088,
+        "h": 0.296
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "warped-paper-fragment",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-aura-restart-star-chart-surface",
+      "surface_type": "paper",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.403,
+        "y": 0.783,
+        "w": 0.39,
+        "h": 0.211
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "warped-paper-fragment",
+        "threshold-scan-reveal"
+      ]
+    }
+  ],
+  "enhancement_bundle": {
+    "primary": [
+      "mechanical-reveal-system"
+    ],
+    "secondary": [
+      "warped-paper-fragment",
+      "threshold-scan-reveal"
+    ],
+    "wildcard": []
+  },
+  "per_region_assignments": [],
+  "scene_wide_behavior": {
+    "selected": "cabinet-drawer-behavior"
+  },
+  "choreography_rule": {
+    "selected": "anchor-and-satellites"
+  },
+  "release_notes": [
+    "Generated automatically from 9 artifacts and scene family heuristics."
+  ]
+}

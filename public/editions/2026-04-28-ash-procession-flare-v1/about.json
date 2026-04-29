@@ -1,0 +1,20 @@
+{
+  "about_id": "about-2026-04-28-ash-procession-flare-v1",
+  "label": "About",
+  "title": "About The Ash Procession Flare",
+  "short_blurb": "A daily generated front page where the image is the interface.",
+  "body": [
+    "Daily Frontpage is a daily generated interactive front page. Each edition starts from recent saved signals and source research, becomes a new image-led scene, and stays explorable in the archive. The image is the interface: visible marks, objects, and surfaces in the scene open the real sources that shaped the day.",
+    "This iteration began with 16 recent saved-signal files and 16 captured links, then narrowed the page to 9 source windows around Requiem, by feeo and 1 hour focus sound | ambient | fragrance note | art | riverside | Shimon Hoshino, plus 7 more. A source image from f4.bcbits.com helped set the palette, contrast, edge behavior, and gesture. The scene became The Ash Procession Flare: A vast charcoal paper field fills the frame, matte and nearly empty, with more than two thirds left as open black-gray air. One dominant surface: dry graphite darkness. After the image was made, a plate-reading pass mapped 9 visible regions and the mask audit tightened them against broad pearled wash around REQUIEM, dominant diagonal silver flare, and jagged torn graphite edge."
+  ],
+  "typography": {
+    "profile_id": "listening-arcade",
+    "heading_family": "'DFE Bricolage Grotesque', ui-sans-serif, system-ui, sans-serif",
+    "body_family": "'DFE Space Grotesk', ui-sans-serif, system-ui, sans-serif",
+    "accent_family": "'DFE Fraunces', Georgia, serif",
+    "heading_weight": 720,
+    "body_weight": 430,
+    "accent_weight": 680,
+    "rationale": "Bricolage Grotesque and Space Grotesk fit record, arcade, and listening-room editions while Fraunces keeps source captions tactile."
+  }
+}

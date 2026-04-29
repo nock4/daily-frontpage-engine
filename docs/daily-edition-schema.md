@@ -13,12 +13,19 @@ Each edition should be self-contained enough to:
 ## Core rule
 One day = one edition package.
 
+## Root manifest
+The root manifest lives at `public/editions/index.json`.
+
+`current_edition_id` is the authoritative root-route pointer. The matching edition item should be the only manifest entry with `is_live: true`; generated review editions should remain `is_live: false` unless the daily process is run with `--publish`.
+
 That package should include:
 - the daily brief
 - generated scene plate
 - artifact map
 - source bindings
 - ambiance recipe
+- about note with run-specific process explanation and typography profile
+- post-plate analysis, interpretation, and enhancement-plan metadata when generated
 - review state
 - publish metadata
 
@@ -73,11 +80,10 @@ Stores the generated image and provenance.
 ```json
 {
   "plate_id": "plate-2026-04-17-a",
-  "asset_path": "assets/plates/2026-04-17-herbarium-bed-v1.jpg",
-  "width": 1280,
-  "height": 720,
-  "model": "provider/model-name",
-  "seed": "optional-seed",
+  "asset_path": "assets/plate.png",
+  "width": 1536,
+  "height": 1024,
+  "model": "gpt-image-2",
   "prompt_version": "prompt-v3",
   "generated_at": "2026-04-17T09:00:00Z",
   "scene_family": "herbarium-bed",
@@ -114,6 +120,8 @@ Defines hero/module geometry and semantics.
 }
 ```
 
+`polygon` should represent the best available contour-hugging mask for the visible target. Bounds-only rectangles are acceptable as fallback scaffolding, but generated packages should prefer the winning mask candidate when the automated mask pass can identify one.
+
 ## 4. Source binding set
 Each artifact opens a real source window.
 
@@ -124,17 +132,27 @@ Each artifact opens a real source window.
     {
       "id": "binding-left-specimen",
       "artifact_id": "module-left-label",
-      "source_type": "tweet|youtube|nts|article|image|link",
+      "source_type": "tweet|youtube|audio|article|image|github|link",
       "source_url": "https://...",
       "window_type": "social|video|audio|image|web",
       "hover_behavior": "preview|none",
       "click_behavior": "pin-open",
       "playback_persistence": true,
-      "fallback_type": "rich-preview|outbound-link"
+      "fallback_type": "rich-preview|outbound-link",
+      "embed_status": "unavailable"
     }
   ]
 }
 ```
+
+`embed_status` is optional. Use `"unavailable"` only when a provider URL is valid but the native embed is known to fail, so the runtime can preserve source truth with a direct provider fallback instead of rendering a broken player.
+
+Generated edition constraints:
+- primary `source_url` values must be unique
+- generated YouTube source URLs must be known embeddable; otherwise skip that source before packaging
+- raw `pbs.twimg.com` or `video.twimg.com` media URLs must not be primary `source_url` values
+- Twitter/X media can appear as `source_image_url` only when the primary source is the native tweet URL
+- NTS liked-track rows must resolve to direct streamable sources before packaging; do not package NTS page URLs as the displayed binding
 
 ## 5. Ambiance recipe
 Stores edition-specific atmosphere.
@@ -151,7 +169,69 @@ Stores edition-specific atmosphere.
 }
 ```
 
-## 6. Review state
+## 6. About note
+Explains how this specific edition was made.
+
+```json
+{
+  "about_id": "about-2026-04-17-herbarium-bed-v1",
+  "label": "About",
+  "title": "About Herbarium Bed",
+  "short_blurb": "This edition began with recent saved notes, inspected source links, and a source image that shaped the final scene.",
+  "body": [
+    "Stable project paragraph explaining that Daily Frontpage is a daily generated interactive front page where the image is the interface and visible scene elements open real sources.",
+    "Run-specific paragraph explaining the saved signals, source research, visual reference, scene result, and post-plate mapping/mask pass for this edition."
+  ],
+  "typography": {
+    "profile_id": "botanical-field|archive-reader|signal-technical|constructed-world",
+    "heading_family": "'DFE Fraunces', 'DFE Source Serif 4', Georgia, serif",
+    "body_family": "'DFE Source Serif 4', Iowan Old Style, Georgia, serif",
+    "accent_family": "'DFE Inter', Inter, ui-sans-serif, system-ui, sans-serif",
+    "heading_weight": 700,
+    "body_weight": 430,
+    "accent_weight": 720,
+    "rationale": "Why this font profile fits the edition mood."
+  }
+}
+```
+
+Do not use generic kicker text such as `"Generated process"`. The about note should read like a viewer-facing edition note, not a build log.
+
+The generated About record should be concise. It should reference the actual process and visuals for this edition without turning into an internal step log.
+
+## 7. Post-plate analysis
+Records what the generated image actually became before masks and interactions are finalized.
+
+```json
+{
+  "inspection_mode": "openai-vision",
+  "detected_objects": [],
+  "usable_surfaces": [],
+  "complexity_assessment": {
+    "status": "minimal|watch|busy",
+    "dominant_form_count": 2,
+    "large_region_count": 1,
+    "mapped_region_coverage": 0.38,
+    "rationale": "Why the plate is acceptable or needs review."
+  }
+}
+```
+
+This file is not optional for from-scratch generated editions. The post-plate pass should use `gpt-5.5` vision and should treat visible abstract marks, gestures, surfaces, and edges as valid targets only when they are actually visible in the plate.
+
+## 8. Interpretation and enhancement plan
+Generated editions commonly include:
+
+```text
+interpretation.json
+enhancement-plan.json
+```
+
+`interpretation.json` converts the package, analysis, geometry kit, candidate pack, and source bindings into scene ontology, artifact surface types, supported behaviors, and per-region treatment assignments.
+
+`enhancement-plan.json` selects the runtime-safe interaction treatment bundle for the package. It should not invent behavior that is unsupported by the current runtime.
+
+## 9. Review state
 Tracks whether the edition is ready.
 
 ```json
@@ -165,7 +245,7 @@ Tracks whether the edition is ready.
 }
 ```
 
-## 7. Archive metadata
+## 10. Archive metadata
 Supports long-term browsing.
 
 ```json
@@ -190,10 +270,14 @@ editions/
     artifact-map.json
     source-bindings.json
     ambiance.json
+    about.json
+    analysis.json
+    interpretation.json
+    enhancement-plan.json
     review.json
     assets/
-      plate.jpg
-      preview.jpg
+      plate.png
+      preview.png
       masks/*.svg
 ```
 
@@ -203,5 +287,9 @@ editions/
 - all artifact ids unique
 - all source bindings must resolve to real source URLs
 - all artifacts must reference real bindings when interactive
+- generated packages should have 7-10 non-duplicate source bindings when enough valid saved-source material exists
+- generated packages must not use raw Twitter/X CDN media as a primary source URL
+- generated YouTube bindings must be embeddable or be excluded before packaging
+- about notes must reference edition-specific process details, not generic pipeline copy
 - published edition must have review pass states
 - archive package must be complete before live pointer changes

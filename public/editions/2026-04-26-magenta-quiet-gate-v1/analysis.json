@@ -1,0 +1,470 @@
+{
+  "analysis_id": "analysis-2026-04-26-magenta-quiet-gate-v1",
+  "edition_id": "2026-04-26-magenta-quiet-gate-v1",
+  "inspection_mode": "manual-visible-anchor-repair",
+  "inspection_error": null,
+  "scene_summary": "A sparse magenta public threshold with a rounded gate, smoked-glass slit, floor inlay, wall pinholes, seam labels, small plates, and tiny floor glints used as source anchors.",
+  "usable_surfaces": [
+    "rounded rose gate",
+    "smoked-glass October slit",
+    "curved cobalt floor inlay",
+    "sound leaves pinhole cluster",
+    "sea salt wall seam",
+    "PRD metal plate",
+    "People's Prize curb notch",
+    "audit ash square",
+    "Coreys floor spark"
+  ],
+  "detected_objects": [
+    {
+      "label": "Rose Field Gate",
+      "artifact_type": "hero-scale-rounded-threshold",
+      "role": "hero-anchor",
+      "bounds": {
+        "x": 0.395,
+        "y": 0.148,
+        "w": 0.236,
+        "h": 0.695
+      },
+      "polygon": [
+        [
+          0.397,
+          0.812
+        ],
+        [
+          0.397,
+          0.282
+        ],
+        [
+          0.404,
+          0.214
+        ],
+        [
+          0.431,
+          0.166
+        ],
+        [
+          0.477,
+          0.149
+        ],
+        [
+          0.563,
+          0.149
+        ],
+        [
+          0.608,
+          0.168
+        ],
+        [
+          0.626,
+          0.218
+        ],
+        [
+          0.63,
+          0.29
+        ],
+        [
+          0.63,
+          0.811
+        ],
+        [
+          0.618,
+          0.835
+        ],
+        [
+          0.58,
+          0.843
+        ],
+        [
+          0.441,
+          0.843
+        ],
+        [
+          0.41,
+          0.833
+        ]
+      ],
+      "confidence": 0.82,
+      "visual_evidence": "Visible artifact anchors were checked against the finished generated plate after the automatic remap fallback."
+    },
+    {
+      "label": "October Glass Slit",
+      "artifact_type": "hero-scale-smoked-glass-aperture",
+      "role": "hero-anchor",
+      "bounds": {
+        "x": 0.249,
+        "y": 0.257,
+        "w": 0.038,
+        "h": 0.342
+      },
+      "polygon": [
+        [
+          0.266,
+          0.257
+        ],
+        [
+          0.278,
+          0.261
+        ],
+        [
+          0.286,
+          0.276
+        ],
+        [
+          0.287,
+          0.572
+        ],
+        [
+          0.281,
+          0.59
+        ],
+        [
+          0.267,
+          0.599
+        ],
+        [
+          0.254,
+          0.594
+        ],
+        [
+          0.249,
+          0.575
+        ],
+        [
+          0.249,
+          0.28
+        ],
+        [
+          0.256,
+          0.263
+        ]
+      ],
+      "confidence": 0.82,
+      "visual_evidence": "Visible artifact anchors were checked against the finished generated plate after the automatic remap fallback."
+    },
+    {
+      "label": "Blue Dress Inlay",
+      "artifact_type": "cobalt-enamel-floor-line",
+      "role": "source-pocket",
+      "bounds": {
+        "x": 0.486,
+        "y": 0.817,
+        "w": 0.122,
+        "h": 0.183
+      },
+      "polygon": [
+        [
+          0.486,
+          0.825
+        ],
+        [
+          0.517,
+          0.831
+        ],
+        [
+          0.546,
+          0.844
+        ],
+        [
+          0.57,
+          0.872
+        ],
+        [
+          0.589,
+          0.924
+        ],
+        [
+          0.6,
+          1
+        ],
+        [
+          0.608,
+          1
+        ],
+        [
+          0.596,
+          0.918
+        ],
+        [
+          0.578,
+          0.864
+        ],
+        [
+          0.553,
+          0.835
+        ],
+        [
+          0.522,
+          0.822
+        ],
+        [
+          0.488,
+          0.817
+        ]
+      ],
+      "confidence": 0.82,
+      "visual_evidence": "Visible artifact anchors were checked against the finished generated plate after the automatic remap fallback."
+    },
+    {
+      "label": "Sound Leaves Pinholes",
+      "artifact_type": "clustered-wall-perforations",
+      "role": "source-pocket",
+      "bounds": {
+        "x": 0.702,
+        "y": 0.285,
+        "w": 0.059,
+        "h": 0.158
+      },
+      "polygon": [
+        [
+          0.703,
+          0.286
+        ],
+        [
+          0.736,
+          0.296
+        ],
+        [
+          0.736,
+          0.329
+        ],
+        [
+          0.76,
+          0.375
+        ],
+        [
+          0.76,
+          0.407
+        ],
+        [
+          0.739,
+          0.433
+        ],
+        [
+          0.72,
+          0.443
+        ],
+        [
+          0.703,
+          0.424
+        ],
+        [
+          0.704,
+          0.348
+        ]
+      ],
+      "confidence": 0.82,
+      "visual_evidence": "Visible artifact anchors were checked against the finished generated plate after the automatic remap fallback."
+    },
+    {
+      "label": "Sea Salt Seam",
+      "artifact_type": "pale-horizontal-wall-seam",
+      "role": "source-pocket",
+      "bounds": {
+        "x": 0,
+        "y": 0.589,
+        "w": 0.397,
+        "h": 0.04
+      },
+      "polygon": [
+        [
+          0,
+          0.607
+        ],
+        [
+          0.397,
+          0.607
+        ],
+        [
+          0.397,
+          0.615
+        ],
+        [
+          0.118,
+          0.615
+        ],
+        [
+          0.112,
+          0.603
+        ],
+        [
+          0.074,
+          0.603
+        ],
+        [
+          0.068,
+          0.615
+        ],
+        [
+          0,
+          0.615
+        ]
+      ],
+      "confidence": 0.82,
+      "visual_evidence": "Visible artifact anchors were checked against the finished generated plate after the automatic remap fallback."
+    },
+    {
+      "label": "PRD Etching",
+      "artifact_type": "microtype-metal-plate",
+      "role": "source-pocket",
+      "bounds": {
+        "x": 0.798,
+        "y": 0.596,
+        "w": 0.042,
+        "h": 0.052
+      },
+      "polygon": [
+        [
+          0.801,
+          0.598
+        ],
+        [
+          0.835,
+          0.598
+        ],
+        [
+          0.837,
+          0.627
+        ],
+        [
+          0.833,
+          0.631
+        ],
+        [
+          0.803,
+          0.631
+        ],
+        [
+          0.799,
+          0.626
+        ]
+      ],
+      "confidence": 0.82,
+      "visual_evidence": "Visible artifact anchors were checked against the finished generated plate after the automatic remap fallback."
+    },
+    {
+      "label": "People's Prize Curb",
+      "artifact_type": "tiny-gold-vote-notch",
+      "role": "source-pocket",
+      "bounds": {
+        "x": 0.236,
+        "y": 0.767,
+        "w": 0.04,
+        "h": 0.055
+      },
+      "polygon": [
+        [
+          0.243,
+          0.772
+        ],
+        [
+          0.256,
+          0.772
+        ],
+        [
+          0.257,
+          0.785
+        ],
+        [
+          0.252,
+          0.79
+        ],
+        [
+          0.242,
+          0.79
+        ],
+        [
+          0.239,
+          0.781
+        ]
+      ],
+      "confidence": 0.82,
+      "visual_evidence": "Visible artifact anchors were checked against the finished generated plate after the automatic remap fallback."
+    },
+    {
+      "label": "Audit Ash Square",
+      "artifact_type": "small-charcoal-image-tile",
+      "role": "source-pocket",
+      "bounds": {
+        "x": 0.695,
+        "y": 0.685,
+        "w": 0.038,
+        "h": 0.06
+      },
+      "polygon": [
+        [
+          0.698,
+          0.689
+        ],
+        [
+          0.719,
+          0.689
+        ],
+        [
+          0.721,
+          0.715
+        ],
+        [
+          0.717,
+          0.721
+        ],
+        [
+          0.7,
+          0.721
+        ],
+        [
+          0.696,
+          0.716
+        ]
+      ],
+      "confidence": 0.82,
+      "visual_evidence": "Visible artifact anchors were checked against the finished generated plate after the automatic remap fallback."
+    },
+    {
+      "label": "Coreys Floor Spark",
+      "artifact_type": "single-white-resin-glint",
+      "role": "source-pocket",
+      "bounds": {
+        "x": 0.878,
+        "y": 0.794,
+        "w": 0.077,
+        "h": 0.05
+      },
+      "polygon": [
+        [
+          0.895,
+          0.805
+        ],
+        [
+          0.901,
+          0.799
+        ],
+        [
+          0.907,
+          0.805
+        ],
+        [
+          0.904,
+          0.816
+        ],
+        [
+          0.897,
+          0.82
+        ],
+        [
+          0.89,
+          0.813
+        ]
+      ],
+      "confidence": 0.82,
+      "visual_evidence": "Visible artifact anchors were checked against the finished generated plate after the automatic remap fallback."
+    }
+  ],
+  "complexity_assessment": {
+    "status": "minimal",
+    "dominant_form_count": 2,
+    "large_region_count": 2,
+    "mapped_region_coverage": 0.235,
+    "rationale": "The scene is sparse and expressionist, with one rounded gate and one glass slit plus small readable source anchors."
+  }
+}

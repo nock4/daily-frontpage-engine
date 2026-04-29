@@ -1,5 +1,21 @@
-export type Bounds = { x: number; y: number; w: number; h: number }
-export type Point = [number, number]
+type Bounds = { x: number; y: number; w: number; h: number }
+type Point = [number, number]
+
+export interface ArtifactGeometryRecord {
+  safe_stage_window_origin_px?: [number, number]
+  safe_hover_origin_px?: [number, number]
+  preferred_expansion_direction?: [number, number]
+  preferred_expansion_label?: 'left' | 'right' | 'up' | 'down'
+}
+
+export interface GeometryKitArtifactRecord {
+  artifact_type?: string
+  winner?: string
+  fallback?: string
+  geometry: ArtifactGeometryRecord
+}
+
+export type GeometryKitRecord = Record<string, GeometryKitArtifactRecord>
 
 export interface EditionManifestItem {
   edition_id: string
@@ -65,6 +81,7 @@ export interface ArtifactRecord {
   bounds: Bounds
   polygon: Point[]
   mask_path?: string
+  geometry?: ArtifactGeometryRecord
   z_index: number
   source_binding_ids: string[]
 }
@@ -81,19 +98,45 @@ export interface ArtifactMapRecord {
   artifacts: ArtifactRecord[]
 }
 
+export type SourceBindingSourceType =
+  | 'article'
+  | 'audio'
+  | 'concept-note'
+  | 'github'
+  | 'nts'
+  | 'social'
+  | 'tweet'
+  | 'video'
+  | 'web'
+  | 'youtube'
+
+export type SourceBindingWindowType = 'audio' | 'social' | 'video' | 'web'
+export type SourceBindingHoverBehavior = 'preview'
+export type SourceBindingClickBehavior = 'pin-open'
+export type SourceBindingFallbackType = 'rich-preview'
+export type SourceBindingEmbedStatus = 'unavailable'
+
 export interface SourceBindingRecord {
   id: string
   artifact_id: string
-  source_type: string
+  source_type: SourceBindingSourceType
   source_url: string | null
-  window_type: string
-  hover_behavior: string
-  click_behavior: string
+  window_type: SourceBindingWindowType
+  hover_behavior: SourceBindingHoverBehavior
+  click_behavior: SourceBindingClickBehavior
   playback_persistence: boolean
-  fallback_type: string
+  fallback_type: SourceBindingFallbackType
+  embed_status?: SourceBindingEmbedStatus
   title: string
   kicker: string
   excerpt: string
+  source_title?: string
+  source_summary?: string
+  source_domain?: string
+  source_meta?: string
+  source_embed_html?: string
+  source_image_url?: string
+  source_image_alt?: string
 }
 
 export interface SourceBindingSetRecord {
@@ -120,6 +163,62 @@ export interface ReviewRecord {
   notes: string[]
 }
 
+type EnhancementTargetKind = 'artifact' | 'field-region' | 'surface-region' | 'global-scene'
+
+interface EnhancementActivationRecord {
+  hover: boolean
+  click: boolean
+  drag: boolean
+  hold: boolean
+}
+
+export interface EnhancementRejectedRecord {
+  technique: string
+  reason: string
+}
+
+export interface EnhancementTargetRecord {
+  target_id: string
+  target_kind: EnhancementTargetKind
+  artifact_id?: string
+  priority: number
+  techniques: string[]
+  source_classes: string[]
+  activation: EnhancementActivationRecord
+  reason: string
+}
+
+export interface EnhancementInteractionWorldRecord {
+  class: string
+  primary_behavior: string
+  scene_wide_behavior: string
+  choreography_rule: string
+}
+
+export interface EnhancementPlanRecord {
+  enhancement_plan_id: string
+  edition_id: string
+  derived_from?: {
+    interpretation_id: string
+    analysis_id?: string
+  }
+  interaction_world: EnhancementInteractionWorldRecord
+  bundle: {
+    primary: string[]
+    secondary: string[]
+    wildcard: string[]
+  }
+  runtime_safe_subset: string[]
+  future_only_subset: string[]
+  rejected: EnhancementRejectedRecord[]
+  targets: EnhancementTargetRecord[]
+  global_recommendation: string[]
+  runtime_note?: string
+}
+
+import type { AboutRecord } from './about'
+import type { InterpretationRecord } from './interpretation'
+
 export interface LoadedEdition {
   edition: EditionRecord
   brief: BriefRecord
@@ -127,6 +226,10 @@ export interface LoadedEdition {
   sourceBindings: SourceBindingSetRecord
   ambiance: AmbianceRecord
   review: ReviewRecord
+  geometryKit?: GeometryKitRecord | null
+  enhancementPlan?: EnhancementPlanRecord | null
+  about?: AboutRecord | null
+  interpretation?: InterpretationRecord | null
 }
 
 export interface ArchiveRecord extends EditionManifestItem {
@@ -140,5 +243,5 @@ export interface SourceWindowState {
   openBindingIds: string[]
   minimizedBindingIds: string[]
   persistentBindingIds: string[]
-  bindingWindowTypes: Record<string, string>
+  bindingWindowTypes: Record<string, SourceBindingWindowType>
 }

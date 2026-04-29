@@ -1,0 +1,380 @@
+{
+  "interpretation_id": "interp-2026-04-26-magenta-quiet-gate-v1",
+  "edition_id": "2026-04-26-magenta-quiet-gate-v1",
+  "plate_read_timestamp": "2026-04-29T00:14:40.079Z",
+  "scene_ontology": {
+    "primary": "object-native",
+    "secondary": [
+      "optical-native"
+    ],
+    "confidence": 0.9
+  },
+  "world_read": {
+    "summary": "A sparse magenta public threshold with a rounded gate, smoked-glass slit, floor inlay, wall pinholes, seam labels, small plates, and tiny floor glints used as source anchors.",
+    "dominant_spatial_mode": "contained",
+    "density": "dense",
+    "legibility": "selective",
+    "mood": [
+      "hushed, luminous, and suspended, like a public passage holding a secret after closing time",
+      "A sparse magenta public threshold with a rounded gate, smoked-glass slit, floor inlay, wall pinholes, seam labels, small plates, and tiny floor glints used as source anchors.",
+      "magenta-threshold",
+      "soft-gradient",
+      "ambient-anchors"
+    ]
+  },
+  "visual_ecology": {
+    "dominant_objects": [
+      "Rose Field Gate",
+      "October Glass Slit",
+      "Blue Dress Inlay",
+      "Sound Leaves Pinholes",
+      "Sea Salt Seam",
+      "PRD Etching",
+      "People's Prize Curb",
+      "Audit Ash Square"
+    ],
+    "dominant_surfaces": [
+      "glass",
+      "paint"
+    ],
+    "dominant_structures": [
+      "magenta-quiet-gate",
+      "one monumental rounded rectangular gate in rose plaster",
+      "one secondary smoked-glass listening slit on the left wall",
+      "one secondary low brushed-aluminum curb crossing the foreground",
+      "nine quiet source-anchor marks as labels, pinholes, seams, and tiny lit apertures",
+      "large unoccupied gradient wall and floor planes",
+      "rounded rose gate",
+      "smoked-glass October slit"
+    ],
+    "negative_space_regions": []
+  },
+  "interaction_world": {
+    "class": "object-native",
+    "recommended_behaviors": [
+      "cabinet-drawer-behavior",
+      "object-memory",
+      "threshold-scan"
+    ],
+    "rejected_behaviors": [
+      "light-path-reaction"
+    ],
+    "reasoning": [
+      "Primary ontology inferred from scene family and artifact types: magenta-quiet-gate.",
+      "Artifact vocabulary suggests object-native interaction logic."
+    ]
+  },
+  "artifact_candidates": [
+    {
+      "id": "hero-rose-field-gate",
+      "kind": "hero",
+      "type": "hero-scale-rounded-threshold",
+      "strength": 0.99,
+      "bounds": {
+        "x": 0.395,
+        "y": 0.148,
+        "w": 0.236,
+        "h": 0.695
+      },
+      "supports": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ]
+    },
+    {
+      "id": "hero-october-glass-slit",
+      "kind": "hero",
+      "type": "hero-scale-smoked-glass-aperture",
+      "strength": 0.9199999999999999,
+      "bounds": {
+        "x": 0.249,
+        "y": 0.257,
+        "w": 0.038,
+        "h": 0.342
+      },
+      "supports": [
+        "screen-rendered-html",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-blue-dress-inlay",
+      "kind": "module",
+      "type": "cobalt-enamel-floor-line",
+      "strength": 0.794196,
+      "bounds": {
+        "x": 0.486,
+        "y": 0.817,
+        "w": 0.122,
+        "h": 0.183
+      },
+      "supports": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-sound-leaves-pinholes",
+      "kind": "module",
+      "type": "clustered-wall-perforations",
+      "strength": 0.757596,
+      "bounds": {
+        "x": 0.702,
+        "y": 0.285,
+        "w": 0.059,
+        "h": 0.158
+      },
+      "supports": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ]
+    },
+    {
+      "id": "module-sea-salt-seam",
+      "kind": "module",
+      "type": "pale-horizontal-wall-seam",
+      "strength": 0.7303200000000001,
+      "bounds": {
+        "x": 0,
+        "y": 0.589,
+        "w": 0.397,
+        "h": 0.04
+      },
+      "supports": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-prd-etching",
+      "kind": "module",
+      "type": "microtype-metal-plate",
+      "strength": 0.704076,
+      "bounds": {
+        "x": 0.798,
+        "y": 0.596,
+        "w": 0.042,
+        "h": 0.052
+      },
+      "supports": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-peoples-prize-curb",
+      "kind": "module",
+      "type": "tiny-gold-vote-notch",
+      "strength": 0.6000000000000001,
+      "bounds": {
+        "x": 0.236,
+        "y": 0.767,
+        "w": 0.04,
+        "h": 0.055
+      },
+      "supports": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-audit-ash-square",
+      "kind": "module",
+      "type": "small-charcoal-image-tile",
+      "strength": 0.58,
+      "bounds": {
+        "x": 0.695,
+        "y": 0.685,
+        "w": 0.038,
+        "h": 0.06
+      },
+      "supports": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-coreys-floor-spark",
+      "kind": "module",
+      "type": "single-white-resin-glint",
+      "strength": 0.58,
+      "bounds": {
+        "x": 0.878,
+        "y": 0.794,
+        "w": 0.077,
+        "h": 0.05
+      },
+      "supports": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    }
+  ],
+  "field_candidates": [],
+  "html_surfaces": [
+    {
+      "id": "hero-rose-field-gate-surface",
+      "surface_type": "glass",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.395,
+        "y": 0.148,
+        "w": 0.236,
+        "h": 0.695
+      },
+      "suitability": 0.9,
+      "supported_treatments": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ]
+    },
+    {
+      "id": "hero-october-glass-slit-surface",
+      "surface_type": "glass",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.249,
+        "y": 0.257,
+        "w": 0.038,
+        "h": 0.342
+      },
+      "suitability": 0.9,
+      "supported_treatments": [
+        "screen-rendered-html",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-blue-dress-inlay-surface",
+      "surface_type": "unknown",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.486,
+        "y": 0.817,
+        "w": 0.122,
+        "h": 0.183
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-sound-leaves-pinholes-surface",
+      "surface_type": "paint",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.702,
+        "y": 0.285,
+        "w": 0.059,
+        "h": 0.158
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ]
+    },
+    {
+      "id": "module-sea-salt-seam-surface",
+      "surface_type": "unknown",
+      "host": "artifact",
+      "bounds": {
+        "x": 0,
+        "y": 0.589,
+        "w": 0.397,
+        "h": 0.04
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-prd-etching-surface",
+      "surface_type": "unknown",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.798,
+        "y": 0.596,
+        "w": 0.042,
+        "h": 0.052
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-peoples-prize-curb-surface",
+      "surface_type": "unknown",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.236,
+        "y": 0.767,
+        "w": 0.04,
+        "h": 0.055
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-audit-ash-square-surface",
+      "surface_type": "unknown",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.695,
+        "y": 0.685,
+        "w": 0.038,
+        "h": 0.06
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-coreys-floor-spark-surface",
+      "surface_type": "unknown",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.878,
+        "y": 0.794,
+        "w": 0.077,
+        "h": 0.05
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    }
+  ],
+  "enhancement_bundle": {
+    "primary": [
+      "mechanical-reveal-system"
+    ],
+    "secondary": [
+      "warped-paper-fragment",
+      "threshold-scan-reveal"
+    ],
+    "wildcard": []
+  },
+  "per_region_assignments": [],
+  "scene_wide_behavior": {
+    "selected": "cabinet-drawer-behavior"
+  },
+  "choreography_rule": {
+    "selected": "anchor-and-satellites"
+  },
+  "release_notes": [
+    "Generated automatically from 9 artifacts and scene family heuristics."
+  ]
+}

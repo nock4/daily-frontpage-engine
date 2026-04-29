@@ -1,0 +1,379 @@
+{
+  "interpretation_id": "interp-2026-04-28-indigo-proofing-wash-v1",
+  "edition_id": "2026-04-28-indigo-proofing-wash-v1",
+  "plate_read_timestamp": "2026-04-29T00:14:40.070Z",
+  "scene_ontology": {
+    "primary": "material-native",
+    "secondary": [],
+    "confidence": 0.9
+  },
+  "world_read": {
+    "summary": "A dark charcoal handmade-paper plate with a torn deckled lower and right edge, dominated by a single cobalt-blue pigment drag across the lower third. Small ivory paste, pale chalk, scratch, fleck, stain, crease, and stirred halo marks remain sparse and source-like.",
+    "dominant_spatial_mode": "flat-field",
+    "density": "dense",
+    "legibility": "selective",
+    "mood": [
+      "spare, handmade, nocturnal, reverent, with one bright rupture",
+      "A dark charcoal handmade-paper plate with a torn deckled lower and right edge, dominated by a single cobalt-blue pigment drag across the lower third. Small ivory paste, pale chalk, scratch, fleck, stain, crease, and stirred halo marks remain sparse and source-like.",
+      "sumi-wash",
+      "proofing-yard",
+      "cobalt-smear"
+    ]
+  },
+  "visual_ecology": {
+    "dominant_objects": [
+      "Komachi ash field",
+      "Blue Shit cobalt drag",
+      "The Word Love paste pool",
+      "Water People bloom",
+      "Sacrificial Code scratch",
+      "Alfredo stirred halo",
+      "Sentimental Value crease",
+      "Dream of Blue chalk"
+    ],
+    "dominant_surfaces": [
+      "paper",
+      "water",
+      "paint"
+    ],
+    "dominant_structures": [
+      "indigo-proofing-wash",
+      "one dominant charcoal handmade-paper field",
+      "one disruptive cobalt drag across the lower third",
+      "small ivory paste pools and water stains",
+      "thin gold-fleck registration marks",
+      "hairline scratches and edge tears carrying source labels",
+      "dominant charcoal paper field",
+      "ragged lower deckle edge"
+    ],
+    "negative_space_regions": []
+  },
+  "interaction_world": {
+    "class": "material-native",
+    "recommended_behaviors": [
+      "paint-bleed-reveal",
+      "restoration-scan",
+      "ghost-reflection"
+    ],
+    "rejected_behaviors": [
+      "cabinet-drawer-behavior"
+    ],
+    "reasoning": [
+      "Primary ontology inferred from scene family and artifact types: indigo-proofing-wash.",
+      "Artifact vocabulary suggests material-native interaction logic."
+    ]
+  },
+  "artifact_candidates": [
+    {
+      "id": "hero-komachi-ash-field",
+      "kind": "hero",
+      "type": "hero-scale-charcoal-wash",
+      "strength": 0.99,
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 1
+      },
+      "supports": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ]
+    },
+    {
+      "id": "hero-blue-shit-cobalt-drag",
+      "kind": "hero",
+      "type": "hero-scale-pigment-smear",
+      "strength": 0.9770719999999999,
+      "bounds": {
+        "x": 0.015,
+        "y": 0.674,
+        "w": 0.982,
+        "h": 0.206
+      },
+      "supports": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ]
+    },
+    {
+      "id": "module-the-word-love-paste-pool",
+      "kind": "module",
+      "type": "ivory-paste-pool",
+      "strength": 0.7917,
+      "bounds": {
+        "x": 0.088,
+        "y": 0.62,
+        "w": 0.073,
+        "h": 0.096
+      },
+      "supports": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ]
+    },
+    {
+      "id": "module-water-people-bloom",
+      "kind": "module",
+      "type": "water-stain-bloom",
+      "strength": 0.7611600000000001,
+      "bounds": {
+        "x": 0.542,
+        "y": 0.53,
+        "w": 0.157,
+        "h": 0.132
+      },
+      "supports": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ]
+    },
+    {
+      "id": "module-sacrificial-code-scratch",
+      "kind": "module",
+      "type": "hairline-scratch",
+      "strength": 0.7358520000000001,
+      "bounds": {
+        "x": 0.319,
+        "y": 0.396,
+        "w": 0.12,
+        "h": 0.251
+      },
+      "supports": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ]
+    },
+    {
+      "id": "module-alfredo-stirred-halo",
+      "kind": "module",
+      "type": "ivory-stirred-halo",
+      "strength": 0.695868,
+      "bounds": {
+        "x": 0.768,
+        "y": 0.776,
+        "w": 0.13,
+        "h": 0.119
+      },
+      "supports": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ]
+    },
+    {
+      "id": "module-sentimental-value-crease",
+      "kind": "module",
+      "type": "creased-vellum-line",
+      "strength": 0.6709320000000001,
+      "bounds": {
+        "x": 0.42,
+        "y": 0.78,
+        "w": 0.18,
+        "h": 0.16
+      },
+      "supports": [
+        "paint-bleed-reveal",
+        "pigment-crack-annotation"
+      ]
+    },
+    {
+      "id": "module-dream-of-blue-chalk",
+      "kind": "module",
+      "type": "dry-chalk-dash",
+      "strength": 0.6517959999999999,
+      "bounds": {
+        "x": 0.72,
+        "y": 0.76,
+        "w": 0.18,
+        "h": 0.16
+      },
+      "supports": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ]
+    },
+    {
+      "id": "module-alfredo-stirred-halo-2",
+      "kind": "module",
+      "type": "ivory-stirred-halo",
+      "strength": 0.663472,
+      "bounds": {
+        "x": 0.28,
+        "y": 0.34,
+        "w": 0.16,
+        "h": 0.15
+      },
+      "supports": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ]
+    }
+  ],
+  "field_candidates": [],
+  "html_surfaces": [
+    {
+      "id": "hero-komachi-ash-field-surface",
+      "surface_type": "paper",
+      "host": "artifact",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 1
+      },
+      "suitability": 0.9,
+      "supported_treatments": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ]
+    },
+    {
+      "id": "hero-blue-shit-cobalt-drag-surface",
+      "surface_type": "paint",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.015,
+        "y": 0.674,
+        "w": 0.982,
+        "h": 0.206
+      },
+      "suitability": 0.9,
+      "supported_treatments": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ]
+    },
+    {
+      "id": "module-the-word-love-paste-pool-surface",
+      "surface_type": "paint",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.088,
+        "y": 0.62,
+        "w": 0.073,
+        "h": 0.096
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ]
+    },
+    {
+      "id": "module-water-people-bloom-surface",
+      "surface_type": "water",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.542,
+        "y": 0.53,
+        "w": 0.157,
+        "h": 0.132
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ]
+    },
+    {
+      "id": "module-sacrificial-code-scratch-surface",
+      "surface_type": "paint",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.319,
+        "y": 0.396,
+        "w": 0.12,
+        "h": 0.251
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ]
+    },
+    {
+      "id": "module-alfredo-stirred-halo-surface",
+      "surface_type": "paint",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.768,
+        "y": 0.776,
+        "w": 0.13,
+        "h": 0.119
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ]
+    },
+    {
+      "id": "module-sentimental-value-crease-surface",
+      "surface_type": "paper",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.42,
+        "y": 0.78,
+        "w": 0.18,
+        "h": 0.16
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "paint-bleed-reveal",
+        "pigment-crack-annotation"
+      ]
+    },
+    {
+      "id": "module-dream-of-blue-chalk-surface",
+      "surface_type": "paint",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.72,
+        "y": 0.76,
+        "w": 0.18,
+        "h": 0.16
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ]
+    },
+    {
+      "id": "module-alfredo-stirred-halo-2-surface",
+      "surface_type": "paint",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.28,
+        "y": 0.34,
+        "w": 0.16,
+        "h": 0.15
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ]
+    }
+  ],
+  "enhancement_bundle": {
+    "primary": [
+      "paint-bleed-reveal"
+    ],
+    "secondary": [
+      "restoration-scan",
+      "pigment-crack-annotation"
+    ],
+    "wildcard": []
+  },
+  "per_region_assignments": [],
+  "scene_wide_behavior": {
+    "selected": "paint-bleed-reveal"
+  },
+  "choreography_rule": {
+    "selected": "anchor-and-satellites"
+  },
+  "release_notes": [
+    "Generated automatically from 9 artifacts and scene family heuristics."
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "about_id": "about-2026-04-27-coral-static-passage-v1",
+  "label": "About",
+  "title": "About The Coral Static Passage",
+  "short_blurb": "A daily generated front page where the image is the interface.",
+  "body": [
+    "Daily Frontpage is a daily generated interactive front page. Each edition starts from recent saved signals and source research, becomes a new image-led scene, and stays explorable in the archive. The image is the interface: visible marks, objects, and surfaces in the scene open the real sources that shaped the day.",
+    "This iteration began with 16 recent saved-signal files and 12 captured links, then narrowed the page to 9 source windows. A source image from f4.bcbits.com helped set the palette and material direction. The selected sources included to be expected, by PINKCOURTESYPHONE and Late '90s / Early '00s Japanese Ambient Techno and Electronica Mix【 THE NTS GUIDE TO… 】, plus 7 more, and the scene became The Coral Static Passage: Borrow the reference image’s washed coral-pink monochrome, faint photographic ghosts, and soft rectangular overlays. Frame a public passage frontally: one dominant form, a huge frosted-glass arch of rose static, floats in waxed plaster with more than half the plate left empty. Two secondary forms hold the space: a narrow inverted curtain panel suspended at left, and a low blackened-steel waterline crossing the floor. Embed quiet anchor details: Rose Static Threshold etched across the arch, Underground Mix on the curtain hem, Bajidoran as a small ochre floor tile, Fabric Acid as a violet pinlight, Air/Earth as twin vent slits, Lucid Landscape as a hairline seam, Broadway as a brass mail slot, Jam as a square moon glyph, Open World as a distant horizon chip. Diffuse rainy light, muted coral, milk white, soot black; hushed after-hours mood. A plate-reading pass mapped 9 visible regions, and the mask audit tightened them against large frosted coral arched threshold, translucent red curtain panel, and ochre floor tile label plate. Review artifacts are in tmp/daily-process-runs/daily-process-2026-04-27T13-59-04-674Z."
+  ],
+  "typography": {
+    "profile_id": "listening-arcade",
+    "heading_family": "'DFE Bricolage Grotesque', ui-sans-serif, system-ui, sans-serif",
+    "body_family": "'DFE Space Grotesk', ui-sans-serif, system-ui, sans-serif",
+    "accent_family": "'DFE Fraunces', Georgia, serif",
+    "heading_weight": 720,
+    "body_weight": 430,
+    "accent_weight": 680,
+    "rationale": "Bricolage Grotesque and Space Grotesk fit record, arcade, and listening-room editions while Fraunces keeps source captions tactile."
+  }
+}

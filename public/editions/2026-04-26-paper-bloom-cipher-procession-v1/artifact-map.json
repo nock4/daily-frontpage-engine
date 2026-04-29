@@ -1,0 +1,341 @@
+{
+  "artifact_map_id": "map-2026-04-26-paper-bloom-cipher-procession-v1",
+  "viewport": {
+    "base_width": 1536,
+    "base_height": 1024,
+    "aspect_ratio": "1536:1024"
+  },
+  "default_cluster_id": "paper-bloom-cipher-theater",
+  "default_artifact_id": "hero-flower-music-veil",
+  "artifacts": [
+    {
+      "id": "hero-flower-music-veil",
+      "kind": "hero",
+      "label": "Flower Music veil",
+      "artifact_type": "hero-scale-petal-curtain",
+      "bounds": {
+        "x": 0.279,
+        "y": 0.025,
+        "w": 0.499,
+        "h": 0.885
+      },
+      "z_index": 10,
+      "polygon": [
+        [
+          0.279,
+          0.025
+        ],
+        [
+          0.778,
+          0.025
+        ],
+        [
+          0.778,
+          0.91
+        ],
+        [
+          0.279,
+          0.91
+        ]
+      ],
+      "cluster_id": "paper-bloom-cipher-theater",
+      "mask_path": "/editions/2026-04-26-paper-bloom-cipher-procession-v1/assets/masks/hero-flower-music-veil.svg",
+      "source_binding_ids": [
+        "binding-hero-flower-music-veil"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          812,
+          406
+        ],
+        "safe_stage_window_origin_px": [
+          873,
+          479
+        ],
+        "preferred_expansion_label": "left"
+      }
+    },
+    {
+      "id": "hero-sequencer-ribbon",
+      "kind": "hero",
+      "label": "Sequencer ribbon",
+      "artifact_type": "hero-scale-copper-line",
+      "bounds": {
+        "x": 0.801,
+        "y": 0.412,
+        "w": 0.196,
+        "h": 0.472
+      },
+      "z_index": 11,
+      "polygon": [
+        [
+          0.801,
+          0.412
+        ],
+        [
+          0.997,
+          0.412
+        ],
+        [
+          0.997,
+          0.884
+        ],
+        [
+          0.801,
+          0.884
+        ]
+      ],
+      "cluster_id": "paper-bloom-cipher-theater",
+      "mask_path": "/editions/2026-04-26-paper-bloom-cipher-procession-v1/assets/masks/hero-sequencer-ribbon.svg",
+      "source_binding_ids": [
+        "binding-hero-sequencer-ribbon"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          1320,
+          625
+        ],
+        "safe_stage_window_origin_px": [
+          1320,
+          664
+        ],
+        "preferred_expansion_label": "left"
+      }
+    },
+    {
+      "id": "module-nearstalgia-slit",
+      "kind": "module",
+      "label": "Nearstalgia slit",
+      "artifact_type": "sunset-threshold-aperture",
+      "bounds": {
+        "x": 0.076,
+        "y": 0.853,
+        "w": 0.276,
+        "h": 0.142
+      },
+      "z_index": 22,
+      "polygon": [
+        [
+          0.076,
+          0.853
+        ],
+        [
+          0.352,
+          0.853
+        ],
+        [
+          0.352,
+          0.995
+        ],
+        [
+          0.076,
+          0.995
+        ]
+      ],
+      "cluster_id": "paper-bloom-cipher-theater",
+      "mask_path": "/editions/2026-04-26-paper-bloom-cipher-procession-v1/assets/masks/module-nearstalgia-slit.svg",
+      "source_binding_ids": [
+        "binding-module-nearstalgia-slit"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          329,
+          850
+        ],
+        "safe_stage_window_origin_px": [
+          363,
+          850
+        ],
+        "preferred_expansion_label": "up"
+      }
+    },
+    {
+      "id": "module-flower-music-veil",
+      "kind": "module",
+      "label": "Flower Music veil",
+      "artifact_type": "hero-scale-petal-curtain",
+      "bounds": {
+        "x": 0.08,
+        "y": 0.1,
+        "w": 0.32,
+        "h": 0.32
+      },
+      "z_index": 23,
+      "polygon": [
+        [
+          0.08,
+          0.1
+        ],
+        [
+          0.4,
+          0.1
+        ],
+        [
+          0.4,
+          0.42
+        ],
+        [
+          0.08,
+          0.42
+        ]
+      ],
+      "cluster_id": "paper-bloom-cipher-theater",
+      "mask_path": "/editions/2026-04-26-paper-bloom-cipher-procession-v1/assets/masks/module-flower-music-veil.svg",
+      "source_binding_ids": [
+        "binding-module-flower-music-veil"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          369,
+          240
+        ],
+        "safe_stage_window_origin_px": [
+          408,
+          266
+        ],
+        "preferred_expansion_label": "right"
+      }
+    },
+    {
+      "id": "module-sequencer-ribbon",
+      "kind": "module",
+      "label": "Sequencer ribbon",
+      "artifact_type": "hero-scale-copper-line",
+      "bounds": {
+        "x": 0.58,
+        "y": 0.12,
+        "w": 0.32,
+        "h": 0.32
+      },
+      "z_index": 24,
+      "polygon": [
+        [
+          0.58,
+          0.12
+        ],
+        [
+          0.9,
+          0.12
+        ],
+        [
+          0.9,
+          0.44
+        ],
+        [
+          0.58,
+          0.44
+        ]
+      ],
+      "cluster_id": "paper-bloom-cipher-theater",
+      "mask_path": "/editions/2026-04-26-paper-bloom-cipher-procession-v1/assets/masks/module-sequencer-ribbon.svg",
+      "source_binding_ids": [
+        "binding-module-sequencer-ribbon"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          1137,
+          261
+        ],
+        "safe_stage_window_origin_px": [
+          1176,
+          287
+        ],
+        "preferred_expansion_label": "left"
+      }
+    },
+    {
+      "id": "module-nearstalgia-slit-2",
+      "kind": "module",
+      "label": "Nearstalgia slit",
+      "artifact_type": "sunset-threshold-aperture",
+      "bounds": {
+        "x": 0.08,
+        "y": 0.52,
+        "w": 0.22,
+        "h": 0.22
+      },
+      "z_index": 25,
+      "polygon": [
+        [
+          0.08,
+          0.52
+        ],
+        [
+          0.3,
+          0.52
+        ],
+        [
+          0.3,
+          0.74
+        ],
+        [
+          0.08,
+          0.74
+        ]
+      ],
+      "cluster_id": "paper-bloom-cipher-theater",
+      "mask_path": "/editions/2026-04-26-paper-bloom-cipher-procession-v1/assets/masks/module-nearstalgia-slit-2.svg",
+      "source_binding_ids": [
+        "binding-module-nearstalgia-slit-2"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          292,
+          627
+        ],
+        "safe_stage_window_origin_px": [
+          319,
+          645
+        ],
+        "preferred_expansion_label": "right"
+      }
+    },
+    {
+      "id": "module-sound-of-joy-pin",
+      "kind": "module",
+      "label": "Sound of Joy pin",
+      "artifact_type": "amber-pin-light",
+      "bounds": {
+        "x": 0.34,
+        "y": 0.54,
+        "w": 0.22,
+        "h": 0.22
+      },
+      "z_index": 26,
+      "polygon": [
+        [
+          0.34,
+          0.54
+        ],
+        [
+          0.56,
+          0.54
+        ],
+        [
+          0.56,
+          0.76
+        ],
+        [
+          0.34,
+          0.76
+        ]
+      ],
+      "cluster_id": "paper-bloom-cipher-theater",
+      "mask_path": "/editions/2026-04-26-paper-bloom-cipher-procession-v1/assets/masks/module-sound-of-joy-pin.svg",
+      "source_binding_ids": [
+        "binding-module-sound-of-joy-pin"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          691,
+          648
+        ],
+        "safe_stage_window_origin_px": [
+          718,
+          666
+        ],
+        "preferred_expansion_label": "right"
+      }
+    }
+  ]
+}

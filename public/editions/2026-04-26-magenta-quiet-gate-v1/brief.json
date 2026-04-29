@@ -1,0 +1,62 @@
+{
+  "brief_id": "brief-2026-04-26-magenta-quiet-gate-v1",
+  "date": "2026-04-26",
+  "signal_cluster_ids": [
+    "55c2a5c846a6",
+    "5521ff3b4c89",
+    "d824bedc7d45",
+    "67bac2353d29",
+    "97ed2b079aa4",
+    "1ecbe0ef250f",
+    "409267176a04",
+    "b7428f1c9989"
+  ],
+  "research_node_ids": [
+    "research-1-f3d36279",
+    "research-2-1fecc976",
+    "research-3-5250dba8",
+    "research-4-23c4d2d5",
+    "research-5-f604eb40",
+    "research-6-bcb9a43b",
+    "research-7-d61beb0a",
+    "research-8-02f80703",
+    "research-9-329b71bc",
+    "research-10-a9dad5cd",
+    "research-11-cda659d7",
+    "research-12-2800de35"
+  ],
+  "mood": "hushed, luminous, and suspended, like a public passage holding a secret after closing time",
+  "material_language": [
+    "velvet rose plaster",
+    "dark smoked glass",
+    "brushed aluminum"
+  ],
+  "lighting": "wide magenta-to-wine gradient wash with a soft central bloom, dim edge falloff, and a faint cobalt reflection along the floor",
+  "object_inventory": [
+    "one monumental rounded rectangular gate in rose plaster",
+    "one secondary smoked-glass listening slit on the left wall",
+    "one secondary low brushed-aluminum curb crossing the foreground",
+    "nine quiet source-anchor marks as labels, pinholes, seams, and tiny lit apertures",
+    "large unoccupied gradient wall and floor planes"
+  ],
+  "interaction_grammar": {
+    "hero_count": 2,
+    "module_count": 7,
+    "window_strategy": "source-window"
+  },
+  "negative_constraints": [
+    "no desks",
+    "no dashboards",
+    "no software UI",
+    "no shelves or cabinets",
+    "no archive wall",
+    "no chapel, roller room, printmaking, or splatter-canvas imagery",
+    "no crowded object inventory",
+    "no logos or page chrome",
+    "no dense archive wall",
+    "no cabinet of objects",
+    "no many-prop still life",
+    "no equal-weight grid of source objects",
+    "preserve large negative space"
+  ]
+}

@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { getSourceWindowSurfaceProfile } from './sourceWindowSurface'
-import type { SourceWindowDescriptor } from './sourceWindowContent'
+import type { SourceWindowDescriptor } from '../types/sourceWindows'
 
 const videoDescriptor: SourceWindowDescriptor = {
   kind: 'youtube-embed',
@@ -42,14 +42,27 @@ describe('getSourceWindowSurfaceProfile', () => {
       showExcerpt: false,
       showMeta: false,
       showBodyEyebrow: false,
-      showBodyPlatformPill: true,
+      showBodyPlatformPill: false,
       frameStyle: 'embedded-media',
       bodyStyle: 'immersive',
       closeStyle: 'floating',
     })
   })
 
-  it('keeps live stage previews extra minimal', () => {
+  it('uses embedded media treatment for live stage youtube previews', () => {
+    expect(getSourceWindowSurfaceProfile(videoDescriptor, 'stage', 'preview')).toEqual({
+      showHeader: false,
+      showExcerpt: false,
+      showMeta: false,
+      showBodyEyebrow: false,
+      showBodyPlatformPill: false,
+      frameStyle: 'embedded-media',
+      bodyStyle: 'immersive',
+      closeStyle: 'none',
+    })
+  })
+
+  it('keeps live stage previews extra minimal for non-video sources', () => {
     expect(getSourceWindowSurfaceProfile(socialDescriptor, 'stage', 'preview')).toEqual({
       showHeader: false,
       showExcerpt: false,
@@ -62,14 +75,14 @@ describe('getSourceWindowSurfaceProfile', () => {
     })
   })
 
-  it('does not duplicate the platform label on unbound stage fallback cards', () => {
+  it('keeps stage rich-preview cards chrome-light so source art can stand on its own', () => {
     expect(getSourceWindowSurfaceProfile(unboundDescriptor, 'stage', 'primary')).toEqual({
       showHeader: false,
       showExcerpt: false,
       showMeta: false,
       showBodyEyebrow: false,
-      showBodyPlatformPill: true,
-      frameStyle: 'artifact-card',
+      showBodyPlatformPill: false,
+      frameStyle: 'none',
       bodyStyle: 'standard',
       closeStyle: 'floating',
     })

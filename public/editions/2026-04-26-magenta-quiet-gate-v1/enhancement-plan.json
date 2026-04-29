@@ -1,0 +1,236 @@
+{
+  "enhancement_plan_id": "enhance-2026-04-26-magenta-quiet-gate-v1",
+  "edition_id": "2026-04-26-magenta-quiet-gate-v1",
+  "derived_from": {
+    "interpretation_id": "interp-2026-04-26-magenta-quiet-gate-v1"
+  },
+  "interaction_world": {
+    "class": "object-native",
+    "primary_behavior": "mechanical-reveal-system",
+    "scene_wide_behavior": "cabinet-drawer-behavior",
+    "choreography_rule": "anchor-and-satellites"
+  },
+  "bundle": {
+    "primary": [
+      "mechanical-reveal-system"
+    ],
+    "secondary": [
+      "warped-paper-fragment",
+      "threshold-scan-reveal"
+    ],
+    "wildcard": []
+  },
+  "runtime_safe_subset": [
+    "warped-paper-fragment",
+    "threshold-scan-reveal",
+    "screen-rendered-html"
+  ],
+  "future_only_subset": [
+    "mechanical-reveal-system",
+    "restoration-scan"
+  ],
+  "rejected": [
+    {
+      "technique": "light-path-reveal",
+      "reason": "Rejected by interpretation behavior rule: light-path-reaction"
+    },
+    {
+      "technique": "light-path-reveal",
+      "reason": "Object-native scenes should anchor interaction to discrete artifacts before environmental field effects."
+    }
+  ],
+  "targets": [
+    {
+      "target_id": "hero-rose-field-gate",
+      "target_kind": "artifact",
+      "artifact_id": "hero-rose-field-gate",
+      "priority": 1,
+      "techniques": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ],
+      "source_classes": [
+        "web",
+        "article"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (hero-scale-rounded-threshold) selected from interpretation."
+    },
+    {
+      "target_id": "hero-october-glass-slit",
+      "target_kind": "artifact",
+      "artifact_id": "hero-october-glass-slit",
+      "priority": 2,
+      "techniques": [
+        "screen-rendered-html",
+        "threshold-scan-reveal"
+      ],
+      "source_classes": [
+        "video",
+        "youtube"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (hero-scale-smoked-glass-aperture) selected from interpretation."
+    },
+    {
+      "target_id": "module-blue-dress-inlay",
+      "target_kind": "artifact",
+      "artifact_id": "module-blue-dress-inlay",
+      "priority": 3,
+      "techniques": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ],
+      "source_classes": [
+        "audio"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (cobalt-enamel-floor-line) selected from interpretation."
+    },
+    {
+      "target_id": "module-sound-leaves-pinholes",
+      "target_kind": "artifact",
+      "artifact_id": "module-sound-leaves-pinholes",
+      "priority": 4,
+      "techniques": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ],
+      "source_classes": [
+        "audio"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (clustered-wall-perforations) selected from interpretation."
+    },
+    {
+      "target_id": "module-sea-salt-seam",
+      "target_kind": "artifact",
+      "artifact_id": "module-sea-salt-seam",
+      "priority": 5,
+      "techniques": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ],
+      "source_classes": [
+        "audio"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (pale-horizontal-wall-seam) selected from interpretation."
+    },
+    {
+      "target_id": "module-prd-etching",
+      "target_kind": "artifact",
+      "artifact_id": "module-prd-etching",
+      "priority": 6,
+      "techniques": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ],
+      "source_classes": [
+        "web",
+        "article"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (microtype-metal-plate) selected from interpretation."
+    },
+    {
+      "target_id": "module-peoples-prize-curb",
+      "target_kind": "artifact",
+      "artifact_id": "module-peoples-prize-curb",
+      "priority": 7,
+      "techniques": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ],
+      "source_classes": [
+        "web",
+        "article"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (tiny-gold-vote-notch) selected from interpretation."
+    },
+    {
+      "target_id": "module-audit-ash-square",
+      "target_kind": "artifact",
+      "artifact_id": "module-audit-ash-square",
+      "priority": 8,
+      "techniques": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ],
+      "source_classes": [
+        "web",
+        "article"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (small-charcoal-image-tile) selected from interpretation."
+    },
+    {
+      "target_id": "module-coreys-floor-spark",
+      "target_kind": "artifact",
+      "artifact_id": "module-coreys-floor-spark",
+      "priority": 9,
+      "techniques": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ],
+      "source_classes": [
+        "video",
+        "youtube"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (single-white-resin-glint) selected from interpretation."
+    }
+  ],
+  "global_recommendation": [
+    "mechanical-reveal-system",
+    "warped-paper-fragment",
+    "threshold-scan-reveal"
+  ],
+  "runtime_note": "Generated automatically from 9 artifacts and scene family heuristics."
+}

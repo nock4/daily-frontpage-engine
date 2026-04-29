@@ -1,0 +1,61 @@
+{
+  "brief_id": "brief-2026-04-26-paper-bloom-cipher-procession-v1",
+  "date": "2026-04-26",
+  "signal_cluster_ids": [
+    "55c2a5c846a6",
+    "5521ff3b4c89",
+    "d824bedc7d45",
+    "67bac2353d29",
+    "97ed2b079aa4",
+    "1ecbe0ef250f",
+    "409267176a04",
+    "b7428f1c9989"
+  ],
+  "research_node_ids": [
+    "research-1-07977d76",
+    "research-2-3206e1e5",
+    "research-3-02cb00c4",
+    "research-4-ef432f50",
+    "research-5-ed5a693b",
+    "research-6-a3788ede",
+    "research-7-0c699190",
+    "research-8-c222c645",
+    "research-9-39ca5b54",
+    "research-10-7c4593e8",
+    "research-11-37aa7fdd",
+    "research-12-9ebb0566"
+  ],
+  "mood": "hushed, ceremonial, pale, encrypted, dreamlike",
+  "material_language": [
+    "cream washi paper",
+    "translucent vellum petals",
+    "dull copper ink"
+  ],
+  "lighting": "diffuse milky front light with a faint amber glow gathered at the center of the bloom; edges fall into soft charcoal side shadow",
+  "object_inventory": [
+    "one dominant translucent paper flower opened like a stage curtain",
+    "two secondary forms: a low sunset rail-line threshold and a thin sequencer ribbon",
+    "vertical copper text columns pressed into the paper field",
+    "tiny hidden glyph cuts and pinholes",
+    "small photographic apertures embedded along the margins",
+    "quiet source-anchor marks disguised as labels, slits, stains, and thumbnail windows"
+  ],
+  "interaction_grammar": {
+    "hero_count": 2,
+    "module_count": 5,
+    "window_strategy": "source-window"
+  },
+  "negative_constraints": [
+    "no desks, dashboards, browser chrome, cards, shelves, cabinets, archives, or software UI",
+    "no crowded collage or equal-weight source grid",
+    "no literal code editor, terminal, phone, laptop, or office environment",
+    "no repeated logos or reproduced page layouts",
+    "preserve at least 45 percent open negative space",
+    "limit the main image to one dominant form and two secondary forms",
+    "no dense archive wall",
+    "no cabinet of objects",
+    "no many-prop still life",
+    "no equal-weight grid of source objects",
+    "preserve large negative space"
+  ]
+}

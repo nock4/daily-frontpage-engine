@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-ROOT="/Users/nickgeorge-studio/Projects/landing-editions/ggol-form-field"
+ROOT="/Users/nickgeorge-studio/Projects/daily-frontpage-engine"
 RUNTIME_DIR="$ROOT/.runtime"
 PREVIEW_PID_FILE="$RUNTIME_DIR/preview.pid"
 TUNNEL_PID_FILE="$RUNTIME_DIR/cloudflared.pid"

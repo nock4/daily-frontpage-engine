@@ -1,0 +1,857 @@
+#root {
+  min-height: 100vh;
+}
+
+body {
+  background: #11100f;
+  color: #f5edde;
+}
+
+button,
+a {
+  font: inherit;
+}
+
+.boot-state {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.runtime-shell,
+.archive-shell {
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.runtime-shell {
+  grid-template-columns: minmax(0, 1.25fr) 340px;
+  transition: background 180ms ease, box-shadow 180ms ease;
+}
+
+.runtime-shell--immersive {
+  grid-template-columns: minmax(0, 1fr);
+  padding: 0;
+  min-height: 100vh;
+}
+
+.runtime-shell--stage-fill {
+  overflow: hidden;
+}
+
+.runtime-shell--immersive .runtime-main {
+  min-height: 100vh;
+}
+
+.runtime-shell.ambient-video {
+  background: radial-gradient(circle at top left, rgba(95, 124, 255, 0.14), transparent 40%);
+}
+
+.runtime-shell.ambient-audio {
+  background: radial-gradient(circle at top left, rgba(255, 142, 61, 0.12), transparent 42%);
+}
+
+.runtime-shell.ambient-social {
+  background: radial-gradient(circle at top left, rgba(78, 201, 176, 0.12), transparent 42%);
+}
+
+.runtime-shell.ambient-reading {
+  background: radial-gradient(circle at top left, rgba(214, 189, 113, 0.1), transparent 40%);
+}
+
+.runtime-shell.recipe-motion-soft-spore-drift .plate {
+  animation: plateFloat 18s ease-in-out infinite;
+}
+
+.runtime-shell.recipe-motion-slow-star-drift .plate {
+  animation: plateFloat 28s ease-in-out infinite;
+}
+
+.runtime-shell.recipe-motion-ember-float .plate {
+  animation: plateFloat 22s ease-in-out infinite reverse;
+}
+
+.runtime-shell.recipe-color-warm-paper-breathing {
+  background-color: rgba(89, 69, 41, 0.12);
+}
+
+.runtime-shell.recipe-color-violet-night-breathing {
+  background-color: rgba(68, 45, 108, 0.14);
+}
+
+.runtime-shell.recipe-color-amber-table-breathing {
+  background-color: rgba(118, 74, 34, 0.14);
+}
+
+.runtime-shell.recipe-glow-artifact-proximity .artifact.is-active {
+  box-shadow: 0 0 0 1px rgba(245, 220, 171, 0.4), 0 0 24px rgba(245, 220, 171, 0.22);
+}
+
+.runtime-shell.recipe-glow-constellation-proximity .artifact.is-active {
+  box-shadow: 0 0 0 1px rgba(152, 169, 255, 0.42), 0 0 28px rgba(102, 122, 255, 0.24);
+}
+
+.runtime-shell.recipe-glow-candle-pulse .artifact.is-active {
+  box-shadow: 0 0 0 1px rgba(255, 188, 110, 0.42), 0 0 26px rgba(255, 146, 46, 0.26);
+}
+
+.runtime-shell.recipe-audio-ambient .source-window__body--audio,
+.runtime-shell.recipe-audio-ambient .source-window__body--audio-embed {
+  box-shadow: inset 0 0 0 1px rgba(255, 182, 93, 0.1);
+}
+
+.runtime-shell.recipe-webgl-particles .stage::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.18) 0 1px, transparent 1.5px);
+  background-size: 24px 24px;
+  opacity: 0.12;
+  mix-blend-mode: screen;
+}
+
+.runtime-main,
+.side-rail,
+.archive-shell {
+  display: grid;
+  gap: 1rem;
+}
+
+.embed-preload-layer {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.embed-preload-frame {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.embed-preload-image {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.runtime-topbar,
+.panel,
+.source-window,
+.archive-card {
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(24, 20, 18, 0.78);
+  border-radius: 16px;
+  box-shadow: 0 18px 50px rgba(0,0,0,0.2);
+}
+
+.runtime-topbar {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  gap: 1rem;
+  padding: 0.8rem 1rem;
+  align-items: start;
+}
+
+.runtime-topbar h1,
+.panel h2,
+.runtime-topbar p,
+.panel p,
+.archive-shell h1,
+.archive-shell p,
+.archive-card p {
+  margin: 0;
+}
+
+.topbar-actions,
+.window-dock__items,
+.source-window__meta {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.topbar-actions button,
+.archive-mini-list button,
+.window-dock button,
+.source-window button,
+.source-window a,
+.archive-card,
+.archive-shell button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2rem;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: rgba(255,255,255,0.04);
+  color: #f5edde;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.archive-card {
+  padding: 0;
+  border-radius: 20px;
+  overflow: hidden;
+  text-align: left;
+  display: grid;
+}
+
+.archive-card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.archive-card__body {
+  display: grid;
+  gap: 0.45rem;
+  padding: 0.8rem 0.95rem 1rem;
+}
+
+.archive-card__meta,
+.topbar-meta {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  color: rgba(255,255,255,0.7);
+  font-size: 0.9rem;
+}
+
+.eyebrow {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: rgba(255,255,255,0.6);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  padding: 0.15rem 0.45rem;
+  border-radius: 999px;
+  border: 1px solid rgba(246, 227, 147, 0.25);
+  background: rgba(246, 227, 147, 0.1);
+  color: #f6e393;
+  font-size: 0.75rem;
+}
+
+.stage {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 22px;
+  border: 1px solid rgba(255,255,255,0.08);
+  --scene-react-x: 50%;
+  --scene-react-y: 50%;
+  --scene-react-primary: rgba(255, 230, 164, 0.1);
+  --scene-react-secondary: rgba(124, 201, 255, 0.08);
+  --scene-react-shadow: rgba(10, 9, 8, 0.24);
+}
+
+.stage::before,
+.stage::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 300ms ease;
+}
+
+.stage--scene-tone-video {
+  --scene-react-primary: rgba(132, 193, 255, 0.16);
+  --scene-react-secondary: rgba(102, 118, 255, 0.12);
+  --scene-react-shadow: rgba(8, 10, 19, 0.28);
+}
+
+.stage--scene-tone-audio {
+  --scene-react-primary: rgba(255, 188, 122, 0.17);
+  --scene-react-secondary: rgba(255, 122, 82, 0.11);
+  --scene-react-shadow: rgba(26, 11, 6, 0.28);
+}
+
+.stage--scene-tone-social {
+  --scene-react-primary: rgba(132, 255, 221, 0.14);
+  --scene-react-secondary: rgba(76, 208, 187, 0.1);
+  --scene-react-shadow: rgba(7, 20, 18, 0.28);
+}
+
+.stage--scene-tone-reading {
+  --scene-react-primary: rgba(255, 229, 178, 0.14);
+  --scene-react-secondary: rgba(212, 172, 112, 0.1);
+  --scene-react-shadow: rgba(21, 15, 10, 0.26);
+}
+
+.stage--scene-reacting::before {
+  opacity: 1;
+  background:
+    radial-gradient(circle at var(--scene-react-x) var(--scene-react-y), var(--scene-react-primary), transparent 18%),
+    radial-gradient(circle at var(--scene-react-x) var(--scene-react-y), var(--scene-react-secondary), transparent 32%);
+  mix-blend-mode: screen;
+  animation: stage-scene-bloom 3.8s ease-in-out infinite;
+}
+
+.stage--scene-reacting::after {
+  opacity: 0.62;
+  background: radial-gradient(circle at var(--scene-react-x) var(--scene-react-y), rgba(14, 12, 11, 0), rgba(14, 12, 11, 0.14) 36%, var(--scene-react-shadow) 100%);
+  animation: stage-scene-vignette 4.8s ease-in-out infinite;
+}
+
+.runtime-shell--immersive .stage {
+  min-height: 100vh;
+  aspect-ratio: auto;
+  border-radius: 0;
+  border: 0;
+}
+
+.plate {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-unfurl {
+  --about-heading-font: 'DFE Newsreader', Iowan Old Style, Palatino Linotype, Book Antiqua, Georgia, serif;
+  --about-body-font: 'DFE Newsreader', Iowan Old Style, Palatino Linotype, Book Antiqua, Georgia, serif;
+  --about-accent-font: 'DFE Space Grotesk', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --about-heading-weight: 680;
+  --about-body-weight: 420;
+  --about-accent-weight: 720;
+  position: absolute;
+  top: clamp(0.9rem, 2vw, 1.4rem);
+  right: clamp(0.9rem, 2vw, 1.4rem);
+  z-index: 58;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.65rem;
+  pointer-events: none;
+}
+
+.about-unfurl__button,
+.about-unfurl__panel {
+  pointer-events: auto;
+}
+
+.about-unfurl__button {
+  min-height: 2.25rem;
+  padding: 0.5rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 245, 222, 0.18);
+  background: rgba(18, 16, 15, 0.5);
+  backdrop-filter: blur(14px);
+  color: rgba(255, 244, 230, 0.96);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  font-family: var(--about-accent-font);
+  font-weight: var(--about-accent-weight);
+  font-size: 0.75rem;
+  box-shadow: 0 16px 36px rgba(8, 6, 5, 0.18);
+}
+
+.about-unfurl__button:hover,
+.about-unfurl__button:focus-visible {
+  background: rgba(24, 21, 18, 0.72);
+  border-color: rgba(255, 245, 222, 0.32);
+}
+
+.about-unfurl__panel {
+  width: min(34rem, calc(100vw - 2rem));
+  max-height: min(72vh, 42rem);
+  overflow: auto;
+  padding: 1rem 1rem 1.05rem;
+  border-radius: 1.15rem;
+  border: 1px solid rgba(255, 245, 222, 0.14);
+  background: linear-gradient(180deg, rgba(18, 16, 15, 0.94), rgba(13, 12, 11, 0.9));
+  box-shadow: 0 28px 64px rgba(5, 4, 3, 0.34);
+  color: rgba(255, 245, 228, 0.94);
+  font-family: var(--about-body-font);
+  font-weight: var(--about-body-weight);
+  transform-origin: top right;
+  transform: scale(0.96) translateY(-0.4rem);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 180ms ease, transform 220ms ease, visibility 220ms step-end;
+}
+
+.about-unfurl.is-open .about-unfurl__panel {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1) translateY(0);
+  transition: opacity 180ms ease, transform 220ms ease;
+}
+
+.about-unfurl__kicker {
+  margin-bottom: 0.45rem;
+  color: rgba(255, 232, 184, 0.78);
+  font-family: var(--about-accent-font);
+  font-weight: var(--about-accent-weight);
+  font-size: 0.74rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.about-unfurl__panel h2 {
+  margin: 0;
+  font-family: var(--about-heading-font);
+  font-size: clamp(1.1rem, 2vw, 1.45rem);
+  font-weight: var(--about-heading-weight);
+  line-height: 1.1;
+}
+
+.about-unfurl__blurb {
+  margin: 0.7rem 0 0;
+  color: rgba(255, 237, 211, 0.84);
+  font-size: 0.96rem;
+  line-height: 1.5;
+}
+
+.about-unfurl__body {
+  margin-top: 0.9rem;
+  display: grid;
+  gap: 0.8rem;
+}
+
+.about-unfurl__body p {
+  margin: 0;
+  color: rgba(255, 245, 230, 0.88);
+  font-size: 0.95rem;
+  line-height: 1.58;
+}
+
+.review-mode--live .about-unfurl__panel {
+  background: linear-gradient(180deg, rgba(14, 13, 12, 0.92), rgba(10, 10, 9, 0.9));
+}
+
+@media (max-width: 720px) {
+  .about-unfurl {
+    left: 0.75rem;
+    right: 0.75rem;
+    align-items: stretch;
+  }
+
+  .about-unfurl__panel {
+    width: 100%;
+  }
+}
+
+.artifact {
+  position: absolute;
+  z-index: 4;
+  border: 1px solid rgba(255, 243, 216, 0.06);
+  background: transparent;
+  color: rgba(255,255,255,0.9);
+  cursor: pointer;
+}
+
+.review-mode--live .artifact {
+  border-color: transparent;
+  box-shadow: none;
+}
+
+.review-mode--live .artifact span {
+  display: none;
+}
+
+.artifact span {
+  position: absolute;
+  left: 0.35rem;
+  bottom: 0.35rem;
+  display: inline-flex;
+  max-width: min(18rem, calc(100vw - 2rem));
+  padding: 0;
+  font-family: var(--source-card-accent-font, 'DFE Space Grotesk', ui-sans-serif, system-ui, sans-serif);
+  font-size: 0.68rem;
+  font-weight: var(--source-card-accent-weight, 720);
+  line-height: 1.05;
+  color: rgba(255, 250, 238, 0.96);
+  -webkit-text-stroke: 0.04em rgba(8, 10, 14, 0.78);
+  paint-order: stroke fill;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.78), 0 0 12px rgba(0, 0, 0, 0.58);
+  text-wrap: balance;
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity 140ms ease, transform 140ms ease;
+}
+
+/* Hide artifact labels once a primary live-stage window takes over. */
+.stage--primary-window-open .artifact span {
+  display: none;
+}
+
+.artifact--labels-on span,
+.artifact.is-active span,
+.artifact:hover span,
+.artifact:focus-visible span {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.artifact--hero.is-active,
+.artifact--hero:hover,
+.artifact--hero:focus-visible {
+  box-shadow: 0 0 0 1px rgba(246, 227, 147, 0.3), inset 0 0 0 1px rgba(246, 227, 147, 0.22);
+}
+
+.artifact--module.is-active,
+.artifact--module:hover,
+.artifact--module:focus-visible {
+  box-shadow: 0 0 0 1px rgba(173, 227, 184, 0.22), inset 0 0 0 1px rgba(173, 227, 184, 0.18);
+}
+
+.review-mode--live .artifact.is-active,
+.review-mode--live .artifact:hover,
+.review-mode--live .artifact:focus-visible {
+  box-shadow: none;
+}
+
+.review-mode--live .artifact {
+  isolation: isolate;
+  transition: transform 220ms ease, filter 220ms ease, opacity 220ms ease;
+  --scene-drift-x: 0rem;
+  --scene-drift-y: 0rem;
+  --scene-react-delay: 0ms;
+  --scene-react-strength: 0.34;
+}
+
+.review-mode--live .artifact::before,
+.review-mode--live .artifact::after {
+  content: '';
+  position: absolute;
+  inset: -0.2rem;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.review-mode--live .artifact--preview-active {
+  filter: saturate(1.08) brightness(1.03);
+}
+
+.review-mode--live .artifact--scene-anchor {
+  transform: translate3d(0, -0.08rem, 0);
+  filter: saturate(1.08) brightness(1.04);
+}
+
+.review-mode--live .stage--scene-tone-video .artifact--scene-anchor {
+  filter: saturate(1.14) brightness(1.07) drop-shadow(0 0 0.5rem rgba(96, 144, 255, 0.22));
+}
+
+.review-mode--live .stage--scene-tone-audio .artifact--scene-anchor {
+  filter: saturate(1.12) brightness(1.06) drop-shadow(0 0 0.45rem rgba(255, 145, 82, 0.2));
+}
+
+.review-mode--live .stage--scene-tone-social .artifact--scene-anchor {
+  filter: saturate(1.12) brightness(1.06) drop-shadow(0 0 0.45rem rgba(85, 220, 185, 0.18));
+}
+
+.review-mode--live .stage--scene-tone-reading .artifact--scene-anchor {
+  filter: saturate(1.1) brightness(1.06) drop-shadow(0 0 0.42rem rgba(246, 207, 134, 0.18));
+}
+
+.review-mode--live .artifact--scene-reactive {
+  opacity: calc(0.72 + (var(--scene-react-strength) * 0.16));
+  filter: saturate(calc(0.9 + (var(--scene-react-strength) * 0.16))) brightness(calc(0.88 + (var(--scene-react-strength) * 0.16)));
+}
+
+.review-mode--live .artifact--scene-reactive::before,
+.review-mode--live .artifact--scene-reactive::after {
+  content: none;
+  opacity: 0;
+  animation: none;
+}
+
+.review-mode--live .artifact--scene-reactive-1 {
+  transform: translate3d(calc(var(--scene-drift-x) * 1.35), calc(var(--scene-drift-y) * 1.1), 0) scale(0.996);
+}
+
+.review-mode--live .artifact--scene-reactive-2 {
+  transform: translate3d(calc(var(--scene-drift-x) * 0.95), calc(var(--scene-drift-y) * 0.95), 0) scale(0.992);
+}
+
+.review-mode--live .artifact--scene-reactive-3 {
+  transform: translate3d(calc(var(--scene-drift-x) * 0.7), calc(var(--scene-drift-y) * 0.8), 0) scale(0.989);
+}
+
+.review-mode--live .artifact--scene-reactive.artifact--scene-phase-0::before {
+  inset: -0.12rem;
+  background: radial-gradient(circle, color-mix(in srgb, var(--scene-react-primary) 88%, transparent), rgba(255, 240, 197, 0) 70%);
+  filter: blur(1.5px);
+  animation: scene-react-breath 3.6s ease-in-out infinite;
+}
+
+.review-mode--live .artifact--scene-reactive.artifact--scene-phase-1::before {
+  inset: -0.18rem -0.1rem;
+  background: linear-gradient(180deg, rgba(163, 216, 255, 0) 0%, color-mix(in srgb, var(--scene-react-secondary) 94%, transparent) 54%, rgba(163, 216, 255, 0) 100%);
+  filter: blur(0.8px);
+  animation: scene-react-scan 2.8s ease-in-out infinite;
+}
+
+.review-mode--live .artifact--scene-reactive.artifact--scene-phase-2::before {
+  inset: -0.08rem;
+  background: radial-gradient(circle, color-mix(in srgb, var(--scene-react-primary) 82%, rgba(243, 198, 126, 0.16)), rgba(243, 198, 126, 0) 76%);
+  filter: blur(1.2px);
+  animation: scene-react-breath 4.4s ease-in-out infinite reverse;
+}
+
+.review-mode--live .artifact--scene-reactive::after {
+  inset: -0.05rem;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--scene-react-primary) 85%, rgba(248, 233, 195, 0.12));
+  mix-blend-mode: screen;
+}
+
+.review-mode--live .artifact--click-out {
+  cursor: alias;
+}
+
+.review-mode--live .artifact--click-out.artifact--preview-active {
+  filter: saturate(1.1) brightness(1.05);
+}
+
+.review-mode--live .artifact--preview-active.artifact--projection-cast {
+  transform: translate3d(0, -0.16rem, 0) rotate(-1.2deg);
+}
+
+.review-mode--live .artifact--preview-active.artifact--projection-cast::before {
+  inset: -0.28rem;
+  border-radius: 999px;
+  background: radial-gradient(circle, rgba(255, 226, 156, 0.26), rgba(255, 226, 156, 0) 68%);
+  filter: blur(0.6px) drop-shadow(0 0 10px rgba(255, 206, 96, 0.24));
+  opacity: 0.88;
+  animation: artifact-pulse-halo 2.4s ease-in-out infinite;
+}
+
+.review-mode--live .artifact--preview-active.artifact--projection-cast::after {
+  inset: -0.08rem;
+  border-radius: 999px;
+  background: radial-gradient(circle, rgba(255, 233, 182, 0.14), rgba(255, 233, 182, 0) 72%);
+  opacity: 0.72;
+  animation: artifact-cast-flicker 1.8s ease-in-out infinite;
+}
+
+.review-mode--live .artifact--preview-active.artifact--projection-mechanical {
+  transform: translate3d(0.04rem, -0.03rem, 0);
+}
+
+.review-mode--live .artifact--preview-active.artifact--projection-mechanical::before {
+  inset: -0.08rem;
+  border-radius: 0.28rem;
+  background: linear-gradient(180deg, rgba(170, 205, 255, 0) 0%, rgba(170, 205, 255, 0.34) 48%, rgba(170, 205, 255, 0) 100%);
+  box-shadow: inset 0 0 0 1px rgba(148, 182, 238, 0.24), 0 0 10px rgba(120, 156, 218, 0.14);
+  opacity: 0.92;
+  animation: artifact-scan-jitter 1.7s steps(2, end) infinite;
+}
+
+.review-mode--live .artifact--preview-active.artifact--projection-mechanical::after {
+  inset: auto -0.12rem -0.12rem auto;
+  width: 0.82rem;
+  height: 0.42rem;
+  border-radius: 999px;
+  border: 1px solid rgba(202, 222, 255, 0.46);
+  background: linear-gradient(90deg, rgba(76, 97, 138, 0.92), rgba(202, 220, 255, 0.42), rgba(76, 97, 138, 0.92));
+  box-shadow: inset 0 0 0 1px rgba(18, 24, 34, 0.42), 0 0 10px rgba(146, 180, 244, 0.16);
+  opacity: 0.88;
+  animation: artifact-cuff-flicker 2.3s ease-in-out infinite;
+}
+
+.review-mode--live .artifact--preview-active.artifact--projection-hinged {
+  transform: translate3d(0, -0.05rem, 0) rotate(-0.8deg);
+}
+
+.review-mode--live .artifact--preview-active.artifact--projection-hinged::before {
+  inset: -0.06rem;
+  border-radius: 0.22rem;
+  background: linear-gradient(135deg, rgba(255, 244, 224, 0.18), rgba(181, 130, 63, 0.14));
+  box-shadow: inset 0 0 0 1px rgba(158, 117, 63, 0.18), 0 0 8px rgba(198, 147, 74, 0.12);
+  opacity: 0.9;
+  animation: artifact-paper-flutter 3.2s ease-in-out infinite;
+}
+
+.review-mode--live .artifact--preview-active.artifact--projection-hinged::after {
+  inset: auto auto -0.12rem -0.14rem;
+  width: 0.94rem;
+  height: 0.18rem;
+  border-radius: 999px;
+  background: repeating-linear-gradient(90deg, rgba(255, 243, 215, 0.98) 0 0.11rem, rgba(167, 128, 72, 0.96) 0.11rem 0.18rem);
+  box-shadow: 0 0 0 1px rgba(142, 106, 61, 0.16), 0 0 8px rgba(247, 218, 167, 0.16);
+  opacity: 0.88;
+  animation: artifact-stitch-flicker 3.4s ease-in-out infinite;
+}
+
+.review-mode--live .artifact--preview-active.artifact--inherit-paper {
+  transform: translate3d(0, -0.08rem, 0) rotate(-0.8deg);
+}
+
+.review-mode--live .artifact--preview-active.artifact--inherit-paper::before {
+  inset: -0.08rem;
+  border-radius: 0.2rem;
+  background: linear-gradient(135deg, rgba(255, 244, 224, 0.2), rgba(182, 131, 70, 0.12));
+  box-shadow: inset 0 0 0 1px rgba(159, 119, 69, 0.16), 0 0 8px rgba(210, 168, 92, 0.12);
+  opacity: 0.9;
+  animation: artifact-paper-flutter 3.2s ease-in-out infinite;
+}
+
+.review-mode--live .artifact--preview-active.artifact--inherit-paper::after {
+  inset: auto auto -0.1rem -0.14rem;
+  width: 0.78rem;
+  height: 0.16rem;
+  border-radius: 999px;
+  background: repeating-linear-gradient(90deg, rgba(255, 244, 220, 0.98) 0 0.09rem, rgba(170, 132, 76, 0.96) 0.09rem 0.15rem);
+  opacity: 0.84;
+  animation: artifact-stitch-flicker 3.3s ease-in-out infinite;
+}
+
+.review-mode--live .artifact--preview-active.artifact--inherit-glass {
+  transform: translate3d(0.03rem, -0.05rem, 0) scale(1.004);
+}
+
+.review-mode--live .artifact--preview-active.artifact--inherit-glass::before {
+  inset: -0.12rem;
+  border-radius: 1.1rem;
+  background: radial-gradient(circle at 28% 24%, rgba(225, 244, 255, 0.2), rgba(110, 181, 255, 0.08) 46%, rgba(110, 181, 255, 0) 74%);
+  filter: blur(1.2px);
+  opacity: 0.88;
+  animation: artifact-glass-glint 2.8s ease-in-out infinite;
+}
+
+.review-mode--live .artifact--preview-active.artifact--inherit-light {
+  transform: translate3d(0, -0.12rem, 0) scale(1.01);
+}
+
+.review-mode--live .artifact--preview-active.artifact--inherit-light::before {
+  inset: -0.26rem;
+  border-radius: 999px;
+  background: radial-gradient(circle, rgba(255, 225, 156, 0.28), rgba(255, 225, 156, 0) 70%);
+  filter: blur(0.8px);
+  opacity: 0.96;
+  animation: artifact-pulse-halo 2.2s ease-in-out infinite;
+}
+
+.review-mode--live .artifact--preview-active.artifact--inherit-living {
+  transform: translate3d(0, -0.04rem, 0) scale(1.008);
+}
+
+.review-mode--live .artifact--preview-active.artifact--inherit-living::before {
+  inset: -0.1rem;
+  border-radius: 999px;
+  background: radial-gradient(circle, rgba(168, 224, 172, 0.16), rgba(168, 224, 172, 0) 74%);
+  filter: blur(1.4px);
+  opacity: 0.84;
+  animation: artifact-living-sway 3.8s ease-in-out infinite;
+}
+
+.review-mode--live .artifact--preview-active.artifact--inherit-container::before {
+  inset: -0.08rem;
+  border-radius: 0.6rem;
+  background: radial-gradient(circle at 50% 72%, rgba(255, 223, 172, 0.18), rgba(255, 223, 172, 0) 68%);
+  filter: blur(1px);
+  opacity: 0.78;
+}
+
+.review-mode--live .artifact--preview-active.artifact--inherit-device {
+  transform: translate3d(0.03rem, -0.02rem, 0);
+}
+
+.review-mode--live .artifact--preview-active.artifact--inherit-device::before {
+  inset: -0.08rem;
+  border-radius: 0.28rem;
+  background: linear-gradient(180deg, rgba(170, 205, 255, 0) 0%, rgba(170, 205, 255, 0.28) 48%, rgba(170, 205, 255, 0) 100%);
+  box-shadow: inset 0 0 0 1px rgba(148, 182, 238, 0.22), 0 0 10px rgba(120, 156, 218, 0.12);
+  opacity: 0.9;
+  animation: artifact-scan-jitter 1.8s steps(2, end) infinite;
+}
+
+.review-mode--live .artifact--preview-active.artifact--inherit-paper.artifact--projection-cast::before {
+  animation: artifact-pulse-halo 2.4s ease-in-out infinite, artifact-paper-flutter 3.6s ease-in-out infinite;
+}
+
+.review-mode--live .artifact--preview-active.artifact--inherit-paper.artifact--projection-mechanical::before {
+  animation: artifact-scan-jitter 1.7s steps(2, end) infinite, artifact-paper-flutter 4s ease-in-out infinite;
+}
+
+.review-mode--live .artifact--preview-active.artifact--inherit-paper.artifact--projection-hinged::before {
+  animation: artifact-paper-flutter 3.2s ease-in-out infinite;
+}
+
+.review-mode--live .artifact--preview-active,
+.review-mode--live .artifact--scene-anchor,
+.review-mode--live .artifact--scene-reactive,
+.review-mode--live .artifact--click-out.artifact--preview-active {
+  filter: none !important;
+  box-shadow: none !important;
+}
+
+.review-mode--live .artifact--preview-active::before,
+.review-mode--live .artifact--preview-active::after,
+.review-mode--live .artifact--scene-anchor::before,
+.review-mode--live .artifact--scene-anchor::after,
+.review-mode--live .artifact--scene-reactive::before,
+.review-mode--live .artifact--scene-reactive::after {
+  content: none !important;
+  display: none !important;
+  opacity: 0 !important;
+  animation: none !important;
+  background: none !important;
+  box-shadow: none !important;
+  border: 0 !important;
+}
+
+.artifact-lists {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.artifact-lists div,
+.window-dock {
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  background: rgba(24, 20, 18, 0.78);
+  padding: 0.8rem 1rem;
+}
+
+.window-dock--stage {
+  position: absolute;
+  left: 50%;
+  bottom: 1.1rem;
+  z-index: 10;
+  transform: translateX(-50%);
+  min-width: min(420px, calc(100% - 2rem));
+  backdrop-filter: blur(18px);
+  background: rgba(19, 16, 14, 0.72);
+  border-color: rgba(255, 242, 213, 0.14);
+  box-shadow: 0 20px 44px rgba(0, 0, 0, 0.28);
+}
+
+.artifact-lists h2,
+.artifact-lists ul,
+.archive-mini-list {
+  margin: 0;
+}
+
+.artifact-lists ul {
+  padding-left: 1rem;
+  color: rgba(255,255,255,0.76);
+}
+
+.panel {
+  padding: 0.8rem 1rem;
+  display: grid;
+  gap: 0.55rem;
+}

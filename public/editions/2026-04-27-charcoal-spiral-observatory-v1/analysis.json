@@ -1,0 +1,243 @@
+{
+  "analysis_id": "analysis-2026-04-27-charcoal-spiral-observatory-v1",
+  "inspection_mode": "planned-artifact-fallback",
+  "inspection_error": "Expected ',' or '}' after property value in JSON at position 6198 (line 327 column 8)",
+  "scene_summary": "A nocturnal observatory reduced to a charcoal field: one dominant matte-black celestial oculus floats high in the frame, leaving broad empty darkness around it. Below center, a warm vellum square translates the Yokota cover’s centered pale panel, heavy black surrounding typography, soft grain, and delicate curling violet-brown line into a quiet star-map fragment. A single oxidized copper spiral arc becomes the second secondary form, crossing the vellum like a handmade orbit. Keep the palette to charcoal pigment, warm vellum, and dark copper, with smoked-glass glints. Visible but small: IMAGE 1983-1998 on the vellum edge, Galaxy DNA etched into the copper curl, Under a Glass Bell as a tiny clear aperture, Taaritt as a sand notch, Fabric as a dim acid-green dial, Circuits as a reed scratch, cam.eee as a profile moon, open world as a low horizon chip, and 13-26 as a date fleck. Silent, spacious, optical.",
+  "usable_surfaces": [
+    "matte charcoal pigment",
+    "warm translucent vellum",
+    "oxidized copper wire"
+  ],
+  "detected_objects": [
+    {
+      "label": "IMAGE 1983-1998",
+      "artifact_type": "central-vellum-plate",
+      "role": "hero-anchor",
+      "bounds": {
+        "x": 0.08,
+        "y": 0.1,
+        "w": 0.32,
+        "h": 0.32
+      },
+      "polygon": [
+        [
+          0.08,
+          0.1
+        ],
+        [
+          0.4,
+          0.1
+        ],
+        [
+          0.4,
+          0.42
+        ],
+        [
+          0.08,
+          0.42
+        ]
+      ],
+      "confidence": 0.55,
+      "visual_evidence": "Planned source artifact from the scene brief."
+    },
+    {
+      "label": "Galaxy DNA",
+      "artifact_type": "copper-spiral-orbit",
+      "role": "hero-anchor",
+      "bounds": {
+        "x": 0.58,
+        "y": 0.12,
+        "w": 0.32,
+        "h": 0.32
+      },
+      "polygon": [
+        [
+          0.58,
+          0.12
+        ],
+        [
+          0.9,
+          0.12
+        ],
+        [
+          0.9,
+          0.44
+        ],
+        [
+          0.58,
+          0.44
+        ]
+      ],
+      "confidence": 0.55,
+      "visual_evidence": "Planned source artifact from the scene brief."
+    },
+    {
+      "label": "Under a Glass Bell",
+      "artifact_type": "smoked-glass-aperture",
+      "role": "source-pocket",
+      "bounds": {
+        "x": 0.08,
+        "y": 0.52,
+        "w": 0.22,
+        "h": 0.22
+      },
+      "polygon": [
+        [
+          0.08,
+          0.52
+        ],
+        [
+          0.3,
+          0.52
+        ],
+        [
+          0.3,
+          0.74
+        ],
+        [
+          0.08,
+          0.74
+        ]
+      ],
+      "confidence": 0.55,
+      "visual_evidence": "Planned source artifact from the scene brief."
+    },
+    {
+      "label": "Taaritt",
+      "artifact_type": "sand-paper-notch",
+      "role": "source-pocket",
+      "bounds": {
+        "x": 0.34,
+        "y": 0.54,
+        "w": 0.22,
+        "h": 0.22
+      },
+      "polygon": [
+        [
+          0.34,
+          0.54
+        ],
+        [
+          0.56,
+          0.54
+        ],
+        [
+          0.56,
+          0.76
+        ],
+        [
+          0.34,
+          0.76
+        ]
+      ],
+      "confidence": 0.55,
+      "visual_evidence": "Planned source artifact from the scene brief."
+    },
+    {
+      "label": "Preference Specimen Tray",
+      "artifact_type": "reed-scratch-glyph",
+      "role": "source-pocket",
+      "bounds": {
+        "x": 0.1,
+        "y": 0.78,
+        "w": 0.18,
+        "h": 0.16
+      },
+      "polygon": [
+        [
+          0.1,
+          0.78
+        ],
+        [
+          0.28,
+          0.78
+        ],
+        [
+          0.28,
+          0.94
+        ],
+        [
+          0.1,
+          0.94
+        ]
+      ],
+      "confidence": 0.55,
+      "visual_evidence": "Planned source artifact from the scene brief."
+    },
+    {
+      "label": "open world",
+      "artifact_type": "low-horizon-chip",
+      "role": "source-pocket",
+      "bounds": {
+        "x": 0.72,
+        "y": 0.76,
+        "w": 0.18,
+        "h": 0.16
+      },
+      "polygon": [
+        [
+          0.72,
+          0.76
+        ],
+        [
+          0.9,
+          0.76
+        ],
+        [
+          0.9,
+          0.92
+        ],
+        [
+          0.72,
+          0.92
+        ]
+      ],
+      "confidence": 0.55,
+      "visual_evidence": "Planned source artifact from the scene brief."
+    },
+    {
+      "label": "13-26",
+      "artifact_type": "date-fleck",
+      "role": "source-pocket",
+      "bounds": {
+        "x": 0.28,
+        "y": 0.34,
+        "w": 0.16,
+        "h": 0.15
+      },
+      "polygon": [
+        [
+          0.28,
+          0.34
+        ],
+        [
+          0.44,
+          0.34
+        ],
+        [
+          0.44,
+          0.49
+        ],
+        [
+          0.28,
+          0.49
+        ]
+      ],
+      "confidence": 0.55,
+      "visual_evidence": "Planned source artifact from the scene brief."
+    }
+  ],
+  "complexity_assessment": {
+    "status": "watch",
+    "dominant_form_count": 3,
+    "large_region_count": 3,
+    "mapped_region_coverage": 0.563,
+    "rationale": "Fallback geometry cannot verify the plate complexity directly."
+  },
+  "fallback_detected_object_count": 0,
+  "edition_id": "2026-04-27-charcoal-spiral-observatory-v1",
+  "removed_media_audit_failures": [
+    "https://www.youtube.com/watch?v=8TBDQdXE5qo",
+    "https://www.instagram.com/cam.eee_/"
+  ]
+}

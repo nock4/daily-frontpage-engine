@@ -1,0 +1,61 @@
+{
+  "brief_id": "brief-2026-04-28-ash-procession-flare-v1",
+  "date": "2026-04-28",
+  "signal_cluster_ids": [
+    "55c2a5c846a6",
+    "5521ff3b4c89",
+    "d824bedc7d45",
+    "67bac2353d29",
+    "97ed2b079aa4",
+    "1ecbe0ef250f",
+    "409267176a04",
+    "b7428f1c9989"
+  ],
+  "research_node_ids": [
+    "research-1-4abef8ce",
+    "research-2-4bc72527",
+    "research-3-2ca2a5c8",
+    "research-4-45f1d60f",
+    "research-5-aece83a9",
+    "research-6-30310d9c",
+    "research-7-7f19e780",
+    "research-8-0ce42ea7",
+    "research-9-908549bd",
+    "research-10-e2c054df",
+    "research-11-4fe99639",
+    "research-12-c4c0c715"
+  ],
+  "mood": "hushed, ceremonial, nocturnal, charged with withheld motion",
+  "material_language": [
+    "charcoal paper",
+    "graphite dust",
+    "milky vellum"
+  ],
+  "lighting": "low theatrical side-light with a single overexposed bone-white flare grazing the surface and leaving the surrounding field nearly unlit",
+  "object_inventory": [
+    "one vast charcoal-black negative field",
+    "one diagonal bone-white procession flare",
+    "small vellum apertures carrying track-name whispers",
+    "graphite scars and edge tears along the flare path",
+    "isolated silver flecks arranged like a slow listening score"
+  ],
+  "interaction_grammar": {
+    "hero_count": 2,
+    "module_count": 7,
+    "window_strategy": "source-window"
+  },
+  "negative_constraints": [
+    "no desks, dashboards, cards, shelves, cabinets, archives, realistic props, literal music players, software UI, browser chrome, or landing-page layout",
+    "do not depict the visual reference subject, crowd, performers, venue, faces, or photographic scene",
+    "no corridors, gates, pinlight grids, fog-filled rooms, or ambient interior minimalism",
+    "preserve at least 60 percent open negative field",
+    "use only one dominant field and one disruptive gesture",
+    "no dense archive wall",
+    "no cabinet of objects",
+    "no many-prop still life",
+    "no equal-weight grid of source objects",
+    "no realistic object inventory",
+    "no literal depiction of the source reference image",
+    "preserve large negative space"
+  ]
+}

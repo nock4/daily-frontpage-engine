@@ -1,0 +1,388 @@
+{
+  "artifact_map_id": "map-2026-04-26-medusa-line-listening-arcade-v1-v1",
+  "viewport": {
+    "base_width": 1536,
+    "base_height": 1024,
+    "aspect_ratio": "1536:1024"
+  },
+  "default_cluster_id": "medusa-line-listening-arcade",
+  "default_artifact_id": "hero-computer-life-thank-you-for-your-har",
+  "artifacts": [
+    {
+      "id": "hero-computer-life-thank-you-for-your-har",
+      "kind": "hero",
+      "label": "Computer-life Thank You For Your Hard Work Lightbox",
+      "artifact_type": "illuminated-album-panel",
+      "bounds": {
+        "x": 0.021,
+        "y": 0.042,
+        "w": 0.178,
+        "h": 0.577
+      },
+      "z_index": 10,
+      "polygon": [
+        [
+          0.021,
+          0.042
+        ],
+        [
+          0.199,
+          0.042
+        ],
+        [
+          0.199,
+          0.619
+        ],
+        [
+          0.021,
+          0.619
+        ]
+      ],
+      "cluster_id": "medusa-line-listening-arcade",
+      "mask_path": "/editions/2026-04-26-medusa-line-listening-arcade-v1-v1/assets/masks/hero-computer-life-thank-you-for-your-har.svg",
+      "source_binding_ids": [
+        "binding-hero-computer-life-thank-you-for-your-har"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          169,
+          291
+        ],
+        "safe_stage_window_origin_px": [
+          191,
+          338
+        ],
+        "preferred_expansion_label": "right"
+      }
+    },
+    {
+      "id": "hero-nts-don-t-assume-directory-pylon",
+      "kind": "hero",
+      "label": "NTS Don't Assume Directory Pylon",
+      "artifact_type": "radio-directory-pylon",
+      "bounds": {
+        "x": 0.221,
+        "y": 0.169,
+        "w": 0.068,
+        "h": 0.444
+      },
+      "z_index": 11,
+      "polygon": [
+        [
+          0.221,
+          0.169
+        ],
+        [
+          0.289,
+          0.169
+        ],
+        [
+          0.289,
+          0.613
+        ],
+        [
+          0.221,
+          0.613
+        ]
+      ],
+      "cluster_id": "medusa-line-listening-arcade",
+      "mask_path": "/editions/2026-04-26-medusa-line-listening-arcade-v1-v1/assets/masks/hero-nts-don-t-assume-directory-pylon.svg",
+      "source_binding_ids": [
+        "binding-hero-nts-don-t-assume-directory-pylon"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          392,
+          364
+        ],
+        "safe_stage_window_origin_px": [
+          400,
+          400
+        ],
+        "preferred_expansion_label": "right"
+      }
+    },
+    {
+      "id": "module-blessings-of-the-forest-glass-facade",
+      "kind": "module",
+      "label": "Blessings of the Forest Glass Facade",
+      "artifact_type": "etched-glass-facade",
+      "bounds": {
+        "x": 0.366,
+        "y": 0.057,
+        "w": 0.266,
+        "h": 0.463
+      },
+      "z_index": 22,
+      "polygon": [
+        [
+          0.366,
+          0.057
+        ],
+        [
+          0.632,
+          0.057
+        ],
+        [
+          0.632,
+          0.52
+        ],
+        [
+          0.366,
+          0.52
+        ]
+      ],
+      "cluster_id": "medusa-line-listening-arcade",
+      "mask_path": "/editions/2026-04-26-medusa-line-listening-arcade-v1-v1/assets/masks/module-blessings-of-the-forest-glass-facade.svg",
+      "source_binding_ids": [
+        "binding-module-blessings-of-the-forest-glass-facade"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          766,
+          257
+        ],
+        "safe_stage_window_origin_px": [
+          799,
+          295
+        ],
+        "preferred_expansion_label": "right"
+      }
+    },
+    {
+      "id": "module-habitual-line-stepper-floor-inlay",
+      "kind": "module",
+      "label": "Habitual Line Stepper Floor Inlay",
+      "artifact_type": "brass-enamel-floor-surface",
+      "bounds": {
+        "x": 0.137,
+        "y": 0.469,
+        "w": 0.663,
+        "h": 0.42
+      },
+      "z_index": 23,
+      "polygon": [
+        [
+          0.137,
+          0.469
+        ],
+        [
+          0.8,
+          0.469
+        ],
+        [
+          0.8,
+          0.889
+        ],
+        [
+          0.137,
+          0.889
+        ]
+      ],
+      "cluster_id": "medusa-line-listening-arcade",
+      "mask_path": "/editions/2026-04-26-medusa-line-listening-arcade-v1-v1/assets/masks/module-habitual-line-stepper-floor-inlay.svg",
+      "source_binding_ids": [
+        "binding-module-habitual-line-stepper-floor-inlay"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          720,
+          661
+        ],
+        "safe_stage_window_origin_px": [
+          801,
+          695
+        ],
+        "preferred_expansion_label": "right"
+      }
+    },
+    {
+      "id": "module-my-tracks-listening-bench",
+      "kind": "module",
+      "label": "My Tracks Listening Bench",
+      "artifact_type": "curved-public-bench",
+      "bounds": {
+        "x": 0.586,
+        "y": 0.421,
+        "w": 0.213,
+        "h": 0.095
+      },
+      "z_index": 24,
+      "polygon": [
+        [
+          0.586,
+          0.421
+        ],
+        [
+          0.799,
+          0.421
+        ],
+        [
+          0.799,
+          0.516
+        ],
+        [
+          0.586,
+          0.516
+        ]
+      ],
+      "cluster_id": "medusa-line-listening-arcade",
+      "mask_path": "/editions/2026-04-26-medusa-line-listening-arcade-v1-v1/assets/masks/module-my-tracks-listening-bench.svg",
+      "source_binding_ids": [
+        "binding-module-my-tracks-listening-bench"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          1064,
+          472
+        ],
+        "safe_stage_window_origin_px": [
+          1090,
+          480
+        ],
+        "preferred_expansion_label": "left"
+      }
+    },
+    {
+      "id": "module-fabric-presents-record-vitrine",
+      "kind": "module",
+      "label": "Fabric Presents Record Vitrine",
+      "artifact_type": "record-display-vitrine",
+      "bounds": {
+        "x": 0.839,
+        "y": 0.083,
+        "w": 0.144,
+        "h": 0.477
+      },
+      "z_index": 25,
+      "polygon": [
+        [
+          0.839,
+          0.083
+        ],
+        [
+          0.983,
+          0.083
+        ],
+        [
+          0.983,
+          0.56
+        ],
+        [
+          0.839,
+          0.56
+        ]
+      ],
+      "cluster_id": "medusa-line-listening-arcade",
+      "mask_path": "/editions/2026-04-26-medusa-line-listening-arcade-v1-v1/assets/masks/module-fabric-presents-record-vitrine.svg",
+      "source_binding_ids": [
+        "binding-module-fabric-presents-record-vitrine"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          1320,
+          290
+        ],
+        "safe_stage_window_origin_px": [
+          1320,
+          329
+        ],
+        "preferred_expansion_label": "left"
+      }
+    },
+    {
+      "id": "module-i-want-an-earth-basin",
+      "kind": "module",
+      "label": "I Want An Earth Basin",
+      "artifact_type": "ceramic-water-basin",
+      "bounds": {
+        "x": 0,
+        "y": 0.791,
+        "w": 0.237,
+        "h": 0.20899999999999996
+      },
+      "z_index": 26,
+      "polygon": [
+        [
+          0,
+          0.791
+        ],
+        [
+          0.237,
+          0.791
+        ],
+        [
+          0.237,
+          1
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "cluster_id": "medusa-line-listening-arcade",
+      "mask_path": "/editions/2026-04-26-medusa-line-listening-arcade-v1-v1/assets/masks/module-i-want-an-earth-basin.svg",
+      "source_binding_ids": [
+        "binding-module-i-want-an-earth-basin"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          182,
+          850
+        ],
+        "safe_stage_window_origin_px": [
+          211,
+          850
+        ],
+        "preferred_expansion_label": "up"
+      }
+    },
+    {
+      "id": "module-shu-qin-tea-threshold",
+      "kind": "module",
+      "label": "Shu Qin Tea Threshold",
+      "artifact_type": "low-tea-and-string-platform",
+      "bounds": {
+        "x": 0.242,
+        "y": 0.884,
+        "w": 0.565,
+        "h": 0.11599999999999999
+      },
+      "z_index": 27,
+      "polygon": [
+        [
+          0.242,
+          0.884
+        ],
+        [
+          0.807,
+          0.884
+        ],
+        [
+          0.807,
+          1
+        ],
+        [
+          0.242,
+          1
+        ]
+      ],
+      "cluster_id": "medusa-line-listening-arcade",
+      "mask_path": "/editions/2026-04-26-medusa-line-listening-arcade-v1-v1/assets/masks/module-shu-qin-tea-threshold.svg",
+      "source_binding_ids": [
+        "binding-module-shu-qin-tea-threshold"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          806,
+          850
+        ],
+        "safe_stage_window_origin_px": [
+          875,
+          850
+        ],
+        "preferred_expansion_label": "up"
+      }
+    }
+  ]
+}

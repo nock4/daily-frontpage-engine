@@ -1,0 +1,217 @@
+{
+  "enhancement_plan_id": "enhance-2026-04-26-cream-signal-enamel-workshop-v1",
+  "edition_id": "2026-04-26-cream-signal-enamel-workshop-v1",
+  "derived_from": {
+    "interpretation_id": "interp-2026-04-26-cream-signal-enamel-workshop-v1"
+  },
+  "interaction_world": {
+    "class": "object-native",
+    "primary_behavior": "mechanical-reveal-system",
+    "scene_wide_behavior": "cabinet-drawer-behavior",
+    "choreography_rule": "anchor-and-satellites"
+  },
+  "bundle": {
+    "primary": [
+      "mechanical-reveal-system"
+    ],
+    "secondary": [
+      "warped-paper-fragment",
+      "threshold-scan-reveal"
+    ],
+    "wildcard": []
+  },
+  "runtime_safe_subset": [
+    "warped-paper-fragment",
+    "threshold-scan-reveal"
+  ],
+  "future_only_subset": [
+    "mechanical-reveal-system",
+    "restoration-scan"
+  ],
+  "rejected": [
+    {
+      "technique": "light-path-reveal",
+      "reason": "Rejected by interpretation behavior rule: light-path-reaction"
+    },
+    {
+      "technique": "light-path-reveal",
+      "reason": "Object-native scenes should anchor interaction to discrete artifacts before environmental field effects."
+    }
+  ],
+  "targets": [
+    {
+      "target_id": "hero-cream-oval-plate",
+      "target_kind": "artifact",
+      "artifact_id": "hero-cream-oval-plate",
+      "priority": 1,
+      "techniques": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ],
+      "source_classes": [
+        "video",
+        "youtube"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (hero-scale-enamel-plate) selected from interpretation."
+    },
+    {
+      "target_id": "hero-cream-smear",
+      "target_kind": "artifact",
+      "artifact_id": "hero-cream-smear",
+      "priority": 2,
+      "techniques": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ],
+      "source_classes": [
+        "social",
+        "tweet"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (raised-cream-swipe) selected from interpretation."
+    },
+    {
+      "target_id": "module-brown-plate-label",
+      "target_kind": "artifact",
+      "artifact_id": "module-brown-plate-label",
+      "priority": 3,
+      "techniques": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ],
+      "source_classes": [
+        "video",
+        "youtube"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (small-paper-label) selected from interpretation."
+    },
+    {
+      "target_id": "module-steel-crescent",
+      "target_kind": "artifact",
+      "artifact_id": "module-steel-crescent",
+      "priority": 4,
+      "techniques": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ],
+      "source_classes": [
+        "video",
+        "youtube"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (brushed-metal-crescent) selected from interpretation."
+    },
+    {
+      "target_id": "module-faint-circular-stain",
+      "target_kind": "artifact",
+      "artifact_id": "module-faint-circular-stain",
+      "priority": 5,
+      "techniques": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ],
+      "source_classes": [
+        "web",
+        "article"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (round-surface-stain) selected from interpretation."
+    },
+    {
+      "target_id": "module-bluebell-fog-threshold",
+      "target_kind": "artifact",
+      "artifact_id": "module-bluebell-fog-threshold",
+      "priority": 6,
+      "techniques": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ],
+      "source_classes": [
+        "web",
+        "article"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (hero-scale-fog-panel) selected from interpretation."
+    },
+    {
+      "target_id": "module-cream-oval-plate",
+      "target_kind": "artifact",
+      "artifact_id": "module-cream-oval-plate",
+      "priority": 7,
+      "techniques": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ],
+      "source_classes": [
+        "social",
+        "tweet"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (hero-scale-enamel-plate) selected from interpretation."
+    },
+    {
+      "target_id": "module-bluebell-fog-threshold-2",
+      "target_kind": "artifact",
+      "artifact_id": "module-bluebell-fog-threshold-2",
+      "priority": 8,
+      "techniques": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ],
+      "source_classes": [
+        "web",
+        "article"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (hero-scale-fog-panel) selected from interpretation."
+    }
+  ],
+  "global_recommendation": [
+    "mechanical-reveal-system",
+    "warped-paper-fragment",
+    "threshold-scan-reveal"
+  ],
+  "runtime_note": "Generated automatically from 8 artifacts and scene family heuristics."
+}

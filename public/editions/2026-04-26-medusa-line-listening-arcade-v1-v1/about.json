@@ -1,0 +1,20 @@
+{
+  "about_id": "about-2026-04-26-medusa-line-listening-arcade-v1-v1",
+  "label": "About",
+  "title": "About The Medusa-Line Listening Arcade",
+  "short_blurb": "Built from 137 recent saved-content signals, 12 inspected links, and 8 unique source objects.",
+  "body": [
+    "Seed image: Habitual Line Stepper, by Shatter Hands (f4.bcbits.com). The plate borrowed low amber grazing light, blue-green glass reflections, and materials like matte black stone, brushed brass linework, and emerald enamel. Bound sources include Habitual Line Stepper, by Shatter Hands and Takashi Kokubo (小久保隆) - Blessings Of The Forest (森の恵み) (199X) [Full Album], plus 6 more.",
+    "gpt-5.5 inspected the finished plate and mapped 8 visible objects, including left illuminated Computer-life album panel, freestanding NTS Don't Assume directory pylon, and central etched forest glass facade. Outputs were written to tmp/daily-process-runs/daily-process-2026-04-26T15-00-54-582Z."
+  ],
+  "typography": {
+    "profile_id": "listening-arcade",
+    "heading_family": "'DFE Bricolage Grotesque', ui-sans-serif, system-ui, sans-serif",
+    "body_family": "'DFE Space Grotesk', ui-sans-serif, system-ui, sans-serif",
+    "accent_family": "'DFE Fraunces', Georgia, serif",
+    "heading_weight": 720,
+    "body_weight": 430,
+    "accent_weight": 680,
+    "rationale": "Bricolage Grotesque and Space Grotesk fit record, arcade, and listening-room editions while Fraunces keeps source captions tactile."
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "ambiance_recipe_id": "ambiance-2026-04-26-bluebell-glowseed-clearing-v1",
+  "motion_system": "slow fog breathing across a still botanical clearing",
+  "color_drift": "plum shadow slowly warms into rose and faint bluebell violet",
+  "glow_behavior": "the central seedpod holds a soft internal gloss while small anchors glint only at their edges",
+  "audio_posture": "ambient",
+  "webgl_mode": "shader-scene",
+  "research_inputs": [
+    "research-1-70dcfe4a",
+    "research-2-2f250f7f",
+    "research-3-4bc72527",
+    "research-4-2ca2a5c8",
+    "research-5-0c791b42",
+    "research-6-29ebe5c0",
+    "research-7-ca8fe8a5",
+    "research-8-d36a93c7",
+    "research-9-15ed4bce",
+    "research-10-f3d36279",
+    "research-11-45f1d60f",
+    "research-12-306e25c3"
+  ]
+}

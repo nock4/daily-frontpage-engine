@@ -1,0 +1,230 @@
+{
+  "enhancement_plan_id": "enhance-2026-04-28-ash-procession-flare-v1",
+  "edition_id": "2026-04-28-ash-procession-flare-v1",
+  "derived_from": {
+    "interpretation_id": "interp-2026-04-28-ash-procession-flare-v1"
+  },
+  "interaction_world": {
+    "class": "material-native",
+    "primary_behavior": "paint-bleed-reveal",
+    "scene_wide_behavior": "paint-bleed-reveal",
+    "choreography_rule": "anchor-and-satellites"
+  },
+  "bundle": {
+    "primary": [
+      "paint-bleed-reveal"
+    ],
+    "secondary": [
+      "restoration-scan",
+      "pigment-crack-annotation"
+    ],
+    "wildcard": []
+  },
+  "runtime_safe_subset": [
+    "threshold-scan-reveal"
+  ],
+  "future_only_subset": [
+    "paint-bleed-reveal",
+    "restoration-scan",
+    "pigment-crack-annotation"
+  ],
+  "rejected": [
+    {
+      "technique": "mechanical-reveal-system",
+      "reason": "Rejected by interpretation behavior rule: cabinet-drawer-behavior"
+    },
+    {
+      "technique": "screen-rendered-html",
+      "reason": "Material-native scenes should prefer painterly or restoration treatments over device-screen logic."
+    }
+  ],
+  "targets": [
+    {
+      "target_id": "hero-memory-prism-catalogue",
+      "target_kind": "artifact",
+      "artifact_id": "hero-memory-prism-catalogue",
+      "priority": 1,
+      "techniques": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ],
+      "source_classes": [
+        "audio"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (hero-scale-pearled-wash) selected from interpretation."
+    },
+    {
+      "target_id": "hero-riverside-glint",
+      "target_kind": "artifact",
+      "artifact_id": "hero-riverside-glint",
+      "priority": 2,
+      "techniques": [
+        "paint-bleed-reveal",
+        "restoration-scan"
+      ],
+      "source_classes": [
+        "video",
+        "youtube"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (hero-scale-diagonal-flare) selected from interpretation."
+    },
+    {
+      "target_id": "module-appeasement-smear",
+      "target_kind": "artifact",
+      "artifact_id": "module-appeasement-smear",
+      "priority": 3,
+      "techniques": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ],
+      "source_classes": [
+        "audio"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (soft-ash-smear) selected from interpretation."
+    },
+    {
+      "target_id": "module-fever-pool",
+      "target_kind": "artifact",
+      "artifact_id": "module-fever-pool",
+      "priority": 4,
+      "techniques": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ],
+      "source_classes": [
+        "audio"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (pale-silver-pool) selected from interpretation."
+    },
+    {
+      "target_id": "module-disappear-hairline",
+      "target_kind": "artifact",
+      "artifact_id": "module-disappear-hairline",
+      "priority": 5,
+      "techniques": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ],
+      "source_classes": [
+        "audio"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (vanishing-vellum-line) selected from interpretation."
+    },
+    {
+      "target_id": "module-appeasement-smear-2",
+      "target_kind": "artifact",
+      "artifact_id": "module-appeasement-smear-2",
+      "priority": 6,
+      "techniques": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ],
+      "source_classes": [
+        "audio"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (soft-ash-smear) selected from interpretation."
+    },
+    {
+      "target_id": "module-thirteen-scratches",
+      "target_kind": "artifact",
+      "artifact_id": "module-thirteen-scratches",
+      "priority": 7,
+      "techniques": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ],
+      "source_classes": [
+        "audio"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (counted-chalk-scratches) selected from interpretation."
+    },
+    {
+      "target_id": "module-fever-pool-2",
+      "target_kind": "artifact",
+      "artifact_id": "module-fever-pool-2",
+      "priority": 8,
+      "techniques": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ],
+      "source_classes": [
+        "audio"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (pale-silver-pool) selected from interpretation."
+    },
+    {
+      "target_id": "module-disappear-hairline-2",
+      "target_kind": "artifact",
+      "artifact_id": "module-disappear-hairline-2",
+      "priority": 9,
+      "techniques": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ],
+      "source_classes": [
+        "audio"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (vanishing-vellum-line) selected from interpretation."
+    }
+  ],
+  "global_recommendation": [
+    "paint-bleed-reveal",
+    "restoration-scan",
+    "pigment-crack-annotation"
+  ],
+  "runtime_note": "Generated automatically from 9 artifacts and scene family heuristics."
+}

@@ -1,0 +1,20 @@
+{
+  "about_id": "about-2026-04-27-vermilion-arc-astrolabe-v1",
+  "label": "About",
+  "title": "About The Vermilion Arc Astrolabe",
+  "short_blurb": "A daily generated front page where the image is the interface.",
+  "body": [
+    "Daily Frontpage is a daily generated interactive front page. Each edition starts from recent saved signals and source research, becomes a new image-led scene, and stays explorable in the archive. The image is the interface: visible marks, objects, and surfaces in the scene open the real sources that shaped the day.",
+    "This iteration began with 16 recent saved-signal files and 12 captured links, then narrowed the page to 8 source windows around Into the Light, Flower Music, Shu Qin, Surf Noir, Brise, and three tweet-backed media signals. A Bandcamp image from Marisa Anderson helped set the red field, pale arcs, and sun-worn material direction. The scene became The Vermilion Arc Astrolabe: a minimal vermilion field with a half-dome astrolabe, a low smoked horizon, and small lens-like marks that hold the sources. After the image was made, the mask pass used geometry and contour candidates to attach source windows to the visible marks."
+  ],
+  "typography": {
+    "profile_id": "listening-arcade",
+    "heading_family": "'DFE Bricolage Grotesque', ui-sans-serif, system-ui, sans-serif",
+    "body_family": "'DFE Space Grotesk', ui-sans-serif, system-ui, sans-serif",
+    "accent_family": "'DFE Fraunces', Georgia, serif",
+    "heading_weight": 720,
+    "body_weight": 430,
+    "accent_weight": 680,
+    "rationale": "Bricolage Grotesque and Space Grotesk fit record, arcade, and listening-room editions while Fraunces keeps source captions tactile."
+  }
+}

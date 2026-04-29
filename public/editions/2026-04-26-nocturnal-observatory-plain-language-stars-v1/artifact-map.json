@@ -1,0 +1,435 @@
+{
+  "artifact_map_id": "map-2026-04-26-nocturnal-observatory-plain-language-stars-v1",
+  "viewport": {
+    "base_width": 1536,
+    "base_height": 1024,
+    "aspect_ratio": "1536:1024"
+  },
+  "default_cluster_id": "nocturnal-optical-observatory",
+  "default_artifact_id": "hero-gut-check-star-ledger",
+  "artifacts": [
+    {
+      "id": "hero-gut-check-star-ledger",
+      "kind": "hero",
+      "label": "Gut-Check Star Ledger",
+      "artifact_type": "hero-scale-wall-slate",
+      "bounds": {
+        "x": 0.013,
+        "y": 0.038,
+        "w": 0.255,
+        "h": 0.789
+      },
+      "z_index": 10,
+      "polygon": [
+        [
+          0.013,
+          0.038
+        ],
+        [
+          0.268,
+          0.038
+        ],
+        [
+          0.268,
+          0.827
+        ],
+        [
+          0.013,
+          0.827
+        ]
+      ],
+      "cluster_id": "nocturnal-optical-observatory",
+      "mask_path": "/editions/2026-04-26-nocturnal-observatory-plain-language-stars-v1/assets/masks/hero-gut-check-star-ledger.svg",
+      "source_binding_ids": [
+        "binding-hero-gut-check-star-ledger"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          216,
+          378
+        ],
+        "safe_stage_window_origin_px": [
+          247,
+          443
+        ],
+        "preferred_expansion_label": "right"
+      }
+    },
+    {
+      "id": "hero-ascii-comet-dome",
+      "kind": "hero",
+      "label": "ASCII Comet Dome",
+      "artifact_type": "hero-scale-dome-map",
+      "bounds": {
+        "x": 0.189,
+        "y": 0,
+        "w": 0.746,
+        "h": 0.348
+      },
+      "z_index": 11,
+      "polygon": [
+        [
+          0.189,
+          0
+        ],
+        [
+          0.935,
+          0
+        ],
+        [
+          0.935,
+          0.348
+        ],
+        [
+          0.189,
+          0.348
+        ]
+      ],
+      "cluster_id": "nocturnal-optical-observatory",
+      "mask_path": "/editions/2026-04-26-nocturnal-observatory-plain-language-stars-v1/assets/masks/hero-ascii-comet-dome.svg",
+      "source_binding_ids": [
+        "binding-hero-ascii-comet-dome"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          863,
+          150
+        ],
+        "safe_stage_window_origin_px": [
+          955,
+          178
+        ],
+        "preferred_expansion_label": "left"
+      }
+    },
+    {
+      "id": "module-variable-type-constellation-strip",
+      "kind": "module",
+      "label": "Variable Type Constellation Strip",
+      "artifact_type": "brass-mounted-letter-strip",
+      "bounds": {
+        "x": 0.332,
+        "y": 0.386,
+        "w": 0.389,
+        "h": 0.055
+      },
+      "z_index": 22,
+      "polygon": [
+        [
+          0.332,
+          0.386
+        ],
+        [
+          0.721,
+          0.386
+        ],
+        [
+          0.721,
+          0.441
+        ],
+        [
+          0.332,
+          0.441
+        ]
+      ],
+      "cluster_id": "nocturnal-optical-observatory",
+      "mask_path": "/editions/2026-04-26-nocturnal-observatory-plain-language-stars-v1/assets/masks/module-variable-type-constellation-strip.svg",
+      "source_binding_ids": [
+        "binding-module-variable-type-constellation-strip"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          809,
+          419
+        ],
+        "safe_stage_window_origin_px": [
+          857,
+          423
+        ],
+        "preferred_expansion_label": "left"
+      }
+    },
+    {
+      "id": "module-concealed-egg-signal-vessel",
+      "kind": "module",
+      "label": "Concealed-Egg Signal Vessel",
+      "artifact_type": "porcelain-reliquary",
+      "bounds": {
+        "x": 0.292,
+        "y": 0.463,
+        "w": 0.14,
+        "h": 0.292
+      },
+      "z_index": 23,
+      "polygon": [
+        [
+          0.292,
+          0.463
+        ],
+        [
+          0.432,
+          0.463
+        ],
+        [
+          0.432,
+          0.755
+        ],
+        [
+          0.292,
+          0.755
+        ]
+      ],
+      "cluster_id": "nocturnal-optical-observatory",
+      "mask_path": "/editions/2026-04-26-nocturnal-observatory-plain-language-stars-v1/assets/masks/module-concealed-egg-signal-vessel.svg",
+      "source_binding_ids": [
+        "binding-module-concealed-egg-signal-vessel"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          556,
+          600
+        ],
+        "safe_stage_window_origin_px": [
+          573,
+          624
+        ],
+        "preferred_expansion_label": "right"
+      }
+    },
+    {
+      "id": "module-skill-navigation-tablet",
+      "kind": "module",
+      "label": "Skill Navigation Tablet",
+      "artifact_type": "smoked-glass-tablet",
+      "bounds": {
+        "x": 0.445,
+        "y": 0.488,
+        "w": 0.19,
+        "h": 0.293
+      },
+      "z_index": 24,
+      "polygon": [
+        [
+          0.445,
+          0.488
+        ],
+        [
+          0.635,
+          0.488
+        ],
+        [
+          0.635,
+          0.781
+        ],
+        [
+          0.445,
+          0.781
+        ]
+      ],
+      "cluster_id": "nocturnal-optical-observatory",
+      "mask_path": "/editions/2026-04-26-nocturnal-observatory-plain-language-stars-v1/assets/masks/module-skill-navigation-tablet.svg",
+      "source_binding_ids": [
+        "binding-module-skill-navigation-tablet"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          829,
+          626
+        ],
+        "safe_stage_window_origin_px": [
+          853,
+          650
+        ],
+        "preferred_expansion_label": "left"
+      }
+    },
+    {
+      "id": "module-heisei-tape-moon-monitor",
+      "kind": "module",
+      "label": "Heisei Tape Moon Monitor",
+      "artifact_type": "retro-vhs-monitor",
+      "bounds": {
+        "x": 0.616,
+        "y": 0.512,
+        "w": 0.164,
+        "h": 0.222
+      },
+      "z_index": 25,
+      "polygon": [
+        [
+          0.616,
+          0.512
+        ],
+        [
+          0.78,
+          0.512
+        ],
+        [
+          0.78,
+          0.734
+        ],
+        [
+          0.616,
+          0.734
+        ]
+      ],
+      "cluster_id": "nocturnal-optical-observatory",
+      "mask_path": "/editions/2026-04-26-nocturnal-observatory-plain-language-stars-v1/assets/masks/module-heisei-tape-moon-monitor.svg",
+      "source_binding_ids": [
+        "binding-module-heisei-tape-moon-monitor"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          1072,
+          620
+        ],
+        "safe_stage_window_origin_px": [
+          1092,
+          638
+        ],
+        "preferred_expansion_label": "left"
+      }
+    },
+    {
+      "id": "module-omma-kinetic-orbit-model",
+      "kind": "module",
+      "label": "Omma Kinetic Orbit Model",
+      "artifact_type": "frosted-acrylic-orbit-model",
+      "bounds": {
+        "x": 0.774,
+        "y": 0.5,
+        "w": 0.181,
+        "h": 0.348
+      },
+      "z_index": 26,
+      "polygon": [
+        [
+          0.774,
+          0.5
+        ],
+        [
+          0.955,
+          0.5
+        ],
+        [
+          0.955,
+          0.848
+        ],
+        [
+          0.774,
+          0.848
+        ]
+      ],
+      "cluster_id": "nocturnal-optical-observatory",
+      "mask_path": "/editions/2026-04-26-nocturnal-observatory-plain-language-stars-v1/assets/masks/module-omma-kinetic-orbit-model.svg",
+      "source_binding_ids": [
+        "binding-module-omma-kinetic-orbit-model"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          1320,
+          662
+        ],
+        "safe_stage_window_origin_px": [
+          1320,
+          690
+        ],
+        "preferred_expansion_label": "left"
+      }
+    },
+    {
+      "id": "module-fifty-watt-ephemera-pennant",
+      "kind": "module",
+      "label": "Fifty-Watt Ephemera Pennant",
+      "artifact_type": "aged-paper-pennant",
+      "bounds": {
+        "x": 0.91,
+        "y": 0.309,
+        "w": 0.088,
+        "h": 0.296
+      },
+      "z_index": 27,
+      "polygon": [
+        [
+          0.91,
+          0.309
+        ],
+        [
+          0.998,
+          0.309
+        ],
+        [
+          0.998,
+          0.605
+        ],
+        [
+          0.91,
+          0.605
+        ]
+      ],
+      "cluster_id": "nocturnal-optical-observatory",
+      "mask_path": "/editions/2026-04-26-nocturnal-observatory-plain-language-stars-v1/assets/masks/module-fifty-watt-ephemera-pennant.svg",
+      "source_binding_ids": [
+        "binding-module-fifty-watt-ephemera-pennant"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          1320,
+          444
+        ],
+        "safe_stage_window_origin_px": [
+          1320,
+          468
+        ],
+        "preferred_expansion_label": "left"
+      }
+    },
+    {
+      "id": "module-aura-restart-star-chart",
+      "kind": "module",
+      "label": "Aura Restart Star Chart",
+      "artifact_type": "folded-stellar-manifest",
+      "bounds": {
+        "x": 0.403,
+        "y": 0.783,
+        "w": 0.39,
+        "h": 0.211
+      },
+      "z_index": 28,
+      "polygon": [
+        [
+          0.403,
+          0.783
+        ],
+        [
+          0.793,
+          0.783
+        ],
+        [
+          0.793,
+          0.994
+        ],
+        [
+          0.403,
+          0.994
+        ]
+      ],
+      "cluster_id": "nocturnal-optical-observatory",
+      "mask_path": "/editions/2026-04-26-nocturnal-observatory-plain-language-stars-v1/assets/masks/module-aura-restart-star-chart.svg",
+      "source_binding_ids": [
+        "binding-module-aura-restart-star-chart"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          919,
+          850
+        ],
+        "safe_stage_window_origin_px": [
+          966,
+          850
+        ],
+        "preferred_expansion_label": "up"
+      }
+    }
+  ]
+}

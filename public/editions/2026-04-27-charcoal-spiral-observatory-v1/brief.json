@@ -1,0 +1,60 @@
+{
+  "brief_id": "brief-2026-04-27-charcoal-spiral-observatory-v1",
+  "date": "2026-04-27",
+  "signal_cluster_ids": [
+    "55c2a5c846a6",
+    "5521ff3b4c89",
+    "d824bedc7d45",
+    "67bac2353d29",
+    "97ed2b079aa4",
+    "1ecbe0ef250f",
+    "409267176a04",
+    "b7428f1c9989"
+  ],
+  "research_node_ids": [
+    "research-1-972323a6",
+    "research-2-df8cfa31",
+    "research-3-8a388fbf",
+    "research-4-e6a10546",
+    "research-5-51830e59",
+    "research-6-88263fb4",
+    "research-7-0308f206",
+    "research-8-db30d9b5",
+    "research-9-61c83cb1",
+    "research-10-8edd09cd",
+    "research-11-c545ff94",
+    "research-12-7a6e3590"
+  ],
+  "mood": "hushed, nocturnal, optical, intimate, and slightly uncanny",
+  "material_language": [
+    "matte charcoal pigment",
+    "warm translucent vellum",
+    "oxidized copper wire"
+  ],
+  "lighting": "low sidelight from the lower left, with a restrained amber halo on vellum and tiny cold-white glints on the smallest anchor marks",
+  "object_inventory": [
+    "one large matte-black celestial oculus occupying the upper field",
+    "one centered warm vellum square carrying a curled violet-brown line",
+    "one oxidized copper spiral arc crossing the plate like a handmade orbit",
+    "small glass, sand, enamel, and scratch anchors embedded along the orbit",
+    "wide untouched charcoal negative space around all forms"
+  ],
+  "interaction_grammar": {
+    "hero_count": 2,
+    "module_count": 7,
+    "window_strategy": "source-window"
+  },
+  "negative_constraints": [
+    "no desks, dashboards, cards, shelves, cabinets, archives, room interiors, or office props",
+    "no printmaking chapel, roller room, cipher chapel, splatter-canvas archive, corridor, gate, fog tunnel, or pinlight hallway",
+    "no generic software UI, browser chrome, implementation language, or source-summary panels",
+    "do not reproduce logos, social media chrome, album page layouts, or raw URLs",
+    "keep at least 45 percent of the image as calm negative space",
+    "limit the dominant surface palette to charcoal pigment, vellum, and oxidized copper",
+    "no dense archive wall",
+    "no cabinet of objects",
+    "no many-prop still life",
+    "no equal-weight grid of source objects",
+    "preserve large negative space"
+  ]
+}

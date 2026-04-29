@@ -1,0 +1,352 @@
+{
+  "interpretation_id": "interp-2026-04-26-medusa-line-listening-arcade-v1-v1",
+  "edition_id": "2026-04-26-medusa-line-listening-arcade-v1-v1",
+  "plate_read_timestamp": "2026-04-29T00:14:40.087Z",
+  "scene_ontology": {
+    "primary": "object-native",
+    "secondary": [
+      "optical-native"
+    ],
+    "confidence": 0.9
+  },
+  "world_read": {
+    "summary": "A rain-dark museum arcade with illuminated music and directory signage, a central etched glass forest facade, a brass-and-emerald floor inlay, a listening bench, record vitrine, ceramic basin, and low guqin tea platform visible as interaction surfaces.",
+    "dominant_spatial_mode": "contained",
+    "density": "dense",
+    "legibility": "selective",
+    "mood": [
+      "hushed, nocturnal, mineral, aquatic, quietly ceremonial without becoming a chapel",
+      "A rain-dark museum arcade with illuminated music and directory signage, a central etched glass forest facade, a brass-and-emerald floor inlay, a listening bench, record vitrine, ceramic basin, and low guqin tea platform visible as interaction surfaces.",
+      "black-gold-arcade",
+      "emerald-contours",
+      "ambient-threshold"
+    ]
+  },
+  "visual_ecology": {
+    "dominant_objects": [
+      "Computer-life Thank You For Your Hard Work Lightbox",
+      "NTS Don't Assume Directory Pylon",
+      "Blessings of the Forest Glass Facade",
+      "Habitual Line Stepper Floor Inlay",
+      "My Tracks Listening Bench",
+      "Fabric Presents Record Vitrine",
+      "I Want An Earth Basin",
+      "Shu Qin Tea Threshold"
+    ],
+    "dominant_surfaces": [
+      "paper",
+      "glass",
+      "water",
+      "wood",
+      "paint",
+      "light-band"
+    ],
+    "dominant_structures": [
+      "medusa-line-listening-arcade",
+      "hero-scale serpentine brass-and-emerald floor inlay labeled Habitual Line Stepper",
+      "hero-scale smoked-glass forest facade etched with breathing tree silhouettes",
+      "rainy computer-life album lightbox with small Japanese and English track labels",
+      "black NTS radio directory pylon with a white-red station crest",
+      "curved My Tracks listening bench with tiny brass tally marks",
+      "Discogs record vitrine holding a dark techno compilation sleeve",
+      "shallow ceramic Earth basin with floating green enamel islands"
+    ],
+    "negative_space_regions": []
+  },
+  "interaction_world": {
+    "class": "object-native",
+    "recommended_behaviors": [
+      "cabinet-drawer-behavior",
+      "object-memory",
+      "threshold-scan"
+    ],
+    "rejected_behaviors": [
+      "light-path-reaction"
+    ],
+    "reasoning": [
+      "Primary ontology inferred from scene family and artifact types: medusa-line-listening-arcade.",
+      "Artifact vocabulary suggests object-native interaction logic."
+    ]
+  },
+  "artifact_candidates": [
+    {
+      "id": "hero-computer-life-thank-you-for-your-har",
+      "kind": "hero",
+      "type": "illuminated-album-panel",
+      "strength": 0.99,
+      "bounds": {
+        "x": 0.021,
+        "y": 0.042,
+        "w": 0.178,
+        "h": 0.577
+      },
+      "supports": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "hero-nts-don-t-assume-directory-pylon",
+      "kind": "hero",
+      "type": "radio-directory-pylon",
+      "strength": 0.985748,
+      "bounds": {
+        "x": 0.221,
+        "y": 0.169,
+        "w": 0.068,
+        "h": 0.444
+      },
+      "supports": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-blessings-of-the-forest-glass-facade",
+      "kind": "module",
+      "type": "etched-glass-facade",
+      "strength": 0.793068,
+      "bounds": {
+        "x": 0.366,
+        "y": 0.057,
+        "w": 0.266,
+        "h": 0.463
+      },
+      "supports": [
+        "screen-rendered-html",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-habitual-line-stepper-floor-inlay",
+      "kind": "module",
+      "type": "brass-enamel-floor-surface",
+      "strength": 0.741612,
+      "bounds": {
+        "x": 0.137,
+        "y": 0.469,
+        "w": 0.663,
+        "h": 0.42
+      },
+      "supports": [
+        "screen-rendered-html",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-my-tracks-listening-bench",
+      "kind": "module",
+      "type": "curved-public-bench",
+      "strength": 0.732324,
+      "bounds": {
+        "x": 0.586,
+        "y": 0.421,
+        "w": 0.213,
+        "h": 0.095
+      },
+      "supports": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-fabric-presents-record-vitrine",
+      "kind": "module",
+      "type": "record-display-vitrine",
+      "strength": 0.6993240000000001,
+      "bounds": {
+        "x": 0.839,
+        "y": 0.083,
+        "w": 0.144,
+        "h": 0.477
+      },
+      "supports": [
+        "ghost-reflection-treatment",
+        "lens-inspection"
+      ]
+    },
+    {
+      "id": "module-i-want-an-earth-basin",
+      "kind": "module",
+      "type": "ceramic-water-basin",
+      "strength": 0.6656400000000001,
+      "bounds": {
+        "x": 0,
+        "y": 0.791,
+        "w": 0.237,
+        "h": 0.20899999999999996
+      },
+      "supports": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-shu-qin-tea-threshold",
+      "kind": "module",
+      "type": "low-tea-and-string-platform",
+      "strength": 0.651604,
+      "bounds": {
+        "x": 0.242,
+        "y": 0.884,
+        "w": 0.565,
+        "h": 0.11599999999999999
+      },
+      "supports": [
+        "warped-paper-fragment",
+        "threshold-scan-reveal"
+      ]
+    }
+  ],
+  "field_candidates": [],
+  "html_surfaces": [
+    {
+      "id": "hero-computer-life-thank-you-for-your-har-surface",
+      "surface_type": "wood",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.021,
+        "y": 0.042,
+        "w": 0.178,
+        "h": 0.577
+      },
+      "suitability": 0.9,
+      "supported_treatments": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "hero-nts-don-t-assume-directory-pylon-surface",
+      "surface_type": "unknown",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.221,
+        "y": 0.169,
+        "w": 0.068,
+        "h": 0.444
+      },
+      "suitability": 0.9,
+      "supported_treatments": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-blessings-of-the-forest-glass-facade-surface",
+      "surface_type": "glass",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.366,
+        "y": 0.057,
+        "w": 0.266,
+        "h": 0.463
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "screen-rendered-html",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-habitual-line-stepper-floor-inlay-surface",
+      "surface_type": "glass",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.137,
+        "y": 0.469,
+        "w": 0.663,
+        "h": 0.42
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "screen-rendered-html",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-my-tracks-listening-bench-surface",
+      "surface_type": "unknown",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.586,
+        "y": 0.421,
+        "w": 0.213,
+        "h": 0.095
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-fabric-presents-record-vitrine-surface",
+      "surface_type": "glass",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.839,
+        "y": 0.083,
+        "w": 0.144,
+        "h": 0.477
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "ghost-reflection-treatment",
+        "lens-inspection"
+      ]
+    },
+    {
+      "id": "module-i-want-an-earth-basin-surface",
+      "surface_type": "water",
+      "host": "artifact",
+      "bounds": {
+        "x": 0,
+        "y": 0.791,
+        "w": 0.237,
+        "h": 0.20899999999999996
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-shu-qin-tea-threshold-surface",
+      "surface_type": "paper",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.242,
+        "y": 0.884,
+        "w": 0.565,
+        "h": 0.11599999999999999
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "warped-paper-fragment",
+        "threshold-scan-reveal"
+      ]
+    }
+  ],
+  "enhancement_bundle": {
+    "primary": [
+      "mechanical-reveal-system"
+    ],
+    "secondary": [
+      "warped-paper-fragment",
+      "threshold-scan-reveal"
+    ],
+    "wildcard": []
+  },
+  "per_region_assignments": [],
+  "scene_wide_behavior": {
+    "selected": "cabinet-drawer-behavior"
+  },
+  "choreography_rule": {
+    "selected": "anchor-and-satellites"
+  },
+  "release_notes": [
+    "Generated automatically from 8 artifacts and scene family heuristics."
+  ]
+}

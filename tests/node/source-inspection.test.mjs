@@ -1,0 +1,96 @@
+import { afterEach, describe, expect, it, vi } from 'vitest'
+
+import {
+  classifyYouTubeEmbedFrameText,
+  inspectWithFetch,
+  youtubeEmbedStatus,
+} from '../../scripts/lib/source-inspection.mjs'
+
+afterEach(() => {
+  vi.unstubAllGlobals()
+})
+
+describe('source inspection', () => {
+  it('checks YouTube embeddability through oEmbed', async () => {
+    vi.stubGlobal('fetch', vi.fn(async () => ({
+      ok: true,
+      headers: new Headers(),
+    })))
+
+    await expect(youtubeEmbedStatus('https://www.youtube.com/watch?v=abc123', { verifyPlayback: false })).resolves.toBeNull()
+    expect(fetch).toHaveBeenCalledWith(
+      expect.stringContaining('youtube.com/oembed'),
+      expect.objectContaining({ signal: expect.any(AbortSignal) }),
+    )
+  })
+
+  it('marks YouTube videos unavailable when oEmbed fails', async () => {
+    vi.stubGlobal('fetch', vi.fn(async () => ({
+      ok: false,
+      headers: new Headers(),
+    })))
+
+    await expect(youtubeEmbedStatus('https://www.youtube.com/watch?v=xyz789', { verifyPlayback: false })).resolves.toBe('unavailable')
+  })
+
+  it('classifies YouTube iframe text that means linkout-only playback', () => {
+    expect(classifyYouTubeEmbedFrameText('Video unavailable\nWatch on YouTube')).toBe('unavailable')
+    expect(classifyYouTubeEmbedFrameText('Watch video on YouTube\nError 153\nVideo player configuration error')).toBe('unavailable')
+    expect(classifyYouTubeEmbedFrameText('A playable title\nChannel name\nWatch on')).toBeNull()
+  })
+
+  it('parses fetch fallback metadata from HTML', async () => {
+    vi.stubGlobal('fetch', vi.fn(async () => ({
+      ok: true,
+      status: 200,
+      text: async () => `
+        <html>
+          <head>
+            <meta property="og:title" content="Encoded &amp; Title">
+            <meta property="og:description" content="Readable source description">
+            <meta property="og:image" content="/lead.jpg">
+          </head>
+        </html>
+      `,
+    })))
+
+    const source = await inspectWithFetch(
+      {
+        url: 'https://example.com/story',
+        note_title: 'Fallback note title',
+      },
+      'https://example.com/story',
+      { source_type: 'article', window_type: 'web', kind: 'article' },
+    )
+
+    expect(source).toMatchObject({
+      source_url: 'https://example.com/story',
+      final_url: 'https://example.com/story',
+      title: 'Encoded & Title',
+      description: 'Readable source description',
+      image_url: 'https://example.com/lead.jpg',
+      fetch_status: 'fetch-ok',
+    })
+  })
+
+  it('returns a structured fetch error record instead of throwing', async () => {
+    vi.stubGlobal('fetch', vi.fn(async () => {
+      throw new Error('network down')
+    }))
+
+    const source = await inspectWithFetch(
+      {
+        url: 'https://example.com/story',
+        note_title: 'Fallback note title',
+      },
+      'https://example.com/story',
+      { source_type: 'article', window_type: 'web', kind: 'article' },
+    )
+
+    expect(source).toMatchObject({
+      title: 'Fallback note title',
+      image_url: null,
+      fetch_status: 'fetch-error: network down',
+    })
+  })
+})

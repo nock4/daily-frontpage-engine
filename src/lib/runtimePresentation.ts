@@ -1,6 +1,6 @@
 export type ReviewMode = 'live' | 'clickable' | 'solo' | 'debug'
 
-export interface RuntimePresentation {
+interface RuntimePresentation {
   showTopbar: boolean
   showSidebar: boolean
   showArtifactLists: boolean

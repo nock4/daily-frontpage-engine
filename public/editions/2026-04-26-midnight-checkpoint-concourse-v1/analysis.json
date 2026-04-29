@@ -1,0 +1,148 @@
+{
+  "analysis_id": "analysis-2026-04-26-midnight-checkpoint-concourse-v1",
+  "scene_summary": "A dark museum-like corridor with multiple visible interactive artifact surfaces: a large checkpoint text wall, a monumental ASCII comet mural, labeled floor test tiles, a glowing confetti voting urn, a sequential horse frieze, listening-station plaques, and smaller inscription panels.",
+  "usable_surfaces": [
+    "large Seven Checkpoints inscription wall",
+    "right-side ASCII comet mural wall",
+    "red and green floor test threshold tiles",
+    "glowing confetti voting urn",
+    "sequential cavalry wall frieze",
+    "Susumu Yokota listening-station panel",
+    "rear circular burst artwork panel",
+    "vertical Japanese inscription plaque on left pillar",
+    "small right-side vertical instruction plaque"
+  ],
+  "detected_objects": [
+    {
+      "label": "Seven Checkpoints inscription wall",
+      "artifact_type": "hero-scale-inscription-wall",
+      "role": "hero-anchor",
+      "bounds": {
+        "x": 0.028,
+        "y": 0.022,
+        "w": 0.188,
+        "h": 0.755
+      },
+      "confidence": 0.96,
+      "visual_evidence": "Large matte black wall on the left with clearly readable heading 'SEVEN CHECKPOINTS' and numbered bilingual checkpoint text."
+    },
+    {
+      "label": "ASCII comet mural",
+      "artifact_type": "hero-scale-symbol-mural",
+      "role": "hero-anchor",
+      "bounds": {
+        "x": 0.714,
+        "y": 0,
+        "w": 0.286,
+        "h": 0.818
+      },
+      "confidence": 0.95,
+      "visual_evidence": "Dominant right wall mural made of dense white and blue glyph-like dots forming comet or signal beams."
+    },
+    {
+      "label": "red-green testing threshold tile",
+      "artifact_type": "inlaid-floor-threshold",
+      "role": "label-surface",
+      "bounds": {
+        "x": 0.153,
+        "y": 0.855,
+        "w": 0.552,
+        "h": 0.071
+      },
+      "confidence": 0.89,
+      "visual_evidence": "Two colored floor plates across the entrance path, red on the left and green on the right, labeled 'TEST RED' and 'TEST GREEN' with Japanese text."
+    },
+    {
+      "label": "confetti voting urn lantern",
+      "artifact_type": "translucent-public-urn",
+      "role": "container-surface",
+      "bounds": {
+        "x": 0.425,
+        "y": 0.658,
+        "w": 0.121,
+        "h": 0.304
+      },
+      "confidence": 0.94,
+      "visual_evidence": "Freestanding illuminated translucent ballot-like box in the foreground, filled with colored confetti and bearing vote-related text."
+    },
+    {
+      "label": "motion cavalry frieze",
+      "artifact_type": "sequential-wall-frieze",
+      "role": "media-surface",
+      "bounds": {
+        "x": 0.318,
+        "y": 0.331,
+        "w": 0.138,
+        "h": 0.113
+      },
+      "confidence": 0.9,
+      "visual_evidence": "Long horizontal wall band on the left corridor showing repeated white horse figures in sequential motion."
+    },
+    {
+      "label": "Susumu Yokota listening alcove panel",
+      "artifact_type": "illuminated-audio-alcove",
+      "role": "media-surface",
+      "bounds": {
+        "x": 0.594,
+        "y": 0.254,
+        "w": 0.064,
+        "h": 0.274
+      },
+      "confidence": 0.92,
+      "visual_evidence": "Warm lit vertical panel in the right alcove with readable 'SUSUMU YOKOTA' title and track/year inscriptions."
+    },
+    {
+      "label": "rear circular burst artwork panel",
+      "artifact_type": "framed-symbol-panel",
+      "role": "media-surface",
+      "bounds": {
+        "x": 0.481,
+        "y": 0.39,
+        "w": 0.055,
+        "h": 0.129
+      },
+      "confidence": 0.82,
+      "visual_evidence": "Framed illuminated panel at the end of the corridor containing a bright circular radiating burst image."
+    },
+    {
+      "label": "left vertical Japanese inscription plaque",
+      "artifact_type": "vertical-inscription-plaque",
+      "role": "label-surface",
+      "bounds": {
+        "x": 0.253,
+        "y": 0.294,
+        "w": 0.047,
+        "h": 0.149
+      },
+      "confidence": 0.86,
+      "visual_evidence": "Narrow black plaque on the left entrance pillar with gold border and vertical Japanese text."
+    },
+    {
+      "label": "hero-scale checkpoint inscription wall",
+      "artifact_type": "hero-scale-inscription-wall",
+      "role": "hero-anchor",
+      "bounds": {
+        "x": 0.08,
+        "y": 0.1,
+        "w": 0.32,
+        "h": 0.32
+      },
+      "confidence": 0.55,
+      "visual_evidence": "Planned source artifact from the scene brief."
+    },
+    {
+      "label": "hero-scale ASCII comet mural",
+      "artifact_type": "hero-scale-symbol-mural",
+      "role": "hero-anchor",
+      "bounds": {
+        "x": 0.58,
+        "y": 0.12,
+        "w": 0.32,
+        "h": 0.32
+      },
+      "confidence": 0.55,
+      "visual_evidence": "Planned source artifact from the scene brief."
+    }
+  ],
+  "edition_id": "2026-04-26-midnight-checkpoint-concourse-v1"
+}

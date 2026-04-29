@@ -1,0 +1,63 @@
+{
+  "brief_id": "brief-2026-04-27-coral-static-passage-v1",
+  "date": "2026-04-27",
+  "signal_cluster_ids": [
+    "55c2a5c846a6",
+    "5521ff3b4c89",
+    "d824bedc7d45",
+    "67bac2353d29",
+    "97ed2b079aa4",
+    "1ecbe0ef250f",
+    "409267176a04",
+    "b7428f1c9989"
+  ],
+  "research_node_ids": [
+    "research-1-736d010c",
+    "research-2-972323a6",
+    "research-3-80976fa9",
+    "research-4-82f59734",
+    "research-5-692e7fc6",
+    "research-6-fb92a315",
+    "research-7-8a388fbf",
+    "research-8-e6a10546",
+    "research-9-51830e59",
+    "research-10-c3fc8178",
+    "research-11-c545ff94",
+    "research-12-7a6e3590"
+  ],
+  "mood": "hushed, washed-out, after-hours, quietly expectant",
+  "material_language": [
+    "frosted rose glass",
+    "waxed milk plaster",
+    "blackened steel"
+  ],
+  "lighting": "diffuse rainy daylight from above, softened into a coral haze with tiny violet and blue pinlights at the edges",
+  "object_inventory": [
+    "one dominant frosted-glass arch floating in a waxed plaster passage",
+    "one narrow inverted curtain panel suspended along the left edge",
+    "one low blackened-steel waterline crossing the floor",
+    "soft rectangular overlays and ghosted photographic texture translated from the coral reference image",
+    "nine quiet source anchors embedded as labels, slits, tiles, seams, pinlights, and chips"
+  ],
+  "interaction_grammar": {
+    "hero_count": 2,
+    "module_count": 7,
+    "window_strategy": "source-window"
+  },
+  "negative_constraints": [
+    "no desks",
+    "no dashboards",
+    "no software UI",
+    "no archive wall",
+    "no cabinets or shelves",
+    "no printmaking chapel or roller room",
+    "no crowded object inventory",
+    "preserve at least 45 percent negative space",
+    "only one dominant form plus two secondary forms",
+    "no dense archive wall",
+    "no cabinet of objects",
+    "no many-prop still life",
+    "no equal-weight grid of source objects",
+    "preserve large negative space"
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "analysis_id": "analysis-2026-04-26-rose-fog-listening-procession-v1",
+  "scene_summary": "A misty gallery-procession scene with a vast rose translucent backdrop, visible music/display objects, carried illuminated artifacts, a right-side bronze instrument pavilion, and a readable source catalogue placard in the foreground.",
+  "usable_surfaces": [
+    "large rose translucent scrim wall",
+    "left black speaker column face",
+    "glowing frosted cylindrical veil",
+    "brass wall mailbox plaque",
+    "central illuminated landscape tray",
+    "hanging oval portrait lantern",
+    "right carried stacked-disc tower",
+    "bronze drum pavilion and gong structure",
+    "rear lit shelf/vitrine display",
+    "foreground source catalogue plaque"
+  ],
+  "detected_objects": [
+    {
+      "label": "Rose Expectation Proscenium",
+      "artifact_type": "hero-scale-translucent-scrim",
+      "role": "hero-anchor",
+      "bounds": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 0.42
+      },
+      "confidence": 0.94,
+      "visual_evidence": "A vast continuous pink translucent panelled scrim spans the upper half of the scene with forest/collage texture and vertical seams."
+    },
+    {
+      "label": "Black Acid-Electro Speaker Monolith",
+      "artifact_type": "lacquered-speaker-column",
+      "role": "media-surface",
+      "bounds": {
+        "x": 0.063,
+        "y": 0.096,
+        "w": 0.081,
+        "h": 0.602
+      },
+      "confidence": 0.96,
+      "visual_evidence": "Tall black rectangular speaker tower on the left with stacked circular drivers and small glowing green centers."
+    },
+    {
+      "label": "Air / Earth Weather Veil",
+      "artifact_type": "frosted-glass-curtain",
+      "role": "media-surface",
+      "bounds": {
+        "x": 0.232,
+        "y": 0.462,
+        "w": 0.05,
+        "h": 0.232
+      },
+      "confidence": 0.86,
+      "visual_evidence": "A glowing translucent cylindrical curtain or veil stands beside the left procession figure, filled with rain-like vertical texture."
+    },
+    {
+      "label": "ArtStar Brass Address Mailbox",
+      "artifact_type": "wall-mounted-brass-mailbox",
+      "role": "label-surface",
+      "bounds": {
+        "x": 0.334,
+        "y": 0.479,
+        "w": 0.041,
+        "h": 0.091
+      },
+      "confidence": 0.9,
+      "visual_evidence": "Small polished brass wall-mounted box or plaque with an address/mailbox form, centered on a grey pillar."
+    },
+    {
+      "label": "Lucid Landscape Terrain Tray",
+      "artifact_type": "glass-topographic-object",
+      "role": "source-pocket",
+      "bounds": {
+        "x": 0.462,
+        "y": 0.528,
+        "w": 0.108,
+        "h": 0.077
+      },
+      "confidence": 0.93,
+      "visual_evidence": "Central figure carries a shallow illuminated tray containing clear glowing mountain-like topographic forms."
+    },
+    {
+      "label": "Cameron Portrait Lantern",
+      "artifact_type": "round-portrait-lantern",
+      "role": "media-surface",
+      "bounds": {
+        "x": 0.516,
+        "y": 0.436,
+        "w": 0.047,
+        "h": 0.112
+      },
+      "confidence": 0.91,
+      "visual_evidence": "Oval glowing hanging portrait medallion with a painted face and small tassel below."
+    },
+    {
+      "label": "Rear Lit Shelf Vitrine",
+      "artifact_type": "lit-display-vitrine",
+      "role": "container-surface",
+      "bounds": {
+        "x": 0.606,
+        "y": 0.488,
+        "w": 0.067,
+        "h": 0.094
+      },
+      "confidence": 0.82,
+      "visual_evidence": "Back wall contains a small illuminated shelving cabinet with rows of tiny glowing objects or containers."
+    },
+    {
+      "label": "Jaipong Bronze Drum Pavilion",
+      "artifact_type": "bronze-stage-instrument",
+      "role": "hero-anchor",
+      "bounds": {
+        "x": 0.74,
+        "y": 0.376,
+        "w": 0.26,
+        "h": 0.293
+      },
+      "confidence": 0.95,
+      "visual_evidence": "Large ornate bronze-and-black performance pavilion on the right with gongs, bowls, carved frame, and warm internal lights."
+    },
+    {
+      "label": "Source Catalogue Plaque",
+      "artifact_type": "catalogue-plaque",
+      "role": "label-surface",
+      "bounds": {
+        "x": 0.799,
+        "y": 0.744,
+        "w": 0.092,
+        "h": 0.176
+      },
+      "confidence": 0.97,
+      "visual_evidence": "Foreground black angled sign clearly reads 'SOURCE CATALOGUE' with a short list of items beneath."
+    },
+    {
+      "label": "Rose Expectation Proscenium",
+      "artifact_type": "hero-scale-translucent-scrim",
+      "role": "hero-anchor",
+      "bounds": {
+        "x": 0.08,
+        "y": 0.1,
+        "w": 0.32,
+        "h": 0.32
+      },
+      "confidence": 0.55,
+      "visual_evidence": "Planned source artifact from the scene brief."
+    }
+  ],
+  "edition_id": "2026-04-26-rose-fog-listening-procession-v1"
+}

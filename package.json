@@ -3,13 +3,23 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
     "test": "vitest run",
-    "validate:editions": "node scripts/validate-editions.mjs",
+    "audit:codebase": "node scripts/audit-codebase.mjs",
+    "generate:interpretations": "node scripts/generate-interpretations.mjs",
+    "generate:enhancement-plans": "node scripts/generate-enhancement-plans.mjs",
+    "validate:editions": "npm run generate:interpretations && npm run generate:enhancement-plans && node scripts/validate-editions.mjs",
+    "daily:process": "node scripts/run-daily-process.mjs",
+    "enrich:source-images": "node scripts/enrich-source-images.mjs",
     "test:ux": "npm run build && playwright test -c playwright.ux.config.ts",
+    "test:ux:media": "npm run build && playwright test -c playwright.ux.config.ts tests/ux/source-window-media-audit.spec.ts",
+    "qa:source-windows": "npm run validate:editions && npm test && npm run test:ux:media",
     "test:ux:update": "npm run build && playwright test -c playwright.ux.config.ts tests/ux/stage-windows.spec.ts --update-snapshots",
     "test:ux:a11y": "npm run build && playwright test -c playwright.ux.config.ts tests/ux/accessibility.spec.ts"
   },
@@ -23,11 +33,10 @@
     "@playwright/test": "^1.59.1",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
-    "@vitejs/plugin-react": "^4.3.1",
-    "esbuild": "^0.28.0",
+    "@vitejs/plugin-react": "^6.0.1",
     "playwright": "^1.59.1",
     "typescript": "^5.6.3",
-    "vite": "^5.4.10",
-    "vitest": "^4.1.4"
+    "vite": "^8.0.10",
+    "vitest": "^4.1.5"
   }
 }

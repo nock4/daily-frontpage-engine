@@ -1,6 +1,8 @@
 # Stage Window Refinement Plan
 
-> For Hermes: use this as the implementation plan for the next runtime cleanup pass.
+Status: historical implementation plan. The current source-window behavior, hover reveal direction, and generated-edition media rules are documented in `docs/source-window-embed-interaction-spec.md`, `docs/runtime-plan.md`, and `docs/process.md`.
+
+This plan captures a historical stage-window cleanup pass.
 
 **Goal:** Fix the live-stage window experience so it reads like a coherent scene-native interface instead of a shared overlay shell with leaking labels, single-slot behavior, and weak composition.
 

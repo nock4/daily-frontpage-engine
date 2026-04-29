@@ -1,0 +1,347 @@
+{
+  "interpretation_id": "interp-2026-04-26-bluebell-glowseed-clearing-v1",
+  "edition_id": "2026-04-26-bluebell-glowseed-clearing-v1",
+  "plate_read_timestamp": "2026-04-29T00:14:40.080Z",
+  "scene_ontology": {
+    "primary": "object-native",
+    "secondary": [],
+    "confidence": 0.9
+  },
+  "world_read": {
+    "summary": "A misty pink-purple forest-floor plate with one dominant floating glossy magenta resin pod, a carved star on its face, and several small usable ground-level anchors: a dark hollow, amber beads, pale lichen, a white bellflower, a silvery moth-like cutout, and a charred labeled tag on a thorn.",
+    "dominant_spatial_mode": "contained",
+    "density": "dense",
+    "legibility": "selective",
+    "mood": [
+      "dreamy, hushed, botanical, slightly uncanny",
+      "A misty pink-purple forest-floor plate with one dominant floating glossy magenta resin pod, a carved star on its face, and several small usable ground-level anchors: a dark hollow, amber beads, pale lichen, a white bellflower, a silvery moth-like cutout, and a charred labeled tag on a thorn.",
+      "bluebell-fog",
+      "glossy-seedpod",
+      "rose-plum-gradient"
+    ]
+  },
+  "visual_ecology": {
+    "dominant_objects": [
+      "Background Bloom",
+      "Star Cut on Resin Pod",
+      "Void Hug Hollow",
+      "October Language Spore",
+      "Ever No Way Lichen",
+      "Angel Bell",
+      "Agent Browser Moth",
+      "Grill-Me Thorn"
+    ],
+    "dominant_surfaces": [
+      "fog",
+      "paint",
+      "light-band"
+    ],
+    "dominant_structures": [
+      "bluebell-glowseed-clearing",
+      "one dominant glossy glowseed with a small star-shaped cut",
+      "one secondary bluebell carpet dissolving into fog",
+      "one secondary dark moss threshold at the lower edge",
+      "tiny dew beads, lichen strokes, thorn labels, and shadow apertures as quiet source anchors",
+      "large open gradient sky and mist preserving more than half the plate as negative space",
+      "floating magenta resin pod",
+      "dark star incision on pod"
+    ],
+    "negative_space_regions": []
+  },
+  "interaction_world": {
+    "class": "object-native",
+    "recommended_behaviors": [
+      "cabinet-drawer-behavior",
+      "object-memory",
+      "threshold-scan"
+    ],
+    "rejected_behaviors": [
+      "light-path-reaction"
+    ],
+    "reasoning": [
+      "Primary ontology inferred from scene family and artifact types: bluebell-glowseed-clearing.",
+      "Artifact vocabulary suggests object-native interaction logic."
+    ]
+  },
+  "artifact_candidates": [
+    {
+      "id": "hero-background-bloom",
+      "kind": "hero",
+      "type": "glossy-resin-seedpod",
+      "strength": 0.99,
+      "bounds": {
+        "x": 0.5723,
+        "y": 0.3389,
+        "w": 0.1914,
+        "h": 0.3262
+      },
+      "supports": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ]
+    },
+    {
+      "id": "hero-haller-fog-veil",
+      "kind": "hero",
+      "type": "star-shaped-incision",
+      "strength": 0.99,
+      "bounds": {
+        "x": 0.602,
+        "y": 0.394,
+        "w": 0.09,
+        "h": 0.108
+      },
+      "supports": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ]
+    },
+    {
+      "id": "module-october-language-spore",
+      "kind": "module",
+      "type": "small-shadow-aperture",
+      "strength": 0.798372,
+      "bounds": {
+        "x": 0.334,
+        "y": 0.858,
+        "w": 0.083,
+        "h": 0.11
+      },
+      "supports": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ]
+    },
+    {
+      "id": "module-source-pathway-plaque",
+      "kind": "module",
+      "type": "amber-spore-ring",
+      "strength": 0.7696320000000001,
+      "bounds": {
+        "x": 0.665,
+        "y": 0.828,
+        "w": 0.094,
+        "h": 0.061
+      },
+      "supports": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-ever-no-way-lichen",
+      "kind": "module",
+      "type": "pale-lichen-stroke",
+      "strength": 0.7338600000000001,
+      "bounds": {
+        "x": 0.06,
+        "y": 0.81,
+        "w": 0.208,
+        "h": 0.138
+      },
+      "supports": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-angel-bell",
+      "kind": "module",
+      "type": "white-bellflower",
+      "strength": 0.70254,
+      "bounds": {
+        "x": 0.807,
+        "y": 0.678,
+        "w": 0.051,
+        "h": 0.078
+      },
+      "supports": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-agent-browser-moth",
+      "kind": "module",
+      "type": "silver-moth-cutout",
+      "strength": 0.678876,
+      "bounds": {
+        "x": 0.793,
+        "y": 0.845,
+        "w": 0.108,
+        "h": 0.069
+      },
+      "supports": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ]
+    },
+    {
+      "id": "module-grill-me-thorn",
+      "kind": "module",
+      "type": "charred-thorn-label",
+      "strength": 0.6544479999999999,
+      "bounds": {
+        "x": 0.891,
+        "y": 0.674,
+        "w": 0.102,
+        "h": 0.099
+      },
+      "supports": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    }
+  ],
+  "field_candidates": [],
+  "html_surfaces": [
+    {
+      "id": "hero-background-bloom-surface",
+      "surface_type": "paint",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.5723,
+        "y": 0.3389,
+        "w": 0.1914,
+        "h": 0.3262
+      },
+      "suitability": 0.9,
+      "supported_treatments": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ]
+    },
+    {
+      "id": "hero-haller-fog-veil-surface",
+      "surface_type": "paint",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.602,
+        "y": 0.394,
+        "w": 0.09,
+        "h": 0.108
+      },
+      "suitability": 0.9,
+      "supported_treatments": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ]
+    },
+    {
+      "id": "module-october-language-spore-surface",
+      "surface_type": "paint",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.334,
+        "y": 0.858,
+        "w": 0.083,
+        "h": 0.11
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ]
+    },
+    {
+      "id": "module-source-pathway-plaque-surface",
+      "surface_type": "unknown",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.665,
+        "y": 0.828,
+        "w": 0.094,
+        "h": 0.061
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-ever-no-way-lichen-surface",
+      "surface_type": "unknown",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.06,
+        "y": 0.81,
+        "w": 0.208,
+        "h": 0.138
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-angel-bell-surface",
+      "surface_type": "unknown",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.807,
+        "y": 0.678,
+        "w": 0.051,
+        "h": 0.078
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    },
+    {
+      "id": "module-agent-browser-moth-surface",
+      "surface_type": "paint",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.793,
+        "y": 0.845,
+        "w": 0.108,
+        "h": 0.069
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ]
+    },
+    {
+      "id": "module-grill-me-thorn-surface",
+      "surface_type": "unknown",
+      "host": "artifact",
+      "bounds": {
+        "x": 0.891,
+        "y": 0.674,
+        "w": 0.102,
+        "h": 0.099
+      },
+      "suitability": 0.76,
+      "supported_treatments": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ]
+    }
+  ],
+  "enhancement_bundle": {
+    "primary": [
+      "mechanical-reveal-system"
+    ],
+    "secondary": [
+      "warped-paper-fragment",
+      "threshold-scan-reveal"
+    ],
+    "wildcard": []
+  },
+  "per_region_assignments": [],
+  "scene_wide_behavior": {
+    "selected": "cabinet-drawer-behavior"
+  },
+  "choreography_rule": {
+    "selected": "anchor-and-satellites"
+  },
+  "release_notes": [
+    "Generated automatically from 8 artifacts and scene family heuristics."
+  ]
+}

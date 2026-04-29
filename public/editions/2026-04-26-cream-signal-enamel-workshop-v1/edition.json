@@ -1,0 +1,20 @@
+{
+  "edition_id": "2026-04-26-cream-signal-enamel-workshop-v1",
+  "date": "2026-04-26",
+  "status": "review",
+  "slug": "cream-signal-enamel-workshop-v1",
+  "title": "The Cream-Signal Enamel Workshop",
+  "scene_family": "cream-signal-enamel-workshop",
+  "brief_id": "brief-2026-04-26-cream-signal-enamel-workshop-v1",
+  "plate_id": "plate-2026-04-26-cream-signal-enamel-workshop-v1",
+  "artifact_map_id": "map-2026-04-26-cream-signal-enamel-workshop-v1",
+  "source_binding_set_id": "bindings-2026-04-26-cream-signal-enamel-workshop-v1",
+  "ambiance_recipe_id": "ambiance-2026-04-26-cream-signal-enamel-workshop-v1",
+  "review_state_id": "review-2026-04-26-cream-signal-enamel-workshop-v1",
+  "publish_state": {
+    "is_live": false,
+    "published_at": null,
+    "archive_path": "/archive/cream-signal-enamel-workshop-v1"
+  },
+  "plate_asset_path": "/editions/2026-04-26-cream-signal-enamel-workshop-v1/assets/plate.png"
+}

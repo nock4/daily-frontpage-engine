@@ -1,0 +1,20 @@
+{
+  "edition_id": "2026-04-26-medusa-line-listening-arcade-v1-v1",
+  "date": "2026-04-26",
+  "status": "review",
+  "slug": "medusa-line-listening-arcade-v1-v1",
+  "title": "The Medusa-Line Listening Arcade",
+  "scene_family": "medusa-line-listening-arcade",
+  "brief_id": "brief-2026-04-26-medusa-line-listening-arcade-v1-v1",
+  "plate_id": "plate-2026-04-26-medusa-line-listening-arcade-v1-v1",
+  "artifact_map_id": "map-2026-04-26-medusa-line-listening-arcade-v1-v1",
+  "source_binding_set_id": "bindings-2026-04-26-medusa-line-listening-arcade-v1-v1",
+  "ambiance_recipe_id": "ambiance-2026-04-26-medusa-line-listening-arcade-v1-v1",
+  "review_state_id": "review-2026-04-26-medusa-line-listening-arcade-v1-v1",
+  "publish_state": {
+    "is_live": false,
+    "published_at": null,
+    "archive_path": "/archive/medusa-line-listening-arcade-v1-v1"
+  },
+  "plate_asset_path": "/editions/2026-04-26-medusa-line-listening-arcade-v1-v1/assets/plate.png"
+}

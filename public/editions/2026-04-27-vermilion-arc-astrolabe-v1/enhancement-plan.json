@@ -1,0 +1,217 @@
+{
+  "enhancement_plan_id": "enhance-2026-04-27-vermilion-arc-astrolabe-v1",
+  "edition_id": "2026-04-27-vermilion-arc-astrolabe-v1",
+  "derived_from": {
+    "interpretation_id": "interp-2026-04-27-vermilion-arc-astrolabe-v1"
+  },
+  "interaction_world": {
+    "class": "object-native",
+    "primary_behavior": "mechanical-reveal-system",
+    "scene_wide_behavior": "cabinet-drawer-behavior",
+    "choreography_rule": "anchor-and-satellites"
+  },
+  "bundle": {
+    "primary": [
+      "mechanical-reveal-system"
+    ],
+    "secondary": [
+      "warped-paper-fragment",
+      "threshold-scan-reveal"
+    ],
+    "wildcard": []
+  },
+  "runtime_safe_subset": [
+    "warped-paper-fragment",
+    "threshold-scan-reveal"
+  ],
+  "future_only_subset": [
+    "mechanical-reveal-system",
+    "restoration-scan",
+    "ghost-reflection-treatment",
+    "lens-inspection"
+  ],
+  "rejected": [
+    {
+      "technique": "light-path-reveal",
+      "reason": "Rejected by interpretation behavior rule: light-path-reaction"
+    },
+    {
+      "technique": "light-path-reveal",
+      "reason": "Object-native scenes should anchor interaction to discrete artifacts before environmental field effects."
+    }
+  ],
+  "targets": [
+    {
+      "target_id": "hero-into-the-light-arc",
+      "target_kind": "artifact",
+      "artifact_id": "hero-into-the-light-arc",
+      "priority": 1,
+      "techniques": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ],
+      "source_classes": [
+        "audio"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (hero-scale-chalk-orbit) selected from interpretation."
+    },
+    {
+      "target_id": "hero-flower-music-dome",
+      "target_kind": "artifact",
+      "artifact_id": "hero-flower-music-dome",
+      "priority": 2,
+      "techniques": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ],
+      "source_classes": [
+        "video",
+        "youtube"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (hero-scale-petal-orbit) selected from interpretation."
+    },
+    {
+      "target_id": "module-shu-qin-notch",
+      "target_kind": "artifact",
+      "artifact_id": "module-shu-qin-notch",
+      "priority": 3,
+      "techniques": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ],
+      "source_classes": [
+        "video",
+        "youtube"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (etched-horizon-notch) selected from interpretation."
+    },
+    {
+      "target_id": "module-surf-noir-tide-mark",
+      "target_kind": "artifact",
+      "artifact_id": "module-surf-noir-tide-mark",
+      "priority": 4,
+      "techniques": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ],
+      "source_classes": [
+        "video",
+        "youtube"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (blue-black-edge-stain) selected from interpretation."
+    },
+    {
+      "target_id": "module-brise-air-tick",
+      "target_kind": "artifact",
+      "artifact_id": "module-brise-air-tick",
+      "priority": 5,
+      "techniques": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ],
+      "source_classes": [
+        "audio"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (fine-graphite-tick) selected from interpretation."
+    },
+    {
+      "target_id": "module-jam-signal-tile",
+      "target_kind": "artifact",
+      "artifact_id": "module-jam-signal-tile",
+      "priority": 6,
+      "techniques": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ],
+      "source_classes": [
+        "social",
+        "tweet"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (small-purple-aluminum-tile) selected from interpretation."
+    },
+    {
+      "target_id": "module-galaxy-dna-lens",
+      "target_kind": "artifact",
+      "artifact_id": "module-galaxy-dna-lens",
+      "priority": 7,
+      "techniques": [
+        "ghost-reflection-treatment",
+        "lens-inspection"
+      ],
+      "source_classes": [
+        "social",
+        "tweet"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (brushed-aluminum-lens-moon) selected from interpretation."
+    },
+    {
+      "target_id": "module-paper-cut-anchor",
+      "target_kind": "artifact",
+      "artifact_id": "module-paper-cut-anchor",
+      "priority": 8,
+      "techniques": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ],
+      "source_classes": [
+        "social",
+        "tweet"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (paper-cut-anchor) selected from interpretation."
+    }
+  ],
+  "global_recommendation": [
+    "mechanical-reveal-system",
+    "warped-paper-fragment",
+    "threshold-scan-reveal"
+  ],
+  "runtime_note": "Generated automatically from 8 artifacts and scene family heuristics."
+}

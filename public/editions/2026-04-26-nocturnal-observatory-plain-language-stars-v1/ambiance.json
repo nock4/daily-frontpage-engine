@@ -1,0 +1,20 @@
+{
+  "ambiance_recipe_id": "ambiance-2026-04-26-nocturnal-observatory-plain-language-stars-v1",
+  "motion_system": "slow orbital drift of dust, paper tags, and pinpoint star motes around the instruments",
+  "color_drift": "deep navy and black drifting toward cyan, bone white, and faint violet",
+  "glow_behavior": "thin white text and constellation marks pulse like distant lighthouses, never neon",
+  "audio_posture": "ambient",
+  "webgl_mode": "particles",
+  "research_inputs": [
+    "research-1-329b71bc",
+    "research-2-0307f8d5",
+    "research-3-a9dad5cd",
+    "research-4-9c9b976a",
+    "research-5-b494619c",
+    "research-6-e74f188d",
+    "research-7-f7c11be4",
+    "research-8-a5f5767f",
+    "research-9-13494445",
+    "research-10-5b0c2853"
+  ]
+}

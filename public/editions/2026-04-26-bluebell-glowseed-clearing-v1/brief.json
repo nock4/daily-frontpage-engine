@@ -1,0 +1,62 @@
+{
+  "brief_id": "brief-2026-04-26-bluebell-glowseed-clearing-v1",
+  "date": "2026-04-26",
+  "signal_cluster_ids": [
+    "55c2a5c846a6",
+    "5521ff3b4c89",
+    "d824bedc7d45",
+    "67bac2353d29",
+    "97ed2b079aa4",
+    "1ecbe0ef250f",
+    "409267176a04",
+    "b7428f1c9989"
+  ],
+  "research_node_ids": [
+    "research-1-70dcfe4a",
+    "research-2-2f250f7f",
+    "research-3-4bc72527",
+    "research-4-2ca2a5c8",
+    "research-5-0c791b42",
+    "research-6-29ebe5c0",
+    "research-7-ca8fe8a5",
+    "research-8-d36a93c7",
+    "research-9-15ed4bce",
+    "research-10-f3d36279",
+    "research-11-45f1d60f",
+    "research-12-306e25c3"
+  ],
+  "mood": "dreamy, hushed, botanical, slightly uncanny",
+  "material_language": [
+    "glossy magenta resin",
+    "velvet fog",
+    "wet bluebell petals"
+  ],
+  "lighting": "soft dawn light filtered through fog, with a rose-to-plum glow drifting from upper left into deep violet shadow",
+  "object_inventory": [
+    "one dominant glossy glowseed with a small star-shaped cut",
+    "one secondary bluebell carpet dissolving into fog",
+    "one secondary dark moss threshold at the lower edge",
+    "tiny dew beads, lichen strokes, thorn labels, and shadow apertures as quiet source anchors",
+    "large open gradient sky and mist preserving more than half the plate as negative space"
+  ],
+  "interaction_grammar": {
+    "hero_count": 2,
+    "module_count": 7,
+    "window_strategy": "source-window"
+  },
+  "negative_constraints": [
+    "no desks",
+    "no dashboards",
+    "no software UI",
+    "no landing-page layout",
+    "no source-summary cards",
+    "no shelves, cabinets, archives, or room interiors",
+    "no printmaking, chapel, roller, cipher-chapel, or splatter-canvas imagery",
+    "no crowded object inventory",
+    "no dense archive wall",
+    "no cabinet of objects",
+    "no many-prop still life",
+    "no equal-weight grid of source objects",
+    "preserve large negative space"
+  ]
+}

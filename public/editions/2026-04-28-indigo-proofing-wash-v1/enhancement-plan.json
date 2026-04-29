@@ -1,0 +1,230 @@
+{
+  "enhancement_plan_id": "enhance-2026-04-28-indigo-proofing-wash-v1",
+  "edition_id": "2026-04-28-indigo-proofing-wash-v1",
+  "derived_from": {
+    "interpretation_id": "interp-2026-04-28-indigo-proofing-wash-v1"
+  },
+  "interaction_world": {
+    "class": "material-native",
+    "primary_behavior": "paint-bleed-reveal",
+    "scene_wide_behavior": "paint-bleed-reveal",
+    "choreography_rule": "anchor-and-satellites"
+  },
+  "bundle": {
+    "primary": [
+      "paint-bleed-reveal"
+    ],
+    "secondary": [
+      "restoration-scan",
+      "pigment-crack-annotation"
+    ],
+    "wildcard": []
+  },
+  "runtime_safe_subset": [
+    "threshold-scan-reveal"
+  ],
+  "future_only_subset": [
+    "paint-bleed-reveal",
+    "restoration-scan",
+    "pigment-crack-annotation"
+  ],
+  "rejected": [
+    {
+      "technique": "mechanical-reveal-system",
+      "reason": "Rejected by interpretation behavior rule: cabinet-drawer-behavior"
+    },
+    {
+      "technique": "screen-rendered-html",
+      "reason": "Material-native scenes should prefer painterly or restoration treatments over device-screen logic."
+    }
+  ],
+  "targets": [
+    {
+      "target_id": "hero-komachi-ash-field",
+      "target_kind": "artifact",
+      "artifact_id": "hero-komachi-ash-field",
+      "priority": 1,
+      "techniques": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ],
+      "source_classes": [
+        "audio"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (hero-scale-charcoal-wash) selected from interpretation."
+    },
+    {
+      "target_id": "hero-blue-shit-cobalt-drag",
+      "target_kind": "artifact",
+      "artifact_id": "hero-blue-shit-cobalt-drag",
+      "priority": 2,
+      "techniques": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ],
+      "source_classes": [
+        "audio"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (hero-scale-pigment-smear) selected from interpretation."
+    },
+    {
+      "target_id": "module-the-word-love-paste-pool",
+      "target_kind": "artifact",
+      "artifact_id": "module-the-word-love-paste-pool",
+      "priority": 3,
+      "techniques": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ],
+      "source_classes": [
+        "audio"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (ivory-paste-pool) selected from interpretation."
+    },
+    {
+      "target_id": "module-water-people-bloom",
+      "target_kind": "artifact",
+      "artifact_id": "module-water-people-bloom",
+      "priority": 4,
+      "techniques": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ],
+      "source_classes": [
+        "audio"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (water-stain-bloom) selected from interpretation."
+    },
+    {
+      "target_id": "module-sacrificial-code-scratch",
+      "target_kind": "artifact",
+      "artifact_id": "module-sacrificial-code-scratch",
+      "priority": 5,
+      "techniques": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ],
+      "source_classes": [
+        "audio"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (hairline-scratch) selected from interpretation."
+    },
+    {
+      "target_id": "module-alfredo-stirred-halo",
+      "target_kind": "artifact",
+      "artifact_id": "module-alfredo-stirred-halo",
+      "priority": 6,
+      "techniques": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ],
+      "source_classes": [
+        "audio"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (ivory-stirred-halo) selected from interpretation."
+    },
+    {
+      "target_id": "module-sentimental-value-crease",
+      "target_kind": "artifact",
+      "artifact_id": "module-sentimental-value-crease",
+      "priority": 7,
+      "techniques": [
+        "paint-bleed-reveal",
+        "pigment-crack-annotation"
+      ],
+      "source_classes": [
+        "audio"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (creased-vellum-line) selected from interpretation."
+    },
+    {
+      "target_id": "module-dream-of-blue-chalk",
+      "target_kind": "artifact",
+      "artifact_id": "module-dream-of-blue-chalk",
+      "priority": 8,
+      "techniques": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ],
+      "source_classes": [
+        "audio"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (dry-chalk-dash) selected from interpretation."
+    },
+    {
+      "target_id": "module-alfredo-stirred-halo-2",
+      "target_kind": "artifact",
+      "artifact_id": "module-alfredo-stirred-halo-2",
+      "priority": 9,
+      "techniques": [
+        "threshold-scan-reveal",
+        "restoration-scan"
+      ],
+      "source_classes": [
+        "video",
+        "youtube"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (ivory-stirred-halo) selected from interpretation."
+    }
+  ],
+  "global_recommendation": [
+    "paint-bleed-reveal",
+    "restoration-scan",
+    "pigment-crack-annotation"
+  ],
+  "runtime_note": "Generated automatically from 9 artifacts and scene family heuristics."
+}

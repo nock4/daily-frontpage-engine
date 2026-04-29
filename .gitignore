@@ -2,7 +2,14 @@ node_modules/
 dist/
 .DS_Store
 .env
+.env.*
+!.env.example
+.hermes/
 .runtime/
+tmp/
+*.tsbuildinfo
+__pycache__/
+*.pyc
 *.log
 playwright-report/
 test-results/

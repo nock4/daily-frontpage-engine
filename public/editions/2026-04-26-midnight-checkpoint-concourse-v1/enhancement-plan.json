@@ -1,0 +1,194 @@
+{
+  "enhancement_plan_id": "enhance-2026-04-26-midnight-checkpoint-concourse-v1",
+  "edition_id": "2026-04-26-midnight-checkpoint-concourse-v1",
+  "derived_from": {
+    "interpretation_id": "interp-2026-04-26-midnight-checkpoint-concourse-v1"
+  },
+  "interaction_world": {
+    "class": "object-native",
+    "primary_behavior": "mechanical-reveal-system",
+    "scene_wide_behavior": "cabinet-drawer-behavior",
+    "choreography_rule": "anchor-and-satellites"
+  },
+  "bundle": {
+    "primary": [
+      "mechanical-reveal-system"
+    ],
+    "secondary": [
+      "warped-paper-fragment",
+      "threshold-scan-reveal"
+    ],
+    "wildcard": []
+  },
+  "runtime_safe_subset": [
+    "warped-paper-fragment",
+    "threshold-scan-reveal"
+  ],
+  "future_only_subset": [
+    "mechanical-reveal-system"
+  ],
+  "rejected": [
+    {
+      "technique": "light-path-reveal",
+      "reason": "Rejected by interpretation behavior rule: light-path-reaction"
+    },
+    {
+      "technique": "light-path-reveal",
+      "reason": "Object-native scenes should anchor interaction to discrete artifacts before environmental field effects."
+    }
+  ],
+  "targets": [
+    {
+      "target_id": "hero-seven-checkpoints-inscription-wall",
+      "target_kind": "artifact",
+      "artifact_id": "hero-seven-checkpoints-inscription-wall",
+      "priority": 1,
+      "techniques": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ],
+      "source_classes": [
+        "web",
+        "article"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (hero-scale-inscription-wall) selected from interpretation."
+    },
+    {
+      "target_id": "hero-ascii-comet-mural",
+      "target_kind": "artifact",
+      "artifact_id": "hero-ascii-comet-mural",
+      "priority": 2,
+      "techniques": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ],
+      "source_classes": [
+        "web",
+        "article"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (hero-scale-symbol-mural) selected from interpretation."
+    },
+    {
+      "target_id": "module-red-green-testing-threshold-tile",
+      "target_kind": "artifact",
+      "artifact_id": "module-red-green-testing-threshold-tile",
+      "priority": 3,
+      "techniques": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ],
+      "source_classes": [
+        "web",
+        "article"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (inlaid-floor-threshold) selected from interpretation."
+    },
+    {
+      "target_id": "module-confetti-voting-urn-lantern",
+      "target_kind": "artifact",
+      "artifact_id": "module-confetti-voting-urn-lantern",
+      "priority": 4,
+      "techniques": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ],
+      "source_classes": [
+        "web",
+        "article"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (translucent-public-urn) selected from interpretation."
+    },
+    {
+      "target_id": "module-motion-cavalry-frieze",
+      "target_kind": "artifact",
+      "artifact_id": "module-motion-cavalry-frieze",
+      "priority": 5,
+      "techniques": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ],
+      "source_classes": [
+        "web",
+        "article"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (sequential-wall-frieze) selected from interpretation."
+    },
+    {
+      "target_id": "module-susumu-yokota-listening-alcove-panel",
+      "target_kind": "artifact",
+      "artifact_id": "module-susumu-yokota-listening-alcove-panel",
+      "priority": 6,
+      "techniques": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ],
+      "source_classes": [
+        "audio"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (illuminated-audio-alcove) selected from interpretation."
+    },
+    {
+      "target_id": "module-rear-circular-burst-artwork-panel",
+      "target_kind": "artifact",
+      "artifact_id": "module-rear-circular-burst-artwork-panel",
+      "priority": 7,
+      "techniques": [
+        "mechanical-reveal-system",
+        "threshold-scan-reveal"
+      ],
+      "source_classes": [
+        "social",
+        "tweet"
+      ],
+      "activation": {
+        "hover": true,
+        "click": true,
+        "drag": false,
+        "hold": false
+      },
+      "reason": "Artifact candidate (framed-symbol-panel) selected from interpretation."
+    }
+  ],
+  "global_recommendation": [
+    "mechanical-reveal-system",
+    "warped-paper-fragment",
+    "threshold-scan-reveal"
+  ],
+  "runtime_note": "Generated automatically from 7 artifacts and scene family heuristics."
+}

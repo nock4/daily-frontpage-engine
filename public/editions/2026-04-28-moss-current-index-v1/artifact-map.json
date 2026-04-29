@@ -1,0 +1,441 @@
+{
+  "artifact_map_id": "map-2026-04-28-moss-current-index-v1",
+  "viewport": {
+    "base_width": 1536,
+    "base_height": 1024,
+    "aspect_ratio": "1536:1024"
+  },
+  "default_cluster_id": "moss-current-index",
+  "default_artifact_id": "hero-forest-breath-wash",
+  "artifacts": [
+    {
+      "id": "hero-forest-breath-wash",
+      "kind": "hero",
+      "label": "Forest Breath Wash",
+      "artifact_type": "hero-scale-moss-wash",
+      "bounds": {
+        "x": 0,
+        "y": 0.142,
+        "w": 0.627,
+        "h": 0.844
+      },
+      "z_index": 10,
+      "polygon": [
+        [
+          0.001,
+          0.369
+        ],
+        [
+          0.046,
+          0.354
+        ],
+        [
+          0.072,
+          0.184
+        ],
+        [
+          0.128,
+          0.16
+        ],
+        [
+          0.157,
+          0.337
+        ],
+        [
+          0.263,
+          0.475
+        ],
+        [
+          0.381,
+          0.579
+        ],
+        [
+          0.502,
+          0.724
+        ],
+        [
+          0.604,
+          0.762
+        ],
+        [
+          0.626,
+          0.889
+        ],
+        [
+          0.548,
+          0.965
+        ],
+        [
+          0.364,
+          0.966
+        ],
+        [
+          0.176,
+          0.985
+        ],
+        [
+          0.058,
+          0.942
+        ],
+        [
+          0.022,
+          0.786
+        ],
+        [
+          0,
+          0.664
+        ]
+      ],
+      "cluster_id": "moss-current-index",
+      "mask_path": "/editions/2026-04-28-moss-current-index-v1/assets/masks/hero-forest-breath-wash.svg",
+      "source_binding_ids": [
+        "binding-hero-forest-breath-wash"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          482,
+          508
+        ],
+        "safe_stage_window_origin_px": [
+          559,
+          578
+        ],
+        "preferred_expansion_label": "right"
+      }
+    },
+    {
+      "id": "hero-habitual-line-tear",
+      "kind": "hero",
+      "label": "Habitual Line Tear",
+      "artifact_type": "hero-scale-ochre-edge-tear",
+      "bounds": {
+        "x": 0.202,
+        "y": 0.213,
+        "w": 0.798,
+        "h": 0.731
+      },
+      "z_index": 11,
+      "polygon": [
+        [
+          0.202,
+          0.213
+        ],
+        [
+          1,
+          0.213
+        ],
+        [
+          1,
+          0.944
+        ],
+        [
+          0.202,
+          0.944
+        ]
+      ],
+      "cluster_id": "moss-current-index",
+      "mask_path": "/editions/2026-04-28-moss-current-index-v1/assets/masks/hero-habitual-line-tear.svg",
+      "source_binding_ids": [
+        "binding-hero-habitual-line-tear"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          923,
+          533
+        ],
+        "safe_stage_window_origin_px": [
+          1021,
+          592
+        ],
+        "preferred_expansion_label": "left"
+      }
+    },
+    {
+      "id": "module-sea-lullaby-pool",
+      "kind": "module",
+      "label": "Sea Lullaby Pool",
+      "artifact_type": "small-rain-glaze-pool",
+      "bounds": {
+        "x": 0.733,
+        "y": 0.769,
+        "w": 0.066,
+        "h": 0.071
+      },
+      "z_index": 22,
+      "polygon": [
+        [
+          0.759,
+          0.77
+        ],
+        [
+          0.778,
+          0.775
+        ],
+        [
+          0.793,
+          0.791
+        ],
+        [
+          0.797,
+          0.81
+        ],
+        [
+          0.787,
+          0.829
+        ],
+        [
+          0.769,
+          0.839
+        ],
+        [
+          0.749,
+          0.834
+        ],
+        [
+          0.735,
+          0.819
+        ],
+        [
+          0.733,
+          0.799
+        ],
+        [
+          0.742,
+          0.781
+        ]
+      ],
+      "cluster_id": "moss-current-index",
+      "mask_path": "/editions/2026-04-28-moss-current-index-v1/assets/masks/module-sea-lullaby-pool.svg",
+      "source_binding_ids": [
+        "binding-module-sea-lullaby-pool"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          1177,
+          818
+        ],
+        "safe_stage_window_origin_px": [
+          1185,
+          824
+        ],
+        "preferred_expansion_label": "up"
+      }
+    },
+    {
+      "id": "module-comet-commit-scar",
+      "kind": "module",
+      "label": "Comet Commit Scar",
+      "artifact_type": "tiny-comet-scratch",
+      "bounds": {
+        "x": 0.801,
+        "y": 0.09,
+        "w": 0.095,
+        "h": 0.099
+      },
+      "z_index": 23,
+      "polygon": [
+        [
+          0.802,
+          0.181
+        ],
+        [
+          0.811,
+          0.17
+        ],
+        [
+          0.828,
+          0.153
+        ],
+        [
+          0.852,
+          0.126
+        ],
+        [
+          0.875,
+          0.103
+        ],
+        [
+          0.895,
+          0.091
+        ],
+        [
+          0.878,
+          0.114
+        ],
+        [
+          0.855,
+          0.139
+        ],
+        [
+          0.835,
+          0.16
+        ],
+        [
+          0.817,
+          0.183
+        ],
+        [
+          0.805,
+          0.189
+        ]
+      ],
+      "cluster_id": "moss-current-index",
+      "mask_path": "/editions/2026-04-28-moss-current-index-v1/assets/masks/module-comet-commit-scar.svg",
+      "source_binding_ids": [
+        "binding-module-comet-commit-scar"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          1303,
+          135
+        ],
+        "safe_stage_window_origin_px": [
+          1315,
+          143
+        ],
+        "preferred_expansion_label": "left"
+      }
+    },
+    {
+      "id": "module-comet-commit-scar-2",
+      "kind": "module",
+      "label": "Comet Commit Scar",
+      "artifact_type": "tiny-comet-scratch",
+      "bounds": {
+        "x": 0.62,
+        "y": 0.54,
+        "w": 0.22,
+        "h": 0.22
+      },
+      "z_index": 24,
+      "polygon": [
+        [
+          0.62,
+          0.54
+        ],
+        [
+          0.84,
+          0.54
+        ],
+        [
+          0.84,
+          0.76
+        ],
+        [
+          0.62,
+          0.76
+        ]
+      ],
+      "cluster_id": "moss-current-index",
+      "mask_path": "/editions/2026-04-28-moss-current-index-v1/assets/masks/module-comet-commit-scar-2.svg",
+      "source_binding_ids": [
+        "binding-module-comet-commit-scar-2"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          1121,
+          648
+        ],
+        "safe_stage_window_origin_px": [
+          1148,
+          666
+        ],
+        "preferred_expansion_label": "left"
+      }
+    },
+    {
+      "id": "module-retro-world-seed",
+      "kind": "module",
+      "label": "Retro World Seed",
+      "artifact_type": "small-green-knot",
+      "bounds": {
+        "x": 0.1,
+        "y": 0.78,
+        "w": 0.18,
+        "h": 0.16
+      },
+      "z_index": 25,
+      "polygon": [
+        [
+          0.1,
+          0.78
+        ],
+        [
+          0.28,
+          0.78
+        ],
+        [
+          0.28,
+          0.94
+        ],
+        [
+          0.1,
+          0.94
+        ]
+      ],
+      "cluster_id": "moss-current-index",
+      "mask_path": "/editions/2026-04-28-moss-current-index-v1/assets/masks/module-retro-world-seed.svg",
+      "source_binding_ids": [
+        "binding-module-retro-world-seed"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          292,
+          850
+        ],
+        "safe_stage_window_origin_px": [
+          314,
+          850
+        ],
+        "preferred_expansion_label": "up"
+      }
+    },
+    {
+      "id": "module-jam-day-label",
+      "kind": "module",
+      "label": "Jam Day Label",
+      "artifact_type": "tiny-handwritten-label",
+      "bounds": {
+        "x": 0.42,
+        "y": 0.78,
+        "w": 0.18,
+        "h": 0.16
+      },
+      "z_index": 26,
+      "polygon": [
+        [
+          0.42,
+          0.78
+        ],
+        [
+          0.6,
+          0.78
+        ],
+        [
+          0.6,
+          0.94
+        ],
+        [
+          0.42,
+          0.94
+        ]
+      ],
+      "cluster_id": "moss-current-index",
+      "mask_path": "/editions/2026-04-28-moss-current-index-v1/assets/masks/module-jam-day-label.svg",
+      "source_binding_ids": [
+        "binding-module-jam-day-label"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          783,
+          850
+        ],
+        "safe_stage_window_origin_px": [
+          805,
+          850
+        ],
+        "preferred_expansion_label": "up"
+      }
+    }
+  ]
+}

@@ -1,0 +1,341 @@
+{
+  "artifact_map_id": "map-2026-04-26-midnight-checkpoint-concourse-v1",
+  "viewport": {
+    "base_width": 1536,
+    "base_height": 1024,
+    "aspect_ratio": "1536:1024"
+  },
+  "default_cluster_id": "midnight-checkpoint-concourse",
+  "default_artifact_id": "hero-seven-checkpoints-inscription-wall",
+  "artifacts": [
+    {
+      "id": "hero-seven-checkpoints-inscription-wall",
+      "kind": "hero",
+      "label": "Seven Checkpoints inscription wall",
+      "artifact_type": "hero-scale-inscription-wall",
+      "bounds": {
+        "x": 0.028,
+        "y": 0.022,
+        "w": 0.188,
+        "h": 0.755
+      },
+      "z_index": 10,
+      "polygon": [
+        [
+          0.028,
+          0.022
+        ],
+        [
+          0.216,
+          0.022
+        ],
+        [
+          0.216,
+          0.777
+        ],
+        [
+          0.028,
+          0.777
+        ]
+      ],
+      "cluster_id": "midnight-checkpoint-concourse",
+      "mask_path": "/editions/2026-04-26-midnight-checkpoint-concourse-v1/assets/masks/hero-seven-checkpoints-inscription-wall.svg",
+      "source_binding_ids": [
+        "binding-hero-seven-checkpoints-inscription-wall"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          187,
+          347
+        ],
+        "safe_stage_window_origin_px": [
+          210,
+          409
+        ],
+        "preferred_expansion_label": "right"
+      }
+    },
+    {
+      "id": "hero-ascii-comet-mural",
+      "kind": "hero",
+      "label": "ASCII comet mural",
+      "artifact_type": "hero-scale-symbol-mural",
+      "bounds": {
+        "x": 0.714,
+        "y": 0,
+        "w": 0.286,
+        "h": 0.818
+      },
+      "z_index": 11,
+      "polygon": [
+        [
+          0.714,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0.818
+        ],
+        [
+          0.714,
+          0.818
+        ]
+      ],
+      "cluster_id": "midnight-checkpoint-concourse",
+      "mask_path": "/editions/2026-04-26-midnight-checkpoint-concourse-v1/assets/masks/hero-ascii-comet-mural.svg",
+      "source_binding_ids": [
+        "binding-hero-ascii-comet-mural"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          1316,
+          352
+        ],
+        "safe_stage_window_origin_px": [
+          1320,
+          419
+        ],
+        "preferred_expansion_label": "left"
+      }
+    },
+    {
+      "id": "module-red-green-testing-threshold-tile",
+      "kind": "module",
+      "label": "red-green testing threshold tile",
+      "artifact_type": "inlaid-floor-threshold",
+      "bounds": {
+        "x": 0.153,
+        "y": 0.855,
+        "w": 0.552,
+        "h": 0.071
+      },
+      "z_index": 22,
+      "polygon": [
+        [
+          0.153,
+          0.855
+        ],
+        [
+          0.705,
+          0.855
+        ],
+        [
+          0.705,
+          0.926
+        ],
+        [
+          0.153,
+          0.926
+        ]
+      ],
+      "cluster_id": "midnight-checkpoint-concourse",
+      "mask_path": "/editions/2026-04-26-midnight-checkpoint-concourse-v1/assets/masks/module-red-green-testing-threshold-tile.svg",
+      "source_binding_ids": [
+        "binding-module-red-green-testing-threshold-tile"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          659,
+          850
+        ],
+        "safe_stage_window_origin_px": [
+          727,
+          850
+        ],
+        "preferred_expansion_label": "up"
+      }
+    },
+    {
+      "id": "module-confetti-voting-urn-lantern",
+      "kind": "module",
+      "label": "confetti voting urn lantern",
+      "artifact_type": "translucent-public-urn",
+      "bounds": {
+        "x": 0.425,
+        "y": 0.658,
+        "w": 0.121,
+        "h": 0.304
+      },
+      "z_index": 23,
+      "polygon": [
+        [
+          0.425,
+          0.658
+        ],
+        [
+          0.546,
+          0.658
+        ],
+        [
+          0.546,
+          0.962
+        ],
+        [
+          0.425,
+          0.962
+        ]
+      ],
+      "cluster_id": "midnight-checkpoint-concourse",
+      "mask_path": "/editions/2026-04-26-midnight-checkpoint-concourse-v1/assets/masks/module-confetti-voting-urn-lantern.svg",
+      "source_binding_ids": [
+        "binding-module-confetti-voting-urn-lantern"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          746,
+          805
+        ],
+        "safe_stage_window_origin_px": [
+          761,
+          829
+        ],
+        "preferred_expansion_label": "up"
+      }
+    },
+    {
+      "id": "module-motion-cavalry-frieze",
+      "kind": "module",
+      "label": "motion cavalry frieze",
+      "artifact_type": "sequential-wall-frieze",
+      "bounds": {
+        "x": 0.318,
+        "y": 0.331,
+        "w": 0.138,
+        "h": 0.113
+      },
+      "z_index": 24,
+      "polygon": [
+        [
+          0.318,
+          0.331
+        ],
+        [
+          0.456,
+          0.331
+        ],
+        [
+          0.456,
+          0.444
+        ],
+        [
+          0.318,
+          0.444
+        ]
+      ],
+      "cluster_id": "midnight-checkpoint-concourse",
+      "mask_path": "/editions/2026-04-26-midnight-checkpoint-concourse-v1/assets/masks/module-motion-cavalry-frieze.svg",
+      "source_binding_ids": [
+        "binding-module-motion-cavalry-frieze"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          594,
+          388
+        ],
+        "safe_stage_window_origin_px": [
+          611,
+          397
+        ],
+        "preferred_expansion_label": "right"
+      }
+    },
+    {
+      "id": "module-susumu-yokota-listening-alcove-panel",
+      "kind": "module",
+      "label": "Susumu Yokota listening alcove panel",
+      "artifact_type": "illuminated-audio-alcove",
+      "bounds": {
+        "x": 0.594,
+        "y": 0.254,
+        "w": 0.064,
+        "h": 0.274
+      },
+      "z_index": 25,
+      "polygon": [
+        [
+          0.594,
+          0.254
+        ],
+        [
+          0.658,
+          0.254
+        ],
+        [
+          0.658,
+          0.528
+        ],
+        [
+          0.594,
+          0.528
+        ]
+      ],
+      "cluster_id": "midnight-checkpoint-concourse",
+      "mask_path": "/editions/2026-04-26-midnight-checkpoint-concourse-v1/assets/masks/module-susumu-yokota-listening-alcove-panel.svg",
+      "source_binding_ids": [
+        "binding-module-susumu-yokota-listening-alcove-panel"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          962,
+          378
+        ],
+        "safe_stage_window_origin_px": [
+          969,
+          400
+        ],
+        "preferred_expansion_label": "left"
+      }
+    },
+    {
+      "id": "module-rear-circular-burst-artwork-panel",
+      "kind": "module",
+      "label": "rear circular burst artwork panel",
+      "artifact_type": "framed-symbol-panel",
+      "bounds": {
+        "x": 0.481,
+        "y": 0.39,
+        "w": 0.055,
+        "h": 0.129
+      },
+      "z_index": 26,
+      "polygon": [
+        [
+          0.481,
+          0.39
+        ],
+        [
+          0.536,
+          0.39
+        ],
+        [
+          0.536,
+          0.519
+        ],
+        [
+          0.481,
+          0.519
+        ]
+      ],
+      "cluster_id": "midnight-checkpoint-concourse",
+      "mask_path": "/editions/2026-04-26-midnight-checkpoint-concourse-v1/assets/masks/module-rear-circular-burst-artwork-panel.svg",
+      "source_binding_ids": [
+        "binding-module-rear-circular-burst-artwork-panel"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          781,
+          455
+        ],
+        "safe_stage_window_origin_px": [
+          788,
+          465
+        ],
+        "preferred_expansion_label": "left"
+      }
+    }
+  ]
+}

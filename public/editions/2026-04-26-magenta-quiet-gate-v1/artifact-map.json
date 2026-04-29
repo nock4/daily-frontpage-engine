@@ -1,0 +1,599 @@
+{
+  "artifact_map_id": "map-2026-04-26-magenta-quiet-gate-v1",
+  "viewport": {
+    "base_width": 1536,
+    "base_height": 1024,
+    "aspect_ratio": "1536:1024"
+  },
+  "default_cluster_id": "magenta-quiet-gate",
+  "default_artifact_id": "hero-rose-field-gate",
+  "artifacts": [
+    {
+      "id": "hero-rose-field-gate",
+      "label": "Rose Field Gate",
+      "kind": "hero",
+      "artifact_type": "hero-scale-rounded-threshold",
+      "bounds": {
+        "x": 0.395,
+        "y": 0.148,
+        "w": 0.236,
+        "h": 0.695
+      },
+      "polygon": [
+        [
+          0.397,
+          0.812
+        ],
+        [
+          0.397,
+          0.282
+        ],
+        [
+          0.404,
+          0.214
+        ],
+        [
+          0.431,
+          0.166
+        ],
+        [
+          0.477,
+          0.149
+        ],
+        [
+          0.563,
+          0.149
+        ],
+        [
+          0.608,
+          0.168
+        ],
+        [
+          0.626,
+          0.218
+        ],
+        [
+          0.63,
+          0.29
+        ],
+        [
+          0.63,
+          0.811
+        ],
+        [
+          0.618,
+          0.835
+        ],
+        [
+          0.58,
+          0.843
+        ],
+        [
+          0.441,
+          0.843
+        ],
+        [
+          0.41,
+          0.833
+        ]
+      ],
+      "z_index": 10,
+      "cluster_id": "magenta-quiet-gate",
+      "mask_path": "/editions/2026-04-26-magenta-quiet-gate-v1/assets/masks/hero-rose-field-gate.svg",
+      "source_binding_ids": [
+        "binding-hero-rose-field-gate"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          788,
+          450
+        ],
+        "safe_stage_window_origin_px": [
+          788,
+          522
+        ],
+        "preferred_expansion_label": "down"
+      }
+    },
+    {
+      "id": "hero-october-glass-slit",
+      "label": "October Glass Slit",
+      "kind": "hero",
+      "artifact_type": "hero-scale-smoked-glass-aperture",
+      "bounds": {
+        "x": 0.249,
+        "y": 0.257,
+        "w": 0.038,
+        "h": 0.342
+      },
+      "polygon": [
+        [
+          0.266,
+          0.257
+        ],
+        [
+          0.278,
+          0.261
+        ],
+        [
+          0.286,
+          0.276
+        ],
+        [
+          0.287,
+          0.572
+        ],
+        [
+          0.281,
+          0.59
+        ],
+        [
+          0.267,
+          0.599
+        ],
+        [
+          0.254,
+          0.594
+        ],
+        [
+          0.249,
+          0.575
+        ],
+        [
+          0.249,
+          0.28
+        ],
+        [
+          0.256,
+          0.263
+        ]
+      ],
+      "z_index": 11,
+      "cluster_id": "magenta-quiet-gate",
+      "mask_path": "/editions/2026-04-26-magenta-quiet-gate-v1/assets/masks/hero-october-glass-slit.svg",
+      "source_binding_ids": [
+        "binding-hero-october-glass-slit"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          412,
+          410
+        ],
+        "safe_stage_window_origin_px": [
+          412,
+          445
+        ],
+        "preferred_expansion_label": "right"
+      }
+    },
+    {
+      "id": "module-blue-dress-inlay",
+      "label": "Blue Dress Inlay",
+      "kind": "module",
+      "artifact_type": "cobalt-enamel-floor-line",
+      "bounds": {
+        "x": 0.486,
+        "y": 0.817,
+        "w": 0.122,
+        "h": 0.183
+      },
+      "polygon": [
+        [
+          0.486,
+          0.825
+        ],
+        [
+          0.517,
+          0.831
+        ],
+        [
+          0.546,
+          0.844
+        ],
+        [
+          0.57,
+          0.872
+        ],
+        [
+          0.589,
+          0.924
+        ],
+        [
+          0.6,
+          1
+        ],
+        [
+          0.608,
+          1
+        ],
+        [
+          0.596,
+          0.918
+        ],
+        [
+          0.578,
+          0.864
+        ],
+        [
+          0.553,
+          0.835
+        ],
+        [
+          0.522,
+          0.822
+        ],
+        [
+          0.488,
+          0.817
+        ]
+      ],
+      "z_index": 22,
+      "cluster_id": "magenta-quiet-gate",
+      "mask_path": "/editions/2026-04-26-magenta-quiet-gate-v1/assets/masks/module-blue-dress-inlay.svg",
+      "source_binding_ids": [
+        "binding-module-blue-dress-inlay"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          840,
+          915
+        ],
+        "safe_stage_window_origin_px": [
+          840,
+          934
+        ],
+        "preferred_expansion_label": "up"
+      }
+    },
+    {
+      "id": "module-sound-leaves-pinholes",
+      "label": "Sound Leaves Pinholes",
+      "kind": "module",
+      "artifact_type": "clustered-wall-perforations",
+      "bounds": {
+        "x": 0.702,
+        "y": 0.285,
+        "w": 0.059,
+        "h": 0.158
+      },
+      "polygon": [
+        [
+          0.703,
+          0.286
+        ],
+        [
+          0.736,
+          0.296
+        ],
+        [
+          0.736,
+          0.329
+        ],
+        [
+          0.76,
+          0.375
+        ],
+        [
+          0.76,
+          0.407
+        ],
+        [
+          0.739,
+          0.433
+        ],
+        [
+          0.72,
+          0.443
+        ],
+        [
+          0.703,
+          0.424
+        ],
+        [
+          0.704,
+          0.348
+        ]
+      ],
+      "z_index": 23,
+      "cluster_id": "magenta-quiet-gate",
+      "mask_path": "/editions/2026-04-26-magenta-quiet-gate-v1/assets/masks/module-sound-leaves-pinholes.svg",
+      "source_binding_ids": [
+        "binding-module-sound-leaves-pinholes"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          1124,
+          360
+        ],
+        "safe_stage_window_origin_px": [
+          1124,
+          376
+        ],
+        "preferred_expansion_label": "left"
+      }
+    },
+    {
+      "id": "module-sea-salt-seam",
+      "label": "Sea Salt Seam",
+      "kind": "module",
+      "artifact_type": "pale-horizontal-wall-seam",
+      "bounds": {
+        "x": 0,
+        "y": 0.589,
+        "w": 0.397,
+        "h": 0.04
+      },
+      "polygon": [
+        [
+          0,
+          0.607
+        ],
+        [
+          0.397,
+          0.607
+        ],
+        [
+          0.397,
+          0.615
+        ],
+        [
+          0.118,
+          0.615
+        ],
+        [
+          0.112,
+          0.603
+        ],
+        [
+          0.074,
+          0.603
+        ],
+        [
+          0.068,
+          0.615
+        ],
+        [
+          0,
+          0.615
+        ]
+      ],
+      "z_index": 24,
+      "cluster_id": "magenta-quiet-gate",
+      "mask_path": "/editions/2026-04-26-magenta-quiet-gate-v1/assets/masks/module-sea-salt-seam.svg",
+      "source_binding_ids": [
+        "binding-module-sea-salt-seam"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          305,
+          620
+        ],
+        "safe_stage_window_origin_px": [
+          305,
+          624
+        ],
+        "preferred_expansion_label": "right"
+      }
+    },
+    {
+      "id": "module-prd-etching",
+      "label": "PRD Etching",
+      "kind": "module",
+      "artifact_type": "microtype-metal-plate",
+      "bounds": {
+        "x": 0.798,
+        "y": 0.596,
+        "w": 0.042,
+        "h": 0.052
+      },
+      "polygon": [
+        [
+          0.801,
+          0.598
+        ],
+        [
+          0.835,
+          0.598
+        ],
+        [
+          0.837,
+          0.627
+        ],
+        [
+          0.833,
+          0.631
+        ],
+        [
+          0.803,
+          0.631
+        ],
+        [
+          0.799,
+          0.626
+        ]
+      ],
+      "z_index": 25,
+      "cluster_id": "magenta-quiet-gate",
+      "mask_path": "/editions/2026-04-26-magenta-quiet-gate-v1/assets/masks/module-prd-etching.svg",
+      "source_binding_ids": [
+        "binding-module-prd-etching"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          1258,
+          633
+        ],
+        "safe_stage_window_origin_px": [
+          1258,
+          638
+        ],
+        "preferred_expansion_label": "left"
+      }
+    },
+    {
+      "id": "module-peoples-prize-curb",
+      "label": "People's Prize Curb",
+      "kind": "module",
+      "artifact_type": "tiny-gold-vote-notch",
+      "bounds": {
+        "x": 0.236,
+        "y": 0.767,
+        "w": 0.04,
+        "h": 0.055
+      },
+      "polygon": [
+        [
+          0.243,
+          0.772
+        ],
+        [
+          0.256,
+          0.772
+        ],
+        [
+          0.257,
+          0.785
+        ],
+        [
+          0.252,
+          0.79
+        ],
+        [
+          0.242,
+          0.79
+        ],
+        [
+          0.239,
+          0.781
+        ]
+      ],
+      "z_index": 26,
+      "cluster_id": "magenta-quiet-gate",
+      "mask_path": "/editions/2026-04-26-magenta-quiet-gate-v1/assets/masks/module-peoples-prize-curb.svg",
+      "source_binding_ids": [
+        "binding-module-peoples-prize-curb"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          393,
+          809
+        ],
+        "safe_stage_window_origin_px": [
+          393,
+          815
+        ],
+        "preferred_expansion_label": "right"
+      }
+    },
+    {
+      "id": "module-audit-ash-square",
+      "label": "Audit Ash Square",
+      "kind": "module",
+      "artifact_type": "small-charcoal-image-tile",
+      "bounds": {
+        "x": 0.695,
+        "y": 0.685,
+        "w": 0.038,
+        "h": 0.06
+      },
+      "polygon": [
+        [
+          0.698,
+          0.689
+        ],
+        [
+          0.719,
+          0.689
+        ],
+        [
+          0.721,
+          0.715
+        ],
+        [
+          0.717,
+          0.721
+        ],
+        [
+          0.7,
+          0.721
+        ],
+        [
+          0.696,
+          0.716
+        ]
+      ],
+      "z_index": 27,
+      "cluster_id": "magenta-quiet-gate",
+      "mask_path": "/editions/2026-04-26-magenta-quiet-gate-v1/assets/masks/module-audit-ash-square.svg",
+      "source_binding_ids": [
+        "binding-module-audit-ash-square"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          1097,
+          727
+        ],
+        "safe_stage_window_origin_px": [
+          1097,
+          733
+        ],
+        "preferred_expansion_label": "left"
+      }
+    },
+    {
+      "id": "module-coreys-floor-spark",
+      "label": "Coreys Floor Spark",
+      "kind": "module",
+      "artifact_type": "single-white-resin-glint",
+      "bounds": {
+        "x": 0.878,
+        "y": 0.794,
+        "w": 0.077,
+        "h": 0.05
+      },
+      "polygon": [
+        [
+          0.895,
+          0.805
+        ],
+        [
+          0.901,
+          0.799
+        ],
+        [
+          0.907,
+          0.805
+        ],
+        [
+          0.904,
+          0.816
+        ],
+        [
+          0.897,
+          0.82
+        ],
+        [
+          0.89,
+          0.813
+        ]
+      ],
+      "z_index": 28,
+      "cluster_id": "magenta-quiet-gate",
+      "mask_path": "/editions/2026-04-26-magenta-quiet-gate-v1/assets/masks/module-coreys-floor-spark.svg",
+      "source_binding_ids": [
+        "binding-module-coreys-floor-spark"
+      ],
+      "geometry": {
+        "safe_hover_origin_px": [
+          1408,
+          835
+        ],
+        "safe_stage_window_origin_px": [
+          1408,
+          840
+        ],
+        "preferred_expansion_label": "left"
+      }
+    }
+  ]
+}

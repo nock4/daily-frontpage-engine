@@ -25,6 +25,10 @@ Loads:
 - artifact-map.json
 - source-bindings.json
 - ambiance.json
+- about.json
+- analysis.json
+- interpretation.json
+- enhancement-plan.json
 - review.json
 
 Inputs:
@@ -64,6 +68,8 @@ Controls:
 - replacement rules for single-primary mode
 - provider-native renderer selection from URL and binding metadata
 - stage placement fallback when artifact lookup fails
+- threshold-bloom / genie-like hover reveal treatments where assigned by the enhancement plan
+- title-plus-source-image cards for rich previews and playable embeds for YouTube
 
 ### 5. Ambiance engine
 Mounts:
@@ -74,7 +80,15 @@ Mounts:
 
 Should read directly from the ambiance recipe.
 
-### 6. Archive navigator
+### 6. About scene note
+Supports:
+- edition-scoped About content loaded from `about.json`
+- a stable project paragraph
+- a run-specific process paragraph
+- edition typography profiles using self-hosted fonts
+- scene-native presentation, not a generic product help modal
+
+### 7. Archive navigator
 Supports:
 - previous editions
 - archive browsing by date
@@ -174,6 +188,8 @@ If source embed fails:
 - if no rich preview, show source-framed outbound window action
 - do not replace with a generic summary card
 - do not allow null-source packaging bugs to silently ship as acceptable UX
+- generated YouTube editions should catch non-embeddable videos in QA and skip them in future runs
+- generated Twitter/X editions should use native tweet source URLs, not raw CDN media URLs
 
 ## Live-vs-review presentation contract
 
@@ -196,6 +212,7 @@ Phase 2:
 - richer social/video/audio windows
 - ambiance recipe execution
 - family and motif archive browsing
+- About scene-note presentation
 
 Phase 3:
 - stronger WebGL systems

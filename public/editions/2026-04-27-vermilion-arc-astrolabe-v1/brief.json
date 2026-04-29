@@ -1,0 +1,59 @@
+{
+  "brief_id": "brief-2026-04-27-vermilion-arc-astrolabe-v1",
+  "date": "2026-04-27",
+  "signal_cluster_ids": [
+    "55c2a5c846a6",
+    "5521ff3b4c89",
+    "d824bedc7d45",
+    "67bac2353d29",
+    "97ed2b079aa4",
+    "1ecbe0ef250f",
+    "409267176a04",
+    "b7428f1c9989"
+  ],
+  "research_node_ids": [
+    "research-1-c865cd35",
+    "research-2-07977d76",
+    "research-3-3206e1e5",
+    "research-4-d403a5e4",
+    "research-5-27aacee7",
+    "research-6-c545ff94",
+    "research-7-7a6e3590",
+    "research-8-61c83cb1",
+    "research-9-8a388fbf",
+    "research-10-e6a10546",
+    "research-11-51830e59",
+    "research-12-8edd09cd"
+  ],
+  "mood": "wide, sunburned, nocturnal, and contemplative, like a desert instrument listening after midnight",
+  "material_language": [
+    "matte vermilion mineral pigment",
+    "chalk-white orbital linework",
+    "thin ochre enamel traces"
+  ],
+  "lighting": "low nocturnal sidelight with a warm afterimage glow; pale arcs catch light like drawn wire against a deep red field",
+  "object_inventory": [
+    "one dominant half-dome astrolabe made from nested chalk and ochre arcs",
+    "two secondary forms: a low smoked-obsidian horizon bar and a small brushed-aluminum lens moon",
+    "large uninterrupted vermilion negative space above and around the instrument",
+    "tiny etched labels, pinholes, notches, and constellation ticks used as quiet source anchors",
+    "subtle album-cover texture: flat red ground, hand-drawn imperfect arcs, sparse lettering"
+  ],
+  "interaction_grammar": {
+    "hero_count": 2,
+    "module_count": 7,
+    "window_strategy": "source-window"
+  },
+  "negative_constraints": [
+    "no desks, dashboards, software UI, cards, windows, shelves, cabinets, corridors, gates, or office interiors",
+    "do not crowd the plate with props; maintain at least 45 percent calm negative space",
+    "only one dominant form plus two secondary forms",
+    "avoid literal screenshots, logos, page chrome, code, implementation language, or social media layouts",
+    "keep technical and research concepts translated into physical marks, labels, cuts, apertures, and small lights",
+    "no dense archive wall",
+    "no cabinet of objects",
+    "no many-prop still life",
+    "no equal-weight grid of source objects",
+    "preserve large negative space"
+  ]
+}

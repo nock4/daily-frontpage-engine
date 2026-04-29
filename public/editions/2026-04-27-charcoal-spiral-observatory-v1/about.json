@@ -1,0 +1,20 @@
+{
+  "about_id": "about-2026-04-27-charcoal-spiral-observatory-v1",
+  "label": "About",
+  "title": "About The Charcoal Spiral Observatory",
+  "short_blurb": "A daily generated front page where the image is the interface.",
+  "body": [
+    "Daily Frontpage is a daily generated interactive front page. Each edition starts from recent saved signals and source research, becomes a new image-led scene, and stays explorable in the archive. The image is the interface: visible marks, objects, and surfaces in the scene open the real sources that shaped the day.",
+    "This iteration began with 16 recent saved-signal files and 12 captured links, then narrowed the page to 9 source windows. A source image from f4.bcbits.com helped set the palette and material direction. The selected sources included Image 1983-1998 (Skintone Edition), by Susumu Yokota and @supertommy: promised to ship before the movie so 53 days 731, plus 7 more, and the scene became The Charcoal Spiral Observatory: A nocturnal observatory reduced to a charcoal field: one dominant matte-black celestial oculus floats high in the frame, leaving broad empty darkness around it. Below center, a warm vellum square translates the Yokota cover’s centered pale panel, heavy black surrounding typography, soft grain, and delicate curling violet-brown line into a quiet star-map fragment. A single oxidized copper spiral arc becomes the second secondary form, crossing the vellum like a handmade orbit. Keep the palette to charcoal pigment, warm vellum, and dark copper, with smoked-glass glints. Visible but small: IMAGE 1983-1998 on the vellum edge, Galaxy DNA etched into the copper curl, Under a Glass Bell as a tiny clear aperture, Taaritt as a sand notch, Fabric as a dim acid-green dial, Circuits as a reed scratch, cam.eee as a profile moon, open world as a low horizon chip, and 13-26 as a date fleck. Silent, spacious, optical. The first plate read used fallback geometry, then the mask audit tightened the regions against the finished image. Review artifacts are in tmp/daily-process-runs/daily-process-2026-04-27T15-03-28-995Z."
+  ],
+  "typography": {
+    "profile_id": "listening-arcade",
+    "heading_family": "'DFE Bricolage Grotesque', ui-sans-serif, system-ui, sans-serif",
+    "body_family": "'DFE Space Grotesk', ui-sans-serif, system-ui, sans-serif",
+    "accent_family": "'DFE Fraunces', Georgia, serif",
+    "heading_weight": 720,
+    "body_weight": 430,
+    "accent_weight": 680,
+    "rationale": "Bricolage Grotesque and Space Grotesk fit record, arcade, and listening-room editions while Fraunces keeps source captions tactile."
+  }
+}

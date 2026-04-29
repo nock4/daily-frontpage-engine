@@ -1,0 +1,22 @@
+{
+  "ambiance_recipe_id": "ambiance-2026-04-27-charcoal-spiral-observatory-v1",
+  "motion_system": "nearly still orbital drift, as if the copper line is slowly remembering a constellation",
+  "color_drift": "charcoal black breathes toward deep green-black while the vellum warms from peach to tea-stained cream",
+  "glow_behavior": "small anchors glow only at their edges, never becoming stars or UI lights",
+  "audio_posture": "ambient",
+  "webgl_mode": "shader-scene",
+  "research_inputs": [
+    "research-1-972323a6",
+    "research-2-df8cfa31",
+    "research-3-8a388fbf",
+    "research-4-e6a10546",
+    "research-5-51830e59",
+    "research-6-88263fb4",
+    "research-7-0308f206",
+    "research-8-db30d9b5",
+    "research-9-61c83cb1",
+    "research-10-8edd09cd",
+    "research-11-c545ff94",
+    "research-12-7a6e3590"
+  ]
+}
